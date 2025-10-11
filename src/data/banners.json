@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Nueva Colección Otoño 2024",
+    "subtitle": "Elegancia y estilo en cada prenda",
+    "image": "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "active": true,
+    "order": 1
+  },
+  {
+    "id": 2,
+    "title": "Hasta 40% de Descuento",
+    "subtitle": "En productos seleccionados",
+    "image": "https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "active": true,
+    "order": 2
+  },
+  {
+    "id": 3,
+    "title": "Calzados Premium",
+    "subtitle": "Comodidad y distinción",
+    "image": "https://images.pexels.com/photos/1240892/pexels-photo-1240892.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "active": true,
+    "order": 3
+  }
+]

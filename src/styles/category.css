@@ -1,0 +1,131 @@
+/* Category Page */
+.category-page {
+  padding-bottom: 40px;
+}
+
+.category-hero {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.category-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.category-hero-content {
+  position: relative;
+  text-align: center;
+  color: var(--white);
+  z-index: 1;
+}
+
+.category-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.category-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.category-sidebar {
+  background: var(--bg-light);
+  padding: 20px;
+  border-radius: 10px;
+  height: fit-content;
+  position: sticky;
+  top: 120px;
+}
+
+.category-sidebar h3 {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.subcategory-list {
+  list-style: none;
+}
+
+.subcategory-list li {
+  margin-bottom: 10px;
+}
+
+.subcategory-list button {
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.subcategory-list button:hover {
+  background: var(--accent-color);
+  color: var(--white);
+  border-color: var(--accent-color);
+}
+
+.subcategory-list button.active {
+  background: var(--primary-color);
+  color: var(--white);
+  border-color: var(--primary-color);
+}
+
+.category-main-content {
+  min-height: 500px;
+}
+
+.category-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 30px;
+}
+
+.product-count {
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+.sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sort-controls select {
+  padding: 8px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+@media (max-width: 968px) {
+  .category-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .category-sidebar {
+    position: relative;
+    top: 0;
+  }
+}

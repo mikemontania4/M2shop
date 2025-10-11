@@ -1,0 +1,112 @@
+[
+  {
+    "id": "camisas",
+    "name": "Camisas",
+    "description": "Camisas de alta calidad para toda ocasión",
+    "image": "https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "subcategories": [
+      {
+        "id": "camisas-formales",
+        "name": "Formales",
+        "description": "Camisas para eventos formales"
+      },
+      {
+        "id": "camisas-casuales",
+        "name": "Casuales",
+        "description": "Camisas para uso diario"
+      },
+      {
+        "id": "camisas-manga-corta",
+        "name": "Manga Corta",
+        "description": "Camisas de manga corta"
+      }
+    ]
+  },
+  {
+    "id": "pantalones",
+    "name": "Pantalones",
+    "description": "Pantalones elegantes y casuales",
+    "image": "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "subcategories": [
+      {
+        "id": "pantalones-vestir",
+        "name": "De Vestir",
+        "description": "Pantalones formales"
+      },
+      {
+        "id": "pantalones-jeans",
+        "name": "Jeans",
+        "description": "Pantalones de mezclilla"
+      },
+      {
+        "id": "pantalones-deportivos",
+        "name": "Deportivos",
+        "description": "Pantalones para deporte"
+      }
+    ]
+  },
+  {
+    "id": "sacos",
+    "name": "Sacos",
+    "description": "Sacos y blazers ejecutivos",
+    "image": "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "subcategories": [
+      {
+        "id": "sacos-ejecutivos",
+        "name": "Ejecutivos",
+        "description": "Sacos para oficina"
+      },
+      {
+        "id": "sacos-sport",
+        "name": "Sport",
+        "description": "Sacos casuales"
+      }
+    ]
+  },
+  {
+    "id": "calzados",
+    "name": "Calzados",
+    "description": "Zapatos de cuero y deportivos",
+    "image": "https://images.pexels.com/photos/1240892/pexels-photo-1240892.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "subcategories": [
+      {
+        "id": "calzados-formales",
+        "name": "Formales",
+        "description": "Zapatos de vestir"
+      },
+      {
+        "id": "calzados-casuales",
+        "name": "Casuales",
+        "description": "Zapatos informales"
+      },
+      {
+        "id": "calzados-deportivos",
+        "name": "Deportivos",
+        "description": "Calzado deportivo"
+      }
+    ]
+  },
+  {
+    "id": "accesorios",
+    "name": "Accesorios",
+    "description": "Complementos para tu look",
+    "image": "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "subcategories": [
+      {
+        "id": "accesorios-cinturones",
+        "name": "Cinturones",
+        "description": "Cinturones de cuero"
+      },
+      {
+        "id": "accesorios-corbatas",
+        "name": "Corbatas",
+        "description": "Corbatas y moños"
+      },
+      {
+        "id": "accesorios-billeteras",
+        "name": "Billeteras",
+        "description": "Billeteras y carteras"
+      }
+    ]
+  }
+]
