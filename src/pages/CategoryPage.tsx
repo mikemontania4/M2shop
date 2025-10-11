@@ -1,35 +1,44 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import productService, { Product, Subcategory } from '../services/productService';
 import ProductCard from '../components/ProductCard';
 import { useApp } from '../contexts/AppContext';
 
-interface CategoryPageProps {
-  categoryId: string;
-  onNavigate: (page: string) => void;
-}
-
-const CategoryPage: React.FC<CategoryPageProps> = ({ categoryId, onNavigate }) => {
+const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
   const { addToCart } = useApp();
   const [products, setProducts] = useState<Product[]>([]);
   const [category, setCategory] = useState<any>(null);
   const [subcategories, setSubcategories] = useState<Subcategory[]>([]);
   const [selectedSubcategory, setSelectedSubcategory] = useState<string | null>(null);
   const [sortBy, setSortBy] = useState<string>('default');
+  const params = useParams();
+  const navigate = useNavigate();
+  const effectiveCategoryId = useMemo(() => {
+    if (categoryId && categoryId.length > 0) return categoryId;
+    if (params.categoriaSlug) return params.categoriaSlug;
+    if (params.subcategoriaSlug) {
+      // When we are in /catalogo/:subcategoriaSlug, infer base category from subcategory
+      const allCategories = productService.getCategories();
+      const found = allCategories.find(c => c.subcategories.some(s => s.id === params.subcategoriaSlug));
+      return found?.id || '';
+    }
+    return '';
+  }, [categoryId, params.categoriaSlug, params.subcategoriaSlug]);
 
   useEffect(() => {
-    const categoryData = productService.getCategoryById(categoryId);
+    const categoryData = productService.getCategoryById(effectiveCategoryId);
     setCategory(categoryData);
 
-    const subcats = productService.getSubcategoriesByCategory(categoryId);
+    const subcats = productService.getSubcategoriesByCategory(effectiveCategoryId);
     setSubcategories(subcats);
 
     setSelectedSubcategory(null);
-    loadProducts(categoryId, null, sortBy);
-  }, [categoryId]);
+    loadProducts(effectiveCategoryId, null, sortBy);
+  }, [effectiveCategoryId]);
 
   useEffect(() => {
-    loadProducts(categoryId, selectedSubcategory, sortBy);
-  }, [selectedSubcategory, sortBy]);
+    loadProducts(effectiveCategoryId, selectedSubcategory, sortBy);
+  }, [effectiveCategoryId, selectedSubcategory, sortBy]);
 
   const loadProducts = (catId: string, subcat: string | null, sort: string) => {
     let categoryProducts = productService.getProductsByCategory(catId, subcat || undefined);
@@ -46,7 +55,7 @@ const CategoryPage: React.FC<CategoryPageProps> = ({ categoryId, onNavigate }) =
   };
 
   const handleProductClick = (productId: number) => {
-    onNavigate(`product-${productId}`);
+    navigate(`/producto/${productId}`);
   };
 
   const handleAddToCart = (product: Product, quantity: number) => {
@@ -55,6 +64,11 @@ const CategoryPage: React.FC<CategoryPageProps> = ({ categoryId, onNavigate }) =
 
   const handleSubcategoryClick = (subcategoryId: string | null) => {
     setSelectedSubcategory(subcategoryId);
+    if (subcategoryId) {
+      navigate(`/catalogo/${subcategoryId}`);
+    } else if (effectiveCategoryId) {
+      navigate(`/${effectiveCategoryId}`);
+    }
   };
 
   if (!category) {

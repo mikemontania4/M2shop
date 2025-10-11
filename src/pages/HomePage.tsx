@@ -1,20 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import productService, { Product, Category } from '../services/productService';
-import bannerService, { Banner } from '../services/bannerService';
+import bannerService, { Banner } from '../services/BannerService';
 import ProductCard from '../components/ProductCard';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useApp } from '../contexts/AppContext';
+import { useNavigate } from 'react-router-dom';
 
-interface HomePageProps {
-  onNavigate: (page: string) => void;
-}
-
-const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
+const HomePage: React.FC = () => {
   const { addToCart } = useApp();
   const [featuredProducts, setFeaturedProducts] = useState<Product[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
   const [banners, setBanners] = useState<Banner[]>([]);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setFeaturedProducts(productService.getFeaturedProducts());
@@ -44,11 +42,11 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
   };
 
   const handleCategoryClick = (categoryId: string) => {
-    onNavigate(`category-${categoryId}`);
+    navigate(`/${categoryId}`);
   };
 
   const handleProductClick = (productId: number) => {
-    onNavigate(`product-${productId}`);
+    navigate(`/producto/${productId}`);
   };
 
   return (

@@ -1,112 +1,56 @@
-import React, { useState } from 'react';
 import { AppProvider } from './contexts/AppContext';
+import { Routes, Route, Outlet } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import CategoryPage from './pages/CategoryPage';
 import ProductDetailPage from './pages/ProductDetailPage';
-import SearchPage from './pages/SearchPage';
+import CatalogPage from './pages/CatalogPage';
 import CartPage from './pages/CartPage';
+import CheckoutPage from './pages/CheckoutPage';
+import ContactPage from './pages/ContactPage';
+import CompanyPage from './pages/CompanyPage';
+import HistoryPage from './pages/HistoryPage';
+import StoresPage from './pages/StoresPage';
+import OrderConfirmationPage from './pages/OrderConfirmationPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import ProfilePage from './pages/ProfilePage';
-import CheckoutPage from './pages/CheckoutPage';
-import OrderConfirmationPage from './pages/OrderConfirmationPage';
-import AdminLoginPage from './pages/AdminLoginPage';
-import AdminDashboard from './pages/AdminDashboard';
+
+function Layout() {
+  return (
+    <div className="app">
+      <Header />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
+}
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home');
-  const [searchQuery, setSearchQuery] = useState('');
-  const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(false);
-
-  const handleNavigate = (page: string) => {
-    setCurrentPage(page);
-    window.scrollTo(0, 0);
-  };
-
-  const handleAdminLogin = () => {
-    setIsAdminLoggedIn(true);
-    setCurrentPage('admin-dashboard');
-  };
-
-  const handleAdminLogout = () => {
-    setIsAdminLoggedIn(false);
-    setCurrentPage('home');
-  };
-
-  const handleSearch = (query: string) => {
-    setSearchQuery(query);
-  };
-
-  const renderPage = () => {
-    if (currentPage === 'panelsecreto') {
-      return <AdminLoginPage onAdminLogin={handleAdminLogin} onNavigate={handleNavigate} />;
-    }
-
-    if (currentPage === 'admin-dashboard') {
-      if (!isAdminLoggedIn) {
-        handleNavigate('panelsecreto');
-        return null;
-      }
-      return <AdminDashboard onLogout={handleAdminLogout} />;
-    }
-
-    if (currentPage === 'home') {
-      return <HomePage onNavigate={handleNavigate} />;
-    }
-
-    if (currentPage.startsWith('category-')) {
-      const categoryId = currentPage.replace('category-', '');
-      return <CategoryPage categoryId={categoryId} onNavigate={handleNavigate} />;
-    }
-
-    if (currentPage.startsWith('product-')) {
-      const productId = parseInt(currentPage.replace('product-', ''));
-      return <ProductDetailPage productId={productId} onNavigate={handleNavigate} />;
-    }
-
-    if (currentPage === 'search') {
-      return <SearchPage searchQuery={searchQuery} onNavigate={handleNavigate} />;
-    }
-
-    if (currentPage === 'cart') {
-      return <CartPage onNavigate={handleNavigate} />;
-    }
-
-    if (currentPage === 'login') {
-      return <LoginPage onNavigate={handleNavigate} />;
-    }
-
-    if (currentPage === 'register') {
-      return <RegisterPage onNavigate={handleNavigate} />;
-    }
-
-    if (currentPage === 'profile') {
-      return <ProfilePage onNavigate={handleNavigate} />;
-    }
-
-    if (currentPage === 'checkout') {
-      return <CheckoutPage onNavigate={handleNavigate} />;
-    }
-
-    if (currentPage.startsWith('order-')) {
-      const orderId = currentPage.replace('order-', '');
-      return <OrderConfirmationPage orderId={orderId} onNavigate={handleNavigate} />;
-    }
-
-    return <HomePage onNavigate={handleNavigate} />;
-  };
-
-  const isAdminPanel = currentPage === 'panelsecreto' || currentPage === 'admin-dashboard';
-
   return (
     <AppProvider>
-      <div className="app">
-        {!isAdminPanel && <Header onNavigate={handleNavigate} onSearch={handleSearch} />}
-        <main>{renderPage()}</main>
-        {!isAdminPanel && <Footer />}
-      </div>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/catalogo" element={<CatalogPage />} />
+          <Route path="/catalogo/:subcategoriaSlug" element={<CategoryPage />} />
+          <Route path="/:categoriaSlug" element={<CategoryPage />} />
+          <Route path="/producto/:id" element={<ProductDetailPage />} />
+          <Route path="/carrito" element={<CartPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/orden/:id" element={<OrderConfirmationPage />} />
+          <Route path="/contacto" element={<ContactPage />} />
+          <Route path="/la-empresa" element={<CompanyPage />} />
+          <Route path="/nuestra-historia" element={<HistoryPage />} />
+          <Route path="/sucursales" element={<StoresPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
+        </Route>
+      </Routes>
     </AppProvider>
   );
 }

@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useApp } from '../contexts/AppContext';
 import { User, Lock } from 'lucide-react';
 
-interface LoginPageProps {
-  onNavigate: (page: string) => void;
-}
-
-const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
+const LoginPage: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const { login } = useApp();
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -18,7 +16,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
 
     const result = login(email, password);
     if (result.success) {
-      onNavigate('home');
+      navigate('/');
     } else {
       setError(result.message || 'Error al iniciar sesión');
     }
@@ -69,7 +67,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
             </form>
 
             <div className="login-demo">
-              <p>¿No tienes cuenta? <button onClick={() => onNavigate('register')} className="link-button">Regístrate aquí</button></p>
+              <p>¿No tienes cuenta? <button onClick={() => navigate('/register')} className="link-button">Regístrate aquí</button></p>
               <hr style={{ margin: '15px 0', border: 'none', borderTop: '1px solid #e0e0e0' }} />
               <p><strong>Cuentas de prueba:</strong></p>
               <p>Email: admin@cavallaro.com | Password: admin123</p>

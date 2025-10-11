@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Product } from '../services/productService';
 import { ShoppingCart, Plus, Minus } from 'lucide-react';
 
 interface ProductCardProps {
   product: Product;
-  onProductClick: (productId: number) => void;
+  onProductClick?: (productId: number) => void;
   onAddToCart: (product: Product, quantity: number) => void;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product, onProductClick, onAddToCart }) => {
   const [quantity, setQuantity] = useState(1);
   const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('es-PY', {
@@ -42,14 +44,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onProductClick, onAd
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="product-image" onClick={() => onProductClick(product.id)}>
+      <div className="product-image" onClick={() => (onProductClick ? onProductClick(product.id) : navigate(`/producto/${product.id}`))}>
         <img src={product.image} alt={product.name} />
         {hasDiscount && (
           <span className="discount-badge">-{discountPercentage}%</span>
         )}
       </div>
       <div className="product-info">
-        <h3 onClick={() => onProductClick(product.id)}>{product.name}</h3>
+        <h3 onClick={() => (onProductClick ? onProductClick(product.id) : navigate(`/producto/${product.id}`))}>{product.name}</h3>
         <div className="product-price">
           <span className="current-price">{formatPrice(product.price)}</span>
           {hasDiscount && (

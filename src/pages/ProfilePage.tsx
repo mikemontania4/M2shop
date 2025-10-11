@@ -1,19 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useApp } from '../contexts/AppContext';
 import authService from '../services/authService';
 import orderService from '../services/orderService';
 import { User, Phone, MapPin, FileText, Save } from 'lucide-react';
 
-interface ProfilePageProps {
-  onNavigate: (page: string) => void;
-}
-
-const ProfilePage: React.FC<ProfilePageProps> = ({ onNavigate }) => {
+const ProfilePage: React.FC = () => {
   const { user } = useApp();
+  const navigate = useNavigate();
   const [name, setName] = useState(user?.name || '');
   const [phone, setPhone] = useState(user?.phone || '');
   const [address, setAddress] = useState(user?.address || '');
-  const [documentType, setDocumentType] = useState(user?.documentType || 'none');
+  const [documentType, setDocumentType] = useState<'ci' | 'ruc' | 'none'>(user?.documentType || 'none');
   const [documentNumber, setDocumentNumber] = useState(user?.documentNumber || '');
   const [success, setSuccess] = useState('');
   const [error, setError] = useState('');
@@ -68,7 +66,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ onNavigate }) => {
         <div className="container">
           <div className="profile-error">
             <h2>Debes iniciar sesión</h2>
-            <button className="btn-primary" onClick={() => onNavigate('login')}>
+            <button className="btn-primary" onClick={() => navigate('/login')}>
               Iniciar Sesión
             </button>
           </div>
@@ -136,7 +134,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ onNavigate }) => {
                 </label>
                 <select
                   value={documentType}
-                  onChange={(e) => setDocumentType(e.target.value)}
+                  onChange={(e) => setDocumentType(e.target.value as 'ci' | 'ruc' | 'none')}
                 >
                   <option value="none">Prefiero no dar información</option>
                   <option value="ci">Cédula de Identidad</option>
@@ -171,7 +169,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ onNavigate }) => {
             {userOrders.length === 0 ? (
               <div className="empty-orders">
                 <p>No tienes pedidos aún</p>
-                <button className="btn-primary" onClick={() => onNavigate('home')}>
+                <button className="btn-primary" onClick={() => navigate('/') }>
                   Ir a Comprar
                 </button>
               </div>
@@ -192,7 +190,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ onNavigate }) => {
                     </p>
                     <button
                       className="btn-secondary"
-                      onClick={() => onNavigate(`order-${order.id}`)}
+                      onClick={() => navigate(`/orden/${order.id}`)}
                     >
                       Ver Detalles
                     </button>
