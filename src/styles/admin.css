@@ -4,6 +4,21 @@
   background: var(--bg-light);
 }
 
+/* Admin shell */
+.admin-shell { display: grid; grid-template-columns: 260px 1fr; min-height: 100vh; }
+.admin-sidebar { background: var(--primary-color); color: var(--white); padding: 24px; display: flex; flex-direction: column; gap: 20px; }
+.admin-sidebar .brand { font-weight: 700; letter-spacing: .5px; }
+.admin-sidebar nav ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.admin-sidebar a { color: var(--white); text-decoration: none; opacity: .85; }
+.admin-sidebar a:hover { opacity: 1; }
+.admin-main { padding: 24px; }
+
+.admin-table { width: 100%; border-collapse: collapse; }
+.admin-table th, .admin-table td { border-bottom: 1px solid var(--border-color); padding: 10px; text-align: left; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.form-grid label { display: flex; flex-direction: column; gap: 6px; font-weight: 600; }
+.form-grid input, .form-grid select, .form-grid textarea { padding: 10px; border: 1px solid var(--border-color); border-radius: 6px; }
+
 .admin-header {
   background: var(--primary-color);
   color: var(--white);

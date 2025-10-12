@@ -8,6 +8,12 @@ import ProductDetailPage from './pages/ProductDetailPage';
 import CatalogPage from './pages/CatalogPage';
 import AdminLoginPage from './pages/AdminLoginPage';
 import AdminDashboard from './pages/AdminDashboard';
+import AdminLayout from './admin/AdminLayout';
+import ProductsAdmin from './admin/ProductsAdmin';
+import CategoriesAdmin from './admin/CategoriesAdmin';
+import BannersAdmin from './admin/BannersAdmin';
+import DiscountsAdmin from './admin/DiscountsAdmin';
+import OrdersAdmin from './admin/OrdersAdmin';
 import authService from './services/authService';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
@@ -92,6 +98,46 @@ function App() {
             element={
               <ProtectedAdminRoute>
                 <AdminDashboard onLogout={() => {}} />
+              </ProtectedAdminRoute>
+            }
+          />
+          <Route
+            path="/admin/products"
+            element={
+              <ProtectedAdminRoute>
+                <ProductsAdmin />
+              </ProtectedAdminRoute>
+            }
+          />
+          <Route
+            path="/admin/categories"
+            element={
+              <ProtectedAdminRoute>
+                <CategoriesAdmin />
+              </ProtectedAdminRoute>
+            }
+          />
+          <Route
+            path="/admin/banners"
+            element={
+              <ProtectedAdminRoute>
+                <BannersAdmin />
+              </ProtectedAdminRoute>
+            }
+          />
+          <Route
+            path="/admin/discounts"
+            element={
+              <ProtectedAdminRoute>
+                <DiscountsAdmin />
+              </ProtectedAdminRoute>
+            }
+          />
+          <Route
+            path="/admin/orders"
+            element={
+              <ProtectedAdminRoute>
+                <OrdersAdmin />
               </ProtectedAdminRoute>
             }
           />
