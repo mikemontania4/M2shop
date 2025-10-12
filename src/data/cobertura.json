@@ -1,0 +1,15 @@
+[
+  {
+    "id": "asuncion-area",
+    "name": "Área Metropolitana",
+    "color": "#2f86eb",
+    "weight": 2,
+    "fillOpacity": 0.15,
+    "coordinates": [
+      [-25.24, -57.72],
+      [-25.24, -57.52],
+      [-25.39, -57.52],
+      [-25.39, -57.72]
+    ]
+  }
+]

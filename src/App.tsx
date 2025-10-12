@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import CategoryPage from './pages/CategoryPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import CatalogPage from './pages/CatalogPage';
+import MapCoveragePage from './pages/MapCoveragePage';
 import AdminLoginPage from './pages/AdminLoginPage';
 import AdminDashboard from './pages/AdminDashboard';
 import AdminLayout from './admin/AdminLayout';
@@ -14,6 +15,8 @@ import CategoriesAdmin from './admin/CategoriesAdmin';
 import BannersAdmin from './admin/BannersAdmin';
 import DiscountsAdmin from './admin/DiscountsAdmin';
 import OrdersAdmin from './admin/OrdersAdmin';
+import BranchesAdmin from './admin/BranchesAdmin';
+import CoverageAdmin from './admin/CoverageAdmin';
 import authService from './services/authService';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
@@ -88,6 +91,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/mapa-de-cobertura" element={<MapCoveragePage />} />
         </Route>
 
         {/* Admin area isolated from ecommerce chrome */}
@@ -138,6 +142,22 @@ function App() {
             element={
               <ProtectedAdminRoute>
                 <OrdersAdmin />
+              </ProtectedAdminRoute>
+            }
+          />
+          <Route
+            path="/admin/branches"
+            element={
+              <ProtectedAdminRoute>
+                <BranchesAdmin />
+              </ProtectedAdminRoute>
+            }
+          />
+          <Route
+            path="/admin/coverage"
+            element={
+              <ProtectedAdminRoute>
+                <CoverageAdmin />
               </ProtectedAdminRoute>
             }
           />
