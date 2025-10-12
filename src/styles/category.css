@@ -111,6 +111,16 @@
   min-height: 500px;
 }
 
+/* Stabilize card heights inside category grid */
+.category-main-content .products-grid {
+  align-items: stretch;
+}
+
+.category-main-content .product-card-wrap,
+.category-main-content .product-card {
+  height: 100%;
+}
+
 .category-toolbar {
   display: flex;
   justify-content: space-between;

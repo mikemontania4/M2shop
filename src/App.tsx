@@ -6,6 +6,9 @@ import HomePage from './pages/HomePage';
 import CategoryPage from './pages/CategoryPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import CatalogPage from './pages/CatalogPage';
+import AdminLoginPage from './pages/AdminLoginPage';
+import AdminDashboard from './pages/AdminDashboard';
+import authService from './services/authService';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import ContactPage from './pages/ContactPage';
@@ -44,6 +47,21 @@ function Layout() {
   );
 }
 
+function AdminLayout() {
+  return (
+    <div className="admin-app">
+      <Outlet />
+    </div>
+  );
+}
+
+function ProtectedAdminRoute({ children }: { children: JSX.Element }) {
+  if (!authService.isAuthenticated() || !authService.isAdmin()) {
+    return <AdminLoginPage onAdminLogin={() => {}} onNavigate={() => {}} />;
+  }
+  return children;
+}
+
 function App() {
   return (
     <AppProvider>
@@ -64,6 +82,19 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/profile" element={<ProfilePage />} />
+        </Route>
+
+        {/* Admin area isolated from ecommerce chrome */}
+        <Route element={<AdminLayout />}>
+          <Route path="/admin/login" element={<AdminLoginPage onAdminLogin={() => {}} onNavigate={() => {}} />} />
+          <Route
+            path="/admin"
+            element={
+              <ProtectedAdminRoute>
+                <AdminDashboard onLogout={() => {}} />
+              </ProtectedAdminRoute>
+            }
+          />
         </Route>
       </Routes>
     </AppProvider>
