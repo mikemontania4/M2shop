@@ -8,12 +8,13 @@ const MapCoveragePage: React.FC = () => {
   const areas = coverageService.getCoverage();
 
   const center = branches.length > 0 ? [branches[0].lat, branches[0].lng] as [number, number] : [-25.2969, -57.6244];
+  const bounds = areas.length > 0 ? (areas[0].coordinates as any) : undefined;
 
   return (
     <div className="container" style={{ padding: '20px 0' }}>
       <h1>Mapa de Cobertura</h1>
       <div style={{ height: 520, width: '100%', borderRadius: 12, overflow: 'hidden', boxShadow: '0 6px 16px rgba(0,0,0,0.1)' }}>
-        <MapContainer center={center} zoom={11} style={{ height: '100%', width: '100%' }}>
+        <MapContainer center={center} zoom={11} style={{ height: '100%', width: '100%' }} bounds={bounds}>
           <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution="&copy; OpenStreetMap" />
           {areas.map(a => (
             <Polygon key={a.id} positions={a.coordinates as any} pathOptions={{ color: a.color, weight: a.weight, fillOpacity: a.fillOpacity }}>
