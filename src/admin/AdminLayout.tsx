@@ -21,6 +21,8 @@ const AdminLayout: React.FC = () => {
             <li><Link to="/admin/categories">Categorías</Link></li>
             <li><Link to="/admin/banners">Banners</Link></li>
             <li><Link to="/admin/discounts">Descuentos</Link></li>
+            <li><Link to="/admin/branches">Sucursales</Link></li>
+            <li><Link to="/admin/coverage">Áreas de Cobertura</Link></li>
             <li><Link to="/admin/orders">Pedidos</Link></li>
           </ul>
         </nav>

@@ -88,7 +88,7 @@ function App() {
 
         {/* Admin area isolated from ecommerce chrome */}
         <Route element={<AdminLayout />}>
-          <Route path="/admin/login" element={<AdminLoginPage onAdminLogin={() => {}} onNavigate={() => {}} />} />
+          <Route path="/admin/login" element={<AdminLoginPage />} />
           <Route
             path="/admin"
             element={
