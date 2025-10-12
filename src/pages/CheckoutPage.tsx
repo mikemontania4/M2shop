@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useApp } from '../contexts/AppContext';
 import orderService from '../services/orderService';
 
-interface CheckoutPageProps {
-  onNavigate: (page: string) => void;
-}
-
-const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate }) => {
+const CheckoutPage: React.FC = () => {
   const { user, cart, cartTotal, clearCart } = useApp();
+  const navigate = useNavigate();
   const [shippingAddress, setShippingAddress] = useState(user?.address || '');
   const [paymentMethod, setPaymentMethod] = useState('efectivo');
   const [error, setError] = useState('');
@@ -33,7 +31,7 @@ const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate }) => {
 
     if (!user) {
       setError('Debes iniciar sesión para realizar una compra');
-      onNavigate('login');
+      navigate('/login');
       return;
     }
 
@@ -49,7 +47,7 @@ const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate }) => {
 
     const order = orderService.createOrder(user, cart, shippingAddress, paymentMethod);
     clearCart();
-    onNavigate(`order-${order.id}`);
+    navigate(`/orden/${order.id}`);
   };
 
   if (!user) {
@@ -59,7 +57,7 @@ const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate }) => {
           <div className="checkout-error">
             <h2>Debes iniciar sesión</h2>
             <p>Para realizar una compra, primero debes iniciar sesión en tu cuenta.</p>
-            <button className="btn-primary" onClick={() => onNavigate('login')}>
+            <button className="btn-primary" onClick={() => navigate('/login')}>
               Iniciar Sesión
             </button>
           </div>
@@ -74,7 +72,7 @@ const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate }) => {
         <div className="container">
           <div className="checkout-error">
             <h2>Tu carrito está vacío</h2>
-            <button className="btn-primary" onClick={() => onNavigate('home')}>
+            <button className="btn-primary" onClick={() => navigate('/') }>
               Ir a Comprar
             </button>
           </div>

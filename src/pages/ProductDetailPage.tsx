@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import productService, { Product } from '../services/productService';
 import { useApp } from '../contexts/AppContext';
 import { ShoppingCart, Check } from 'lucide-react';
 
-interface ProductDetailPageProps {
-  productId: number;
-  onNavigate: (page: string) => void;
-}
-
-const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ productId, onNavigate }) => {
+const ProductDetailPage: React.FC<{ productId?: number }> = ({ productId }) => {
   const [product, setProduct] = useState<Product | null>(null);
   const [selectedImage, setSelectedImage] = useState(0);
   const [selectedSize, setSelectedSize] = useState('');
@@ -16,15 +12,17 @@ const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ productId, onNavi
   const [quantity, setQuantity] = useState(1);
   const [showSuccess, setShowSuccess] = useState(false);
   const { addToCart } = useApp();
+  const params = useParams();
 
   useEffect(() => {
-    const productData = productService.getProductById(productId);
+    const idFromRoute = params.id ? parseInt(params.id) : productId;
+    const productData = idFromRoute !== undefined ? productService.getProductById(idFromRoute) : undefined;
     if (productData) {
       setProduct(productData);
       setSelectedSize(productData.sizes[0]);
       setSelectedColor(productData.colors[0]);
     }
-  }, [productId]);
+  }, [params.id, productId]);
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('es-PY', {

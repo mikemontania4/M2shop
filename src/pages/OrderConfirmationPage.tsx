@@ -1,19 +1,18 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import orderService, { Order } from '../services/orderService';
 import { CheckCircle } from 'lucide-react';
 
-interface OrderConfirmationPageProps {
-  orderId: string;
-  onNavigate: (page: string) => void;
-}
-
-const OrderConfirmationPage: React.FC<OrderConfirmationPageProps> = ({ orderId, onNavigate }) => {
+const OrderConfirmationPage: React.FC = () => {
   const [order, setOrder] = useState<Order | null>(null);
+  const params = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const orderData = orderService.getOrderById(orderId);
+    const id = params.id || '';
+    const orderData = orderService.getOrderById(id);
     setOrder(orderData || null);
-  }, [orderId]);
+  }, [params.id]);
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('es-PY', {
@@ -91,7 +90,7 @@ const OrderConfirmationPage: React.FC<OrderConfirmationPageProps> = ({ orderId, 
           </div>
 
           <div className="order-actions">
-            <button className="btn-primary" onClick={() => onNavigate('home')}>
+            <button className="btn-primary" onClick={() => navigate('/') }>
               Volver al Inicio
             </button>
           </div>

@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useApp } from '../contexts/AppContext';
 import authService from '../services/authService';
 import { User, Mail, Lock } from 'lucide-react';
 
-interface RegisterPageProps {
-  onNavigate: (page: string) => void;
-}
-
-const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
+const RegisterPage: React.FC = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
   const { login } = useApp();
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -32,7 +30,7 @@ const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
     const result = authService.register(email, password, name);
     if (result.success) {
       login(email, password);
-      onNavigate('home');
+      navigate('/');
     } else {
       setError(result.message || 'Error al registrarse');
     }
@@ -111,7 +109,7 @@ const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
             </form>
 
             <div className="login-demo">
-              <p>¿Ya tienes cuenta? <button onClick={() => onNavigate('login')} className="link-button">Inicia sesión aquí</button></p>
+              <p>¿Ya tienes cuenta? <button onClick={() => navigate('/login')} className="link-button">Inicia sesión aquí</button></p>
             </div>
           </div>
         </div>

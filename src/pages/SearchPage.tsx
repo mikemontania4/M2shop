@@ -1,26 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import productService, { Product } from '../services/productService';
 import ProductCard from '../components/ProductCard';
 import { useApp } from '../contexts/AppContext';
 
-interface SearchPageProps {
-  searchQuery: string;
-  onNavigate: (page: string) => void;
-}
-
-const SearchPage: React.FC<SearchPageProps> = ({ searchQuery, onNavigate }) => {
+const SearchPage: React.FC = () => {
   const { addToCart } = useApp();
   const [products, setProducts] = useState<Product[]>([]);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const searchParams = useMemo(() => new URLSearchParams(location.search), [location.search]);
+  const searchQuery = searchParams.get('q') || '';
 
   useEffect(() => {
-    if (searchQuery) {
-      const results = productService.searchProducts(searchQuery);
-      setProducts(results);
-    }
+    const results = searchQuery ? productService.searchProducts(searchQuery) : productService.getProducts();
+    setProducts(results);
   }, [searchQuery]);
 
   const handleProductClick = (productId: number) => {
-    onNavigate(`product-${productId}`);
+    navigate(`/producto/${productId}`);
   };
 
   const handleAddToCart = (product: Product, quantity: number) => {
@@ -49,9 +47,7 @@ const SearchPage: React.FC<SearchPageProps> = ({ searchQuery, onNavigate }) => {
         ) : (
           <div className="empty-state">
             <p>No se encontraron productos con tu búsqueda.</p>
-            <button className="btn-primary" onClick={() => onNavigate('home')}>
-              Volver al Inicio
-            </button>
+            <button className="btn-primary" onClick={() => navigate('/')}>Volver al Inicio</button>
           </div>
         )}
       </div>

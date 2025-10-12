@@ -1,13 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useApp } from '../contexts/AppContext';
 import { Trash2, Plus, Minus } from 'lucide-react';
 
-interface CartPageProps {
-  onNavigate: (page: string) => void;
-}
-
-const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
+const CartPage: React.FC = () => {
   const { cart, cartTotal, removeFromCart, updateQuantity } = useApp();
+  const navigate = useNavigate();
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('es-PY', {
@@ -18,7 +16,7 @@ const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
   };
 
   const handleCheckout = () => {
-    onNavigate('checkout');
+    navigate('/checkout');
   };
 
   if (cart.length === 0) {
@@ -28,7 +26,7 @@ const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
           <h1>Carrito de Compras</h1>
           <div className="empty-cart">
             <p>Tu carrito está vacío</p>
-            <button className="btn-primary" onClick={() => onNavigate('home')}>
+            <button className="btn-primary" onClick={() => navigate('/') }>
               Ir a Comprar
             </button>
           </div>
@@ -98,7 +96,7 @@ const CartPage: React.FC<CartPageProps> = ({ onNavigate }) => {
             <button className="btn-checkout" onClick={handleCheckout}>
               Proceder al Pago
             </button>
-            <button className="btn-secondary" onClick={() => onNavigate('home')}>
+            <button className="btn-secondary" onClick={() => navigate('/') }>
               Seguir Comprando
             </button>
           </div>
