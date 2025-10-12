@@ -56,14 +56,6 @@ function Layout() {
   );
 }
 
-function AdminLayout() {
-  return (
-    <div className="admin-app">
-      <Outlet />
-    </div>
-  );
-}
-
 function ProtectedAdminRoute({ children }: { children: JSX.Element }) {
   if (!authService.isAuthenticated() || !authService.isAdmin()) {
     return <AdminLoginPage onAdminLogin={() => {}} onNavigate={() => {}} />;
