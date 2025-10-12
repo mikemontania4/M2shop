@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ShoppingCart, User, Search, Menu, X } from 'lucide-react';
+import { ShoppingCart, User, Search, Menu, X, MapPin } from 'lucide-react';
 import { useApp } from '../contexts/AppContext';
 import { useNavigate } from 'react-router-dom';
 import productService, { Product } from '../services/productService';
@@ -55,6 +55,9 @@ const Header: React.FC = () => {
             <div className="header-contact">
               <span>Tel: (021) 123-4567</span>
               <span>Email: info@cavallaro.com.py</span>
+            <button className="coverage-link" onClick={() => navigate('/mapa-de-cobertura')}>
+              <MapPin size={14} /> Mapa de Cobertura
+            </button>
             </div>
             <div className="header-user">
               {user ? (
