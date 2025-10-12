@@ -1,4 +1,4 @@
-import { AppProvider } from './contexts/AppContext';
+import { AppProvider, useApp } from './contexts/AppContext';
 import { Routes, Route, Outlet } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -14,6 +14,20 @@ import HistoryPage from './pages/HistoryPage';
 import StoresPage from './pages/StoresPage';
 import OrderConfirmationPage from './pages/OrderConfirmationPage';
 import LoginPage from './pages/LoginPage';
+import React from 'react';
+
+function ToastContainer() {
+  const { toasts } = useApp();
+  return (
+    <div className="toast-container" aria-live="polite" aria-atomic="true">
+      {toasts.map((t) => (
+        <div key={t.id} className={`toast ${t.type}`}>
+          {t.message}
+        </div>
+      ))}
+    </div>
+  );
+}
 import RegisterPage from './pages/RegisterPage';
 import ProfilePage from './pages/ProfilePage';
 
@@ -24,6 +38,7 @@ function Layout() {
       <main>
         <Outlet />
       </main>
+      <ToastContainer />
       <Footer />
     </div>
   );

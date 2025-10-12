@@ -9,6 +9,7 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
   const [products, setProducts] = useState<Product[]>([]);
   const [category, setCategory] = useState<any>(null);
   const [subcategories, setSubcategories] = useState<Subcategory[]>([]);
+  const [subcategoryCounts, setSubcategoryCounts] = useState<Record<string, number>>({});
   const [selectedSubcategory, setSelectedSubcategory] = useState<string | null>(null);
   const [sortBy, setSortBy] = useState<string>('default');
   const params = useParams();
@@ -39,6 +40,19 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
   useEffect(() => {
     loadProducts(effectiveCategoryId, selectedSubcategory, sortBy);
   }, [effectiveCategoryId, selectedSubcategory, sortBy]);
+
+  useEffect(() => {
+    // Precompute product counts per subcategory for a nicer UI
+    if (!effectiveCategoryId || subcategories.length === 0) {
+      setSubcategoryCounts({});
+      return;
+    }
+    const counts: Record<string, number> = {};
+    subcategories.forEach((s) => {
+      counts[s.id] = productService.getProductsByCategory(effectiveCategoryId, s.id).length;
+    });
+    setSubcategoryCounts(counts);
+  }, [effectiveCategoryId, subcategories]);
 
   const loadProducts = (catId: string, subcat: string | null, sort: string) => {
     let categoryProducts = productService.getProductsByCategory(catId, subcat || undefined);
@@ -84,7 +98,7 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container cv-container">
         <div className="category-layout">
           {subcategories.length > 0 && (
             <aside className="category-sidebar">
@@ -96,6 +110,7 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
                     onClick={() => handleSubcategoryClick(null)}
                   >
                     Todas
+                    <span className="subcat-count">{productService.getProductsByCategory(effectiveCategoryId).length}</span>
                   </button>
                 </li>
                 {subcategories.map((subcat) => (
@@ -105,6 +120,7 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
                       onClick={() => handleSubcategoryClick(subcat.id)}
                     >
                       {subcat.name}
+                      <span className="subcat-count">{subcategoryCounts[subcat.id] ?? 0}</span>
                     </button>
                   </li>
                 ))}

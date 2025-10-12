@@ -73,6 +73,9 @@
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .subcategory-list button:hover {
@@ -85,6 +88,23 @@
   background: var(--primary-color);
   color: var(--white);
   border-color: var(--primary-color);
+}
+
+.subcat-count {
+  display: inline-block;
+  min-width: 28px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--bg-light);
+  color: var(--text-light);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.subcategory-list button.active .subcat-count,
+.subcategory-list button:hover .subcat-count {
+  background: rgba(255,255,255,0.2);
+  color: var(--white);
 }
 
 .category-main-content {

@@ -14,6 +14,8 @@ interface AppContextType {
   removeFromCart: (productId: number, size: string, color: string) => void;
   updateQuantity: (productId: number, size: string, color: string, quantity: number) => void;
   clearCart: () => void;
+  toasts: { id: number; message: string; type: 'success' | 'error' | 'info' }[];
+  showToast: (message: string, type?: 'success' | 'error' | 'info') => void;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -23,6 +25,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [cart, setCart] = useState<CartItem[]>(cartService.getCart());
   const [cartCount, setCartCount] = useState(cartService.getCartCount());
   const [cartTotal, setCartTotal] = useState(cartService.getCartTotal());
+  const [toasts, setToasts] = useState<{ id: number; message: string; type: 'success' | 'error' | 'info' }[]>([]);
 
   const updateCartState = () => {
     setCart(cartService.getCart());
@@ -43,9 +46,18 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     setUser(null);
   };
 
+  const showToast = (message: string, type: 'success' | 'error' | 'info' = 'success') => {
+    const id = Date.now() + Math.floor(Math.random() * 1000);
+    setToasts((prev) => [...prev, { id, message, type }]);
+    setTimeout(() => {
+      setToasts((prev) => prev.filter((t) => t.id !== id));
+    }, 2500);
+  };
+
   const addToCart = (product: Product, quantity: number, size: string, color: string) => {
     cartService.addToCart(product, quantity, size, color);
     updateCartState();
+    showToast('Producto agregado al carrito', 'success');
   };
 
   const removeFromCart = (productId: number, size: string, color: string) => {
@@ -79,7 +91,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         addToCart,
         removeFromCart,
         updateQuantity,
-        clearCart
+        clearCart,
+        toasts,
+        showToast
       }}
     >
       {children}

@@ -11,7 +11,6 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product, onProductClick, onAddToCart }) => {
   const [quantity, setQuantity] = useState(1);
-  const [isHovered, setIsHovered] = useState(false);
   const navigate = useNavigate();
 
   const formatPrice = (price: number) => {
@@ -39,11 +38,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onProductClick, onAd
   };
 
   return (
-    <div
-      className="product-card"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+    <div className="product-card">
       <div className="product-image" onClick={() => (onProductClick ? onProductClick(product.id) : navigate(`/producto/${product.id}`))}>
         <img src={product.image} alt={product.name} />
         {hasDiscount && (
@@ -75,12 +70,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onProductClick, onAd
           </button>
         </div>
 
-        {isHovered && (
-          <button className="btn-add-to-cart-card" onClick={handleAddToCart}>
-            <ShoppingCart size={18} />
-            Agregar al Carrito
-          </button>
-        )}
+        <button className="btn-add-to-cart-card" onClick={handleAddToCart}>
+          <ShoppingCart size={18} />
+          Agregar al Carrito
+        </button>
       </div>
     </div>
   );
