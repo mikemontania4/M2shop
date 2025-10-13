@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import branchesService, { Branch } from '../services/branchesService';
-import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Polygon } from 'react-leaflet';
 import L from 'leaflet';
 
 const emptyBranch = (id: string): Branch => ({ id, name: '', address: '', lat: -25.2969, lng: -57.6244, phone: '' });
@@ -45,12 +45,27 @@ const BranchesAdmin: React.FC = () => {
             <label>Lng<input type="number" value={editing.lng} onChange={e => setEditing({ ...editing, lng: parseFloat(e.target.value)||0 })} step="0.0001" /></label>
             <label>Teléfono<input value={editing.phone} onChange={e => setEditing({ ...editing, phone: e.target.value })} /></label>
           </div>
-          <p style={{ margin: '10px 0' }}>Arrastra el marcador para ajustar la ubicación</p>
+          <p style={{ margin: '10px 0' }}>Arrastra el marcador para ajustar la ubicación. Clic para agregar vértices del área de cobertura y arrástralos para editar.</p>
           <div style={{ height: 320, borderRadius: 8, overflow: 'hidden', marginBottom: 12 }}>
-            <MapContainer center={[editing.lat, editing.lng]} zoom={14} style={{height:'100%', width:'100%'}}>
+            <MapContainer center={[editing.lat, editing.lng]} zoom={14} style={{height:'100%', width:'100%'}} whenCreated={(map)=>{
+              map.on('click', (e:any)=>{
+                const { lat, lng } = e.latlng; const cov = editing.coverage||[];
+                setEditing({ ...editing, coverage: [...cov, [lat,lng]] });
+              });
+            }}>
               <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
               <Marker position={[editing.lat, editing.lng]} draggable eventHandlers={{ dragend: (e)=>{ const m = e.target as L.Marker; const pos = m.getLatLng(); setEditing({ ...editing, lat: pos.lat, lng: pos.lng }); } }} />
+              {editing.coverage && editing.coverage.length>2 && (
+                <Polygon positions={editing.coverage as any} pathOptions={{ color: '#2563eb', weight: 2, fillOpacity: 0.15 }} />
+              )}
+              {(editing.coverage||[]).map((c, idx)=>(
+                <Marker key={idx} position={[c[0], c[1]]} draggable eventHandlers={{ dragend: (e)=>{ const m=e.target as L.Marker; const pos=m.getLatLng(); const next=[...(editing.coverage||[])]; next[idx]=[pos.lat,pos.lng]; setEditing({ ...editing, coverage: next }); } }} />
+              ))}
             </MapContainer>
+          </div>
+          <div style={{ display:'flex', gap:8, marginBottom: 8 }}>
+            <button className="btn-secondary" onClick={()=> setEditing({ ...editing, coverage: (editing.coverage||[]).slice(0,-1) })} disabled={!editing.coverage||editing.coverage.length===0}>Deshacer</button>
+            <button className="btn-secondary" onClick={()=> setEditing({ ...editing, coverage: [] })} disabled={!editing.coverage||editing.coverage.length===0}>Limpiar</button>
           </div>
           <div style={{ marginTop: 12, display: 'flex', gap: 8 }}>
             <button className="btn-primary" onClick={save}>Guardar</button>

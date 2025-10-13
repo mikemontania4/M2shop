@@ -7,6 +7,7 @@ export interface Branch {
   lat: number;
   lng: number;
   phone: string;
+  coverage?: [number, number][];
 }
 
 class BranchesService {
