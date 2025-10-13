@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import productService, { Product, Subcategory, Category } from '../services/productService';
 import ProductCard from '../components/ProductCard';
+import CategorySidebar, { CategoryItem } from '../components/CategorySidebar';
 import { useApp } from '../contexts/AppContext';
 
 const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
@@ -111,42 +112,22 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
         <div className="category-layout" style={{ gridTemplateColumns: subcategories.length>0 ? '260px 1fr' : '1fr' }}>
           {(subcategories.length > 0 || allCategories.length > 0) && (
             <aside className="category-sidebar">
-              {allCategories.length > 0 && (
-                <div className="category-tabs">
-                  {allCategories.map((c) => (
-                    <button
-                      key={c.id}
-                      className={`category-tab ${c.id === effectiveCategoryId ? 'active' : ''}`}
-                      onClick={() => handleCategoryTabClick(c.id)}
-                    >
-                      {c.name}
-                    </button>
-                  ))}
-                </div>
-              )}
-              <h3>Subcategorías</h3>
-              <ul className="subcategory-list">
-                <li>
-                  <button
-                    className={selectedSubcategory === null ? 'active' : ''}
-                    onClick={() => handleSubcategoryClick(null)}
-                  >
-                    Todas
-                    <span className="subcat-count">{productService.getProductsByCategory(effectiveCategoryId).length}</span>
-                  </button>
-                </li>
-                {subcategories.map((subcat) => (
-                  <li key={subcat.id}>
-                    <button
-                      className={selectedSubcategory === subcat.id ? 'active' : ''}
-                      onClick={() => handleSubcategoryClick(subcat.id)}
-                    >
-                      {subcat.name}
-                      <span className="subcat-count">{subcategoryCounts[subcat.id] ?? 0}</span>
-                    </button>
-                  </li>
-                ))}
-              </ul>
+              <CategorySidebar
+                categories={allCategories.map((c) => ({
+                  id: c.id,
+                  name: c.name,
+                  count: productService.getProductsByCategory(c.id).length,
+                  subCategories: productService.getSubcategoriesByCategory(c.id).map((s) => ({
+                    id: s.id,
+                    name: s.name,
+                    count: productService.getProductsByCategory(c.id, s.id).length,
+                  }))
+                })) as CategoryItem[]}
+                selectedCategory={effectiveCategoryId}
+                selectedSubCategory={selectedSubcategory || undefined}
+                onCategorySelect={(catId) => handleCategoryTabClick(catId)}
+                onSubCategorySelect={(_catId, subId) => handleSubcategoryClick(subId)}
+              />
             </aside>
           )}
 
