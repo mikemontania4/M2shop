@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import productService, { Product, Subcategory } from '../services/productService';
+import productService, { Product, Subcategory, Category } from '../services/productService';
 import ProductCard from '../components/ProductCard';
 import { useApp } from '../contexts/AppContext';
 
@@ -11,6 +11,7 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
   const [subcategories, setSubcategories] = useState<Subcategory[]>([]);
   const [subcategoryCounts, setSubcategoryCounts] = useState<Record<string, number>>({});
   const [selectedSubcategory, setSelectedSubcategory] = useState<string | null>(null);
+  const [allCategories, setAllCategories] = useState<Category[]>([]);
   const [sortBy, setSortBy] = useState<string>('default');
   const params = useParams();
   const navigate = useNavigate();
@@ -32,6 +33,8 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
 
     const subcats = productService.getSubcategoriesByCategory(effectiveCategoryId);
     setSubcategories(subcats);
+
+    setAllCategories(productService.getCategories());
 
     setSelectedSubcategory(null);
     loadProducts(effectiveCategoryId, null, sortBy);
@@ -85,6 +88,12 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
     }
   };
 
+  const handleCategoryTabClick = (catId: string) => {
+    // Reset selected subcategory when switching category
+    setSelectedSubcategory(null);
+    navigate(`/${catId}`);
+  };
+
   if (!category) {
     return <div className="container"><p>Categoría no encontrada</p></div>;
   }
@@ -100,8 +109,21 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
 
       <div className="container cv-container-with-sidebar">
         <div className="category-layout" style={{ gridTemplateColumns: subcategories.length>0 ? '260px 1fr' : '1fr' }}>
-          {subcategories.length > 0 && (
+          {(subcategories.length > 0 || allCategories.length > 0) && (
             <aside className="category-sidebar">
+              {allCategories.length > 0 && (
+                <div className="category-tabs">
+                  {allCategories.map((c) => (
+                    <button
+                      key={c.id}
+                      className={`category-tab ${c.id === effectiveCategoryId ? 'active' : ''}`}
+                      onClick={() => handleCategoryTabClick(c.id)}
+                    >
+                      {c.name}
+                    </button>
+                  ))}
+                </div>
+              )}
               <h3>Subcategorías</h3>
               <ul className="subcategory-list">
                 <li>
