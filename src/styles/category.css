@@ -49,6 +49,7 @@
   height: fit-content;
   position: sticky;
   top: 120px;
+  align-self: start;
 }
 
 .category-sidebar h3 {
