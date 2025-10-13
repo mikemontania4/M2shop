@@ -7,7 +7,7 @@ interface AdminDashboardProps {
 }
 
 const AdminDashboard: React.FC<AdminDashboardProps> = ({ onLogout }) => {
-  const [activeTab, setActiveTab] = useState<'products' | 'categories' | 'banners'>('products');
+  const [activeTab, setActiveTab] = useState<'products' | 'categories' | 'banners' | 'branches' | 'coverage'>('products');
   const user = authService.getCurrentUser();
 
   const handleLogout = () => {
@@ -55,6 +55,18 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ onLogout }) => {
             >
               <Image size={20} />
               Banners
+            </button>
+            <button
+              className={`admin-tab ${activeTab === 'branches' ? 'active' : ''}`}
+              onClick={() => setActiveTab('branches')}
+            >
+              Sucursales
+            </button>
+            <button
+              className={`admin-tab ${activeTab === 'coverage' ? 'active' : ''}`}
+              onClick={() => setActiveTab('coverage')}
+            >
+              Cobertura
             </button>
           </div>
 
@@ -123,6 +135,20 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ onLogout }) => {
   "order": 1
 }`}</pre>
                 </div>
+              </div>
+            )}
+
+            {activeTab === 'branches' && (
+              <div className="admin-section">
+                <h2>Gestión de Sucursales</h2>
+                <p className="admin-info">Puedes administrar sucursales en <code>/admin/branches</code>.</p>
+              </div>
+            )}
+
+            {activeTab === 'coverage' && (
+              <div className="admin-section">
+                <h2>Áreas de Cobertura</h2>
+                <p className="admin-info">Puedes administrar áreas en <code>/admin/coverage</code> o desde el mapa público.</p>
               </div>
             )}
           </div>

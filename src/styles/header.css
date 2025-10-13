@@ -24,6 +24,22 @@
   margin-right: 20px;
 }
 
+.coverage-link {
+  margin-left: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.15);
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 999px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.coverage-link:hover { background: rgba(255,255,255,0.25); }
+
 .header-user {
   display: flex;
   align-items: center;

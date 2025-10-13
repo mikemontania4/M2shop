@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Polygon } from 'react-leaflet';
+import L from 'leaflet';
 import branchesService from '../services/branchesService';
 import coverageService from '../services/coverageService';
 
@@ -22,7 +23,16 @@ const MapCoveragePage: React.FC = () => {
             </Polygon>
           ))}
           {branches.map(b => (
-            <Marker key={b.id} position={[b.lat, b.lng]}>
+            <Marker key={b.id} position={[b.lat, b.lng]} draggable
+              eventHandlers={{
+                dragend: (e) => {
+                  const m = e.target as L.Marker;
+                  const pos = m.getLatLng();
+                  const updated = branchesService.getBranches().map(x => x.id===b.id ? { ...x, lat: pos.lat, lng: pos.lng } : x);
+                  localStorage.setItem('branches', JSON.stringify(updated));
+                }
+              }}
+            >
               <Popup>
                 <strong>{b.name}</strong><br />
                 {b.address}<br />

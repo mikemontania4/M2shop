@@ -7,6 +7,7 @@ import { User as UserIcon, Phone, MapPin, FileText, Save, CreditCard, List, Plus
 import addressService, { Address } from '../services/addressService';
 import cardService, { Card } from '../services/cardService';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import L from 'leaflet';
 
 const ProfilePage: React.FC = () => {
   const { user } = useApp();
@@ -210,7 +211,15 @@ const ProfilePage: React.FC = () => {
                     <div style={{ height: 300, borderRadius: 8, overflow: 'hidden' }}>
                       <MapContainer center={[editingAddress.lat||-25.2969, editingAddress.lng||-57.6244]} zoom={14} style={{height:'100%', width:'100%'}}>
                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                        <Marker position={[editingAddress.lat||-25.2969, editingAddress.lng||-57.6244]} />
+                        <Marker position={[editingAddress.lat||-25.2969, editingAddress.lng||-57.6244]} draggable
+                          eventHandlers={{
+                            dragend: (e) => {
+                              const m = e.target as L.Marker;
+                              const pos = m.getLatLng();
+                              setEditingAddress({ ...editingAddress, lat: pos.lat, lng: pos.lng });
+                            }
+                          }}
+                        />
                       </MapContainer>
                     </div>
                     <div style={{ marginTop: 10, display:'flex', gap: 8 }}>
