@@ -2,111 +2,67 @@
   {
     "id": "camisas",
     "name": "Camisas",
-    "description": "Camisas de alta calidad para toda ocasión",
-    "image": "https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "description": "Camisas para cada ocasión, formales y casuales",
+    "image": "https://images.pexels.com/photos/1976179/pexels-photo-1976179.jpeg?auto=compress&cs=tinysrgb&w=800",
     "subcategories": [
-      {
-        "id": "camisas-formales",
-        "name": "Formales",
-        "description": "Camisas para eventos formales"
-      },
-      {
-        "id": "camisas-casuales",
-        "name": "Casuales",
-        "description": "Camisas para uso diario"
-      },
-      {
-        "id": "camisas-manga-corta",
-        "name": "Manga Corta",
-        "description": "Camisas de manga corta"
-      }
+      { "id": "camisas-formales", "name": "Formales", "description": "Corte clásico y telas premium" },
+      { "id": "camisas-casuales", "name": "Casuales", "description": "Comodidad diaria con estilo" },
+      { "id": "camisas-manga-corta", "name": "Manga Corta", "description": "Frescura para el verano" }
     ]
   },
   {
     "id": "pantalones",
     "name": "Pantalones",
-    "description": "Pantalones elegantes y casuales",
-    "image": "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "description": "Corte moderno y materiales resistentes",
+    "image": "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&w=800",
     "subcategories": [
-      {
-        "id": "pantalones-vestir",
-        "name": "De Vestir",
-        "description": "Pantalones formales"
-      },
-      {
-        "id": "pantalones-jeans",
-        "name": "Jeans",
-        "description": "Pantalones de mezclilla"
-      },
-      {
-        "id": "pantalones-deportivos",
-        "name": "Deportivos",
-        "description": "Pantalones para deporte"
-      }
+      { "id": "pantalones-vestir", "name": "De Vestir", "description": "Elegancia para la oficina" },
+      { "id": "pantalones-jeans", "name": "Jeans", "description": "Denim de alta calidad" },
+      { "id": "pantalones-deportivos", "name": "Deportivos", "description": "Flexibilidad y confort" }
     ]
   },
   {
     "id": "sacos",
     "name": "Sacos",
-    "description": "Sacos y blazers ejecutivos",
-    "image": "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "description": "Blazers y sacos ejecutivos y sport",
+    "image": "https://images.pexels.com/photos/2745257/pexels-photo-2745257.jpeg?auto=compress&cs=tinysrgb&w=800",
     "subcategories": [
-      {
-        "id": "sacos-ejecutivos",
-        "name": "Ejecutivos",
-        "description": "Sacos para oficina"
-      },
-      {
-        "id": "sacos-sport",
-        "name": "Sport",
-        "description": "Sacos casuales"
-      }
+      { "id": "sacos-ejecutivos", "name": "Ejecutivos", "description": "Imagen profesional impecable" },
+      { "id": "sacos-sport", "name": "Sport", "description": "Estilo casual refinado" }
     ]
   },
   {
     "id": "calzados",
     "name": "Calzados",
-    "description": "Zapatos de cuero y deportivos",
-    "image": "https://images.pexels.com/photos/1240892/pexels-photo-1240892.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "description": "Calzado formal y casual para todos los días",
+    "image": "https://images.pexels.com/photos/298864/pexels-photo-298864.jpeg?auto=compress&cs=tinysrgb&w=800",
     "subcategories": [
-      {
-        "id": "calzados-formales",
-        "name": "Formales",
-        "description": "Zapatos de vestir"
-      },
-      {
-        "id": "calzados-casuales",
-        "name": "Casuales",
-        "description": "Zapatos informales"
-      },
-      {
-        "id": "calzados-deportivos",
-        "name": "Deportivos",
-        "description": "Calzado deportivo"
-      }
+      { "id": "calzados-formales", "name": "Formales", "description": "Oxford, Derby y más" },
+      { "id": "calzados-casuales", "name": "Casuales", "description": "Mocasines y sneakers" },
+      { "id": "calzados-deportivos", "name": "Deportivos", "description": "Performance y comodidad" }
     ]
   },
   {
     "id": "accesorios",
     "name": "Accesorios",
-    "description": "Complementos para tu look",
-    "image": "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "description": "Cinturones, corbatas y billeteras",
+    "image": "https://images.pexels.com/photos/267313/pexels-photo-267313.jpeg?auto=compress&cs=tinysrgb&w=800",
     "subcategories": [
-      {
-        "id": "accesorios-cinturones",
-        "name": "Cinturones",
-        "description": "Cinturones de cuero"
-      },
-      {
-        "id": "accesorios-corbatas",
-        "name": "Corbatas",
-        "description": "Corbatas y moños"
-      },
-      {
-        "id": "accesorios-billeteras",
-        "name": "Billeteras",
-        "description": "Billeteras y carteras"
-      }
+      { "id": "accesorios-cinturones", "name": "Cinturones", "description": "Cuero genuino" },
+      { "id": "accesorios-corbatas", "name": "Corbatas", "description": "Sedas italianas" },
+      { "id": "accesorios-billeteras", "name": "Billeteras", "description": "Diseños clásicos" }
+    ]
+  },
+  {
+    "id": "cuidado-de-las-prendas",
+    "name": "Cuidado de las Prendas",
+    "description": "Detergentes, suavizantes y quitamanchas",
+    "image": "https://images.pexels.com/photos/5591624/pexels-photo-5591624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "subcategories": [
+      { "id": "detergentes", "name": "Detergentes", "description": "Poder de limpieza" },
+      { "id": "suavizantes", "name": "Suavizantes", "description": "Aroma y suavidad" },
+      { "id": "quitamanchas", "name": "Quitamanchas", "description": "Remueve manchas difíciles" },
+      { "id": "lavandina", "name": "Lavandina", "description": "Desinfección y blanqueo" }
     ]
   }
 ]
