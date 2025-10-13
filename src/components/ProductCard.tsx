@@ -45,6 +45,18 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onProductClick, onAd
           {hasDiscount && (
             <span className="discount-badge">-{discountPercentage}%</span>
           )}
+          {/* gradient hover bar like reference */}
+          <div className="hover-cart-bar">
+            <div className="hover-qty">
+              <button className="quantity-btn" onClick={(e)=>handleQuantityChange(-1,e)}><Minus size={16} /></button>
+              <span className="quantity-display">{quantity}</span>
+              <button className="quantity-btn" onClick={(e)=>handleQuantityChange(1,e)}><Plus size={16} /></button>
+            </div>
+            <button className="btn-add-to-cart-card" onClick={handleAddToCart}>
+              <ShoppingCart size={18} />
+              Agregar
+            </button>
+          </div>
         </div>
         <div className="product-info">
           <h3 onClick={() => (onProductClick ? onProductClick(product.id) : navigate(`/producto/${product.id}`))}>{product.name}</h3>
@@ -72,10 +84,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onProductClick, onAd
           </div>
         </div>
       </div>
-      <button className="btn-add-to-cart-card add-to-cart-bar" onClick={handleAddToCart}>
-        <ShoppingCart size={18} />
-        Agregar al Carrito
-      </button>
+      {/* keep legacy bar for non-hover devices via media queries if needed */}
+      <button className="btn-add-to-cart-card add-to-cart-bar" onClick={handleAddToCart}><ShoppingCart size={18}/> Agregar al Carrito</button>
     </div>
   );
 };
