@@ -1,5 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import branchesService, { Branch } from '../services/branchesService';
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import L from 'leaflet';
 
 const emptyBranch = (id: string): Branch => ({ id, name: '', address: '', lat: -25.2969, lng: -57.6244, phone: '' });
 
@@ -42,6 +44,13 @@ const BranchesAdmin: React.FC = () => {
             <label>Lat<input type="number" value={editing.lat} onChange={e => setEditing({ ...editing, lat: parseFloat(e.target.value)||0 })} step="0.0001" /></label>
             <label>Lng<input type="number" value={editing.lng} onChange={e => setEditing({ ...editing, lng: parseFloat(e.target.value)||0 })} step="0.0001" /></label>
             <label>Teléfono<input value={editing.phone} onChange={e => setEditing({ ...editing, phone: e.target.value })} /></label>
+          </div>
+          <p style={{ margin: '10px 0' }}>Arrastra el marcador para ajustar la ubicación</p>
+          <div style={{ height: 320, borderRadius: 8, overflow: 'hidden', marginBottom: 12 }}>
+            <MapContainer center={[editing.lat, editing.lng]} zoom={14} style={{height:'100%', width:'100%'}}>
+              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+              <Marker position={[editing.lat, editing.lng]} draggable eventHandlers={{ dragend: (e)=>{ const m = e.target as L.Marker; const pos = m.getLatLng(); setEditing({ ...editing, lat: pos.lat, lng: pos.lng }); } }} />
+            </MapContainer>
           </div>
           <div style={{ marginTop: 12, display: 'flex', gap: 8 }}>
             <button className="btn-primary" onClick={save}>Guardar</button>

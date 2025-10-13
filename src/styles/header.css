@@ -278,7 +278,7 @@
     gap: 0;
   }
 
-  .nav-list button {
+  .nav-list button, .coverage-link {
     width: 100%;
     text-align: left;
     padding: 15px 20px;

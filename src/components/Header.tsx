@@ -105,7 +105,7 @@ const Header: React.FC = () => {
               <button type="submit">
                 <Search size={20} />
               </button>
-              {showSuggestions && suggestions.length > 0 && (
+            {showSuggestions && suggestions.length > 0 && (
                 <div className="search-suggestions">
                   <ul>
                     {suggestions.map((p) => (
@@ -148,7 +148,6 @@ const Header: React.FC = () => {
             <li><button onClick={() => { navigate('/sacos'); setShowMobileMenu(false); }}>Sacos</button></li>
             <li><button onClick={() => { navigate('/calzados'); setShowMobileMenu(false); }}>Calzados</button></li>
             <li><button onClick={() => { navigate('/accesorios'); setShowMobileMenu(false); }}>Accesorios</button></li>
-            <li><button onClick={() => { navigate('/mapa-de-cobertura'); setShowMobileMenu(false); }}>Mapa de Cobertura</button></li>
           </ul>
         </div>
       </nav>
