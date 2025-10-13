@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useRef, useEffect } from 'react';
 import coverageService, { CoverageArea } from '../services/coverageService';
-import { MapContainer, TileLayer, Polygon } from 'react-leaflet';
+import { MapContainer, TileLayer, Polygon, Marker } from 'react-leaflet';
 import L from 'leaflet';
 
 const emptyArea = (id: string): CoverageArea => ({ id, name: '', color: '#2f86eb', weight: 2, fillOpacity: 0.2, coordinates: [] });
@@ -74,7 +74,21 @@ const CoverageAdmin: React.FC = () => {
                 {editing.coordinates.length > 2 && (
                   <Polygon positions={editing.coordinates as any} pathOptions={{ color: editing.color, weight: editing.weight, fillOpacity: editing.fillOpacity }} />
                 )}
+                {editing.coordinates.map((c, idx) => (
+                  <Marker key={idx} position={[c[0], c[1]]} draggable eventHandlers={{
+                    dragend: (e) => {
+                      const m = e.target as L.Marker; const pos = m.getLatLng();
+                      const next = [...editing.coordinates];
+                      next[idx] = [pos.lat, pos.lng];
+                      setEditing({ ...editing, coordinates: next });
+                    }
+                  }} />
+                ))}
               </MapContainer>
+            </div>
+            <div style={{ display:'flex', gap:8, marginTop: 8 }}>
+              <button className="btn-secondary" onClick={()=> setEditing({ ...editing, coordinates: editing.coordinates.slice(0, -1) })} disabled={editing.coordinates.length===0}>Deshacer</button>
+              <button className="btn-secondary" onClick={()=> setEditing({ ...editing, coordinates: [] })} disabled={editing.coordinates.length===0}>Limpiar</button>
             </div>
           </div>
           <div style={{ marginTop: 12, display: 'flex', gap: 8 }}>
