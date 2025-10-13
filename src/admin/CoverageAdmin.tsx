@@ -43,11 +43,26 @@ const CoverageAdmin: React.FC = () => {
     setEditing({ ...editing, coordinates: editing.coordinates.filter((_, i) => i !== index) });
   };
 
+  const mapRef = useRef<any>(null);
+  const [addingEnabled, setAddingEnabled] = useState(true);
+
   const mapClickToAdd = (e: any) => {
-    if (!editing) return;
+    if (!editing || !addingEnabled) return;
     const { lat, lng } = e.latlng;
     setEditing({ ...editing, coordinates: [...editing.coordinates, [lat, lng]] });
   };
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    map.off('click');
+    if (addingEnabled) {
+      map.on('click', mapClickToAdd);
+    }
+    return () => {
+      map.off('click', mapClickToAdd);
+    };
+  }, [addingEnabled, editing]);
 
   return (
     <div>
@@ -69,7 +84,7 @@ const CoverageAdmin: React.FC = () => {
             <h3>Dibuja o edita el polígono en el mapa</h3>
             <div style={{ height: 380, borderRadius: 8, overflow: 'hidden' }}>
               <MapContainer center={editing.coordinates[0] ? [editing.coordinates[0][0], editing.coordinates[0][1]] : [-25.2969,-57.6244]} zoom={12} style={{height:'100%', width:'100%'}}
-                whenCreated={(map) => { map.on('click', mapClickToAdd); }}>
+                whenCreated={(map) => { mapRef.current = map; }}>
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                 {editing.coordinates.length > 2 && (
                   <Polygon positions={editing.coordinates as any} pathOptions={{ color: editing.color, weight: editing.weight, fillOpacity: editing.fillOpacity }} />
@@ -89,6 +104,10 @@ const CoverageAdmin: React.FC = () => {
             <div style={{ display:'flex', gap:8, marginTop: 8 }}>
               <button className="btn-secondary" onClick={()=> setEditing({ ...editing, coordinates: editing.coordinates.slice(0, -1) })} disabled={editing.coordinates.length===0}>Deshacer</button>
               <button className="btn-secondary" onClick={()=> setEditing({ ...editing, coordinates: [] })} disabled={editing.coordinates.length===0}>Limpiar</button>
+              <button className="btn-secondary" onClick={()=>{
+                if (editing.coordinates.length < 3) { alert('El polígono debe tener al menos 3 puntos para cerrarse'); return; }
+                setAddingEnabled(false);
+              }}>Cerrar polígono</button>
             </div>
           </div>
           <div style={{ marginTop: 12, display: 'flex', gap: 8 }}>

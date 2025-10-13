@@ -66,6 +66,10 @@ const BranchesAdmin: React.FC = () => {
           <div style={{ display:'flex', gap:8, marginBottom: 8 }}>
             <button className="btn-secondary" onClick={()=> setEditing({ ...editing, coverage: (editing.coverage||[]).slice(0,-1) })} disabled={!editing.coverage||editing.coverage.length===0}>Deshacer</button>
             <button className="btn-secondary" onClick={()=> setEditing({ ...editing, coverage: [] })} disabled={!editing.coverage||editing.coverage.length===0}>Limpiar</button>
+            <button className="btn-secondary" onClick={()=>{
+              if (!editing.coverage || editing.coverage.length < 3) { alert('El polígono debe tener al menos 3 puntos para cerrarse'); return; }
+              // no-op, sirve para indicar que se dejó de agregar puntos (ya estamos en modo arrastrar vértices)
+            }}>Cerrar polígono</button>
           </div>
           <div style={{ marginTop: 12, display: 'flex', gap: 8 }}>
             <button className="btn-primary" onClick={save}>Guardar</button>
