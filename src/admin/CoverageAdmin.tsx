@@ -1,7 +1,7 @@
 import React, { useMemo, useState, useRef, useEffect } from 'react';
 import coverageService, { CoverageArea } from '../services/coverageService';
-import { MapContainer, TileLayer, FeatureGroup, Polygon } from 'react-leaflet';
-import { EditControl } from 'react-leaflet-draw';
+import { MapContainer, TileLayer, Polygon } from 'react-leaflet';
+import L from 'leaflet';
 
 const emptyArea = (id: string): CoverageArea => ({ id, name: '', color: '#2f86eb', weight: 2, fillOpacity: 0.2, coordinates: [] });
 
@@ -43,22 +43,10 @@ const CoverageAdmin: React.FC = () => {
     setEditing({ ...editing, coordinates: editing.coordinates.filter((_, i) => i !== index) });
   };
 
-  const onCreated = (e: any) => {
+  const mapClickToAdd = (e: any) => {
     if (!editing) return;
-    const layer = e.layer;
-    const latlngs = layer.getLatLngs()[0] || [];
-    const coords = latlngs.map((p: any) => [p.lat, p.lng]) as [number, number][];
-    setEditing({ ...editing, coordinates: coords });
-  };
-
-  const onEdited = (e: any) => {
-    if (!editing) return;
-    const layers = e.layers.getLayers();
-    if (layers.length > 0) {
-      const latlngs = layers[0].getLatLngs()[0] || [];
-      const coords = latlngs.map((p: any) => [p.lat, p.lng]) as [number, number][];
-      setEditing({ ...editing, coordinates: coords });
-    }
+    const { lat, lng } = e.latlng;
+    setEditing({ ...editing, coordinates: [...editing.coordinates, [lat, lng]] });
   };
 
   return (
@@ -80,19 +68,12 @@ const CoverageAdmin: React.FC = () => {
           <div style={{ marginTop: 12 }}>
             <h3>Dibuja o edita el polígono en el mapa</h3>
             <div style={{ height: 380, borderRadius: 8, overflow: 'hidden' }}>
-              <MapContainer center={editing.coordinates[0] ? [editing.coordinates[0][0], editing.coordinates[0][1]] : [-25.2969,-57.6244]} zoom={12} style={{height:'100%', width:'100%'}}>
+              <MapContainer center={editing.coordinates[0] ? [editing.coordinates[0][0], editing.coordinates[0][1]] : [-25.2969,-57.6244]} zoom={12} style={{height:'100%', width:'100%'}}
+                whenCreated={(map) => { map.on('click', mapClickToAdd); }}>
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                <FeatureGroup>
-                  <EditControl
-                    position='topright'
-                    onCreated={onCreated}
-                    onEdited={onEdited}
-                    draw={{ rectangle: false, circle: false, marker: false, circlemarker: false, polyline: false }}
-                  />
-                  {editing.coordinates.length > 2 && (
-                    <Polygon positions={editing.coordinates as any} pathOptions={{ color: editing.color, weight: editing.weight, fillOpacity: editing.fillOpacity }} />
-                  )}
-                </FeatureGroup>
+                {editing.coordinates.length > 2 && (
+                  <Polygon positions={editing.coordinates as any} pathOptions={{ color: editing.color, weight: editing.weight, fillOpacity: editing.fillOpacity }} />
+                )}
               </MapContainer>
             </div>
           </div>

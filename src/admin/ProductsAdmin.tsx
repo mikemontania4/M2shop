@@ -11,6 +11,9 @@ const emptyProduct = (nextId: number): Product => ({
   image: '',
   images: [],
   description: '',
+  descripcion: '',
+  propiedades: [],
+  usosRecomendados: [],
   sizes: ['S','M','L','XL'],
   colors: ['Negro','Azul'],
   featured: false,
@@ -63,7 +66,10 @@ const ProductsAdmin: React.FC = () => {
             <label>Imagen principal<input value={editing.image} onChange={e => setEditing({ ...editing, image: e.target.value })} /></label>
             <label>Imágenes (coma separadas)<input value={editing.images.join(',')} onChange={e => setEditing({ ...editing, images: e.target.value.split(',').map(s=>s.trim()).filter(Boolean) })} /></label>
             <label>Destacado<select value={editing.featured? '1':'0'} onChange={e => setEditing({ ...editing, featured: e.target.value==='1' })}><option value="0">No</option><option value="1">Sí</option></select></label>
-            <label>Descripción<textarea value={editing.description} onChange={e => setEditing({ ...editing, description: e.target.value })} /></label>
+            <label>Descripción breve<textarea value={editing.description} onChange={e => setEditing({ ...editing, description: e.target.value })} /></label>
+            <label>Descripción (larga)<textarea value={editing.descripcion||''} onChange={e => setEditing({ ...editing, descripcion: e.target.value })} /></label>
+            <label>Propiedades (una por línea)<textarea value={(editing.propiedades||[]).join('\n')} onChange={e => setEditing({ ...editing, propiedades: e.target.value.split('\n').map(s=>s.trim()).filter(Boolean) })} /></label>
+            <label>Usos Recomendados (una por línea)<textarea value={(editing.usosRecomendados||[]).join('\n')} onChange={e => setEditing({ ...editing, usosRecomendados: e.target.value.split('\n').map(s=>s.trim()).filter(Boolean) })} /></label>
           </div>
           <div style={{ marginTop: 12, display: 'flex', gap: 8 }}>
             <button className="btn-primary" onClick={save}>Guardar</button>

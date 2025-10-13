@@ -11,6 +11,9 @@ export interface Product {
   image: string;
   images: string[];
   description: string;
+  descripcion?: string;
+  propiedades?: string[];
+  usosRecomendados?: string[];
   sizes: string[];
   colors: string[];
   featured: boolean;

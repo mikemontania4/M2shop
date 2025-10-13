@@ -111,6 +111,12 @@
   min-height: 500px;
 }
 
+.product-specs, .product-uses {
+  margin: 16px 0;
+}
+.product-specs h3, .product-uses h3 { margin-bottom: 8px; color: var(--primary-color); }
+.product-specs ul, .product-uses ul { padding-left: 18px; }
+
 /* Stabilize card heights inside category grid */
 .category-main-content .products-grid {
   align-items: stretch;
