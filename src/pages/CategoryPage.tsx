@@ -98,8 +98,8 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
         </div>
       </div>
 
-      <div className="container cv-container">
-        <div className="category-layout">
+      <div className="container cv-container-with-sidebar">
+        <div className="category-layout" style={{ gridTemplateColumns: subcategories.length>0 ? '260px 1fr' : '1fr' }}>
           {subcategories.length > 0 && (
             <aside className="category-sidebar">
               <h3>Subcategorías</h3>
