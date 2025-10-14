@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ShoppingCart, User, Search, Menu, X, MapPin } from 'lucide-react';
 import { useApp } from '../contexts/AppContext';
-import productService, { Category } from '../services/productService';
-import { useNavigate } from 'react-router-dom';
-import productService, { Product } from '../services/productService';
+import productService, { Category,Product } from '../services/productService';
+import { useNavigate } from 'react-router-dom'; 
 
 const Header: React.FC = () => {
   const { user, cartCount, logout } = useApp();
@@ -149,7 +148,6 @@ const Header: React.FC = () => {
       <nav className={`main-nav ${showMobileMenu ? 'mobile-active' : ''}`}>
         <div className="container">
           <ul className="nav-list">
-            <li><button onClick={() => { navigate('/'); setShowMobileMenu(false); }}>Inicio</button></li>
             {navCategories.map((c) => (
               <li key={c.id}><button onClick={() => { navigate(`/${c.id}`); setShowMobileMenu(false); }}>{c.name}</button></li>
             ))}
