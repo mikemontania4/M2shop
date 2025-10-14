@@ -47,21 +47,22 @@
   transform: scale(1.1);
 }
 
-/* Hover gradient bar like reference */
-.hover-cart-bar {
+/* hover-area reference style using adjacent bar */
+.add-to-cart-bar {
   position: absolute;
-  left: 0; right: 0; bottom: 0;
-  display: flex; align-items: center; gap: 10px;
-  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.3), transparent);
-  padding: 12px;
-  transform: translateY(100%);
-  opacity: 0; pointer-events: none;
-  transition: transform .3s ease, opacity .3s ease;
+  left: -2px; right: -2px; top: 100%;
+  background: var(--white);
+  border: 2px solid transparent;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  padding: 8px 13px 15px;
+  text-align: center;
+  transition: all .25s ease;
+  opacity: 0; visibility: hidden; transform: translateY(20px);
 }
-.product-image .quantity-btn { background: var(--white); border-color: var(--border-color); }
-.product-card:hover .hover-cart-bar {
-  transform: translateY(0);
-  opacity: 1; pointer-events: auto;
+.product-card:hover + .add-to-cart-bar {
+  opacity: 1; visibility: visible; transform: translateY(0);
+  border-color: #ebebeb;
 }
 
 .discount-badge {
