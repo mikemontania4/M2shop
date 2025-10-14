@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ShoppingCart, User, Search, Menu, X, MapPin } from 'lucide-react';
 import { useApp } from '../contexts/AppContext';
+import productService, { Category } from '../services/productService';
 import { useNavigate } from 'react-router-dom';
 import productService, { Product } from '../services/productService';
 
@@ -11,6 +12,7 @@ const Header: React.FC = () => {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const searchRef = useRef<HTMLFormElement | null>(null);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [navCategories, setNavCategories] = useState<Category[]>([]);
   const navigate = useNavigate();
 
   const handleSearch = (e: React.FormEvent) => {
@@ -46,6 +48,11 @@ const Header: React.FC = () => {
     logout();
     navigate('/');
   };
+
+  // Load categories for nav
+  React.useEffect(() => {
+    setNavCategories(productService.getCategories());
+  }, []);
 
   return (
     <header className="header">
@@ -143,11 +150,9 @@ const Header: React.FC = () => {
         <div className="container">
           <ul className="nav-list">
             <li><button onClick={() => { navigate('/'); setShowMobileMenu(false); }}>Inicio</button></li>
-            <li><button onClick={() => { navigate('/camisas'); setShowMobileMenu(false); }}>Camisas</button></li>
-            <li><button onClick={() => { navigate('/pantalones'); setShowMobileMenu(false); }}>Pantalones</button></li>
-            <li><button onClick={() => { navigate('/sacos'); setShowMobileMenu(false); }}>Sacos</button></li>
-            <li><button onClick={() => { navigate('/calzados'); setShowMobileMenu(false); }}>Calzados</button></li>
-            <li><button onClick={() => { navigate('/accesorios'); setShowMobileMenu(false); }}>Accesorios</button></li>
+            {navCategories.map((c) => (
+              <li key={c.id}><button onClick={() => { navigate(`/${c.id}`); setShowMobileMenu(false); }}>{c.name}</button></li>
+            ))}
           </ul>
         </div>
       </nav>
