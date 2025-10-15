@@ -1,6 +1,7 @@
 import { AppProvider, useApp } from './contexts/AppContext';
 import { Routes, Route, Outlet } from 'react-router-dom';
 import Header from './components/Header';
+import TopBar from './components/TopBar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import CategoryPage from './pages/CategoryPage';
@@ -46,6 +47,7 @@ import ProfilePage from './pages/ProfilePage';
 function Layout() {
   return (
     <div className="app">
+      <TopBar />
       <Header />
       <main>
         <Outlet />
