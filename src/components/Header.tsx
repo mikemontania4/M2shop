@@ -3,6 +3,7 @@ import { ShoppingCart, User, Search, Menu, X, MapPin } from 'lucide-react';
 import { useApp } from '../contexts/AppContext';
 import productService, { Category,Product } from '../services/productService';
 import { useNavigate } from 'react-router-dom'; 
+import DepartmentsMenu from './DepartmentsMenu';
 
 const Header: React.FC = () => {
   const { user, cartCount, logout } = useApp();
@@ -99,6 +100,8 @@ const Header: React.FC = () => {
               <h1>CAVALLARO</h1>
               <p>Elegancia Masculina</p>
             </div>
+
+            <DepartmentsMenu categories={navCategories} />
 
             <form className="search-form" onSubmit={handleSearch} ref={searchRef}>
               <input

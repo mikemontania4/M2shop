@@ -86,6 +86,23 @@
   gap: 30px;
 }
 
+/* Departments menu */
+.departments-menu { position: relative; }
+.departments-toggle { display:flex; align-items:center; gap:8px; background:#fff; border:1px solid var(--border-color); border-radius:6px; padding:8px 12px; cursor:pointer; }
+.departments-icon { width:16px; height:16px; background: currentColor; mask: linear-gradient(#000 0 0); -webkit-mask: linear-gradient(#000 0 0); opacity:.6; }
+.departments-dropdown { position:absolute; top:100%; left:0; background:#fff; border:1px solid var(--border-color); border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,.12); padding:8px; z-index:1200; min-width:280px; }
+.departments-list { list-style:none; margin:0; padding:0; }
+.department-item { position:relative; }
+.department-link { width:100%; display:flex; align-items:center; gap:8px; justify-content:space-between; background:transparent; border:none; padding:8px 10px; border-radius:6px; cursor:pointer; }
+.department-link:hover { background: var(--bg-light); }
+.square-color { width:10px; height:10px; background:#c22622; border-radius:2px; margin-right:6px; }
+.subcategory-panel { border-top:1px solid var(--border-color); padding:8px 6px; }
+.subcategory-title { font-weight:700; color:var(--primary-color); margin-bottom:6px; }
+.subcategory-listing { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:4px; }
+.subcategory-link { width:100%; text-align:left; background:transparent; border:none; padding:6px 8px; border-radius:6px; cursor:pointer; }
+.subcategory-link:hover { background: var(--bg-light); }
+.subcategory-link.view-all { color: var(--accent-color); font-weight:600; }
+
 .mobile-menu-btn {
   display: none;
   background: none;
