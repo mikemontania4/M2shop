@@ -56,35 +56,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="header">
-      <div className="header-top">
-        <div className="container">
-          <div className="header-top-content">
-            <div className="header-contact">
-              <span>Tel: (021) 123-4567</span>
-              <span>Email: info@cavallaro.com.py</span>
-            <button className="coverage-link" onClick={() => navigate('/mapa-de-cobertura')}>
-              <MapPin size={14} /> Mapa de Cobertura
-            </button>
-            </div>
-            <div className="header-user">
-              {user ? (
-                <>
-                  <button onClick={() => navigate('/profile')} className="btn-link">
-                    <User size={16} />
-                    {user.name}
-                  </button>
-                  <button onClick={handleLogout} className="btn-link">Cerrar Sesión</button>
-                </>
-              ) : (
-                <button onClick={() => navigate('/login')} className="btn-link">
-                  <User size={16} />
-                  Iniciar Sesión
-                </button>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       <div className="header-main">
         <div className="container">
@@ -96,9 +68,8 @@ const Header: React.FC = () => {
               {showMobileMenu ? <X size={24} /> : <Menu size={24} />}
             </button>
 
-            <div className="logo" onClick={() => navigate('/') }>
-              <h1>CAVALLARO</h1>
-              <p>Elegancia Masculina</p>
+            <div className="site-branding" onClick={() => navigate('/') }>
+              <img className="logo-image" src="https://www.cavallaro.com.py/img/logo-web-blanco.png" alt="Cavallaro - Elegancia Masculina" />
             </div>
 
             <DepartmentsMenu categories={navCategories} />
