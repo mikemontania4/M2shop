@@ -80,10 +80,10 @@
 }
 
 .header-main-content {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 /* Departments menu */
@@ -224,6 +224,10 @@
   transform: scale(1.1);
 }
 
+.header-actions { display:flex; align-items:center; gap: 14px; }
+.header-user .btn-link { color: var(--text-color); }
+.header-user .btn-link:hover { color: var(--accent-color); }
+
 .cart-count {
   position: absolute;
   top: 0;
@@ -322,12 +326,12 @@
     gap: 10px;
   }
 
-  .header-main-content {
-    flex-wrap: wrap;
-  }
+  .header-main-content { grid-template-columns: 1fr; }
 
   .search-form {
     order: 3;
     width: 100%;
   }
+
+  .header-actions { width: 100%; justify-content: space-between; }
 }
