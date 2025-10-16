@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import type { Category } from '../../services/productService';
 import productService from '../../services/productService';
 
@@ -87,10 +87,12 @@ const MainNav: React.FC<MainNavProps> = ({ categories, mobileActive, onCloseMobi
   return (
     <nav className={`main-nav ${hidden ? 'nav-hidden' : ''} ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
-        <ul className="nav-list">
+        <ul className="nav-list nav-scrollable">
           {cats.map((c) => (
-            <li key={c.id}>
-              <button onClick={() => { navigate(`/${c.id}`); onCloseMobile?.(); }}>{c.name}</button>
+            <li key={c.id} className="nav-item">
+              <Link to={`/${c.id}`} className="nav-link" onClick={() => onCloseMobile?.()}>
+                {c.name}
+              </Link>
             </li>
           ))}
         </ul>
