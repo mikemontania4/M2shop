@@ -61,19 +61,21 @@ const Header: React.FC = () => {
       <div className="header-main">
         <div className="container">
           <div className="header-main-content">
-            <button
-              className="mobile-menu-btn"
-              onClick={() => setShowMobileMenu(!showMobileMenu)}
-            >
-              {showMobileMenu ? <X size={24} /> : <Menu size={24} />}
-            </button>
+            <div className="header-left">
+              <button
+                className="mobile-menu-btn"
+                onClick={() => setShowMobileMenu(!showMobileMenu)}
+              >
+                {showMobileMenu ? <X size={24} /> : <Menu size={24} />}
+              </button>
 
-            <div className="logo" onClick={() => navigate('/') }>
-              <h1>CAVALLARO</h1>
-              <p>Elegancia Masculina</p>
+              <div className="logo" onClick={() => navigate('/') }>
+                <h1>CAVALLARO</h1>
+                <p>Elegancia Masculina</p>
+              </div>
+
+              <DepartmentsMenu categories={navCategories} />
             </div>
-
-            <DepartmentsMenu categories={navCategories} />
 
             <form className="search-form" onSubmit={handleSearch} ref={searchRef}>
               <input
