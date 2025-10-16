@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import productService, { Product, Category } from '../services/productService';
 import bannerService, { Banner } from '../services/BannerService';
 import ProductCard from '../components/ProductCard';
@@ -53,6 +53,14 @@ const HomePage: React.FC = () => {
   const handleProductClick = (productId: number) => {
     navigate(`/producto/${productId}`);
   };
+
+  const categorizedProducts = useMemo(() => {
+    const byCat: Record<string, Product[]> = {};
+    categories.forEach((c) => {
+      byCat[c.id] = productService.getProductsByCategory(c.id).slice(0, 12);
+    });
+    return byCat;
+  }, [categories]);
 
   return (
     <div className="home-page">
@@ -127,6 +135,18 @@ const HomePage: React.FC = () => {
         onProductClick={handleProductClick}
         onAddToCart={handleAddToCart}
       />
+
+      {/* Sliders por Categoría */}
+      {categories.map((cat) => (
+        <ProductCarousel
+          key={cat.id}
+          title={cat.name}
+          products={categorizedProducts[cat.id] || []}
+          slideBy={1}
+          onProductClick={handleProductClick}
+          onAddToCart={handleAddToCart}
+        />
+      ))}
 
       <section className="promo-section">
         <div className="container">
