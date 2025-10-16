@@ -240,7 +240,7 @@
   width: 100%;
   background: var(--bg-light);
   border-top: 1px solid var(--border-color);
-  z-index: 900;
+  z-index: 800; /* below sticky header z-index:1000 */
   transition: transform .25s ease, opacity .2s ease, box-shadow .2s ease;
 }
 

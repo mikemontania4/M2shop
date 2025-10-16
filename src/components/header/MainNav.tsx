@@ -63,7 +63,7 @@ const MainNav: React.FC<MainNavProps> = ({ categories, mobileActive, onCloseMobi
   return (
     <nav
       className={`main-nav ${isMobileActive ? 'mobile-active' : ''} ${hidden ? 'nav-hidden' : ''} ${scrolled ? 'scrolled' : ''}`}
-      style={{ top: offsetTop }}
+      style={{ top: `${offsetTop}px` }}
     >
       <div className="container">
         <ul className="nav-list">

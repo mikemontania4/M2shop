@@ -7,7 +7,6 @@ import HeaderLogo from './header/HeaderLogo';
 import SearchBar from './header/SearchBar';
 import HeaderUser from './header/HeaderUser';
 import CartButton from './header/CartButton';
-import MainNav from './header/MainNav';
 
 const Header: React.FC = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -30,7 +29,11 @@ const Header: React.FC = () => {
             <div className="header-left">
               <button
                 className="mobile-menu-btn"
-                onClick={() => setShowMobileMenu(!showMobileMenu)}
+                onClick={() => {
+                  const next = !showMobileMenu;
+                  setShowMobileMenu(next);
+                  window.dispatchEvent(new CustomEvent('nav-toggle', { detail: next }));
+                }}
               >
                 {showMobileMenu ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -49,8 +52,6 @@ const Header: React.FC = () => {
           </div>
         </div>
       </div>
-
-      <MainNav categories={navCategories} mobileActive={showMobileMenu} onCloseMobile={() => setShowMobileMenu(false)} />
     </header>
   );
 };
