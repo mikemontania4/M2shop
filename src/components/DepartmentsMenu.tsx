@@ -46,34 +46,41 @@ const DepartmentsMenu: React.FC<DepartmentsMenuProps> = ({ categories }) => {
       </button>
       {open && (
         <div className="departments-dropdown">
-          <ul className="departments-list">
-            {categories.map((c) => (
-              <li key={c.id} className="department-item">
-                <button className="department-link" onClick={() => setExpandedCat(expandedCat === c.id ? null : c.id)}>
-                  <span className="square-color" />
-                  <span>{c.name}</span>
-                  {getSubcategories(c.id).length > 0 && <ChevronRight size={14} />}
-                </button>
-                {expandedCat === c.id && (
-                  <div className="subcategory-panel">
-                    <div className="subcategory-title">{c.name}</div>
-                    <ul className="subcategory-listing">
-                      {getSubcategories(c.id).map((s) => (
-                        <li key={s.id}>
-                          <button className="subcategory-link" onClick={() => handleSubcategoryClick(s.id)}>{s.name}</button>
-                        </li>
-                      ))}
-                      <li>
-                        <button className="subcategory-link view-all" onClick={() => handleCategoryClick(c.id)}>
-                          Ver todo en "{c.name}"
-                        </button>
+          <div className="departments-columns">
+            <ul className="departments-list">
+              {categories.map((c) => (
+                <li key={c.id} className={`department-item ${expandedCat === c.id ? 'active' : ''}`}>
+                  <button className="department-link" onClick={() => setExpandedCat(expandedCat === c.id ? null : c.id)}>
+                    <span className="square-color" />
+                    <span>{c.name}</span>
+                    {getSubcategories(c.id).length > 0 && <ChevronRight size={14} />}
+                  </button>
+                </li>
+              ))}
+            </ul>
+            <div className="departments-subpanel">
+              {expandedCat && (
+                <div className="subcategory-panel">
+                  <div className="subcategory-title">{categories.find(cc => cc.id === expandedCat)?.name}</div>
+                  <ul className="subcategory-listing">
+                    {getSubcategories(expandedCat).map((s) => (
+                      <li key={s.id}>
+                        <button className="subcategory-link" onClick={() => handleSubcategoryClick(s.id)}>{s.name}</button>
                       </li>
-                    </ul>
-                  </div>
-                )}
-              </li>
-            ))}
-          </ul>
+                    ))}
+                    <li>
+                      <button className="subcategory-link view-all" onClick={() => handleCategoryClick(expandedCat)}>
+                        Ver todo en "{categories.find(cc => cc.id === expandedCat)?.name}"
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              )}
+              {!expandedCat && (
+                <div className="subcategory-empty">Seleccioná una categoría para ver subcategorías</div>
+              )}
+            </div>
+          </div>
         </div>
       )}
     </div>
