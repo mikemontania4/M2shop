@@ -1,157 +1,241 @@
-/* Products Grid - 4 columns on large screens */
+/* Refined product grid with elegant spacing */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-  padding: 20px 0;
+  gap: 0px;
+  padding: 30px 0;
 }
+/* </CHANGE> */
 
+/* Product card wrapper for consistent layout */
+.product-card-wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+/* </CHANGE> */
+
+/* Elegant product card with subtle border and shadow */
 .product-card {
   background: var(--white);
-  border-radius: 10px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #e0e0e0;
 }
+/* </CHANGE> */
 
+/* Product image container with consistent aspect ratio */
 .product-image {
   position: relative;
-  height: 350px;
+  width: 100%;
+  padding-top: 125%; /* 4:5 aspect ratio for elegant product display */
   overflow: hidden;
+  background: #fafafa;
 }
 
 .product-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s;
+  transition: transform 0.4s ease;
 }
 
 .product-card:hover .product-image img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
+/* </CHANGE> */
 
-.discount-badge {
+/* Product labels (Oferta, Destacado) in top-left corner */
+.product-labels {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background: var(--error);
+  top: 12px;
+  left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 2;
+}
+
+.product-label {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.label-discount {
+  background: #e74c3c;
   color: var(--white);
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: bold;
 }
 
+.label-featured {
+  background: #f39c12;
+  color: var(--white);
+}
+/* </CHANGE> */
+
+/* Product info section with elegant spacing */
 .product-info {
-  padding: 20px;
+  padding: 20px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
-.product-info h3 {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-  color: var(--text-color);
-  cursor: pointer;
+.product-name {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0 0 12px 0;
+  color: #333;
+  font-weight: 500;
+  min-height: 2.8em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
+/* </CHANGE> */
 
+/* Price display with elegant typography */
 .product-price {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
 }
 
 .current-price {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: var(--accent-color);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #2c3e50;
 }
 
 .original-price {
   font-size: 1rem;
-  color: var(--text-light);
+  color: #95a5a6;
   text-decoration: line-through;
+  font-weight: 400;
 }
+/* </CHANGE> */
 
-/* Product Card Quantity Controls */
+/* Elegant quantity incrementer with rounded design */
 .product-card-quantity {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  margin: 15px 0 10px;
+  gap: 16px;
+  margin-top: auto;
+  background: #f8f9fa;
+  border-radius: 50px;
+  padding: 6px 12px;
+  border: 1px solid #e9ecef;
 }
 
 .quantity-btn {
-  width: 35px;
-  height: 35px;
-  border: 1px solid var(--border-color);
+  width: 32px;
+  height: 32px;
+  border: 1px solid #dee2e6;
   background: var(--white);
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s;
+  transition: all 0.2s ease;
+  color: #495057;
 }
 
 .quantity-btn:hover {
   background: var(--accent-color);
   color: var(--white);
   border-color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+.quantity-btn:active {
+  transform: scale(0.95);
 }
 
 .quantity-display {
   font-weight: 600;
-  font-size: 1.1rem;
-  min-width: 30px;
+  font-size: 1rem;
+  min-width: 28px;
   text-align: center;
+  color: #2c3e50;
 }
+/* </CHANGE> */
 
+/* Add to cart button - appears on hover (desktop) or always visible (mobile) */
 .btn-add-to-cart-card {
   width: 100%;
-  padding: 10px 15px;
+  padding: 14px 20px;
   background: var(--accent-color);
   color: var(--white);
   border: none;
-  border-radius: 5px;
+  border-radius: 0 0 8px 8px;
   font-weight: 600;
+  font-size: 0.95rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  transition: all 0.3s;
-  animation: slideUp 0.3s ease-out;
+  transition: all 0.3s ease;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  margin-top: -1px;
 }
 
 .btn-add-to-cart-card:hover {
   background: var(--primary-color);
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
+/* Desktop: show on hover */
+@media (min-width: 769px) {
+  .product-card-wrap:hover .btn-add-to-cart-card {
     opacity: 1;
-    transform: translateY(0);
+    max-height: 60px;
+    pointer-events: auto;
   }
 }
 
-/* Responsive Grid */
+/* Mobile: always visible */
+@media (max-width: 768px) {
+  .btn-add-to-cart-card {
+    opacity: 1;
+    max-height: 60px;
+    pointer-events: auto;
+    position: static;
+  }
+}
+/* </CHANGE> */
+
+/* Responsive grid breakpoints */
 @media (max-width: 1200px) {
   .products-grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
   }
 }
 
@@ -162,12 +246,26 @@
   }
 
   .product-image {
-    height: 250px;
+    padding-top: 130%;
+  }
+
+  .product-name {
+    font-size: 0.9rem;
+  }
+
+  .current-price {
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 480px) {
   .products-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .product-image {
+    padding-top: 120%;
   }
 }
+/* </CHANGE> */

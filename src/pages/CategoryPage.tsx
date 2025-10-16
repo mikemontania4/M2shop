@@ -1,7 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import productService, { Product, Subcategory } from '../services/productService';
+import productService, { Product, Subcategory, Category } from '../services/productService';
 import ProductCard from '../components/ProductCard';
+import CategorySidebar, { CategoryItem } from '../components/CategorySidebar';
 import { useApp } from '../contexts/AppContext';
 
 const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
@@ -9,7 +10,9 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
   const [products, setProducts] = useState<Product[]>([]);
   const [category, setCategory] = useState<any>(null);
   const [subcategories, setSubcategories] = useState<Subcategory[]>([]);
+  const [subcategoryCounts, setSubcategoryCounts] = useState<Record<string, number>>({});
   const [selectedSubcategory, setSelectedSubcategory] = useState<string | null>(null);
+  const [allCategories, setAllCategories] = useState<Category[]>([]);
   const [sortBy, setSortBy] = useState<string>('default');
   const params = useParams();
   const navigate = useNavigate();
@@ -32,6 +35,8 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
     const subcats = productService.getSubcategoriesByCategory(effectiveCategoryId);
     setSubcategories(subcats);
 
+    setAllCategories(productService.getCategories());
+
     setSelectedSubcategory(null);
     loadProducts(effectiveCategoryId, null, sortBy);
   }, [effectiveCategoryId]);
@@ -39,6 +44,19 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
   useEffect(() => {
     loadProducts(effectiveCategoryId, selectedSubcategory, sortBy);
   }, [effectiveCategoryId, selectedSubcategory, sortBy]);
+
+  useEffect(() => {
+    // Precompute product counts per subcategory for a nicer UI
+    if (!effectiveCategoryId || subcategories.length === 0) {
+      setSubcategoryCounts({});
+      return;
+    }
+    const counts: Record<string, number> = {};
+    subcategories.forEach((s) => {
+      counts[s.id] = productService.getProductsByCategory(effectiveCategoryId, s.id).length;
+    });
+    setSubcategoryCounts(counts);
+  }, [effectiveCategoryId, subcategories]);
 
   const loadProducts = (catId: string, subcat: string | null, sort: string) => {
     let categoryProducts = productService.getProductsByCategory(catId, subcat || undefined);
@@ -71,6 +89,12 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
     }
   };
 
+  const handleCategoryTabClick = (catId: string) => {
+    // Reset selected subcategory when switching category
+    setSelectedSubcategory(null);
+    navigate(`/${catId}`);
+  };
+
   if (!category) {
     return <div className="container"><p>Categoría no encontrada</p></div>;
   }
@@ -84,31 +108,26 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
         </div>
       </div>
 
-      <div className="container">
-        <div className="category-layout">
-          {subcategories.length > 0 && (
+      <div className="container cv-container-with-sidebar">
+        <div className="category-layout" style={{ gridTemplateColumns: subcategories.length>0 ? '260px 1fr' : '1fr' }}>
+          {(subcategories.length > 0 || allCategories.length > 0) && (
             <aside className="category-sidebar">
-              <h3>Subcategorías</h3>
-              <ul className="subcategory-list">
-                <li>
-                  <button
-                    className={selectedSubcategory === null ? 'active' : ''}
-                    onClick={() => handleSubcategoryClick(null)}
-                  >
-                    Todas
-                  </button>
-                </li>
-                {subcategories.map((subcat) => (
-                  <li key={subcat.id}>
-                    <button
-                      className={selectedSubcategory === subcat.id ? 'active' : ''}
-                      onClick={() => handleSubcategoryClick(subcat.id)}
-                    >
-                      {subcat.name}
-                    </button>
-                  </li>
-                ))}
-              </ul>
+              <CategorySidebar
+                categories={allCategories.map((c) => ({
+                  id: c.id,
+                  name: c.name,
+                  count: productService.getProductsByCategory(c.id).length,
+                  subCategories: productService.getSubcategoriesByCategory(c.id).map((s) => ({
+                    id: s.id,
+                    name: s.name,
+                    count: productService.getProductsByCategory(c.id, s.id).length,
+                  }))
+                })) as CategoryItem[]}
+                selectedCategory={effectiveCategoryId}
+                selectedSubCategory={selectedSubcategory || undefined}
+                onCategorySelect={(catId) => handleCategoryTabClick(catId)}
+                onSubCategorySelect={(_catId, subId) => handleSubcategoryClick(subId)}
+              />
             </aside>
           )}
 

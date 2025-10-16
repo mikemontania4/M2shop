@@ -7,6 +7,19 @@
   z-index: 1000;
 }
 
+/* TopBar styles above header */
+.top-bar {
+  width: 100%;
+  background: #c22622;
+  color: #fff;
+  font-size: 0.875em;
+  line-height: 2.4em;
+}
+.top-bar .col-full { max-width: 100vw; margin: 0 auto; }
+.topbar-nav { list-style: none; display: flex; justify-content: center; gap: 24px; padding: 0; margin: 0; }
+.topbar-link { background: transparent; border: none; color: #fff; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; }
+.topbar-link:hover { text-decoration: underline; }
+
 .header-top {
   background: var(--primary-color);
   color: var(--white);
@@ -23,6 +36,22 @@
 .header-contact span {
   margin-right: 20px;
 }
+
+.coverage-link {
+  margin-left: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.15);
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 999px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.coverage-link:hover { background: rgba(255,255,255,0.25); }
 
 .header-user {
   display: flex;
@@ -57,6 +86,23 @@
   gap: 30px;
 }
 
+/* Departments menu */
+.departments-menu { position: relative; }
+.departments-toggle { display:flex; align-items:center; gap:8px; background:#fff; border:1px solid var(--border-color); border-radius:6px; padding:8px 12px; cursor:pointer; }
+.departments-icon { width:16px; height:16px; background: currentColor; mask: linear-gradient(#000 0 0); -webkit-mask: linear-gradient(#000 0 0); opacity:.6; }
+.departments-dropdown { position:absolute; top:100%; left:0; background:#fff; border:1px solid var(--border-color); border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,.12); padding:8px; z-index:1200; min-width:280px; }
+.departments-list { list-style:none; margin:0; padding:0; }
+.department-item { position:relative; }
+.department-link { width:100%; display:flex; align-items:center; gap:8px; justify-content:space-between; background:transparent; border:none; padding:8px 10px; border-radius:6px; cursor:pointer; }
+.department-link:hover { background: var(--bg-light); }
+.square-color { width:10px; height:10px; background:#c22622; border-radius:2px; margin-right:6px; }
+.subcategory-panel { border-top:1px solid var(--border-color); padding:8px 6px; }
+.subcategory-title { font-weight:700; color:var(--primary-color); margin-bottom:6px; }
+.subcategory-listing { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:4px; }
+.subcategory-link { width:100%; text-align:left; background:transparent; border:none; padding:6px 8px; border-radius:6px; cursor:pointer; }
+.subcategory-link:hover { background: var(--bg-light); }
+.subcategory-link.view-all { color: var(--accent-color); font-weight:600; }
+
 .mobile-menu-btn {
   display: none;
   background: none;
@@ -90,6 +136,7 @@
   border: 2px solid var(--border-color);
   border-radius: 25px;
   overflow: hidden;
+  position: relative;
 }
 
 .search-form input {
@@ -111,6 +158,57 @@
 
 .search-form button:hover {
   background: var(--secondary-color);
+}
+
+.search-suggestions {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 100%;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  padding: 8px;
+  animation: dropdownIn 0.15s ease-out;
+  z-index: 1200;
+}
+
+.search-suggestions ul { list-style: none; }
+.search-suggestions li { margin: 0; }
+
+.suggestion-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.suggestion-item:hover {
+  background: var(--bg-light);
+  transform: translateY(-1px);
+}
+
+.suggestion-item img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.suggestion-info { display: flex; flex-direction: column; align-items: flex-start; }
+.suggestion-name { font-weight: 600; color: var(--text-color); }
+.suggestion-sub { font-size: 0.85rem; color: var(--text-light); }
+
+@keyframes dropdownIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .cart-btn {
@@ -210,7 +308,7 @@
     gap: 0;
   }
 
-  .nav-list button {
+  .nav-list button, .coverage-link {
     width: 100%;
     text-align: left;
     padding: 15px 20px;

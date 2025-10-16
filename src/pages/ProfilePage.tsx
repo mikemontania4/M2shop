@@ -3,11 +3,18 @@ import { useNavigate } from 'react-router-dom';
 import { useApp } from '../contexts/AppContext';
 import authService from '../services/authService';
 import orderService from '../services/orderService';
-import { User, Phone, MapPin, FileText, Save } from 'lucide-react';
+import { User as UserIcon, Phone, MapPin, FileText, Save, CreditCard, List, Plus, Trash2 } from 'lucide-react';
+import addressService, { Address } from '../services/addressService';
+import cardService, { Card } from '../services/cardService';
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import L from 'leaflet';
 
 const ProfilePage: React.FC = () => {
   const { user } = useApp();
   const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState<'datos' | 'direcciones' | 'tarjetas' | 'pedidos'>('datos');
+
+  // Datos personales
   const [name, setName] = useState(user?.name || '');
   const [phone, setPhone] = useState(user?.phone || '');
   const [address, setAddress] = useState(user?.address || '');
@@ -16,6 +23,14 @@ const ProfilePage: React.FC = () => {
   const [success, setSuccess] = useState('');
   const [error, setError] = useState('');
   const [userOrders, setUserOrders] = useState(orderService.getOrdersByUser(user?.id || 0));
+
+  // Direcciones
+  const [addresses, setAddresses] = useState<Address[]>(user ? addressService.getByUser(user.id) : []);
+  const [editingAddress, setEditingAddress] = useState<Address | null>(null);
+
+  // Tarjetas
+  const [cards, setCards] = useState<Card[]>(user ? cardService.getByUser(user.id) : []);
+  const [editingCard, setEditingCard] = useState<Card | null>(null);
 
   useEffect(() => {
     if (user) {
@@ -80,9 +95,20 @@ const ProfilePage: React.FC = () => {
       <div className="container">
         <h1>Mi Perfil</h1>
 
-        <div className="profile-content">
+        <div className="profile-content" style={{ gridTemplateColumns: '260px 1fr' }}>
+          <aside className="profile-tabs" style={{ background: 'var(--bg-light)', borderRadius: 10, padding: 16, height: 'fit-content' }}>
+            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 6 }}>
+              <li><button className={`btn-secondary ${activeTab==='datos'?'active':''}`} onClick={()=>setActiveTab('datos')}><UserIcon size={16}/> Mis Datos</button></li>
+              <li><button className={`btn-secondary ${activeTab==='direcciones'?'active':''}`} onClick={()=>setActiveTab('direcciones')}><MapPin size={16}/> Mis Direcciones</button></li>
+              <li><button className={`btn-secondary ${activeTab==='tarjetas'?'active':''}`} onClick={()=>setActiveTab('tarjetas')}><CreditCard size={16}/> Mis Tarjetas</button></li>
+              <li><button className={`btn-secondary ${activeTab==='pedidos'?'active':''}`} onClick={()=>setActiveTab('pedidos')}><List size={16}/> Mis Pedidos</button></li>
+            </ul>
+          </aside>
+
           <div className="profile-form-section">
-            <h2>Información Personal</h2>
+            {activeTab === 'datos' && (
+              <>
+                <h2>Información Personal</h2>
 
             {success && <div className="success-message">{success}</div>}
             {error && <div className="error-message">{error}</div>}
@@ -90,7 +116,7 @@ const ProfilePage: React.FC = () => {
             <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <label>
-                  <User size={20} />
+                  <UserIcon size={20} />
                   Nombre Completo
                 </label>
                 <input
@@ -162,41 +188,131 @@ const ProfilePage: React.FC = () => {
                 Guardar Cambios
               </button>
             </form>
-          </div>
+              </>
+            )}
 
-          <div className="profile-orders-section">
-            <h2>Mis Pedidos</h2>
-            {userOrders.length === 0 ? (
-              <div className="empty-orders">
-                <p>No tienes pedidos aún</p>
-                <button className="btn-primary" onClick={() => navigate('/') }>
-                  Ir a Comprar
-                </button>
-              </div>
-            ) : (
-              <div className="orders-list">
-                {userOrders.map((order) => (
-                  <div key={order.id} className="order-card">
-                    <div className="order-header">
-                      <h3>Pedido #{order.id}</h3>
-                      <span className={`order-status ${order.status.toLowerCase()}`}>
-                        {order.status}
-                      </span>
+            {activeTab === 'direcciones' && (
+              <>
+                <h2>Mis Direcciones</h2>
+                <div style={{ marginBottom: 12 }}>
+                  <button className="btn-primary" onClick={() => setEditingAddress({ id: 'addr-'+Date.now(), userId: user.id, street: '', number: '', cross: '', city: '', neighborhood: '', reference: '', lat: -25.2969, lng: -57.6244 })}><Plus size={16}/> Agregar nueva dirección</button>
+                </div>
+                {editingAddress && (
+                  <div className="admin-panel" style={{ marginBottom: 12 }}>
+                    <div className="form-grid">
+                      <label>Calle<input value={editingAddress.street} onChange={e=>setEditingAddress({ ...editingAddress, street: e.target.value })} /></label>
+                      <label>Número<input value={editingAddress.number} onChange={e=>setEditingAddress({ ...editingAddress, number: e.target.value })} /></label>
+                      <label>Transversal<input value={editingAddress.cross} onChange={e=>setEditingAddress({ ...editingAddress, cross: e.target.value })} /></label>
+                      <label>Localidad<input value={editingAddress.city} onChange={e=>setEditingAddress({ ...editingAddress, city: e.target.value })} /></label>
+                      <label>Barrio<input value={editingAddress.neighborhood} onChange={e=>setEditingAddress({ ...editingAddress, neighborhood: e.target.value })} /></label>
+                      <label>Referencias<input value={editingAddress.reference} onChange={e=>setEditingAddress({ ...editingAddress, reference: e.target.value })} /></label>
                     </div>
-                    <p className="order-date">{formatDate(order.date)}</p>
-                    <p className="order-total">Total: {formatPrice(order.total)}</p>
-                    <p className="order-items-count">
-                      {order.items.length} {order.items.length === 1 ? 'producto' : 'productos'}
-                    </p>
-                    <button
-                      className="btn-secondary"
-                      onClick={() => navigate(`/orden/${order.id}`)}
-                    >
-                      Ver Detalles
+                    <p style={{ margin: '10px 0' }}>Ubique su dirección en el mapa</p>
+                    <div style={{ height: 300, borderRadius: 8, overflow: 'hidden' }}>
+                      <MapContainer center={[editingAddress.lat||-25.2969, editingAddress.lng||-57.6244]} zoom={14} style={{height:'100%', width:'100%'}}>
+                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                        <Marker position={[editingAddress.lat||-25.2969, editingAddress.lng||-57.6244]} draggable
+                          eventHandlers={{
+                            dragend: (e) => {
+                              const m = e.target as L.Marker;
+                              const pos = m.getLatLng();
+                              setEditingAddress({ ...editingAddress, lat: pos.lat, lng: pos.lng });
+                            }
+                          }}
+                        />
+                      </MapContainer>
+                    </div>
+                    <div style={{ marginTop: 10, display:'flex', gap: 8 }}>
+                      <button className="btn-primary" onClick={()=>{ addressService.upsert(editingAddress); setAddresses(addressService.getByUser(user.id)); setEditingAddress(null); }}>Guardar</button>
+                      <button className="btn-secondary" onClick={()=>setEditingAddress(null)}>Cancelar</button>
+                    </div>
+                  </div>
+                )}
+                <div className="orders-list">
+                  {addresses.map(a => (
+                    <div key={a.id} className="order-card" style={{ display:'grid', gridTemplateColumns:'1fr auto', alignItems:'center' }}>
+                      <div>
+                        <strong>{a.street} {a.number}</strong><br/>
+                        {a.neighborhood}, {a.city}<br/>
+                        {a.reference}
+                      </div>
+                      <button className="btn-secondary" onClick={()=>setEditingAddress(a)}><Plus size={16}/> Editar</button>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+
+            {activeTab === 'tarjetas' && (
+              <>
+                <h2>Mis Tarjetas</h2>
+                <div style={{ marginBottom: 12 }}>
+                  <button className="btn-primary" onClick={()=>setEditingCard({ id:'card-'+Date.now(), userId: user.id, holder:'', last4:'', brand:'', expMonth:1, expYear:new Date().getFullYear() })}><Plus size={16}/> Agregar tarjeta</button>
+                </div>
+                {editingCard && (
+                  <div className="admin-panel" style={{ marginBottom: 12 }}>
+                    <div className="form-grid">
+                      <label>Nombre en la tarjeta<input value={editingCard.holder} onChange={e=>setEditingCard({ ...editingCard, holder: e.target.value })} /></label>
+                      <label>Marca<input value={editingCard.brand} onChange={e=>setEditingCard({ ...editingCard, brand: e.target.value })} placeholder="Visa / MasterCard" /></label>
+                      <label>Últimos 4<input value={editingCard.last4} onChange={e=>setEditingCard({ ...editingCard, last4: e.target.value.slice(0,4) })} /></label>
+                      <label>Vencimiento (MM)<input type="number" value={editingCard.expMonth} onChange={e=>setEditingCard({ ...editingCard, expMonth: parseInt(e.target.value)||1 })} /></label>
+                      <label>Vencimiento (YYYY)<input type="number" value={editingCard.expYear} onChange={e=>setEditingCard({ ...editingCard, expYear: parseInt(e.target.value)||new Date().getFullYear() })} /></label>
+                    </div>
+                    <div style={{ marginTop: 10, display:'flex', gap: 8 }}>
+                      <button className="btn-primary" onClick={()=>{ cardService.upsert(editingCard); setCards(cardService.getByUser(user.id)); setEditingCard(null); }}>Guardar</button>
+                      <button className="btn-secondary" onClick={()=>setEditingCard(null)}>Cancelar</button>
+                    </div>
+                  </div>
+                )}
+                <div className="orders-list">
+                  {cards.map(c => (
+                    <div key={c.id} className="order-card" style={{ display:'grid', gridTemplateColumns:'1fr auto', alignItems:'center' }}>
+                      <div>
+                        <strong>{c.brand}</strong> •••• {c.last4}
+                      </div>
+                      <button className="btn-secondary" onClick={()=>setEditingCard(c)}>Editar</button>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+
+            {activeTab === 'pedidos' && (
+              <>
+                <h2>Mis Pedidos</h2>
+                {userOrders.length === 0 ? (
+                  <div className="empty-orders">
+                    <p>No tienes pedidos aún</p>
+                    <button className="btn-primary" onClick={() => navigate('/') }>
+                      Ir a Comprar
                     </button>
                   </div>
-                ))}
-              </div>
+                ) : (
+                  <div className="orders-list">
+                    {userOrders.map((order) => (
+                      <div key={order.id} className="order-card">
+                        <div className="order-header">
+                          <h3>Pedido #{order.id}</h3>
+                          <span className={`order-status ${order.status.toLowerCase()}`}>
+                            {order.status}
+                          </span>
+                        </div>
+                        <p className="order-date">{formatDate(order.date)}</p>
+                        <p className="order-total">Total: {formatPrice(order.total)}</p>
+                        <p className="order-items-count">
+                          {order.items.length} {order.items.length === 1 ? 'producto' : 'productos'}
+                        </p>
+                        <button
+                          className="btn-secondary"
+                          onClick={() => navigate(`/orden/${order.id}`)}
+                        >
+                          Ver Detalles
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </>
             )}
           </div>
         </div>

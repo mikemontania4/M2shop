@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
-import { ShoppingCart, User, Search, Menu, X } from 'lucide-react';
+import React, { useEffect, useRef, useState } from 'react';
+import { ShoppingCart, User, Search, Menu, X, MapPin } from 'lucide-react';
 import { useApp } from '../contexts/AppContext';
-import { useNavigate } from 'react-router-dom';
+import productService, { Category,Product } from '../services/productService';
+import { useNavigate } from 'react-router-dom'; 
+import DepartmentsMenu from './DepartmentsMenu';
 
 const Header: React.FC = () => {
   const { user, cartCount, logout } = useApp();
   const [searchQuery, setSearchQuery] = useState('');
+  const [suggestions, setSuggestions] = useState<Product[]>([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const searchRef = useRef<HTMLFormElement | null>(null);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [navCategories, setNavCategories] = useState<Category[]>([]);
   const navigate = useNavigate();
 
   const handleSearch = (e: React.FormEvent) => {
@@ -15,12 +21,38 @@ const Header: React.FC = () => {
     if (searchQuery.trim()) params.set('q', searchQuery.trim());
     navigate(`/catalogo${params.toString() ? `?${params.toString()}` : ''}`);
     setShowMobileMenu(false);
+    setShowSuggestions(false);
   };
+  useEffect(() => {
+    if (searchQuery.trim().length === 0) {
+      setSuggestions([]);
+      setShowSuggestions(false);
+      return;
+    }
+    const all = productService.searchProducts(searchQuery.trim());
+    setSuggestions(all.slice(0, 6));
+    setShowSuggestions(true);
+  }, [searchQuery]);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
+        setShowSuggestions(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const handleLogout = () => {
     logout();
     navigate('/');
   };
+
+  // Load categories for nav
+  React.useEffect(() => {
+    setNavCategories(productService.getCategories());
+  }, []);
 
   return (
     <header className="header">
@@ -30,6 +62,9 @@ const Header: React.FC = () => {
             <div className="header-contact">
               <span>Tel: (021) 123-4567</span>
               <span>Email: info@cavallaro.com.py</span>
+            <button className="coverage-link" onClick={() => navigate('/mapa-de-cobertura')}>
+              <MapPin size={14} /> Mapa de Cobertura
+            </button>
             </div>
             <div className="header-user">
               {user ? (
@@ -66,16 +101,43 @@ const Header: React.FC = () => {
               <p>Elegancia Masculina</p>
             </div>
 
-            <form className="search-form" onSubmit={handleSearch}>
+            <DepartmentsMenu categories={navCategories} />
+
+            <form className="search-form" onSubmit={handleSearch} ref={searchRef}>
               <input
                 type="text"
                 placeholder="Buscar productos..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
+                onFocus={() => { if (suggestions.length > 0) setShowSuggestions(true); }}
               />
               <button type="submit">
                 <Search size={20} />
               </button>
+            {showSuggestions && suggestions.length > 0 && (
+                <div className="search-suggestions">
+                  <ul>
+                    {suggestions.map((p) => (
+                      <li key={p.id}>
+                        <button
+                          className="suggestion-item"
+                          onClick={() => {
+                            navigate(`/producto/${p.id}`);
+                            setShowSuggestions(false);
+                            setSearchQuery('');
+                          }}
+                        >
+                          <img src={p.image} alt={p.name} />
+                          <div className="suggestion-info">
+                            <span className="suggestion-name">{p.name}</span>
+                            <span className="suggestion-sub">{p.subcategory || p.category}</span>
+                          </div>
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </form>
 
             <button className="cart-btn" onClick={() => navigate('/carrito')}>
@@ -89,12 +151,9 @@ const Header: React.FC = () => {
       <nav className={`main-nav ${showMobileMenu ? 'mobile-active' : ''}`}>
         <div className="container">
           <ul className="nav-list">
-            <li><button onClick={() => { navigate('/'); setShowMobileMenu(false); }}>Inicio</button></li>
-            <li><button onClick={() => { navigate('/camisas'); setShowMobileMenu(false); }}>Camisas</button></li>
-            <li><button onClick={() => { navigate('/pantalones'); setShowMobileMenu(false); }}>Pantalones</button></li>
-            <li><button onClick={() => { navigate('/sacos'); setShowMobileMenu(false); }}>Sacos</button></li>
-            <li><button onClick={() => { navigate('/calzados'); setShowMobileMenu(false); }}>Calzados</button></li>
-            <li><button onClick={() => { navigate('/accesorios'); setShowMobileMenu(false); }}>Accesorios</button></li>
+            {navCategories.map((c) => (
+              <li key={c.id}><button onClick={() => { navigate(`/${c.id}`); setShowMobileMenu(false); }}>{c.name}</button></li>
+            ))}
           </ul>
         </div>
       </nav>

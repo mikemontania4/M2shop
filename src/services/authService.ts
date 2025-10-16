@@ -14,6 +14,13 @@ export interface User {
 
 class AuthService {
   private currentUser: User | null = null;
+  private getAllUsers(): User[] {
+    const saved = localStorage.getItem('allUsers');
+    if (saved) {
+      try { return JSON.parse(saved) as User[]; } catch { /* ignore */ }
+    }
+    return usersData as User[];
+  }
 
   constructor() {
     const savedUser = localStorage.getItem('currentUser');
@@ -23,7 +30,8 @@ class AuthService {
   }
 
   login(email: string, password: string): { success: boolean; user?: User; message?: string } {
-    const user = usersData.find(u => u.email === email && u.password === password) as User | undefined;
+    const list = this.getAllUsers();
+    const user = list.find(u => u.email === email && u.password === password) as User | undefined;
 
     if (user) {
       this.currentUser = user;
@@ -52,7 +60,7 @@ class AuthService {
   }
 
   register(email: string, password: string, name: string): { success: boolean; message?: string } {
-    const allUsers = JSON.parse(localStorage.getItem('allUsers') || JSON.stringify(usersData));
+    const allUsers = this.getAllUsers();
     const existingUser = allUsers.find((u: User) => u.email === email);
     if (existingUser) {
       return { success: false, message: 'El email ya está registrado' };

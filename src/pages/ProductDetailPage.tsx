@@ -90,7 +90,25 @@ const ProductDetailPage: React.FC<{ productId?: number }> = ({ productId }) => {
               </div>
             </div>
 
-            <p className="product-description">{product.description}</p>
+            <p className="product-description">{product.descripcion || product.description}</p>
+
+            {(product.propiedades && product.propiedades.length > 0) && (
+              <div className="product-specs">
+                <h3>Propiedades</h3>
+                <ul>
+                  {product.propiedades.map((p, i) => (<li key={i}>{p}</li>))}
+                </ul>
+              </div>
+            )}
+
+            {(product.usosRecomendados && product.usosRecomendados.length > 0) && (
+              <div className="product-uses">
+                <h3>Usos Recomendados</h3>
+                <ul>
+                  {product.usosRecomendados.map((p, i) => (<li key={i}>{p}</li>))}
+                </ul>
+              </div>
+            )}
 
             <div className="product-options">
               <div className="option-group">

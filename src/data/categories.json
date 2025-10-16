@@ -1,112 +1,48 @@
 [
   {
-    "id": "camisas",
-    "name": "Camisas",
-    "description": "Camisas de alta calidad para toda ocasión",
-    "image": "https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "id": "cuidado-de-las-prendas",
+    "name": "Cuidado de las Prendas",
+    "description": "Productos para el lavado y cuidado de tu ropa",
+    "image": "https://www.cavallaro.com.py/userfiles/images/banners/banner-medio-884x330.jpg",
     "subcategories": [
-      {
-        "id": "camisas-formales",
-        "name": "Formales",
-        "description": "Camisas para eventos formales"
-      },
-      {
-        "id": "camisas-casuales",
-        "name": "Casuales",
-        "description": "Camisas para uso diario"
-      },
-      {
-        "id": "camisas-manga-corta",
-        "name": "Manga Corta",
-        "description": "Camisas de manga corta"
-      }
+      { "id": "detergentes", "name": "Detergentes", "description": "Detergentes en polvo y líquido" },
+      { "id": "suavizantes", "name": "Suavizantes", "description": "Suavizantes para ropa con fragancias duraderas" },
+      { "id": "liquidos-lavar", "name": "Líquidos para Lavar", "description": "Líquidos concentrados para lavado" },
+      { "id": "quitamanchas", "name": "Quitamanchas", "description": "Removedores de manchas efectivos" }
     ]
   },
   {
-    "id": "pantalones",
-    "name": "Pantalones",
-    "description": "Pantalones elegantes y casuales",
-    "image": "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "id": "higiene-personal",
+    "name": "Higiene Personal",
+    "description": "Productos para el cuidado personal y familiar",
+    "image": "https://www.cavallaro.com.py/userfiles/images/banners/banner-medio-411x330-tocador.jpg",
     "subcategories": [
       {
-        "id": "pantalones-vestir",
-        "name": "De Vestir",
-        "description": "Pantalones formales"
+        "id": "jabones-tocador",
+        "name": "Jabones de Tocador",
+        "description": "Jabones en barra con fragancias naturales"
       },
-      {
-        "id": "pantalones-jeans",
-        "name": "Jeans",
-        "description": "Pantalones de mezclilla"
-      },
-      {
-        "id": "pantalones-deportivos",
-        "name": "Deportivos",
-        "description": "Pantalones para deporte"
-      }
+      { "id": "jabones-liquidos", "name": "Jabones Líquidos", "description": "Jabones líquidos antibacteriales" },
+      { "id": "glicerina", "name": "Glicerina", "description": "Jabones de glicerina neutros" }
     ]
   },
   {
-    "id": "sacos",
-    "name": "Sacos",
-    "description": "Sacos y blazers ejecutivos",
-    "image": "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "id": "limpieza-hogar",
+    "name": "Limpieza y Desinfección del Hogar",
+    "description": "Productos de limpieza para tu hogar",
+    "image": "https://www.cavallaro.com.py/userfiles/images/banners/banner-medio-411x330.jpg",
     "subcategories": [
       {
-        "id": "sacos-ejecutivos",
-        "name": "Ejecutivos",
-        "description": "Sacos para oficina"
+        "id": "limpiadores-concentrados",
+        "name": "Limpiadores Concentrados",
+        "description": "Limpiadores desinfectantes concentrados"
       },
       {
-        "id": "sacos-sport",
-        "name": "Sport",
-        "description": "Sacos casuales"
-      }
-    ]
-  },
-  {
-    "id": "calzados",
-    "name": "Calzados",
-    "description": "Zapatos de cuero y deportivos",
-    "image": "https://images.pexels.com/photos/1240892/pexels-photo-1240892.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "subcategories": [
-      {
-        "id": "calzados-formales",
-        "name": "Formales",
-        "description": "Zapatos de vestir"
+        "id": "detergentes-lavavajillas",
+        "name": "Detergentes Lavavajillas",
+        "description": "Detergentes para vajilla con fórmula concentrada"
       },
-      {
-        "id": "calzados-casuales",
-        "name": "Casuales",
-        "description": "Zapatos informales"
-      },
-      {
-        "id": "calzados-deportivos",
-        "name": "Deportivos",
-        "description": "Calzado deportivo"
-      }
-    ]
-  },
-  {
-    "id": "accesorios",
-    "name": "Accesorios",
-    "description": "Complementos para tu look",
-    "image": "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "subcategories": [
-      {
-        "id": "accesorios-cinturones",
-        "name": "Cinturones",
-        "description": "Cinturones de cuero"
-      },
-      {
-        "id": "accesorios-corbatas",
-        "name": "Corbatas",
-        "description": "Corbatas y moños"
-      },
-      {
-        "id": "accesorios-billeteras",
-        "name": "Billeteras",
-        "description": "Billeteras y carteras"
-      }
+      { "id": "desinfectantes", "name": "Desinfectantes", "description": "Productos desinfectantes para superficies" }
     ]
   }
 ]

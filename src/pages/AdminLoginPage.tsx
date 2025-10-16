@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
 import authService from '../services/authService';
 import { Lock, User } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
-interface AdminLoginPageProps {
-  onAdminLogin: () => void;
-  onNavigate: (page: string) => void;
-}
-
-const AdminLoginPage: React.FC<AdminLoginPageProps> = ({ onAdminLogin, onNavigate }) => {
+const AdminLoginPage: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,7 +16,7 @@ const AdminLoginPage: React.FC<AdminLoginPageProps> = ({ onAdminLogin, onNavigat
     const result = authService.login(email, password);
     if (result.success && result.user) {
       if (authService.isAdmin()) {
-        onAdminLogin();
+        navigate('/admin');
       } else {
         setError('No tienes permisos de administrador');
         authService.logout();
@@ -74,7 +71,7 @@ const AdminLoginPage: React.FC<AdminLoginPageProps> = ({ onAdminLogin, onNavigat
             </form>
 
             <div className="login-demo">
-              <p><button onClick={() => onNavigate('home')} className="link-button">Volver a la tienda</button></p>
+              <p><button onClick={() => navigate('/')} className="link-button">Volver a la tienda</button></p>
             </div>
           </div>
         </div>
