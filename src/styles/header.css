@@ -245,6 +245,10 @@
 .main-nav {
   background: var(--bg-light);
   border-top: 1px solid var(--border-color);
+  position: sticky;
+  top: 72px; /* sits below sticky header */
+  z-index: 900;
+  transition: transform .25s ease, opacity .2s ease;
 }
 
 .nav-list {
@@ -284,6 +288,12 @@
 
 .nav-list button:hover::after {
   width: 100%;
+}
+
+/* Hide-on-scroll behavior */
+.main-nav.nav-hidden {
+  transform: translateY(-100%);
+  opacity: 0.0;
 }
 
 @media (max-width: 968px) {

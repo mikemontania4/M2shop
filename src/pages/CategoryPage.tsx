@@ -14,6 +14,7 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
   const [selectedSubcategory, setSelectedSubcategory] = useState<string | null>(null);
   const [allCategories, setAllCategories] = useState<Category[]>([]);
   const [sortBy, setSortBy] = useState<string>('default');
+  const [filters, setFilters] = useState<{ priceMin?: number; priceMax?: number; featured?: boolean; inStock?: boolean; onSale?: boolean; }>({});
   const params = useParams();
   const navigate = useNavigate();
   const effectiveCategoryId = useMemo(() => {
@@ -60,6 +61,22 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
 
   const loadProducts = (catId: string, subcat: string | null, sort: string) => {
     let categoryProducts = productService.getProductsByCategory(catId, subcat || undefined);
+    // Apply filters
+    if (filters.priceMin !== undefined) {
+      categoryProducts = categoryProducts.filter(p => p.price >= (filters.priceMin as number));
+    }
+    if (filters.priceMax !== undefined) {
+      categoryProducts = categoryProducts.filter(p => p.price <= (filters.priceMax as number));
+    }
+    if (filters.featured) {
+      categoryProducts = categoryProducts.filter(p => p.featured);
+    }
+    if (filters.inStock) {
+      categoryProducts = categoryProducts.filter(p => p.stock > 0);
+    }
+    if (filters.onSale) {
+      categoryProducts = categoryProducts.filter(p => p.originalPrice > 0 && p.originalPrice > p.price);
+    }
 
     if (sort === 'price-asc') {
       categoryProducts = [...categoryProducts].sort((a, b) => a.price - b.price);
@@ -127,6 +144,7 @@ const CategoryPage: React.FC<{ categoryId?: string }> = ({ categoryId }) => {
                 selectedSubCategory={selectedSubcategory || undefined}
                 onCategorySelect={(catId) => handleCategoryTabClick(catId)}
                 onSubCategorySelect={(_catId, subId) => handleSubcategoryClick(subId)}
+                onApplyFilters={(f) => { setFilters(f); loadProducts(effectiveCategoryId, selectedSubcategory, sortBy); }}
               />
             </aside>
           )}
