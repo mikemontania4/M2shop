@@ -13,14 +13,16 @@ const HeaderUser: React.FC = () => {
         <>
           <button onClick={() => navigate('/profile')} className="btn-link">
             <User size={16} />
-            {user.name}
+            <span className="label">{user.name}</span>
           </button>
-          <button onClick={() => { logout(); navigate('/'); }} className="btn-link">Cerrar Sesión</button>
+          <button onClick={() => { logout(); navigate('/'); }} className="btn-link">
+            <span className="label">Cerrar Sesión</span>
+          </button>
         </>
       ) : (
         <button onClick={() => navigate('/login')} className="btn-link">
           <User size={16} />
-          Iniciar Sesión
+          <span className="label">Iniciar Sesión</span>
         </button>
       )}
     </div>
