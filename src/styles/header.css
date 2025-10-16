@@ -289,18 +289,11 @@
   @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 }
 
-@media (max-width: 640px) {
-  .header-top-content {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .header-main-content { grid-template-columns: 1fr; }
-
-  .search-form {
-    order: 3;
-    width: 100%;
-  }
-
-  .header-actions { width: 100%; justify-content: flex-end; }
+@media (max-width: 767px) {
+  /* Force single-line header row: logo | spacer | actions */
+  .header-main-content { grid-template-columns: auto 1fr auto; align-items:center; gap: 8px; }
+  .logo img { height: 28px; }
+  .header-user .btn-link .label { display: none; }
+  .cart-btn { padding: 6px; }
+  .search-form { grid-column: 1 / -1; width: 100%; margin-left: 0; margin-top: 6px; }
 }
