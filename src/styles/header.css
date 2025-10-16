@@ -237,8 +237,6 @@
 }
 
 .main-nav {
-  position: fixed;
-  left: 0;
   width: 100%;
   background: var(--bg-light);
   border-top: 1px solid var(--border-color);
@@ -286,10 +284,7 @@
 }
 
 /* Hide-on-scroll behavior */
-.main-nav.nav-hidden {
-  transform: translateY(-100%);
-  opacity: 0.0;
-}
+/* nav-hidden no-op when nav is in normal flow; left intentionally unused */
 
 .main-nav.scrolled {
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
@@ -300,19 +295,8 @@
     display: block;
   }
 
-  .main-nav {
-    display: none;
-  }
-
-  .main-nav.mobile-active {
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: var(--white);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  }
+  .main-nav { display: none; }
+  .main-nav.mobile-active { display: block; position: static; background: var(--white); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
 
   .nav-list {
     flex-direction: column;
@@ -325,6 +309,9 @@
     padding: 15px 20px;
     border-bottom: 1px solid var(--border-color);
   }
+
+  /* Hide departments hover menu on mobile; rely on MainNav */
+  .departments-menu { display: none; }
 }
 
 @media (max-width: 640px) {
