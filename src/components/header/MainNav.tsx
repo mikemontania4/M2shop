@@ -60,11 +60,32 @@ const MainNav: React.FC<MainNavProps> = ({ categories, mobileActive, onCloseMobi
   }, []);
   const isMobileActive = mobileActive || mobileActiveInternal;
 
+  // Desktop: inline under header in normal flow. Mobile: render as overlay panel.
+  const isDesktop = typeof window === 'undefined' ? true : window.innerWidth > 968;
+
+  if (!isDesktop) {
+    if (!isMobileActive) return null;
+    return (
+      <div className="mobile-nav-overlay" onClick={() => onCloseMobile?.()}>
+        <div className="mobile-nav-panel" onClick={(e) => e.stopPropagation()}>
+          <div className="mobile-nav-header">
+            <span>Categorías</span>
+            <button className="mobile-nav-close" onClick={() => onCloseMobile?.()}>✕</button>
+          </div>
+          <ul className="mobile-nav-list">
+            {cats.map((c) => (
+              <li key={c.id}>
+                <button className="mobile-nav-item" onClick={() => { navigate(`/${c.id}`); onCloseMobile?.(); }}>{c.name}</button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <nav
-      className={`main-nav ${isMobileActive ? 'mobile-active' : ''} ${hidden ? 'nav-hidden' : ''} ${scrolled ? 'scrolled' : ''}`}
-      style={{ top: `${offsetTop}px` }}
-    >
+    <nav className={`main-nav ${hidden ? 'nav-hidden' : ''} ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <ul className="nav-list">
           {cats.map((c) => (
