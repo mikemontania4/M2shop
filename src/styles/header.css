@@ -117,19 +117,7 @@
   cursor: pointer;
 }
 
-.logo h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  letter-spacing: 2px;
-}
-
-.logo p {
-  font-size: 0.75rem;
-  color: var(--accent-color);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
+.logo img { height: 36px; display:block; }
 
 .search-form { flex: 1; display:flex; max-width: 680px; border: 2px solid var(--border-color); border-radius: 25px; overflow: hidden; position: relative; margin-left: 8px; min-width: 0; }
 

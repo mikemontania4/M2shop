@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ChevronRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import productService, { Category, Subcategory } from '../services/productService';
 
@@ -52,6 +52,7 @@ const DepartmentsMenu: React.FC<DepartmentsMenuProps> = ({ categories }) => {
                 <button className="department-link" onClick={() => setExpandedCat(expandedCat === c.id ? null : c.id)}>
                   <span className="square-color" />
                   <span>{c.name}</span>
+                  {getSubcategories(c.id).length > 0 && <ChevronRight size={14} />}
                 </button>
                 {expandedCat === c.id && (
                   <div className="subcategory-panel">
