@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { Category } from '../../services/productService';
+import productService from '../../services/productService';
 
 interface MainNavProps {
-  categories: Category[];
+  categories?: Category[];
   mobileActive?: boolean;
   onCloseMobile?: () => void;
 }
@@ -14,6 +15,8 @@ const MainNav: React.FC<MainNavProps> = ({ categories, mobileActive, onCloseMobi
   const [scrolled, setScrolled] = useState(false);
   const [offsetTop, setOffsetTop] = useState<number>(0);
   const lastScroll = useRef<number>(0);
+  const [mobileActiveInternal, setMobileActiveInternal] = useState(false);
+  const [cats, setCats] = useState<Category[]>(categories ?? []);
 
   useEffect(() => {
     const measure = () => {
@@ -31,20 +34,40 @@ const MainNav: React.FC<MainNavProps> = ({ categories, mobileActive, onCloseMobi
       const goingDown = current > lastScroll.current;
       setScrolled(current > 0);
       // Hide only when scrolling down past header height and no mobile panel
-      setHidden(!mobileActive && goingDown && current > offsetTop + 20);
+      const anyMobileActive = mobileActive || mobileActiveInternal;
+      setHidden(!anyMobileActive && goingDown && current > offsetTop + 20);
       lastScroll.current = current;
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
-  }, [mobileActive, offsetTop]);
+  }, [mobileActive, mobileActiveInternal, offsetTop]);
+
+  useEffect(() => {
+    if (!categories || categories.length === 0) {
+      setCats(productService.getCategories());
+    } else {
+      setCats(categories);
+    }
+  }, [categories]);
+
+  useEffect(() => {
+    const handler = (e: Event) => {
+      const detail = (e as CustomEvent<boolean>).detail;
+      setMobileActiveInternal(!!detail);
+    };
+    window.addEventListener('nav-toggle', handler as EventListener);
+    return () => window.removeEventListener('nav-toggle', handler as EventListener);
+  }, []);
+  const isMobileActive = mobileActive || mobileActiveInternal;
+
   return (
     <nav
-      className={`main-nav ${mobileActive ? 'mobile-active' : ''} ${hidden ? 'nav-hidden' : ''} ${scrolled ? 'scrolled' : ''}`}
+      className={`main-nav ${isMobileActive ? 'mobile-active' : ''} ${hidden ? 'nav-hidden' : ''} ${scrolled ? 'scrolled' : ''}`}
       style={{ top: offsetTop }}
     >
       <div className="container">
         <ul className="nav-list">
-          {categories.map((c) => (
+          {cats.map((c) => (
             <li key={c.id}>
               <button onClick={() => { navigate(`/${c.id}`); onCloseMobile?.(); }}>{c.name}</button>
             </li>

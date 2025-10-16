@@ -245,7 +245,7 @@
 .main-nav {
   position: fixed;
   left: 0;
-  right: 0;
+  width: 100%;
   background: var(--bg-light);
   border-top: 1px solid var(--border-color);
   z-index: 900;
