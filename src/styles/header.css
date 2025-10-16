@@ -244,44 +244,12 @@
   transition: transform .25s ease, opacity .2s ease, box-shadow .2s ease;
 }
 
-.nav-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 15px 0;
-}
-
-.nav-list button {
-  background: none;
-  border: none;
-  color: var(--text-color);
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  padding: 5px 0;
-  position: relative;
-  transition: color 0.3s;
-}
-
-.nav-list button:hover {
-  color: var(--accent-color);
-}
-
-.nav-list button::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--accent-color);
-  transition: width 0.3s;
-}
-
-.nav-list button:hover::after {
-  width: 100%;
-}
+.nav-list { list-style:none; display:flex; justify-content:center; align-items:center; margin:0; padding:0; gap: 8px; flex-wrap: wrap; }
+.nav-item { position: relative; }
+.nav-link { display:block; padding: 12px 14px; font-size:.95rem; font-weight:600; color: var(--text-color); text-transform: uppercase; letter-spacing:.5px; transition: all .2s; position: relative; }
+.nav-link::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 0; height: 3px; background: var(--accent-color); transition: width .25s; }
+.nav-link:hover { color: var(--accent-color); }
+.nav-link:hover::after { width: 80%; }
 
 /* Hide-on-scroll behavior */
 /* nav-hidden no-op when nav is in normal flow; left intentionally unused */
@@ -291,16 +259,13 @@
 }
 
 @media (max-width: 968px) {
-  .mobile-menu-btn {
-    display: block;
-  }
+  .mobile-menu-btn { display: none; }
 
-  .main-nav { display: none; }
+  .main-nav { display: block; }
 
-  .nav-list {
-    flex-direction: column;
-    gap: 0;
-  }
+  .nav-list { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; gap: 8px; padding: 0 12px; -webkit-overflow-scrolling: touch; }
+  .nav-list::-webkit-scrollbar { display: none; }
+  .nav-list button { white-space: nowrap; padding: 10px 12px; font-size: .9rem; }
 
   .nav-list button, .coverage-link {
     width: 100%;
