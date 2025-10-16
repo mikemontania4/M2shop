@@ -50,6 +50,9 @@ const Header: React.FC = () => {
               <CartButton />
             </div>
           </div>
+          <div className="header-row-mobile-search">
+            <SearchBar variant="mobile" />
+          </div>
         </div>
       </div>
     </header>

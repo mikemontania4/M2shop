@@ -5,9 +5,10 @@ import { useNavigate } from 'react-router-dom';
 
 interface SearchBarProps {
   className?: string;
+  variant?: 'desktop' | 'mobile';
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ className }) => {
+const SearchBar: React.FC<SearchBarProps> = ({ className, variant = 'desktop' }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [suggestions, setSuggestions] = useState<Product[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -44,7 +45,11 @@ const SearchBar: React.FC<SearchBarProps> = ({ className }) => {
   }, []);
 
   return (
-    <form className={`search-form ${className || ''}`} onSubmit={handleSearch} ref={searchRef}>
+    <form
+      className={`search-form ${variant === 'mobile' ? 'search-form-mobile' : ''} ${className || ''}`}
+      onSubmit={handleSearch}
+      ref={searchRef}
+    >
       <input
         type="text"
         placeholder="Buscar productos..."
