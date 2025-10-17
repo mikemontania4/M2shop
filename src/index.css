@@ -1,6 +1,15 @@
 /* Import CSS Modules */
 @import './styles/base.css';
-@import './styles/header.css';
+@import './styles/TopBar.css'; 
+@import './styles/header.css'; 
+@import './styles/headerDepartments.css'; 
+@import "./styles/CartButton.css"; 
+@import "./styles/HeaderLogo.css";
+@import "./styles/HeaderUser.css";
+@import "./styles/MainNav.css";
+@import "./styles/MobileSearchBar.css"; 
+@import "./styles/SearchBar.css";
+
 @import './styles/footer.css';
 @import './styles/products.css';
 @import './styles/home.css';

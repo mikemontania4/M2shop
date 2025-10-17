@@ -5,8 +5,7 @@ import { useEffect, useRef, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import type { Category } from "../../services/productService"
 import productService from "../../services/productService"
-import "../../styles/components/MainNav.css"
-
+ 
 interface MainNavProps {
   categories?: Category[]
   mobileActive?: boolean

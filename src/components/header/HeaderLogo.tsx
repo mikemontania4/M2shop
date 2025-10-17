@@ -2,8 +2,7 @@
 
 import type React from "react"
 import { useNavigate } from "react-router-dom"
-import "../../styles/components/HeaderLogo.css"
-
+ 
 const HeaderLogo: React.FC = () => {
   const navigate = useNavigate()
   return (

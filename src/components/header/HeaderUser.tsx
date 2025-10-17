@@ -4,8 +4,7 @@ import type React from "react"
 import { User } from "lucide-react"
 import { useNavigate } from "react-router-dom"
 import { useApp } from "../../contexts/AppContext"
-import "../../styles/components/HeaderUser.css"
-
+ 
 const HeaderUser: React.FC = () => {
   const { user, logout } = useApp()
   const navigate = useNavigate()

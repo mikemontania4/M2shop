@@ -5,8 +5,7 @@ import { useEffect, useRef, useState } from "react"
 import { Search } from "lucide-react"
 import productService, { type Product } from "../../services/productService"
 import { useNavigate } from "react-router-dom"
-import "../../styles/components/SearchBar.css"
-
+ 
 interface SearchBarProps {
   className?: string
 }

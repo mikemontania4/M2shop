@@ -4,8 +4,7 @@ import type React from "react"
 import { ShoppingCart } from "lucide-react"
 import { useApp } from "../../contexts/AppContext"
 import { useNavigate } from "react-router-dom"
-import "../../styles/components/CartButton.css"
-
+ 
 const CartButton: React.FC = () => {
   const { cartCount } = useApp()
   const navigate = useNavigate()
