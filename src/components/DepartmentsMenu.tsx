@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ChevronRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import productService, { Category, Subcategory } from '../services/productService';
 
@@ -10,8 +10,18 @@ interface DepartmentsMenuProps {
 const DepartmentsMenu: React.FC<DepartmentsMenuProps> = ({ categories }) => {
   const [open, setOpen] = useState(false);
   const [expandedCat, setExpandedCat] = useState<string | null>(null);
+  const [hoverCat, setHoverCat] = useState<string | null>(null);
+  const [isHoverable, setIsHoverable] = useState<boolean>(true);
   const menuRef = useRef<HTMLDivElement | null>(null);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    // Determine if the device supports hover (desktop) or not (mobile)
+    if (typeof window !== 'undefined' && 'matchMedia' in window) {
+      const mq = window.matchMedia('(hover: hover) and (pointer: fine)');
+      setIsHoverable(!!mq.matches);
+    }
+  }, []);
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -37,42 +47,72 @@ const DepartmentsMenu: React.FC<DepartmentsMenuProps> = ({ categories }) => {
     return productService.getSubcategoriesByCategory(catId);
   };
 
+  const activeCat = (isHoverable ? hoverCat : expandedCat) || null;
+
   return (
-    <div className="departments-menu" ref={menuRef}>
-      <button className="departments-toggle" onClick={() => setOpen(!open)}>
+    <div
+      className="departments-menu"
+      ref={menuRef}
+      onMouseEnter={() => { if (isHoverable) setOpen(true); }}
+      onMouseLeave={() => { if (isHoverable) { setOpen(false); setHoverCat(null); } }}
+    >
+      <button className="departments-toggle" onClick={() => { if (!isHoverable) setOpen(!open); }}>
         <span className="departments-icon" />
         <span>Categorías</span>
         <ChevronDown size={16} />
       </button>
       {open && (
         <div className="departments-dropdown">
-          <ul className="departments-list">
-            {categories.map((c) => (
-              <li key={c.id} className="department-item">
-                <button className="department-link" onClick={() => setExpandedCat(expandedCat === c.id ? null : c.id)}>
-                  <span className="square-color" />
-                  <span>{c.name}</span>
-                </button>
-                {expandedCat === c.id && (
-                  <div className="subcategory-panel">
-                    <div className="subcategory-title">{c.name}</div>
-                    <ul className="subcategory-listing">
-                      {getSubcategories(c.id).map((s) => (
-                        <li key={s.id}>
-                          <button className="subcategory-link" onClick={() => handleSubcategoryClick(s.id)}>{s.name}</button>
-                        </li>
-                      ))}
-                      <li>
-                        <button className="subcategory-link view-all" onClick={() => handleCategoryClick(c.id)}>
-                          Ver todo en "{c.name}"
+          <div className="departments-columns">
+            <ul className="departments-list">
+              {categories.map((c) => (
+                <li
+                  key={c.id}
+                  className={`department-item ${activeCat === c.id ? 'active' : ''}`}
+                  onMouseEnter={() => isHoverable && setHoverCat(c.id)}
+                >
+                  <button
+                    className="department-link"
+                    onClick={() => { if (!isHoverable) setExpandedCat(expandedCat === c.id ? null : c.id); }}
+                    onMouseEnter={() => isHoverable && setHoverCat(c.id)}
+                  >
+                    <span className="square-color" />
+                    <span>{c.name}</span>
+                    {getSubcategories(c.id).length > 0 && <ChevronRight size={14} />}
+                  </button>
+                </li>
+              ))}
+            </ul>
+            <div className="departments-subpanel">
+              {activeCat && (
+                <div className="subcategory-panel">
+                  <div className="subcategory-title">
+                    {categories.find(cc => cc.id === activeCat)?.name}
+                  </div>
+                  <ul className="subcategory-listing">
+                    <li>
+                      <button
+                        className="subcategory-link view-all"
+                        onMouseDown={() => handleCategoryClick(activeCat)}
+                      >
+                        Todos
+                      </button>
+                    </li>
+                    {getSubcategories(activeCat).map((s) => (
+                      <li key={s.id}>
+                        <button
+                          className="subcategory-link"
+                          onMouseDown={() => handleSubcategoryClick(s.id)}
+                        >
+                          {s.name}
                         </button>
                       </li>
-                    </ul>
-                  </div>
-                )}
-              </li>
-            ))}
-          </ul>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       )}
     </div>

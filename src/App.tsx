@@ -1,6 +1,7 @@
 import { AppProvider, useApp } from './contexts/AppContext';
 import { Routes, Route, Outlet } from 'react-router-dom';
 import Header from './components/Header';
+import MainNav from './components/header/MainNav';
 import TopBar from './components/TopBar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -49,6 +50,7 @@ function Layout() {
     <div className="app">
       <TopBar />
       <Header />
+      <MainNav />
       <main>
         <Outlet />
       </main>

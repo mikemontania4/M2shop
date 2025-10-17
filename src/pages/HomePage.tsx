@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import productService, { Product, Category } from '../services/productService';
 import bannerService, { Banner } from '../services/BannerService';
 import ProductCard from '../components/ProductCard';
+import ProductCarousel from '../components/ProductCarousel';
+import Newsletter from '../components/Newsletter';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useApp } from '../contexts/AppContext';
 import { useNavigate } from 'react-router-dom';
@@ -9,13 +11,16 @@ import { useNavigate } from 'react-router-dom';
 const HomePage: React.FC = () => {
   const { addToCart } = useApp();
   const [featuredProducts, setFeaturedProducts] = useState<Product[]>([]);
+  const [newProducts, setNewProducts] = useState<Product[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
   const [banners, setBanners] = useState<Banner[]>([]);
   const [currentSlide, setCurrentSlide] = useState(0);
   const navigate = useNavigate();
 
   useEffect(() => {
-    setFeaturedProducts(productService.getFeaturedProducts());
+    const all = productService.getProducts();
+    setFeaturedProducts(all.filter(p => p.featured));
+    setNewProducts([...all].sort((a,b) => b.id - a.id).slice(0, 10));
     setCategories(productService.getCategories());
     setBanners(bannerService.getBanners());
   }, []);
@@ -48,6 +53,14 @@ const HomePage: React.FC = () => {
   const handleProductClick = (productId: number) => {
     navigate(`/producto/${productId}`);
   };
+
+  const categorizedProducts = useMemo(() => {
+    const byCat: Record<string, Product[]> = {};
+    categories.forEach((c) => {
+      byCat[c.id] = productService.getProductsByCategory(c.id).slice(0, 12);
+    });
+    return byCat;
+  }, [categories]);
 
   return (
     <div className="home-page">
@@ -105,21 +118,35 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      <section className="featured-section">
-        <div className="container">
-          <h2 className="section-title">Productos Destacados</h2>
-          <div className="products-grid">
-            {featuredProducts.map((product) => (
-              <ProductCard
-                key={product.id}
-                product={product}
-                onProductClick={handleProductClick}
-                onAddToCart={handleAddToCart}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+      <ProductCarousel
+        title="Novedades"
+        products={newProducts}
+        slideBy={1}
+        autoPlay
+        autoPlayIntervalMs={4500}
+        onProductClick={handleProductClick}
+        onAddToCart={handleAddToCart}
+      />
+
+      <ProductCarousel
+        title="Destacados"
+        products={featuredProducts}
+        slideBy={1}
+        onProductClick={handleProductClick}
+        onAddToCart={handleAddToCart}
+      />
+
+      {/* Sliders por Categoría */}
+      {categories.map((cat) => (
+        <ProductCarousel
+          key={cat.id}
+          title={cat.name}
+          products={categorizedProducts[cat.id] || []}
+          slideBy={1}
+          onProductClick={handleProductClick}
+          onAddToCart={handleAddToCart}
+        />
+      ))}
 
       <section className="promo-section">
         <div className="container">
@@ -143,6 +170,8 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <Newsletter />
     </div>
   );
 };

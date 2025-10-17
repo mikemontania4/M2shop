@@ -1,164 +1,78 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { ShoppingCart, User, Search, Menu, X, MapPin } from 'lucide-react';
-import { useApp } from '../contexts/AppContext';
-import productService, { Category,Product } from '../services/productService';
-import { useNavigate } from 'react-router-dom'; 
-import DepartmentsMenu from './DepartmentsMenu';
+"use client"
+
+import React, { useState, useEffect } from "react"
+import { Menu } from "lucide-react"
+import productService, { type Category } from "../services/productService"
+import DepartmentsMenu from "./DepartmentsMenu"
+import HeaderLogo from "./header/HeaderLogo"
+import SearchBar from "./header/SearchBar"
+import HeaderUser from "./header/HeaderUser"
+import CartButton from "./header/CartButton"
 
 const Header: React.FC = () => {
-  const { user, cartCount, logout } = useApp();
-  const [searchQuery, setSearchQuery] = useState('');
-  const [suggestions, setSuggestions] = useState<Product[]>([]);
-  const [showSuggestions, setShowSuggestions] = useState(false);
-  const searchRef = useRef<HTMLFormElement | null>(null);
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [navCategories, setNavCategories] = useState<Category[]>([]);
-  const navigate = useNavigate();
-
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    const params = new URLSearchParams();
-    if (searchQuery.trim()) params.set('q', searchQuery.trim());
-    navigate(`/catalogo${params.toString() ? `?${params.toString()}` : ''}`);
-    setShowMobileMenu(false);
-    setShowSuggestions(false);
-  };
-  useEffect(() => {
-    if (searchQuery.trim().length === 0) {
-      setSuggestions([]);
-      setShowSuggestions(false);
-      return;
-    }
-    const all = productService.searchProducts(searchQuery.trim());
-    setSuggestions(all.slice(0, 6));
-    setShowSuggestions(true);
-  }, [searchQuery]);
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
-        setShowSuggestions(false);
-      }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
-
-  const handleLogout = () => {
-    logout();
-    navigate('/');
-  };
+  const [showMobileMenu, setShowMobileMenu] = useState(false)
+  const [navCategories, setNavCategories] = useState<Category[]>([])
 
   // Load categories for nav
   React.useEffect(() => {
-    setNavCategories(productService.getCategories());
-  }, []);
+    setNavCategories(productService.getCategories())
+  }, [])
+
+  useEffect(() => {
+    const handler = (e: Event) => {
+      const detail = (e as CustomEvent<boolean>).detail
+      setShowMobileMenu(detail)
+    }
+    window.addEventListener("nav-toggle", handler as EventListener)
+    return () => window.removeEventListener("nav-toggle", handler as EventListener)
+  }, [])
+
+  const toggleMobileMenu = () => {
+    const next = !showMobileMenu
+    setShowMobileMenu(next)
+    window.dispatchEvent(new CustomEvent("nav-toggle", { detail: next }))
+  }
 
   return (
-    <header className="header">
-      <div className="header-top">
-        <div className="container">
-          <div className="header-top-content">
-            <div className="header-contact">
-              <span>Tel: (021) 123-4567</span>
-              <span>Email: info@cavallaro.com.py</span>
-            <button className="coverage-link" onClick={() => navigate('/mapa-de-cobertura')}>
-              <MapPin size={14} /> Mapa de Cobertura
-            </button>
-            </div>
-            <div className="header-user">
-              {user ? (
-                <>
-                  <button onClick={() => navigate('/profile')} className="btn-link">
-                    <User size={16} />
-                    {user.name}
-                  </button>
-                  <button onClick={handleLogout} className="btn-link">Cerrar Sesión</button>
-                </>
-              ) : (
-                <button onClick={() => navigate('/login')} className="btn-link">
-                  <User size={16} />
-                  Iniciar Sesión
-                </button>
-              )}
+    <>
+      <header className="header">
+        <div className="header-main">
+          <div className="container">
+            <div className="header-main-content">
+              <div className="header-left">
+                <HeaderLogo />
+                <DepartmentsMenu categories={navCategories} />
+              </div>
+
+              <SearchBar />
+
+              <div className="header-actions">
+                <HeaderUser />
+                <CartButton />
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="header-main">
-        <div className="container">
-          <div className="header-main-content">
-            <button
-              className="mobile-menu-btn"
-              onClick={() => setShowMobileMenu(!showMobileMenu)}
-            >
-              {showMobileMenu ? <X size={24} /> : <Menu size={24} />}
-            </button>
-
-            <div className="logo" onClick={() => navigate('/') }>
-              <h1>CAVALLARO</h1>
-              <p>Elegancia Masculina</p>
-            </div>
-
-            <DepartmentsMenu categories={navCategories} />
-
-            <form className="search-form" onSubmit={handleSearch} ref={searchRef}>
-              <input
-                type="text"
-                placeholder="Buscar productos..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                onFocus={() => { if (suggestions.length > 0) setShowSuggestions(true); }}
-              />
-              <button type="submit">
-                <Search size={20} />
-              </button>
-            {showSuggestions && suggestions.length > 0 && (
-                <div className="search-suggestions">
-                  <ul>
-                    {suggestions.map((p) => (
-                      <li key={p.id}>
-                        <button
-                          className="suggestion-item"
-                          onClick={() => {
-                            navigate(`/producto/${p.id}`);
-                            setShowSuggestions(false);
-                            setSearchQuery('');
-                          }}
-                        >
-                          <img src={p.image} alt={p.name} />
-                          <div className="suggestion-info">
-                            <span className="suggestion-name">{p.name}</span>
-                            <span className="suggestion-sub">{p.subcategory || p.category}</span>
-                          </div>
-                        </button>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </form>
-
-            <button className="cart-btn" onClick={() => navigate('/carrito')}>
-              <ShoppingCart size={24} />
-              {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
-            </button>
+        <div className="header-mobile-line2">
+          <div className="container">
+            <HeaderLogo />
+            <HeaderUser />
           </div>
         </div>
-      </div>
+      </header>
 
-      <nav className={`main-nav ${showMobileMenu ? 'mobile-active' : ''}`}>
+      <div className="header-search-sticky">
         <div className="container">
-          <ul className="nav-list">
-            {navCategories.map((c) => (
-              <li key={c.id}><button onClick={() => { navigate(`/${c.id}`); setShowMobileMenu(false); }}>{c.name}</button></li>
-            ))}
-          </ul>
+          <button className="mobile-menu-btn" onClick={toggleMobileMenu} aria-label="Toggle menu">
+            <Menu size={24} />
+          </button>
+          <SearchBar />
+          <CartButton />
         </div>
-      </nav>
-    </header>
-  );
-};
+      </div>
+    </>
+  )
+}
 
-export default Header;
+export default Header

@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import productService, { Product } from '../services/productService';
 import { useApp } from '../contexts/AppContext';
-import { ShoppingCart, Check } from 'lucide-react';
+import { ShoppingCart, Check, ChevronLeft, ChevronRight } from 'lucide-react';
+import ProductCarousel from '../components/ProductCarousel';
 
 const ProductDetailPage: React.FC<{ productId?: number }> = ({ productId }) => {
   const [product, setProduct] = useState<Product | null>(null);
@@ -40,6 +41,14 @@ const ProductDetailPage: React.FC<{ productId?: number }> = ({ productId }) => {
     }
   };
 
+  const relatedProducts = useMemo(() => {
+    if (!product) return [] as Product[];
+    return productService
+      .getProductsByCategory(product.category)
+      .filter((p) => p.id !== product.id)
+      .slice(0, 12);
+  }, [product]);
+
   if (!product) {
     return <div className="container"><p>Producto no encontrado</p></div>;
   }
@@ -58,6 +67,16 @@ const ProductDetailPage: React.FC<{ productId?: number }> = ({ productId }) => {
               <img src={product.images[selectedImage]} alt={product.name} />
               {hasDiscount && (
                 <span className="discount-badge">-{discountPercentage}%</span>
+              )}
+              {product.images.length > 1 && (
+                <>
+                  <button className="image-nav-btn prev" onClick={() => setSelectedImage((i) => Math.max(0, i - 1))}>
+                    <ChevronLeft size={18} />
+                  </button>
+                  <button className="image-nav-btn next" onClick={() => setSelectedImage((i) => Math.min(product.images.length - 1, i + 1))}>
+                    <ChevronRight size={18} />
+                  </button>
+                </>
               )}
             </div>
             {product.images.length > 1 && (
@@ -175,6 +194,25 @@ const ProductDetailPage: React.FC<{ productId?: number }> = ({ productId }) => {
             </div>
           </div>
         </div>
+        <div className="product-tabs">
+          <div className="tab-list">
+            <button className="tab-btn active">Descripción</button>
+            <button className="tab-btn">Composición</button>
+            <button className="tab-btn">Cuidados</button>
+          </div>
+          <div className="tab-panel">
+            <p>{product.descripcion || product.description}</p>
+          </div>
+        </div>
+
+        <ProductCarousel
+          title="Productos relacionados"
+          products={relatedProducts}
+          slideBy={1}
+          autoPlay
+          autoPlayIntervalMs={5500}
+          onAddToCart={(p, q) => addToCart(p, q, p.sizes[0], p.colors[0])}
+        />
       </div>
     </div>
   );
