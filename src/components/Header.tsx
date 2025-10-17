@@ -7,6 +7,7 @@ import HeaderLogo from "./header/HeaderLogo"
 import SearchBar from "./header/SearchBar"
 import HeaderUser from "./header/HeaderUser"
 import CartButton from "./header/CartButton"
+import MobileSearchBar from "./header/MobileSearchBar"
 
 const Header: React.FC = () => {
   const [navCategories, setNavCategories] = useState<Category[]>([])
@@ -18,7 +19,6 @@ const Header: React.FC = () => {
 
   return (
     <>
-
       <header className="header">
         <div className="header-main">
           <div className="container">
@@ -45,8 +45,8 @@ const Header: React.FC = () => {
           </div>
         </div>
       </header>
-           
-
+            
+      <MobileSearchBar />
     </>
   )
 }
