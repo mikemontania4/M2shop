@@ -160,7 +160,28 @@
 
 @media (max-width: 768px) {
   .hero-slider {
-    height: 350px;
+    height: 250px; /* Reduced height for better mobile viewing */
+  }
+
+  .slider-btn {
+    padding: 10px;
+  }
+
+  .slider-btn.prev {
+    left: 10px;
+  }
+
+  .slider-btn.next {
+    right: 10px;
+  }
+
+  .slider-dots {
+    bottom: 10px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
   }
 
   .slide-content h2 {
@@ -174,5 +195,16 @@
   /* Adjusted mobile category card height */
   .category-image {
     height: 220px;
+  }
+}
+
+/* Added extra small mobile breakpoint for very small screens */
+@media (max-width: 480px) {
+  .hero-slider {
+    height: 200px; /* Even smaller for very small screens */
+  }
+
+  .slider-btn {
+    padding: 8px;
   }
 }

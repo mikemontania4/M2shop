@@ -588,27 +588,95 @@
 
 /* ============================================
    MOBILE BREAKPOINT (max-width: 767px)
-   4 LINES LAYOUT
+   4 LINES LAYOUT - REORDERED
    ============================================ */
 @media (max-width: 767px) {
-  /* TopBar remains not sticky - scrolls up */
-  .top-bar {
-    position: relative;
+  /* Mobile layout reordering wrapper with flexbox */
+  .mobile-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    background: var(--white);
   }
 
-  /* Header is NOT sticky on mobile - scrolls up */
+  /* Header contains line 1 (sticky search) and line 2 (logo+user) */
   .header {
+    order: 1;
     position: relative;
     top: auto;
     box-shadow: none;
   }
 
-  /* Hide header-main on mobile */
+  /* TopBar comes second on mobile */
+  .top-bar {
+    order: 2;
+    position: relative;
+  }
+
+  /* MainNav comes last on mobile */
+  .main-nav {
+    order: 3;
+    position: relative;
+    top: auto;
+  }
+
+  /* Hide desktop header-main on mobile */
   .header-main {
     display: none;
   }
 
-  /* Line 2: Logo (left) + HeaderUser (right) - NOT STICKY */
+  /* Line 1 (FIXED): Menu button + SearchBar + CartButton */
+  .header-search-sticky {
+    display: block;
+    position: relative;
+    width: 100%;
+    background: var(--white);
+    z-index: 1100;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-search-sticky .container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .header-search-sticky .mobile-menu-btn {
+    display: flex;
+    flex-shrink: 0;
+    padding: 4px;
+  }
+
+  /* Adjust search form for mobile to fit properly with reduced padding */
+  .header-search-sticky .search-form {
+    flex: 1;
+    margin: 0;
+    max-width: none;
+    min-width: 0;
+    border-radius: 20px;
+    border-width: 1px;
+  }
+
+  .header-search-sticky .search-form input {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+    min-width: 0;
+  }
+
+  .header-search-sticky .search-form button {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+
+  .header-search-sticky .cart-btn {
+    flex-shrink: 0;
+    padding: 6px;
+  }
+
+  /* Line 2: Logo (left) + HeaderUser (right) - NOT STICKY, scrolls up */
   .header-mobile-line2 {
     display: block;
     padding: 12px 0;
@@ -637,86 +705,31 @@
     display: block;
   }
 
-  /* Line 3: Menu button + SearchBar + CartButton - THIS IS STICKY AND STAYS AT TOP */
-  .header-search-sticky {
-    position: sticky;
-    top: 0;
-    background: var(--white);
-    z-index: 1000;
-    padding: 10px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .header-search-sticky .container {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .header-search-sticky .mobile-menu-btn {
-    display: flex;
-    flex-shrink: 0;
-    padding: 4px;
-  }
-
-  /* Adjust search form for mobile to fit properly */
-  .header-search-sticky .search-form {
-    flex: 1;
-    margin: 0;
-    max-width: none;
-    min-width: 0;
-    border-radius: 20px;
-  }
-
-  .header-search-sticky .search-form input {
-    padding: 8px 12px;
-    font-size: 0.875rem;
-    min-width: 0;
-  }
-
-  .header-search-sticky .search-form button {
-    padding: 8px 12px;
-  }
-
-  .header-search-sticky .cart-btn {
-    flex-shrink: 0;
-    padding: 6px;
-  }
-
   /* Hide user label on mobile */
   .header-user .btn-link .label {
     display: none;
   }
+}
 
-  /* Line 4: MainNav - horizontal scrollable, NOT STICKY */
-  .main-nav {
-    position: relative;
-    top: auto;
+/* Added extra small mobile breakpoint for better search bar fit */
+@media (max-width: 480px) {
+  .header-search-sticky .search-form input {
+    padding: 6px 8px;
+    font-size: 0.75rem;
   }
 
-  .nav-list {
-    justify-content: flex-start;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    gap: 8px;
-    padding: 8px 12px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
-
-  .nav-list::-webkit-scrollbar {
-    display: none;
-  }
-
-  .nav-link {
-    white-space: nowrap;
-    padding: 10px 12px;
-    font-size: 0.9rem;
+  .header-search-sticky .search-form button {
+    padding: 6px 8px;
+    font-size: 0.8rem;
   }
 }
 
 /* Hide mobile-specific elements on desktop */
 @media (min-width: 768px) {
+  .mobile-header-wrapper {
+    position: relative;
+  }
+
   .header-mobile-line2 {
     display: none;
   }
