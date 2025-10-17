@@ -99,8 +99,7 @@ const HomePage: React.FC = () => {
 
       <section className="categories-section">
         <div className="container">
-          <h2 className="section-title">Categorías</h2>
-          <div className="categories-grid">
+           <div className="categories-grid">
             {categories.map((category) => (
               <div
                 key={category.id}

@@ -5,22 +5,50 @@
   box-sizing: border-box;
 }
 
+/* Updated to use Cavallaro color palette */
 :root {
-  --primary-color: #111111; /* cercano a cavallaro (negro) */
-  --secondary-color: #222222;
-  --accent-color: #bfa06a; /* dorado elegante */
-  --text-color: #222222;
-  --text-light: #6b7280;
+  /* Primary Colors - Red */
+  --primary-color: #c22622;
+  --primary-color-d4: #c22622;
+  --primary-color-d10: #c22622;
+  --primary-color-l6: #c22622;
+  --primary-color-l8: #c22622;
+  --primary-color-l10: #c22622;
+  --primary-color-l36: #ffddbb;
+  --primary-color-l44: #fff1e3;
+
+  /* Secondary Colors - Dark Gray/Black */
+  --secondary-color: #201f1f;
+  --secondary-color-d4: #161515;
+  --secondary-color-d10: #060606;
+  --secondary-color-l10: #3a3838;
+
+  /* Tertiary Colors - Medium Gray */
+  --tertiary-color: #4d4d4d;
+  --tertiary-color-d4: #434343;
+  --tertiary-color-d10: #343434;
+  --tertiary-color-l10: #676767;
+
+  /* Quaternary Colors - Blue */
+  --quaternary-color: #0063d1;
+  --quaternary-color-d4: #0059bd;
+  --quaternary-color-d10: #004b9e;
+  --quaternary-color-l10: #057bff;
+
+  /* Legacy aliases for backward compatibility */
+  --accent-color: var(--primary-color);
+  --text-color: var(--secondary-color);
+  --text-light: var(--tertiary-color-l10);
   --border-color: #e5e7eb;
   --bg-light: #f7f7f7;
   --white: #ffffff;
   --success: #16a34a;
   --error: #dc2626;
-  --info: #2563eb;
+  --info: var(--quaternary-color);
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-color);
   line-height: 1.6;
   background-color: var(--white);
@@ -55,7 +83,7 @@ body {
 .btn-primary:hover {
   background: var(--accent-color);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn-secondary {
@@ -106,7 +134,7 @@ body {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   display: block;
   width: 80px;
   height: 3px;
@@ -195,15 +223,21 @@ body {
   background: var(--white);
   color: var(--text-color);
   border-left: 4px solid var(--accent-color);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   padding: 12px 16px;
   border-radius: 8px;
   animation: slideIn 0.25s ease-out;
 }
 
-.toast.success { border-left-color: var(--success); }
-.toast.error { border-left-color: var(--error); }
-.toast.info { border-left-color: var(--info); }
+.toast.success {
+  border-left-color: var(--success);
+}
+.toast.error {
+  border-left-color: var(--error);
+}
+.toast.info {
+  border-left-color: var(--info);
+}
 
 @keyframes slideIn {
   from {
