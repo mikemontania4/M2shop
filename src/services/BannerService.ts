@@ -5,6 +5,7 @@ export interface Banner {
   title: string;
   subtitle: string;
   image: string;
+    url: string; 
   active: boolean;
   order: number;
 }

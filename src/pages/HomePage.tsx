@@ -1,66 +1,72 @@
-import React, { useEffect, useMemo, useState } from 'react';
-import productService, { Product, Category } from '../services/productService';
-import bannerService, { Banner } from '../services/BannerService';
-import ProductCard from '../components/ProductCard';
-import ProductCarousel from '../components/ProductCarousel';
-import Newsletter from '../components/Newsletter';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { useApp } from '../contexts/AppContext';
-import { useNavigate } from 'react-router-dom';
+"use client"
+
+import type React from "react"
+import { useEffect, useMemo, useState } from "react"
+import productService, { type Product, type Category } from "../services/productService"
+import bannerService, { type Banner } from "../services/BannerService"
+import ProductCarousel from "../components/ProductCarousel"
+import Newsletter from "../components/Newsletter"
+import { ChevronLeft, ChevronRight } from "lucide-react"
+import { useApp } from "../contexts/AppContext"
+import { useNavigate } from "react-router-dom"
 
 const HomePage: React.FC = () => {
-  const { addToCart } = useApp();
-  const [featuredProducts, setFeaturedProducts] = useState<Product[]>([]);
-  const [newProducts, setNewProducts] = useState<Product[]>([]);
-  const [categories, setCategories] = useState<Category[]>([]);
-  const [banners, setBanners] = useState<Banner[]>([]);
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const navigate = useNavigate();
+  const { addToCart } = useApp()
+  const [featuredProducts, setFeaturedProducts] = useState<Product[]>([])
+  const [newProducts, setNewProducts] = useState<Product[]>([])
+  const [categories, setCategories] = useState<Category[]>([])
+  const [banners, setBanners] = useState<Banner[]>([])
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const navigate = useNavigate()
 
   useEffect(() => {
-    const all = productService.getProducts();
-    setFeaturedProducts(all.filter(p => p.featured));
-    setNewProducts([...all].sort((a,b) => b.id - a.id).slice(0, 10));
-    setCategories(productService.getCategories());
-    setBanners(bannerService.getBanners());
-  }, []);
+    const all = productService.getProducts()
+    setFeaturedProducts(all.filter((p) => p.featured))
+    setNewProducts([...all].sort((a, b) => b.id - a.id).slice(0, 10))
+    setCategories(productService.getCategories())
+    setBanners(bannerService.getBanners())
+  }, [])
 
   useEffect(() => {
     if (banners.length > 0) {
       const interval = setInterval(() => {
-        setCurrentSlide((prev) => (prev + 1) % banners.length);
-      }, 5000);
-      return () => clearInterval(interval);
+        setCurrentSlide((prev) => (prev + 1) % banners.length)
+      }, 5000)
+      return () => clearInterval(interval)
     }
-  }, [banners]);
+  }, [banners])
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % banners.length);
-  };
+    setCurrentSlide((prev) => (prev + 1) % banners.length)
+  }
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + banners.length) % banners.length);
-  };
+    setCurrentSlide((prev) => (prev - 1 + banners.length) % banners.length)
+  }
 
   const handleAddToCart = (product: Product, quantity: number) => {
-    addToCart(product, quantity, product.sizes[0], product.colors[0]);
-  };
+    addToCart(product, quantity, product.sizes[0], product.colors[0])
+  }
 
   const handleCategoryClick = (categoryId: string) => {
-    navigate(`/${categoryId}`);
-  };
+    navigate(`/${categoryId}`)
+  }
 
   const handleProductClick = (productId: number) => {
-    navigate(`/producto/${productId}`);
-  };
+    navigate(`/producto/${productId}`)
+  }
+
+  const handleBannerClick = (url: string) => {
+    navigate(url)
+  }
 
   const categorizedProducts = useMemo(() => {
-    const byCat: Record<string, Product[]> = {};
+    const byCat: Record<string, Product[]> = {}
     categories.forEach((c) => {
-      byCat[c.id] = productService.getProductsByCategory(c.id).slice(0, 12);
-    });
-    return byCat;
-  }, [categories]);
+      byCat[c.id] = productService.getProductsByCategory(c.id).slice(0, 12)
+    })
+    return byCat
+  }, [categories])
 
   return (
     <div className="home-page">
@@ -69,15 +75,10 @@ const HomePage: React.FC = () => {
           {banners.map((banner, index) => (
             <div
               key={index}
-              className={`slide ${index === currentSlide ? 'active' : ''}`}
+              className={`slide ${index === currentSlide ? "active" : ""}`}
               style={{ backgroundImage: `url(${banner.image})` }}
-            >
-              <div className="slide-content">
-                <h2>{banner.title}</h2>
-                <p>{banner.subtitle}</p>
-                <button className="btn-primary">Ver Colección</button>
-              </div>
-            </div>
+              onClick={() => handleBannerClick(banner.url)}
+            ></div>
           ))}
         </div>
         <button className="slider-btn prev" onClick={prevSlide}>
@@ -90,7 +91,7 @@ const HomePage: React.FC = () => {
           {banners.map((_, index) => (
             <button
               key={index}
-              className={`dot ${index === currentSlide ? 'active' : ''}`}
+              className={`dot ${index === currentSlide ? "active" : ""}`}
               onClick={() => setCurrentSlide(index)}
             />
           ))}
@@ -99,17 +100,12 @@ const HomePage: React.FC = () => {
 
       <section className="categories-section">
         <div className="container">
-           <div className="categories-grid">
+          <h2 className="section-title">Categorías</h2>
+          <div className="categories-grid">
             {categories.map((category) => (
-              <div
-                key={category.id}
-                className="category-card"
-                onClick={() => handleCategoryClick(category.id)}
-              >
-                <img src={category.image} alt={category.name} />
-                <div className="category-overlay">
-                  <h3>{category.name}</h3>
-                  <p>{category.description}</p>
+              <div key={category.id} className="category-card" onClick={() => handleCategoryClick(category.id)}>
+                <div className="category-image">
+                  <img src={category.image || "/placeholder.svg"} alt={category.name} />
                 </div>
               </div>
             ))}
@@ -172,7 +168,7 @@ const HomePage: React.FC = () => {
 
       <Newsletter />
     </div>
-  );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage
