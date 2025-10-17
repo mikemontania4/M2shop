@@ -28,9 +28,7 @@ import HistoryPage from './pages/HistoryPage';
 import StoresPage from './pages/StoresPage';
 import OrderConfirmationPage from './pages/OrderConfirmationPage';
 import LoginPage from './pages/LoginPage';
-import React from 'react';
-
-function ToastContainer() {
+ function ToastContainer() {
   const { toasts } = useApp();
   return (
     <div className="toast-container" aria-live="polite" aria-atomic="true">
@@ -44,12 +42,14 @@ function ToastContainer() {
 }
 import RegisterPage from './pages/RegisterPage';
 import ProfilePage from './pages/ProfilePage';
+import MobileSearchBar from './components/header/MobileSearchBar';
 
 function Layout() {
   return (
     <div className="app">
       <TopBar />
       <Header />
+       <MobileSearchBar />
       <MainNav />
       <main>
         <Outlet />

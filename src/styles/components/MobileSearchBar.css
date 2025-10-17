@@ -1,0 +1,89 @@
+/* ============================================
+   MOBILE SEARCH BAR - Sticky line 3 on mobile
+   ============================================ */
+.mobile-search-bar {
+  /* Hide on desktop by default */
+  display: none;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: var(--white);
+  z-index: 1100;
+  padding: 10px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.mobile-search-bar .container {
+  /* Layout: menu button left, search center (flex-grow), cart right */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.mobile-search-bar .mobile-menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+/* Search bar takes available space in the center */
+.mobile-search-bar .search-form {
+  flex: 1;
+  margin: 0;
+  max-width: none;
+  min-width: 0;
+  border-radius: 20px;
+  border-width: 1px;
+}
+
+.mobile-search-bar .search-form input {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  min-width: 0;
+}
+
+.mobile-search-bar .search-form button {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+}
+
+.mobile-search-bar .cart-btn {
+  flex-shrink: 0;
+  padding: 6px;
+}
+
+/* Show only on mobile with flex display */
+@media (max-width: 767px) {
+  .mobile-search-bar {
+    display: flex;
+  }
+}
+
+/* Extra small mobile adjustments */
+@media (max-width: 480px) {
+  .mobile-search-bar .container {
+    gap: 8px;
+  }
+
+  .mobile-search-bar .mobile-menu-btn {
+    padding: 6px;
+  }
+
+  .mobile-search-bar .search-form input {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .mobile-search-bar .search-form button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}
