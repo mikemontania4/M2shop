@@ -99,7 +99,7 @@ const ProfilePage: React.FC = () => {
       <div className="container">
         <h1>Mi Perfil</h1>
 
-        <div className="profile-content" style={{ gridTemplateColumns: window.innerWidth > 968 ? "260px 1fr" : "1fr" }}>
+        <div className="profile-content">
           <aside className="profile-tabs">
             <ul>
               <li>

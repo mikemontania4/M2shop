@@ -1,3 +1,5 @@
+"use client"
+
 import type React from "react"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
@@ -23,9 +25,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onProductClick, onAd
   }
 
   const hasDiscount = product.originalPrice > 0
-  const discountPercentage = hasDiscount
-    ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
-    : 0
 
   const handleQuantityChange = (delta: number, e: React.MouseEvent) => {
     e.stopPropagation()
@@ -52,8 +51,28 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onProductClick, onAd
         <div className="product-image">
           <img src={product.image || "/placeholder.svg"} alt={product.name} />
           <div className="product-labels">
-            {hasDiscount && <span className="product-label label-discount">Oferta</span>}
-            {product.featured && <span className="product-label label-featured">Destacado</span>}
+            {hasDiscount && (
+              <img
+                src="https://www.cavallaro.com.py/img/tag.png"
+                alt="Oferta"
+                className="product-badge"
+                onError={(e) => {
+                  console.error("[v0] Failed to load oferta badge image:", e)
+                  e.currentTarget.style.display = "none"
+                }}
+              />
+            )}
+            {product.featured && (
+              <img
+                src="https://www.cavallaro.com.py/img/bancardlogo.png"
+                alt="Destacado"
+                className="product-badge"
+                onError={(e) => {
+                  console.error("[v0] Failed to load destacado badge image:", e)
+                  e.currentTarget.style.display = "none"
+                }}
+              />
+            )}
           </div>
           {/* </CHANGE> */}
         </div>
@@ -77,13 +96,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onProductClick, onAd
               <Plus size={16} />
             </button>
           </div>
-          {/* </CHANGE> */}
         </div>
       </div>
       <button className="btn-add-to-cart-card" onClick={handleAddToCart}>
         <ShoppingCart size={18} /> Agregar al Carrito
       </button>
-      {/* </CHANGE> */}
     </div>
   )
 }

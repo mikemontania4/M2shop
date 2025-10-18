@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useApp } from '../contexts/AppContext';
 import orderService from '../services/orderService';
+import "../styles/checkout.css"
 
 const CheckoutPage: React.FC = () => {
   const { user, cart, cartTotal, clearCart } = useApp();

@@ -1,25 +1,30 @@
 /* Cart & Checkout */
-.cart-page, .checkout-page {
+.cart-page,
+.checkout-page {
   padding: 40px 0;
   min-height: 60vh;
 }
 
-.cart-page h1, .checkout-page h1 {
+.cart-page h1,
+.checkout-page h1 {
   margin-bottom: 40px;
 }
 
-.empty-cart, .checkout-error {
+.empty-cart,
+.checkout-error {
   text-align: center;
   padding: 80px 20px;
 }
 
-.empty-cart p, .checkout-error p {
+.empty-cart p,
+.checkout-error p {
   font-size: 1.3rem;
   color: var(--text-light);
   margin-bottom: 30px;
 }
 
-.cart-content, .checkout-content {
+.cart-content,
+.checkout-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 40px;
@@ -72,6 +77,13 @@
   color: var(--primary-color);
 }
 
+.cart-item-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
 .quantity-controls {
   display: flex;
   align-items: center;
@@ -112,7 +124,8 @@
   transform: scale(1.1);
 }
 
-.cart-summary, .checkout-summary {
+.cart-summary,
+.checkout-summary {
   background: var(--bg-light);
   padding: 30px;
   border-radius: 10px;
@@ -137,7 +150,8 @@
   border-radius: 6px;
 }
 
-.cart-summary h2, .checkout-summary h2 {
+.cart-summary h2,
+.checkout-summary h2 {
   margin-bottom: 25px;
   color: var(--primary-color);
 }
@@ -157,7 +171,8 @@
   color: var(--primary-color);
 }
 
-.btn-checkout, .btn-recalculate {
+.btn-checkout,
+.btn-recalculate {
   width: 100%;
   margin: 20px 0 10px;
   padding: 15px;
@@ -178,7 +193,7 @@
 .btn-checkout:hover {
   background: var(--primary-color);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn-recalculate {
@@ -193,9 +208,16 @@
   color: var(--white);
 }
 
+/* Improved mobile responsiveness for cart and checkout */
 @media (max-width: 968px) {
-  .cart-content, .checkout-content {
+  .cart-content,
+  .checkout-content {
     grid-template-columns: 1fr;
+  }
+
+  .cart-summary,
+  .checkout-summary {
+    position: static;
   }
 
   .cart-item {
@@ -207,4 +229,52 @@
   .cart-item-total {
     grid-column: 2;
   }
+
+  .cart-item-actions {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
+
+@media (max-width: 480px) {
+  .cart-page,
+  .checkout-page {
+    padding: 20px 0;
+  }
+
+  .cart-item {
+    grid-template-columns: 80px 1fr;
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .cart-item img {
+    height: 80px;
+  }
+
+  .cart-item-details h3 {
+    font-size: 1rem;
+  }
+
+  .cart-summary,
+  .checkout-summary {
+    padding: 20px;
+  }
+
+  .order-items .order-item {
+    grid-template-columns: 60px 1fr;
+    gap: 10px;
+  }
+
+  .order-items .order-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .order-item-price {
+    grid-column: 2;
+    text-align: right;
+    margin-top: 8px;
+  }
+}
+/* </CHANGE> */
