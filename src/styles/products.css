@@ -15,24 +15,22 @@
   min-height: 420px;
 }
 
-/* Elegant product card matching mockup design */
-.product-card {
-  background: #ffffff;
-  border: 1px solid #e8e8e8;
-  border-radius: 8px;
-  overflow: visible;
+/* Image card with light gray background and rounded corners */
+.product-image-card {
+  background: #f5f5f5;
+  border-radius: 12px;
+  overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
   position: relative;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-.product-card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+.product-image-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }
+/* </CHANGE> */
 
 /* OFERTA badge in top-right corner with red background */
 .product-badge-oferta {
@@ -51,14 +49,12 @@
   box-shadow: 0 2px 6px rgba(200, 16, 46, 0.3);
 }
 
-/* Product image container with white background instead of gray */
+/* Product image container without extra background */
 .product-image {
   position: relative;
   width: 100%;
   padding-top: 100%;
   overflow: hidden;
-  background: #ffffff;
-  border-radius: 8px 8px 0 0;
 }
 
 .product-image img {
@@ -68,34 +64,34 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 16px;
+        border: 1px solid #ccc;
+    border-radius: 20px;
+
+ }
+/* </CHANGE> */
+
+/* Product info section outside the image card */
+.product-info-section {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 /* </CHANGE> */
 
-/* Product info section with reduced gaps */
-.product-info {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  gap: 8px;
-}
-
-/* Product name now appears first, styled to match mockup */
+/* Product name styled to match mockup */
 .product-name {
   font-size: 0.875rem;
   line-height: 1.4;
   margin: 0;
-  color: #666666;
+  color: #333333;
   font-weight: 400;
   min-height: 2.8em;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  order: -1;
 }
-/* </CHANGE> */
 
 /* Price display with red current price first, then gray strikethrough */
 .product-price {
@@ -126,8 +122,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-top: auto;
-  padding: 8px 0 4px 0;
+  padding: 8px 0;
 }
 
 .quantity-btn-circle {
@@ -170,7 +165,6 @@
   text-align: center;
   color: #333333;
 }
-/* </CHANGE> */
 
 /* Add to cart button with tighter spacing */
 .btn-add-to-cart-card {
@@ -195,7 +189,6 @@
   margin-top: 8px;
   text-transform: capitalize;
 }
-/* </CHANGE> */
 
 .btn-add-to-cart-card:hover {
   background: #a00d25;
