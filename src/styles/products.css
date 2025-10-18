@@ -5,7 +5,6 @@
   gap: 0px;
   padding: 30px 0;
 }
-/* </CHANGE> */
 
 /* Product card wrapper for consistent layout */
 .product-card-wrap {
@@ -13,7 +12,6 @@
   flex-direction: column;
   position: relative;
 }
-/* </CHANGE> */
 
 /* Elegant product card with subtle border and shadow */
 .product-card {
@@ -33,7 +31,6 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   border-color: #e0e0e0;
 }
-/* </CHANGE> */
 
 /* Product image container with consistent aspect ratio */
 .product-image {
@@ -57,9 +54,8 @@
 .product-card:hover .product-image img {
   transform: scale(1.05);
 }
-/* </CHANGE> */
 
-/* Product labels (Oferta, Destacado) in top-left corner */
+/* Updated product labels to support image badges */
 .product-labels {
   position: absolute;
   top: 12px;
@@ -68,6 +64,13 @@
   flex-direction: column;
   gap: 6px;
   z-index: 2;
+}
+
+.product-badge {
+  width: 60px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 .product-label {
@@ -90,7 +93,6 @@
   background: #f39c12;
   color: var(--white);
 }
-/* </CHANGE> */
 
 /* Product info section with elegant spacing */
 .product-info {
@@ -112,7 +114,6 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-/* </CHANGE> */
 
 /* Price display with elegant typography */
 .product-price {
@@ -135,7 +136,6 @@
   text-decoration: line-through;
   font-weight: 400;
 }
-/* </CHANGE> */
 
 /* Elegant quantity incrementer with rounded design */
 .product-card-quantity {
@@ -182,7 +182,6 @@
   text-align: center;
   color: #2c3e50;
 }
-/* </CHANGE> */
 
 /* Add to cart button - appears on hover (desktop) or always visible (mobile) */
 .btn-add-to-cart-card {
@@ -229,7 +228,6 @@
     position: static;
   }
 }
-/* </CHANGE> */
 
 /* Responsive grid breakpoints */
 @media (max-width: 1200px) {
@@ -256,6 +254,11 @@
   .current-price {
     font-size: 1.2rem;
   }
+
+  /* Adjust badge size for mobile */
+  .product-badge {
+    width: 50px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -268,4 +271,3 @@
     padding-top: 120%;
   }
 }
-/* </CHANGE> */

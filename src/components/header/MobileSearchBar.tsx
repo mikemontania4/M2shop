@@ -10,42 +10,6 @@ const MobileSearchBar: React.FC = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
 
   useEffect(() => {
-    console.log("[v0] MobileSearchBar mounted")
-
-    const checkSticky = () => {
-      const element = document.querySelector(".mobile-search-bar")
-      if (element) {
-        const styles = window.getComputedStyle(element)
-        console.log("[v0] MobileSearchBar styles:", {
-          display: styles.display,
-          position: styles.position,
-          top: styles.top,
-          zIndex: styles.zIndex,
-          background: styles.background,
-        })
-      }
-    }
-
-    // Check styles after a short delay to ensure CSS is loaded
-    setTimeout(checkSticky, 100)
-
-    // Check on scroll to see if sticky is working
-    const handleScroll = () => {
-      const element = document.querySelector(".mobile-search-bar")
-      if (element) {
-        const rect = element.getBoundingClientRect()
-        console.log("[v0] MobileSearchBar scroll position:", {
-          top: rect.top,
-          scrollY: window.scrollY,
-        })
-      }
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-
-  useEffect(() => {
     const handler = (e: Event) => {
       const detail = (e as CustomEvent<boolean>).detail
       setShowMobileMenu(detail)

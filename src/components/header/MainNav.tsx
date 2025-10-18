@@ -5,7 +5,8 @@ import { useEffect, useRef, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import type { Category } from "../../services/productService"
 import productService from "../../services/productService"
- 
+import MobileSidebar from "./MobileSidebar"
+
 interface MainNavProps {
   categories?: Category[]
   mobileActive?: boolean
@@ -71,34 +72,8 @@ const MainNav: React.FC<MainNavProps> = ({ categories, mobileActive, onCloseMobi
     onCloseMobile?.()
   }
 
-  const handleCategoryClick = (categoryId: string) => {
-    navigate(`/${categoryId}`)
-    handleClose()
-  }
-
   if (!isDesktop) {
-    if (!isMobileActive) return null
-    return (
-      <div className="mobile-nav-overlay" onClick={handleClose}>
-        <div className="mobile-nav-panel" onClick={(e) => e.stopPropagation()}>
-          <div className="mobile-nav-header">
-            <span>Categorías</span>
-            <button className="mobile-nav-close" onClick={handleClose}>
-              ✕
-            </button>
-          </div>
-          <ul className="mobile-nav-list">
-            {cats.map((c) => (
-              <li key={c.id}>
-                <button className="mobile-nav-item" onClick={() => handleCategoryClick(c.id)}>
-                  {c.name}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    )
+    return <MobileSidebar isOpen={isMobileActive} onClose={handleClose} categories={cats} />
   }
 
   return (

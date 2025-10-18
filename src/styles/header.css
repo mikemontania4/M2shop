@@ -1,6 +1,6 @@
 /* ============================================
    HEADER STYLES - E-COMMERCE LAYOUT
-   ============================================ */ 
+   ============================================ */
 
 /* ============================================
    HEADER - Sticky on desktop, split on mobile
@@ -48,8 +48,6 @@
   cursor: pointer;
   padding: 5px;
 }
- 
- 
 
 @keyframes menuFade {
   from {
@@ -75,24 +73,13 @@
    MOBILE BREAKPOINT (max-width: 767px)
    ============================================ */
 @media (max-width: 767px) {
-  /* Hide desktop header-main on mobile */
+  /* Hide desktop header-main and mobile line 2 on mobile */
   .header-main {
     display: none;
   }
 
-  /* Line 2: Logo (left) + HeaderUser (right) - NOT STICKY, scrolls up */
   .header-mobile-line2 {
-    display: block;
-    padding: 12px 0;
-    background: var(--white);
-    border-bottom: 1px solid var(--border-color);
-  }
-
-  .header-mobile-line2 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
+    display: none;
   }
 
   /* Hide departments menu on mobile */

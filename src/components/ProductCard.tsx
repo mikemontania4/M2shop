@@ -1,3 +1,5 @@
+"use client"
+
 import type React from "react"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
@@ -52,10 +54,16 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onProductClick, onAd
         <div className="product-image">
           <img src={product.image || "/placeholder.svg"} alt={product.name} />
           <div className="product-labels">
-            {hasDiscount && <span className="product-label label-discount">Oferta</span>}
-            {product.featured && <span className="product-label label-featured">Destacado</span>}
+            {product.featured && (
+              <img src="/M2shop-main/src/imagenes/nuevo.png" alt="Nuevo" className="product-badge badge-nuevo" />
+            )}
+            {hasDiscount && (
+              <img src="/M2shop-main/src/imagenes/oferta.png" alt="Oferta" className="product-badge badge-oferta" />
+            )}
+            {product.featured && !hasDiscount && !product.featured && (
+              <span className="product-label label-featured">Destacado</span>
+            )}
           </div>
-          {/* </CHANGE> */}
         </div>
         <div className="product-info">
           <h3 className="product-name">{product.name}</h3>
@@ -77,13 +85,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onProductClick, onAd
               <Plus size={16} />
             </button>
           </div>
-          {/* </CHANGE> */}
         </div>
       </div>
       <button className="btn-add-to-cart-card" onClick={handleAddToCart}>
         <ShoppingCart size={18} /> Agregar al Carrito
       </button>
-      {/* </CHANGE> */}
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import coverageData from "../data/cobertura.json"
+import coberturaData from "../data/cobertura.json"
 
 export interface CoverageArea {
   id: string
@@ -10,71 +10,38 @@ export interface CoverageArea {
 }
 
 class CoverageService {
-  private areas: CoverageArea[] = []
-
-  constructor() {
-    this.loadFromStorage()
+  private readCoverage(): CoverageArea[] {
+    const saved = localStorage.getItem("coverage")
+    return saved ? (JSON.parse(saved) as CoverageArea[]) : (coberturaData as CoverageArea[])
   }
 
-  private loadFromStorage() {
-    const stored = localStorage.getItem("coverage_areas")
-    if (stored) {
-      try {
-        this.areas = JSON.parse(stored)
-      } catch {
-        this.areas = [...(coverageData as CoverageArea[])]
-      }
-    } else {
-      this.areas = [...(coverageData as CoverageArea[])]
-    }
-  }
-
-  private saveToStorage() {
-    localStorage.setItem("coverage_areas", JSON.stringify(this.areas))
+  private writeCoverage(list: CoverageArea[]): void {
+    localStorage.setItem("coverage", JSON.stringify(list))
   }
 
   getCoverage(): CoverageArea[] {
-    return [...this.areas]
+    return this.readCoverage()
   }
 
-  getAreaById(id: string): CoverageArea | undefined {
-    return this.areas.find((area) => area.id === id)
+  getCoverageById(id: string): CoverageArea | undefined {
+    return this.readCoverage().find((a) => a.id === id)
   }
 
   upsertArea(area: CoverageArea): void {
-    const index = this.areas.findIndex((a) => a.id === area.id)
-    if (index >= 0) {
-      this.areas[index] = area
+    const list = this.readCoverage()
+    const idx = list.findIndex((a) => a.id === area.id)
+    if (idx >= 0) {
+      list[idx] = area
     } else {
-      this.areas.push(area)
+      list.push(area)
     }
-    this.saveToStorage()
+    this.writeCoverage(list)
   }
 
-  deleteArea(id: string): void {
-    this.areas = this.areas.filter((a) => a.id !== id)
-    this.saveToStorage()
-  }
-
-  isInCoverageArea(lat: number, lng: number): boolean {
-    return this.areas.some((area) => this.pointInPolygon([lat, lng], area.coordinates))
-  }
-
-  private pointInPolygon(point: [number, number], polygon: [number, number][]): boolean {
-    const [x, y] = point
-    let inside = false
-
-    for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {
-      const [xi, yi] = polygon[i]
-      const [xj, yj] = polygon[j]
-
-      const intersect = yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi
-      if (intersect) inside = !inside
-    }
-
-    return inside
+  deleteArea(areaId: string): void {
+    const list = this.readCoverage().filter((a) => a.id !== areaId)
+    this.writeCoverage(list)
   }
 }
 
-const coverageService = new CoverageService()
-export default coverageService
+export default new CoverageService()

@@ -39,3 +39,10 @@
 .topbar-link:hover {
   text-decoration: underline;
 }
+
+/* Hide TopBar on mobile screens */
+@media (max-width: 767px) {
+  .top-bar {
+    display: none;
+  }
+}
