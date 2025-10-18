@@ -1,7 +1,10 @@
 [
   {
     "id": 1,
-    "name": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA",
+    "producto": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA",
+    "variedad": "Extra",
+    "presentacion": "Bolsa de 10Kg",
+    "name": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA Extra Bolsa de 10Kg",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000243",
@@ -12,7 +15,7 @@
     ],
     "price": "141900",
     "originalPrice": "141900.00",
-    "sizes": [
+    "size": [
       "Bolsa de 10Kg"
     ],
     "featured": false,
@@ -30,13 +33,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#eb961e"
     ]
   },
   {
     "id": 2,
-    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "variedad": "Limón",
+    "presentacion": "Botella 500 ml.",
+    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE Limón Botella 500 ml.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "detergente",
     "sku": "300000664",
@@ -47,7 +53,7 @@
     ],
     "price": "5000",
     "originalPrice": "5000.00",
-    "sizes": [
+    "size": [
       "Botella 500 ml."
     ],
     "featured": false,
@@ -58,13 +64,16 @@
       "• Fragancias variadas y agradables."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#61d62e"
     ]
   },
   {
     "id": 3,
-    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "variedad": "Manzana",
+    "presentacion": "Botella 500 ml.",
+    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE Manzana Botella 500 ml.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "detergente",
     "sku": "300000665",
@@ -75,7 +84,7 @@
     ],
     "price": "5000",
     "originalPrice": "5000.00",
-    "sizes": [
+    "size": [
       "Botella 500 ml."
     ],
     "featured": false,
@@ -86,13 +95,16 @@
       "• Fragancias variadas y agradables."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f0192e"
     ]
   },
   {
     "id": 4,
-    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "variedad": "Neutro",
+    "presentacion": "Botella 500 ml.",
+    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE Neutro Botella 500 ml.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "detergente",
     "sku": "300000666",
@@ -103,7 +115,7 @@
     ],
     "price": "5000",
     "originalPrice": "5000.00",
-    "sizes": [
+    "size": [
       "Botella 500 ml."
     ],
     "featured": false,
@@ -114,13 +126,16 @@
       "• Fragancias variadas y agradables."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#edd040"
     ]
   },
   {
     "id": 5,
-    "name": "COMBO NAVIDEÑO - COCO PURO",
+    "producto": "COMBO NAVIDEÑO - COCO PURO",
+    "variedad": "Neutro",
+    "presentacion": "KIT",
+    "name": "COMBO NAVIDEÑO - COCO PURO Neutro KIT",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "bolsa",
     "sku": "830000314",
@@ -131,7 +146,7 @@
     ],
     "price": "128500",
     "originalPrice": "128500.00",
-    "sizes": [
+    "size": [
       "KIT"
     ],
     "featured": false,
@@ -146,13 +161,16 @@
       "• Toc de coco puro 100 gr petit grain."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ff6d1f"
     ]
   },
   {
     "id": 6,
-    "name": "COMBO NAVIDEÑO - PREMIUM",
+    "producto": "COMBO NAVIDEÑO - PREMIUM",
+    "variedad": "Neutro",
+    "presentacion": "KIT",
+    "name": "COMBO NAVIDEÑO - PREMIUM Neutro KIT",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "bolsa",
     "sku": "830000315",
@@ -163,7 +181,7 @@
     ],
     "price": "199400",
     "originalPrice": "199400.00",
-    "sizes": [
+    "size": [
       "KIT"
     ],
     "featured": false,
@@ -179,13 +197,16 @@
       "• C2 Humectante de 125 gr cajita vainilla y frutos r."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ff6d1f"
     ]
   },
   {
     "id": 7,
-    "name": "COMBO NAVIDEÑO - ECONOMICO",
+    "producto": "COMBO NAVIDEÑO - ECONOMICO",
+    "variedad": "Neutro",
+    "presentacion": "KIT",
+    "name": "COMBO NAVIDEÑO - ECONOMICO Neutro KIT",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "bolsa",
     "sku": "830000316",
@@ -196,7 +217,7 @@
     ],
     "price": "70800",
     "originalPrice": "70800.00",
-    "sizes": [
+    "size": [
       "KIT"
     ],
     "featured": false,
@@ -214,13 +235,16 @@
       "• Jabón de lavar deluxe de 130 gr."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ff6d1f"
     ]
   },
   {
     "id": 8,
-    "name": "PACK PROMO DESODORANTE FANTASIA 900ML + 500ML",
+    "producto": "PACK PROMO DESODORANTE FANTASIA 900ML + 500ML",
+    "variedad": "Premium",
+    "presentacion": "KIT",
+    "name": "PACK PROMO DESODORANTE FANTASIA 900ML + 500ML Premium KIT",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "bolsa",
     "sku": "830000351",
@@ -231,7 +255,7 @@
     ],
     "price": "14700",
     "originalPrice": "14700.00",
-    "sizes": [
+    "size": [
       "KIT"
     ],
     "featured": false,
@@ -244,13 +268,16 @@
       "• Larga duración."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ff6d1f"
     ]
   },
   {
     "id": 9,
-    "name": "PACK PROMO DESODORANTE UVA 900ML + 500ML",
+    "producto": "PACK PROMO DESODORANTE UVA 900ML + 500ML",
+    "variedad": "Premium",
+    "presentacion": "KIT",
+    "name": "PACK PROMO DESODORANTE UVA 900ML + 500ML Premium KIT",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "bolsa",
     "sku": "830000352",
@@ -261,7 +288,7 @@
     ],
     "price": "14700",
     "originalPrice": "14700.00",
-    "sizes": [
+    "size": [
       "KIT"
     ],
     "featured": false,
@@ -274,13 +301,16 @@
       "• Larga duración."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ff6d1f"
     ]
   },
   {
     "id": 10,
-    "name": "PACK PROMO DESODORANTE MARINA 900ML + 500ML",
+    "producto": "PACK PROMO DESODORANTE MARINA 900ML + 500ML",
+    "variedad": "Premium",
+    "presentacion": "KIT",
+    "name": "PACK PROMO DESODORANTE MARINA 900ML + 500ML Premium KIT",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "bolsa",
     "sku": "830000355",
@@ -291,7 +321,7 @@
     ],
     "price": "14700",
     "originalPrice": "14700.00",
-    "sizes": [
+    "size": [
       "KIT"
     ],
     "featured": false,
@@ -304,13 +334,16 @@
       "• Larga duración."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ff6d1f"
     ]
   },
   {
     "id": 11,
-    "name": "COMBO NAVIDEÑO - MEDIO",
+    "producto": "COMBO NAVIDEÑO - MEDIO",
+    "variedad": "Neutro",
+    "presentacion": "KIT",
+    "name": "COMBO NAVIDEÑO - MEDIO Neutro KIT",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "bolsa",
     "sku": "830000437",
@@ -321,7 +354,7 @@
     ],
     "price": "108900",
     "originalPrice": "108900.00",
-    "sizes": [
+    "size": [
       "KIT"
     ],
     "featured": false,
@@ -340,13 +373,16 @@
       "• DETERG. P/ROPA INSUPERABLE CITRUS 800ML."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ff6d1f"
     ]
   },
   {
     "id": 12,
-    "name": "ESCOBA NOVICA R1672",
+    "producto": "ESCOBA NOVICA R1672",
+    "variedad": "Neutro",
+    "presentacion": "Escoba novica",
+    "name": "ESCOBA NOVICA R1672 Neutro Escoba novica",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "complementarios",
     "sku": "500000028",
@@ -357,7 +393,7 @@
     ],
     "price": "19000",
     "originalPrice": "19000.00",
-    "sizes": [
+    "size": [
       "Escoba novica"
     ],
     "featured": false,
@@ -369,13 +405,16 @@
       "•\tMayor poder de Barrido."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ce0058"
     ]
   },
   {
     "id": 13,
-    "name": "MOPA ALG. REFILL - R 132",
+    "producto": "MOPA ALG. REFILL - R 132",
+    "variedad": "Neutro",
+    "presentacion": "Refil mopa de algodón",
+    "name": "MOPA ALG. REFILL - R 132 Neutro Refil mopa de algodón",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "complementarios",
     "sku": "500000029",
@@ -386,7 +425,7 @@
     ],
     "price": "32500",
     "originalPrice": "32500.00",
-    "sizes": [
+    "size": [
       "Refil mopa de algodón"
     ],
     "featured": false,
@@ -398,13 +437,16 @@
       "•\tIdeal para suelos rústicos."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#fafbfd"
     ]
   },
   {
     "id": 14,
-    "name": "MOPA ALG. CON PALO - R 1322",
+    "producto": "MOPA ALG. CON PALO - R 1322",
+    "variedad": "Neutro",
+    "presentacion": "Mopa de algodón con palo",
+    "name": "MOPA ALG. CON PALO - R 1322 Neutro Mopa de algodón con palo",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "complementarios",
     "sku": "500000030",
@@ -415,7 +457,7 @@
     ],
     "price": "38500",
     "originalPrice": "38500.00",
-    "sizes": [
+    "size": [
       "Mopa de algodón con palo"
     ],
     "featured": false,
@@ -427,13 +469,16 @@
       "•\tIdeal para suelos rústicos."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#fafbfd"
     ]
   },
   {
     "id": 15,
-    "name": "MOPA SPRAY NOVICA BT1912",
+    "producto": "MOPA SPRAY NOVICA BT1912",
+    "variedad": "Neutro",
+    "presentacion": "Mopa spray",
+    "name": "MOPA SPRAY NOVICA BT1912 Neutro Mopa spray",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "complementarios",
     "sku": "500000031",
@@ -444,7 +489,7 @@
     ],
     "price": "224000",
     "originalPrice": "224000.00",
-    "sizes": [
+    "size": [
       "Mopa spray"
     ],
     "featured": false,
@@ -456,13 +501,16 @@
       "•\tDepósito con capacidad de 600 ml."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#8d9093"
     ]
   },
   {
     "id": 16,
-    "name": "PALA DE LIMPIEZA R150",
+    "producto": "PALA DE LIMPIEZA R150",
+    "variedad": "Neutro",
+    "presentacion": "Pala de limpieza",
+    "name": "PALA DE LIMPIEZA R150 Neutro Pala de limpieza",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "complementarios",
     "sku": "500000032",
@@ -473,7 +521,7 @@
     ],
     "price": "26000",
     "originalPrice": "26000.00",
-    "sizes": [
+    "size": [
       "Pala de limpieza"
     ],
     "featured": false,
@@ -485,13 +533,16 @@
       "•\tFacilita la recogida de pequeños productos."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ce0058"
     ]
   },
   {
     "id": 17,
-    "name": "SECADOR / ESCURRIDOR 30CM 1292",
+    "producto": "SECADOR / ESCURRIDOR 30CM 1292",
+    "variedad": "Neutro",
+    "presentacion": "Secador de piso push 30 cm",
+    "name": "SECADOR / ESCURRIDOR 30CM 1292 Neutro Secador de piso push 30 cm",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "complementarios",
     "sku": "500000033",
@@ -502,7 +553,7 @@
     ],
     "price": "36500",
     "originalPrice": "36500.00",
-    "sizes": [
+    "size": [
       "Secador de piso push 30 cm"
     ],
     "featured": false,
@@ -514,13 +565,16 @@
       "•\tGarras que ayudan a fijar las telas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#00c7b1"
     ]
   },
   {
     "id": 18,
-    "name": "SECADOR / ESCURRIDOR 40 CM1302",
+    "producto": "SECADOR / ESCURRIDOR 40 CM1302",
+    "variedad": "Neutro",
+    "presentacion": "Secador de piso push 40 cm",
+    "name": "SECADOR / ESCURRIDOR 40 CM1302 Neutro Secador de piso push 40 cm",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "complementarios",
     "sku": "500000034",
@@ -531,7 +585,7 @@
     ],
     "price": "39500",
     "originalPrice": "39500.00",
-    "sizes": [
+    "size": [
       "Secador de piso push 40 cm"
     ],
     "featured": false,
@@ -543,13 +597,16 @@
       "•\tGarras que ayudan a fijar las telas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#00c7b1"
     ]
   },
   {
     "id": 19,
-    "name": "BALDE C/PORTA ESCURRIDOR 1384",
+    "producto": "BALDE C/PORTA ESCURRIDOR 1384",
+    "variedad": "Neutro",
+    "presentacion": "Balde con porta escurridor",
+    "name": "BALDE C/PORTA ESCURRIDOR 1384 Neutro Balde con porta escurridor",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "complementarios",
     "sku": "500000035",
@@ -560,7 +617,7 @@
     ],
     "price": "54500",
     "originalPrice": "54500.00",
-    "sizes": [
+    "size": [
       "Balde con porta escurridor"
     ],
     "featured": false,
@@ -572,13 +629,16 @@
       "• Regla de litros."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#00c7b1"
     ]
   },
   {
     "id": 20,
-    "name": "ESCOBILLON SUPER BE 80X12 R1772",
+    "producto": "ESCOBILLON SUPER BE 80X12 R1772",
+    "variedad": "Neutro",
+    "presentacion": "Escobillon novica",
+    "name": "ESCOBILLON SUPER BE 80X12 R1772 Neutro Escobillon novica",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "complementarios",
     "sku": "500000036",
@@ -589,7 +649,7 @@
     ],
     "price": "34500",
     "originalPrice": "34500.00",
-    "sizes": [
+    "size": [
       "Escobillon novica"
     ],
     "featured": false,
@@ -601,13 +661,16 @@
       "•\tMayor poder de Barrido."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#cdea80"
     ]
   },
   {
     "id": 21,
-    "name": "KITS SEMANAL",
+    "producto": "KITS SEMANAL",
+    "variedad": "Surtido",
+    "presentacion": "Kit",
+    "name": "KITS SEMANAL Surtido Kit",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "otros-servicios",
     "sku": "830000544",
@@ -617,7 +680,7 @@
     ],
     "price": "59000",
     "originalPrice": "59000.00",
-    "sizes": [
+    "size": [
       "Kit"
     ],
     "featured": false,
@@ -625,13 +688,16 @@
     "usosRecomendados": [],
     "propiedades": [],
     "stock": 0,
-    "colors": [
+    "color": [
       "#dde4ec"
     ]
   },
   {
     "id": 22,
-    "name": "KITS QUINCENAL",
+    "producto": "KITS QUINCENAL",
+    "variedad": "Surtido",
+    "presentacion": "Kit",
+    "name": "KITS QUINCENAL Surtido Kit",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "otros-servicios",
     "sku": "830000545",
@@ -641,7 +707,7 @@
     ],
     "price": "98000",
     "originalPrice": "98000.00",
-    "sizes": [
+    "size": [
       "Kit"
     ],
     "featured": false,
@@ -649,13 +715,16 @@
     "usosRecomendados": [],
     "propiedades": [],
     "stock": 0,
-    "colors": [
+    "color": [
       "#e1e8ef"
     ]
   },
   {
     "id": 23,
-    "name": "POLVO PARA LAVAR LA ROPA GUAIRA OPTI SYSTEM",
+    "producto": "POLVO PARA LAVAR LA ROPA GUAIRA OPTI SYSTEM",
+    "variedad": "Opti-Fiber",
+    "presentacion": "Bolsa de 800g",
+    "name": "POLVO PARA LAVAR LA ROPA GUAIRA OPTI SYSTEM Opti-Fiber Bolsa de 800g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000253",
@@ -666,7 +735,7 @@
     ],
     "price": "35150",
     "originalPrice": "35150.00",
-    "sizes": [
+    "size": [
       "Bolsa de 800g"
     ],
     "featured": false,
@@ -683,13 +752,16 @@
       "• Conserva los colores."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#4d86fe"
     ]
   },
   {
     "id": 24,
-    "name": "POLVO PARA LAVAR LA ROPA GUAIRA OPTI SYSTEM",
+    "producto": "POLVO PARA LAVAR LA ROPA GUAIRA OPTI SYSTEM",
+    "variedad": "Opti-Fiber",
+    "presentacion": "Bolsa de 2Kg",
+    "name": "POLVO PARA LAVAR LA ROPA GUAIRA OPTI SYSTEM Opti-Fiber Bolsa de 2Kg",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000444",
@@ -700,7 +772,7 @@
     ],
     "price": "76850",
     "originalPrice": "76850.00",
-    "sizes": [
+    "size": [
       "Bolsa de 2Kg"
     ],
     "featured": false,
@@ -717,13 +789,16 @@
       "• Conserva los colores."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#4d86fe"
     ]
   },
   {
     "id": 25,
-    "name": "PINZAS P/ROPAS PIXOL",
+    "producto": "PINZAS P/ROPAS PIXOL",
+    "variedad": "Verde",
+    "presentacion": "Pack de 12 Unidades",
+    "name": "PINZAS P/ROPAS PIXOL Verde Pack de 12 Unidades",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "complementarios",
     "sku": "500000038",
@@ -734,7 +809,7 @@
     ],
     "price": "15000",
     "originalPrice": "15000.00",
-    "sizes": [
+    "size": [
       "Pack de 12 Unidades"
     ],
     "featured": false,
@@ -746,13 +821,16 @@
       "• Las pinzas de la ropa están hechas de plástico resistente y material de goma antideslizante para sujetar la ropa de forma segura sin dejar marcas. Con fuertes resortes fáciles de abrir, resistentes y duraderos, no se rompen con facilidad, están diseñados para resistir las inclemencias del tiempo y el uso diario."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#61d62e"
     ]
   },
   {
     "id": 26,
-    "name": "CAJA EXHIBIDORA COCO TOC. 5X1",
+    "producto": "CAJA EXHIBIDORA COCO TOC. 5X1",
+    "variedad": "Surtido",
+    "presentacion": "Caja 5 x 100g",
+    "name": "CAJA EXHIBIDORA COCO TOC. 5X1 Surtido Caja 5 x 100g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300001736",
@@ -763,7 +841,7 @@
     ],
     "price": "50000",
     "originalPrice": "50000.00",
-    "sizes": [
+    "size": [
       "Caja 5 x 100g"
     ],
     "featured": false,
@@ -780,13 +858,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#eae448"
     ]
   },
   {
     "id": 27,
-    "name": "JABON DE COCO PURO COCO CAVALLARO",
+    "producto": "JABON DE COCO PURO COCO CAVALLARO",
+    "variedad": "Blanco",
+    "presentacion": "Pan de 200g",
+    "name": "JABON DE COCO PURO COCO CAVALLARO Blanco Pan de 200g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "coco-puro",
     "sku": "300000000",
@@ -797,7 +878,7 @@
     ],
     "price": "10300",
     "originalPrice": "10300.00",
-    "sizes": [
+    "size": [
       "Pan de 200g"
     ],
     "featured": false,
@@ -814,13 +895,16 @@
       "• Libre de gluten."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ebe1d5"
     ]
   },
   {
     "id": 28,
-    "name": "JABON DE COCO PURO COCO CAVALLARO",
+    "producto": "JABON DE COCO PURO COCO CAVALLARO",
+    "variedad": "Blanco",
+    "presentacion": "Pack 10 x 40g",
+    "name": "JABON DE COCO PURO COCO CAVALLARO Blanco Pack 10 x 40g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "coco-puro",
     "sku": "300000002",
@@ -831,7 +915,7 @@
     ],
     "price": "22000",
     "originalPrice": "22000.00",
-    "sizes": [
+    "size": [
       "Pack 10 x 40g"
     ],
     "featured": false,
@@ -848,13 +932,16 @@
       "• Libre de gluten."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ebe1d5"
     ]
   },
   {
     "id": 29,
-    "name": "JABON DE COCO PURO COCO CAVALLARO",
+    "producto": "JABON DE COCO PURO COCO CAVALLARO",
+    "variedad": "Blanco",
+    "presentacion": "Pan de 100g",
+    "name": "JABON DE COCO PURO COCO CAVALLARO Blanco Pan de 100g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "coco-puro",
     "sku": "300000003",
@@ -865,7 +952,7 @@
     ],
     "price": "5650",
     "originalPrice": "5650.00",
-    "sizes": [
+    "size": [
       "Pan de 100g"
     ],
     "featured": false,
@@ -882,13 +969,16 @@
       "• Libre de gluten."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ebe1d5"
     ]
   },
   {
     "id": 30,
-    "name": "LAVANDINA CAVALLARO",
+    "producto": "LAVANDINA CAVALLARO",
+    "variedad": "Concentrado",
+    "presentacion": "Bidón de 5 L.",
+    "name": "LAVANDINA CAVALLARO Concentrado Bidón de 5 L.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "lavandina",
     "sku": "300000007",
@@ -899,7 +989,7 @@
     ],
     "price": "59950",
     "originalPrice": "59950.00",
-    "sizes": [
+    "size": [
       "Bidón de 5 L."
     ],
     "featured": false,
@@ -911,13 +1001,16 @@
       "• Elimina el 99 % de virus, bacterias y hongos de ambientes y superficies."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#e4d211"
     ]
   },
   {
     "id": 31,
-    "name": "DETERGENTE LAVAVAJILLAS CAVALLARO",
+    "producto": "DETERGENTE LAVAVAJILLAS CAVALLARO",
+    "variedad": "Concentrado",
+    "presentacion": "Bidón de 5 L.",
+    "name": "DETERGENTE LAVAVAJILLAS CAVALLARO Concentrado Bidón de 5 L.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "detergente",
     "sku": "300000016",
@@ -928,7 +1021,7 @@
     ],
     "price": "59000",
     "originalPrice": "59000.00",
-    "sizes": [
+    "size": [
       "Bidón de 5 L."
     ],
     "featured": false,
@@ -939,13 +1032,16 @@
       "• Fórmula concentrada que permite el doble de rendimiento."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#e4d211"
     ]
   },
   {
     "id": 32,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Clásico",
+    "presentacion": "Bidón de 4L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Clásico Bidón de 4L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000029",
@@ -956,7 +1052,7 @@
     ],
     "price": "56800",
     "originalPrice": "56800.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -969,13 +1065,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1385dd"
     ]
   },
   {
     "id": 33,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Clásico",
+    "presentacion": "Doypack 900ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Clásico Doypack 900ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000033",
@@ -986,7 +1085,7 @@
     ],
     "price": "18200",
     "originalPrice": "18200.00",
-    "sizes": [
+    "size": [
       "Doypack 900ml"
     ],
     "featured": false,
@@ -999,13 +1098,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1385dd"
     ]
   },
   {
     "id": 34,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Intenso",
+    "presentacion": "Doypack 900ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Intenso Doypack 900ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000034",
@@ -1016,7 +1118,7 @@
     ],
     "price": "18200",
     "originalPrice": "18200.00",
-    "sizes": [
+    "size": [
       "Doypack 900ml"
     ],
     "featured": false,
@@ -1029,13 +1131,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#92d99a"
     ]
   },
   {
     "id": 35,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Clásico",
+    "presentacion": "Doypack 2L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Clásico Doypack 2L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000038",
@@ -1046,7 +1151,7 @@
     ],
     "price": "34400",
     "originalPrice": "34400.00",
-    "sizes": [
+    "size": [
       "Doypack 2L"
     ],
     "featured": false,
@@ -1059,13 +1164,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1385dd"
     ]
   },
   {
     "id": 36,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Intenso",
+    "presentacion": "Doypack 2L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Intenso Doypack 2L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000039",
@@ -1076,7 +1184,7 @@
     ],
     "price": "34400",
     "originalPrice": "34400.00",
-    "sizes": [
+    "size": [
       "Doypack 2L"
     ],
     "featured": false,
@@ -1089,13 +1197,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#92d99a"
     ]
   },
   {
     "id": 37,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Delicado",
+    "presentacion": "Doypack 450ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Delicado Doypack 450ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000040",
@@ -1106,7 +1217,7 @@
     ],
     "price": "11000",
     "originalPrice": "11000.00",
-    "sizes": [
+    "size": [
       "Doypack 450ml"
     ],
     "featured": false,
@@ -1119,13 +1230,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ffd600"
     ]
   },
   {
     "id": 38,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Intenso",
+    "presentacion": "Doypack 450ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Intenso Doypack 450ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000041",
@@ -1136,7 +1250,7 @@
     ],
     "price": "11000",
     "originalPrice": "11000.00",
-    "sizes": [
+    "size": [
       "Doypack 450ml"
     ],
     "featured": false,
@@ -1149,13 +1263,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#92d99a"
     ]
   },
   {
     "id": 39,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Delicado",
+    "presentacion": "Bidón de 4L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Delicado Bidón de 4L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000042",
@@ -1166,7 +1283,7 @@
     ],
     "price": "56800",
     "originalPrice": "56800.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -1179,13 +1296,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ffd600"
     ]
   },
   {
     "id": 40,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Intenso",
+    "presentacion": "Bidón de 4L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Intenso Bidón de 4L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000043",
@@ -1196,7 +1316,7 @@
     ],
     "price": "56800",
     "originalPrice": "56800.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -1209,13 +1329,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#92d99a"
     ]
   },
   {
     "id": 41,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Clásico",
+    "presentacion": "Display 20x70ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Clásico Display 20x70ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000046",
@@ -1226,7 +1349,7 @@
     ],
     "price": "62000",
     "originalPrice": "62000.00",
-    "sizes": [
+    "size": [
       "Display 20x70ml"
     ],
     "featured": false,
@@ -1239,13 +1362,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1385dd"
     ]
   },
   {
     "id": 42,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Intenso",
+    "presentacion": "Display 20x70ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Intenso Display 20x70ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000047",
@@ -1256,7 +1382,7 @@
     ],
     "price": "62000",
     "originalPrice": "62000.00",
-    "sizes": [
+    "size": [
       "Display 20x70ml"
     ],
     "featured": false,
@@ -1269,13 +1395,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#92d99a"
     ]
   },
   {
     "id": 43,
-    "name": "JABON DE COCO PURO COCO CAVALLARO",
+    "producto": "JABON DE COCO PURO COCO CAVALLARO",
+    "variedad": "Blanco",
+    "presentacion": "Barra de 500g",
+    "name": "JABON DE COCO PURO COCO CAVALLARO Blanco Barra de 500g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "coco-puro",
     "sku": "300000050",
@@ -1286,7 +1415,7 @@
     ],
     "price": "25000",
     "originalPrice": "25000.00",
-    "sizes": [
+    "size": [
       "Barra de 500g"
     ],
     "featured": false,
@@ -1303,13 +1432,16 @@
       "• Libre de gluten."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ebe1d5"
     ]
   },
   {
     "id": 44,
-    "name": "JABON DE COCO PURO COCO CAVALLARO",
+    "producto": "JABON DE COCO PURO COCO CAVALLARO",
+    "variedad": "Blanco",
+    "presentacion": "Barra de 1000g",
+    "name": "JABON DE COCO PURO COCO CAVALLARO Blanco Barra de 1000g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "coco-puro",
     "sku": "300000052",
@@ -1320,7 +1452,7 @@
     ],
     "price": "48250",
     "originalPrice": "48250.00",
-    "sizes": [
+    "size": [
       "Barra de 1000g"
     ],
     "featured": false,
@@ -1337,13 +1469,16 @@
       "• Libre de gluten."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ebe1d5"
     ]
   },
   {
     "id": 45,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Floral",
+    "presentacion": "Caja de 250 x 25g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Floral Caja de 250 x 25g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300000055",
@@ -1354,7 +1489,7 @@
     ],
     "price": "387500",
     "originalPrice": "387500.00",
-    "sizes": [
+    "size": [
       "Caja de 250 x 25g"
     ],
     "featured": false,
@@ -1371,13 +1506,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f859a0"
     ]
   },
   {
     "id": 46,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Almendras",
+    "presentacion": "Caja de 250 x 25g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Almendras Caja de 250 x 25g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300000056",
@@ -1388,7 +1526,7 @@
     ],
     "price": "387500",
     "originalPrice": "387500.00",
-    "sizes": [
+    "size": [
       "Caja de 250 x 25g"
     ],
     "featured": false,
@@ -1405,13 +1543,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#c2c39d"
     ]
   },
   {
     "id": 47,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Clásico",
+    "presentacion": "Caja de 250 x 25g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Clásico Caja de 250 x 25g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300000057",
@@ -1422,7 +1563,7 @@
     ],
     "price": "387500",
     "originalPrice": "387500.00",
-    "sizes": [
+    "size": [
       "Caja de 250 x 25g"
     ],
     "featured": false,
@@ -1439,13 +1580,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#b6b0a5"
     ]
   },
   {
     "id": 48,
-    "name": "JABON EN POLVO ANTIBACTERIAL COCO CAVALLARO",
+    "producto": "JABON EN POLVO ANTIBACTERIAL COCO CAVALLARO",
+    "variedad": "Clásico",
+    "presentacion": "Bolsa de 80g",
+    "name": "JABON EN POLVO ANTIBACTERIAL COCO CAVALLARO Clásico Bolsa de 80g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "coco-puro",
     "sku": "300000074",
@@ -1456,7 +1600,7 @@
     ],
     "price": "4050",
     "originalPrice": "4050.00",
-    "sizes": [
+    "size": [
       "Bolsa de 80g"
     ],
     "featured": false,
@@ -1472,13 +1616,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#b99869"
     ]
   },
   {
     "id": 49,
-    "name": "JABON EN POLVO ANTIBACTERIAL COCO CAVALLARO",
+    "producto": "JABON EN POLVO ANTIBACTERIAL COCO CAVALLARO",
+    "variedad": "Clásico",
+    "presentacion": "Bolsa de 800g",
+    "name": "JABON EN POLVO ANTIBACTERIAL COCO CAVALLARO Clásico Bolsa de 800g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "coco-puro",
     "sku": "300000087",
@@ -1489,7 +1636,7 @@
     ],
     "price": "34000",
     "originalPrice": "34000.00",
-    "sizes": [
+    "size": [
       "Bolsa de 800g"
     ],
     "featured": false,
@@ -1505,13 +1652,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#b99869"
     ]
   },
   {
     "id": 50,
-    "name": "JABON PARA LAVAR LA ROPA GUAIRA DELUXE",
+    "producto": "JABON PARA LAVAR LA ROPA GUAIRA DELUXE",
+    "variedad": "Coco y Glicerina",
+    "presentacion": "Pan de 130 g.",
+    "name": "JABON PARA LAVAR LA ROPA GUAIRA DELUXE Coco y Glicerina Pan de 130 g.",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-de-lavar",
     "sku": "300000092",
@@ -1522,7 +1672,7 @@
     ],
     "price": "4200",
     "originalPrice": "4200.00",
-    "sizes": [
+    "size": [
       "Pan de 130 g."
     ],
     "featured": false,
@@ -1537,13 +1687,16 @@
       "• La glicerina otorga suavidad a los tejidos y protección de las manos."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#d5ccbd"
     ]
   },
   {
     "id": 51,
-    "name": "JABON PARA LAVAR LA ROPA GUAIRA DELUXE",
+    "producto": "JABON PARA LAVAR LA ROPA GUAIRA DELUXE",
+    "variedad": "Coco y Glicerina",
+    "presentacion": "Pack de 5 x 180g",
+    "name": "JABON PARA LAVAR LA ROPA GUAIRA DELUXE Coco y Glicerina Pack de 5 x 180g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-de-lavar",
     "sku": "300000095",
@@ -1554,7 +1707,7 @@
     ],
     "price": "23000",
     "originalPrice": "23000.00",
-    "sizes": [
+    "size": [
       "Pack de 5 x 180g"
     ],
     "featured": false,
@@ -1569,13 +1722,16 @@
       "• La glicerina otorga suavidad a los tejidos y protección de las manos."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#d5ccbd"
     ]
   },
   {
     "id": 52,
-    "name": "JABON PARA LAVAR LA ROPA GUAIRA DELUXE",
+    "producto": "JABON PARA LAVAR LA ROPA GUAIRA DELUXE",
+    "variedad": "Coco y Glicerina",
+    "presentacion": "Pan de 200g",
+    "name": "JABON PARA LAVAR LA ROPA GUAIRA DELUXE Coco y Glicerina Pan de 200g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-de-lavar",
     "sku": "300000096",
@@ -1586,7 +1742,7 @@
     ],
     "price": "6200",
     "originalPrice": "6200.00",
-    "sizes": [
+    "size": [
       "Pan de 200g"
     ],
     "featured": false,
@@ -1601,13 +1757,16 @@
       "• La glicerina otorga suavidad a los tejidos y protección de las manos."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#d5ccbd"
     ]
   },
   {
     "id": 53,
-    "name": "JABÓN PARA LAVAR LA ROPA GUAIRA DELUXE",
+    "producto": "JABÓN PARA LAVAR LA ROPA GUAIRA DELUXE",
+    "variedad": "Azul Blanqueador",
+    "presentacion": "Pan de 230 g.",
+    "name": "JABÓN PARA LAVAR LA ROPA GUAIRA DELUXE Azul Blanqueador Pan de 230 g.",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-de-lavar",
     "sku": "300000097",
@@ -1618,7 +1777,7 @@
     ],
     "price": "8100",
     "originalPrice": "8100.00",
-    "sizes": [
+    "size": [
       "Pan de 230 g."
     ],
     "featured": false,
@@ -1633,13 +1792,16 @@
       "• La glicerina otorga suavidad a los tejidos y protección de las manos."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#4284b4"
     ]
   },
   {
     "id": 54,
-    "name": "JABÓN PARA LAVAR LA ROPA GUAIRA DELUXE",
+    "producto": "JABÓN PARA LAVAR LA ROPA GUAIRA DELUXE",
+    "variedad": "Glicerina y Limón",
+    "presentacion": "Pan de 250 g.",
+    "name": "JABÓN PARA LAVAR LA ROPA GUAIRA DELUXE Glicerina y Limón Pan de 250 g.",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-de-lavar",
     "sku": "300000098",
@@ -1650,7 +1812,7 @@
     ],
     "price": "8300",
     "originalPrice": "8300.00",
-    "sizes": [
+    "size": [
       "Pan de 250 g."
     ],
     "featured": false,
@@ -1665,13 +1827,16 @@
       "• La glicerina otorga suavidad a los tejidos y protección de las manos."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#71c66c"
     ]
   },
   {
     "id": 55,
-    "name": "JABON DE TOCADOR IO",
+    "producto": "JABON DE TOCADOR IO",
+    "variedad": "Durazno & Frutos Rojos",
+    "presentacion": "Tripack 3 x 80g",
+    "name": "JABON DE TOCADOR IO Durazno & Frutos Rojos Tripack 3 x 80g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000136",
@@ -1682,7 +1847,7 @@
     ],
     "price": "8300",
     "originalPrice": "8300.00",
-    "sizes": [
+    "size": [
       "Tripack 3 x 80g"
     ],
     "featured": false,
@@ -1694,13 +1859,16 @@
       "• Limpieza profunda de la piel."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ff75c6"
     ]
   },
   {
     "id": 56,
-    "name": "JABON DE TOCADOR IO",
+    "producto": "JABON DE TOCADOR IO",
+    "variedad": "Mango & Mburucuya",
+    "presentacion": "Tripack 3 x 80g",
+    "name": "JABON DE TOCADOR IO Mango & Mburucuya Tripack 3 x 80g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000137",
@@ -1711,7 +1879,7 @@
     ],
     "price": "8300",
     "originalPrice": "8300.00",
-    "sizes": [
+    "size": [
       "Tripack 3 x 80g"
     ],
     "featured": false,
@@ -1723,13 +1891,16 @@
       "• Limpieza profunda de la piel."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ffc72e"
     ]
   },
   {
     "id": 57,
-    "name": "JABON DE TOCADOR IO",
+    "producto": "JABON DE TOCADOR IO",
+    "variedad": "Manzana verde & Pera",
+    "presentacion": "Tripack 3 x 80g",
+    "name": "JABON DE TOCADOR IO Manzana verde & Pera Tripack 3 x 80g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000138",
@@ -1740,7 +1911,7 @@
     ],
     "price": "8300",
     "originalPrice": "8300.00",
-    "sizes": [
+    "size": [
       "Tripack 3 x 80g"
     ],
     "featured": false,
@@ -1752,13 +1923,16 @@
       "• Limpieza profunda de la piel."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#80e62d"
     ]
   },
   {
     "id": 58,
-    "name": "JABON DE TOCADOR C",
+    "producto": "JABON DE TOCADOR C",
+    "variedad": "Natural Fresh",
+    "presentacion": "Caja de 300 x 20g",
+    "name": "JABON DE TOCADOR C Natural Fresh Caja de 300 x 20g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000153",
@@ -1769,7 +1943,7 @@
     ],
     "price": "363000",
     "originalPrice": "363000.00",
-    "sizes": [
+    "size": [
       "Caja de 300 x 20g"
     ],
     "featured": false,
@@ -1783,13 +1957,16 @@
       "• Suaviza la piel."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#d1d1d1"
     ]
   },
   {
     "id": 59,
-    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "variedad": "Clásico",
+    "presentacion": "Bolsa de 10Kg",
+    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE Clásico Bolsa de 10Kg",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000229",
@@ -1800,7 +1977,7 @@
     ],
     "price": "125400",
     "originalPrice": "125400.00",
-    "sizes": [
+    "size": [
       "Bolsa de 10Kg"
     ],
     "featured": false,
@@ -1815,13 +1992,16 @@
       "•  Apto para lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1385dd"
     ]
   },
   {
     "id": 60,
-    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "variedad": "Citrus",
+    "presentacion": "Bolsa de 1Kg",
+    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE Citrus Bolsa de 1Kg",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000230",
@@ -1832,7 +2012,7 @@
     ],
     "price": "15300",
     "originalPrice": "15300.00",
-    "sizes": [
+    "size": [
       "Bolsa de 1Kg"
     ],
     "featured": false,
@@ -1847,13 +2027,16 @@
       "•  Apto para lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#38cb1a"
     ]
   },
   {
     "id": 61,
-    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "variedad": "Citrus",
+    "presentacion": "Bolsa de 10Kg",
+    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE Citrus Bolsa de 10Kg",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000231",
@@ -1864,7 +2047,7 @@
     ],
     "price": "125400",
     "originalPrice": "125400.00",
-    "sizes": [
+    "size": [
       "Bolsa de 10Kg"
     ],
     "featured": false,
@@ -1879,13 +2062,16 @@
       "•  Apto para lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#38cb1a"
     ]
   },
   {
     "id": 62,
-    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "variedad": "Clásico",
+    "presentacion": "Bolsa de 400g",
+    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE Clásico Bolsa de 400g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000232",
@@ -1896,7 +2082,7 @@
     ],
     "price": "7000",
     "originalPrice": "7000.00",
-    "sizes": [
+    "size": [
       "Bolsa de 400g"
     ],
     "featured": false,
@@ -1911,13 +2097,16 @@
       "•  Apto para lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1385dd"
     ]
   },
   {
     "id": 63,
-    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "variedad": "Citrus",
+    "presentacion": "Bolsa de 150g",
+    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE Citrus Bolsa de 150g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000233",
@@ -1928,7 +2117,7 @@
     ],
     "price": "3850",
     "originalPrice": "3850.00",
-    "sizes": [
+    "size": [
       "Bolsa de 150g"
     ],
     "featured": false,
@@ -1943,13 +2132,16 @@
       "•  Apto para lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#38cb1a"
     ]
   },
   {
     "id": 64,
-    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "variedad": "Citrus",
+    "presentacion": "Bolsa de 400g",
+    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE Citrus Bolsa de 400g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000234",
@@ -1960,7 +2152,7 @@
     ],
     "price": "7000",
     "originalPrice": "7000.00",
-    "sizes": [
+    "size": [
       "Bolsa de 400g"
     ],
     "featured": false,
@@ -1975,13 +2167,16 @@
       "•  Apto para lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#38cb1a"
     ]
   },
   {
     "id": 65,
-    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "variedad": "Citrus",
+    "presentacion": "Bolsa de 3Kg",
+    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE Citrus Bolsa de 3Kg",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000235",
@@ -1992,7 +2187,7 @@
     ],
     "price": "43000",
     "originalPrice": "43000.00",
-    "sizes": [
+    "size": [
       "Bolsa de 3Kg"
     ],
     "featured": false,
@@ -2007,13 +2202,16 @@
       "•  Apto para lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#38cb1a"
     ]
   },
   {
     "id": 66,
-    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "variedad": "Clásico",
+    "presentacion": "Bolsa de 1Kg",
+    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE Clásico Bolsa de 1Kg",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000236",
@@ -2024,7 +2222,7 @@
     ],
     "price": "15300",
     "originalPrice": "15300.00",
-    "sizes": [
+    "size": [
       "Bolsa de 1Kg"
     ],
     "featured": false,
@@ -2039,13 +2237,16 @@
       "•  Apto para lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1385dd"
     ]
   },
   {
     "id": 67,
-    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "variedad": "Clásico",
+    "presentacion": "Bolsa de 3Kg",
+    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE Clásico Bolsa de 3Kg",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000237",
@@ -2056,7 +2257,7 @@
     ],
     "price": "43000",
     "originalPrice": "43000.00",
-    "sizes": [
+    "size": [
       "Bolsa de 3Kg"
     ],
     "featured": false,
@@ -2071,13 +2272,16 @@
       "•  Apto para lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1385dd"
     ]
   },
   {
     "id": 68,
-    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
+    "variedad": "Clásico",
+    "presentacion": "Bolsa de 150g",
+    "name": "POLVO PARA LAVAR LA ROPA INSUPERABLE Clásico Bolsa de 150g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000238",
@@ -2088,7 +2292,7 @@
     ],
     "price": "3850",
     "originalPrice": "3850.00",
-    "sizes": [
+    "size": [
       "Bolsa de 150g"
     ],
     "featured": false,
@@ -2103,13 +2307,16 @@
       "•  Apto para lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1385dd"
     ]
   },
   {
     "id": 69,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "variedad": "Floral",
+    "presentacion": "Display 20x70ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Floral Display 20x70ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000270",
@@ -2120,7 +2327,7 @@
     ],
     "price": "62000",
     "originalPrice": "62000.00",
-    "sizes": [
+    "size": [
       "Display 20x70ml"
     ],
     "featured": false,
@@ -2135,13 +2342,16 @@
       "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f859a0"
     ]
   },
   {
     "id": 70,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "variedad": "Tropical",
+    "presentacion": "Display 20x70ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Tropical Display 20x70ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000271",
@@ -2152,7 +2362,7 @@
     ],
     "price": "62000",
     "originalPrice": "62000.00",
-    "sizes": [
+    "size": [
       "Display 20x70ml"
     ],
     "featured": false,
@@ -2167,13 +2377,16 @@
       "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ff4701"
     ]
   },
   {
     "id": 71,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "variedad": "Oriental",
+    "presentacion": "Display 20x70ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Oriental Display 20x70ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000272",
@@ -2184,7 +2397,7 @@
     ],
     "price": "62000",
     "originalPrice": "62000.00",
-    "sizes": [
+    "size": [
       "Display 20x70ml"
     ],
     "featured": false,
@@ -2199,13 +2412,16 @@
       "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#bf17ee"
     ]
   },
   {
     "id": 72,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "variedad": "Floral",
+    "presentacion": "Doypack 450ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Floral Doypack 450ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000273",
@@ -2216,7 +2432,7 @@
     ],
     "price": "11050",
     "originalPrice": "11050.00",
-    "sizes": [
+    "size": [
       "Doypack 450ml"
     ],
     "featured": false,
@@ -2231,13 +2447,16 @@
       "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f859a0"
     ]
   },
   {
     "id": 73,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "variedad": "Tropical",
+    "presentacion": "Doypack 450ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Tropical Doypack 450ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000274",
@@ -2248,7 +2467,7 @@
     ],
     "price": "11050",
     "originalPrice": "11050.00",
-    "sizes": [
+    "size": [
       "Doypack 450ml"
     ],
     "featured": false,
@@ -2263,13 +2482,16 @@
       "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ff4701"
     ]
   },
   {
     "id": 74,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "variedad": "Oriental",
+    "presentacion": "Doypack 450ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Oriental Doypack 450ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000275",
@@ -2280,7 +2502,7 @@
     ],
     "price": "11050",
     "originalPrice": "11050.00",
-    "sizes": [
+    "size": [
       "Doypack 450ml"
     ],
     "featured": false,
@@ -2295,13 +2517,16 @@
       "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#bf17ee"
     ]
   },
   {
     "id": 75,
-    "name": "POLVO PARA LAVAR LA ROPA GUAIRA PROFESIONAL",
+    "producto": "POLVO PARA LAVAR LA ROPA GUAIRA PROFESIONAL",
+    "variedad": "Profesional",
+    "presentacion": "Bolsa de 2Kg",
+    "name": "POLVO PARA LAVAR LA ROPA GUAIRA PROFESIONAL Profesional Bolsa de 2Kg",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000276",
@@ -2312,7 +2537,7 @@
     ],
     "price": "52500",
     "originalPrice": "52500.00",
-    "sizes": [
+    "size": [
       "Bolsa de 2Kg"
     ],
     "featured": false,
@@ -2327,13 +2552,16 @@
       "• Apto para uso en lavadoras Industriales y lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#0e19af"
     ]
   },
   {
     "id": 76,
-    "name": "POLVO PARA LAVAR LA ROPA GUAIRA PROFESIONAL",
+    "producto": "POLVO PARA LAVAR LA ROPA GUAIRA PROFESIONAL",
+    "variedad": "Profesional",
+    "presentacion": "Bolsa de 5Kg",
+    "name": "POLVO PARA LAVAR LA ROPA GUAIRA PROFESIONAL Profesional Bolsa de 5Kg",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000277",
@@ -2344,7 +2572,7 @@
     ],
     "price": "130400",
     "originalPrice": "130400.00",
-    "sizes": [
+    "size": [
       "Bolsa de 5Kg"
     ],
     "featured": false,
@@ -2359,13 +2587,16 @@
       "• Apto para uso en lavadoras Industriales y lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#0e19af"
     ]
   },
   {
     "id": 77,
-    "name": "JABON PARA LAVAR LA ROPA TROPICAL",
+    "producto": "JABON PARA LAVAR LA ROPA TROPICAL",
+    "variedad": "Ropa Blanca",
+    "presentacion": "Pan de 180 g.",
+    "name": "JABON PARA LAVAR LA ROPA TROPICAL Ropa Blanca Pan de 180 g.",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-de-lavar",
     "sku": "300000362",
@@ -2376,7 +2607,7 @@
     ],
     "price": "5000",
     "originalPrice": "5000.00",
-    "sizes": [
+    "size": [
       "Pan de 180 g."
     ],
     "featured": false,
@@ -2391,13 +2622,16 @@
       "• Mayor rendimiento, por su formato compacto y concentrado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#359aff"
     ]
   },
   {
     "id": 78,
-    "name": "JABON PARA LAVAR LA ROPA TROPICAL",
+    "producto": "JABON PARA LAVAR LA ROPA TROPICAL",
+    "variedad": "Ropa Delicada",
+    "presentacion": "Pan de 180 g.",
+    "name": "JABON PARA LAVAR LA ROPA TROPICAL Ropa Delicada Pan de 180 g.",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-de-lavar",
     "sku": "300000363",
@@ -2408,7 +2642,7 @@
     ],
     "price": "5000",
     "originalPrice": "5000.00",
-    "sizes": [
+    "size": [
       "Pan de 180 g."
     ],
     "featured": false,
@@ -2423,13 +2657,16 @@
       "• Mayor rendimiento, por su formato compacto y concentrado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ff80c3"
     ]
   },
   {
     "id": 79,
-    "name": "JABON PARA LAVAR LA ROPA TROPICAL",
+    "producto": "JABON PARA LAVAR LA ROPA TROPICAL",
+    "variedad": "Ropa Diaria",
+    "presentacion": "Pan de 180 g.",
+    "name": "JABON PARA LAVAR LA ROPA TROPICAL Ropa Diaria Pan de 180 g.",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-de-lavar",
     "sku": "300000364",
@@ -2440,7 +2677,7 @@
     ],
     "price": "5000",
     "originalPrice": "5000.00",
-    "sizes": [
+    "size": [
       "Pan de 180 g."
     ],
     "featured": false,
@@ -2455,13 +2692,16 @@
       "• Mayor rendimiento, por su formato compacto y concentrado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#37d767"
     ]
   },
   {
     "id": 80,
-    "name": "JABON PARA LAVAR LA ROPA TROPICAL",
+    "producto": "JABON PARA LAVAR LA ROPA TROPICAL",
+    "variedad": "Ropa Color",
+    "presentacion": "Pan de 180 g.",
+    "name": "JABON PARA LAVAR LA ROPA TROPICAL Ropa Color Pan de 180 g.",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-de-lavar",
     "sku": "300000365",
@@ -2472,7 +2712,7 @@
     ],
     "price": "5000",
     "originalPrice": "5000.00",
-    "sizes": [
+    "size": [
       "Pan de 180 g."
     ],
     "featured": false,
@@ -2487,13 +2727,16 @@
       "• Mayor rendimiento, por su formato compacto y concentrado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#cc61ba"
     ]
   },
   {
     "id": 81,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Delicado",
+    "presentacion": "Doypack 900ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Delicado Doypack 900ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000448",
@@ -2504,7 +2747,7 @@
     ],
     "price": "18200",
     "originalPrice": "18200.00",
-    "sizes": [
+    "size": [
       "Doypack 900ml"
     ],
     "featured": false,
@@ -2517,13 +2760,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ffd600"
     ]
   },
   {
     "id": 82,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "variedad": "Floral",
+    "presentacion": "Doypack 1600ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Floral Doypack 1600ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000492",
@@ -2534,7 +2780,7 @@
     ],
     "price": "32400",
     "originalPrice": "32400.00",
-    "sizes": [
+    "size": [
       "Doypack 1600ml"
     ],
     "featured": false,
@@ -2549,13 +2795,16 @@
       "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f859a0"
     ]
   },
   {
     "id": 83,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "variedad": "Floral",
+    "presentacion": "Bidón de 4L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Floral Bidón de 4L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000495",
@@ -2566,7 +2815,7 @@
     ],
     "price": "67150",
     "originalPrice": "67150.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -2581,13 +2830,16 @@
       "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f859a0"
     ]
   },
   {
     "id": 84,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "variedad": "Tropical",
+    "presentacion": "Bidón de 4L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Tropical Bidón de 4L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000496",
@@ -2598,7 +2850,7 @@
     ],
     "price": "67150",
     "originalPrice": "67150.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -2613,13 +2865,16 @@
       "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ff4701"
     ]
   },
   {
     "id": 85,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "variedad": "Oriental",
+    "presentacion": "Bidón de 4L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Oriental Bidón de 4L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000497",
@@ -2630,7 +2885,7 @@
     ],
     "price": "67150",
     "originalPrice": "67150.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -2645,13 +2900,16 @@
       "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#bf17ee"
     ]
   },
   {
     "id": 86,
-    "name": "JABON PARA LAVAR LA ROPA AGRICULTOR",
+    "producto": "JABON PARA LAVAR LA ROPA AGRICULTOR",
+    "variedad": "Marrón",
+    "presentacion": "Caja de 20 x 250 g.",
+    "name": "JABON PARA LAVAR LA ROPA AGRICULTOR Marrón Caja de 20 x 250 g.",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-prensado",
     "sku": "300000594",
@@ -2662,7 +2920,7 @@
     ],
     "price": "95000",
     "originalPrice": "95000.00",
-    "sizes": [
+    "size": [
       "Caja de 20 x 250 g."
     ],
     "featured": false,
@@ -2678,13 +2936,16 @@
       "• Cuida y protege las manos por su contenido de glicerina."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#a58860"
     ]
   },
   {
     "id": 87,
-    "name": "JABON PARA LAVAR LA ROPA AGRICULTOR",
+    "producto": "JABON PARA LAVAR LA ROPA AGRICULTOR",
+    "variedad": "Verde",
+    "presentacion": "Caja de 20 x 250 g.",
+    "name": "JABON PARA LAVAR LA ROPA AGRICULTOR Verde Caja de 20 x 250 g.",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-prensado",
     "sku": "300000595",
@@ -2695,7 +2956,7 @@
     ],
     "price": "95000",
     "originalPrice": "95000.00",
-    "sizes": [
+    "size": [
       "Caja de 20 x 250 g."
     ],
     "featured": false,
@@ -2711,13 +2972,16 @@
       "• Cuida y protege las manos por su contenido de glicerina."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#576452"
     ]
   },
   {
     "id": 88,
-    "name": "JABON DE TOCADOR C GLICERINA",
+    "producto": "JABON DE TOCADOR C GLICERINA",
+    "variedad": "Neutro",
+    "presentacion": "Pastilla 125g",
+    "name": "JABON DE TOCADOR C GLICERINA Neutro Pastilla 125g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000603",
@@ -2728,7 +2992,7 @@
     ],
     "price": "6600",
     "originalPrice": "6600.00",
-    "sizes": [
+    "size": [
       "Pastilla 125g"
     ],
     "featured": false,
@@ -2743,13 +3007,16 @@
       "• Suaviza la piel"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#edd040"
     ]
   },
   {
     "id": 89,
-    "name": "JABON DE TOCADOR C GLICERINA",
+    "producto": "JABON DE TOCADOR C GLICERINA",
+    "variedad": "Floral",
+    "presentacion": "Pastilla 125g",
+    "name": "JABON DE TOCADOR C GLICERINA Floral Pastilla 125g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000604",
@@ -2760,7 +3027,7 @@
     ],
     "price": "6600",
     "originalPrice": "6600.00",
-    "sizes": [
+    "size": [
       "Pastilla 125g"
     ],
     "featured": false,
@@ -2775,13 +3042,16 @@
       "• Suaviza la piel"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f859a0"
     ]
   },
   {
     "id": 90,
-    "name": "JABON DE TOCADOR C GLICERINA",
+    "producto": "JABON DE TOCADOR C GLICERINA",
+    "variedad": "Citrus",
+    "presentacion": "Pastilla 125g",
+    "name": "JABON DE TOCADOR C GLICERINA Citrus Pastilla 125g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000605",
@@ -2792,7 +3062,7 @@
     ],
     "price": "6600",
     "originalPrice": "6600.00",
-    "sizes": [
+    "size": [
       "Pastilla 125g"
     ],
     "featured": false,
@@ -2807,13 +3077,16 @@
       "• Suaviza la piel"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#38cb1a"
     ]
   },
   {
     "id": 91,
-    "name": "POLVO PARA LAVAR LA ROPA GUAIRA PROFESIONAL",
+    "producto": "POLVO PARA LAVAR LA ROPA GUAIRA PROFESIONAL",
+    "variedad": "Profesional",
+    "presentacion": "Bolsa de 600g",
+    "name": "POLVO PARA LAVAR LA ROPA GUAIRA PROFESIONAL Profesional Bolsa de 600g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000610",
@@ -2824,7 +3097,7 @@
     ],
     "price": "17600",
     "originalPrice": "17600.00",
-    "sizes": [
+    "size": [
       "Bolsa de 600g"
     ],
     "featured": false,
@@ -2839,13 +3112,16 @@
       "• Apto para uso en lavadoras Industriales y lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#0e19af"
     ]
   },
   {
     "id": 92,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Delicado",
+    "presentacion": "Display 20x70ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Delicado Display 20x70ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300000615",
@@ -2856,7 +3132,7 @@
     ],
     "price": "62000",
     "originalPrice": "62000.00",
-    "sizes": [
+    "size": [
       "Display 20x70ml"
     ],
     "featured": false,
@@ -2869,13 +3145,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ffd600"
     ]
   },
   {
     "id": 93,
-    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
+    "producto": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
+    "variedad": "Floral",
+    "presentacion": "Bidón de 4L",
+    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO Floral Bidón de 4L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "coco-puro",
     "sku": "300000624",
@@ -2886,7 +3165,7 @@
     ],
     "price": "99500",
     "originalPrice": "99500.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -2902,13 +3181,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f05cd7"
     ]
   },
   {
     "id": 94,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Surtido",
+    "presentacion": "Pack de 15 x 25g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Surtido Pack de 15 x 25g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300000625",
@@ -2919,7 +3201,7 @@
     ],
     "price": "24000",
     "originalPrice": "24000.00",
-    "sizes": [
+    "size": [
       "Pack de 15 x 25g"
     ],
     "featured": false,
@@ -2936,13 +3218,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#eae448"
     ]
   },
   {
     "id": 95,
-    "name": "JABON LIQUIDO ANTIBACTERIAL \"MULTIUSO\" COCO CAVALLARO",
+    "producto": "JABON LIQUIDO ANTIBACTERIAL \"MULTIUSO\" COCO CAVALLARO",
+    "variedad": "Natural",
+    "presentacion": "Bidón de 4L",
+    "name": "JABON LIQUIDO ANTIBACTERIAL \"MULTIUSO\" COCO CAVALLARO Natural Bidón de 4L",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300000628",
@@ -2953,7 +3238,7 @@
     ],
     "price": "97500",
     "originalPrice": "97500.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -2970,13 +3255,16 @@
       "• Libre de Gluten"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f0cb47"
     ]
   },
   {
     "id": 96,
-    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "variedad": "Leche de Almendras",
+    "presentacion": "Estuche de 125g",
+    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL Leche de Almendras Estuche de 125g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000641",
@@ -2987,7 +3275,7 @@
     ],
     "price": "8400",
     "originalPrice": "8400.00",
-    "sizes": [
+    "size": [
       "Estuche de 125g"
     ],
     "featured": false,
@@ -3002,13 +3290,16 @@
       "• Elimina el 99,9% de virus, gérmenes y bacterias."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#b3e1f5"
     ]
   },
   {
     "id": 97,
-    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "variedad": "Vainilla y Frutos Rojos",
+    "presentacion": "Estuche de 125g",
+    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL Vainilla y Frutos Rojos Estuche de 125g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000642",
@@ -3019,7 +3310,7 @@
     ],
     "price": "8400",
     "originalPrice": "8400.00",
-    "sizes": [
+    "size": [
       "Estuche de 125g"
     ],
     "featured": false,
@@ -3034,13 +3325,16 @@
       "• Elimina el 99,9% de virus, gérmenes y bacterias."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#eeaad2"
     ]
   },
   {
     "id": 98,
-    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "variedad": "Naranja y Jazmín",
+    "presentacion": "Estuche de 125g",
+    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL Naranja y Jazmín Estuche de 125g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000643",
@@ -3051,7 +3345,7 @@
     ],
     "price": "8400",
     "originalPrice": "8400.00",
-    "sizes": [
+    "size": [
       "Estuche de 125g"
     ],
     "featured": false,
@@ -3066,13 +3360,16 @@
       "• Elimina el 99,9% de virus, gérmenes y bacterias."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#8ce8c0"
     ]
   },
   {
     "id": 99,
-    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "variedad": "Leche de Almendras",
+    "presentacion": "Pastilla 90g",
+    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL Leche de Almendras Pastilla 90g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000644",
@@ -3083,7 +3380,7 @@
     ],
     "price": "5900",
     "originalPrice": "5900.00",
-    "sizes": [
+    "size": [
       "Pastilla 90g"
     ],
     "featured": false,
@@ -3098,13 +3395,16 @@
       "• Elimina el 99,9% de virus, gérmenes y bacterias."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#b3e1f5"
     ]
   },
   {
     "id": 100,
-    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "variedad": "Vainilla y Frutos Rojos",
+    "presentacion": "Pastilla 90g",
+    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL Vainilla y Frutos Rojos Pastilla 90g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000645",
@@ -3115,7 +3415,7 @@
     ],
     "price": "5900",
     "originalPrice": "5900.00",
-    "sizes": [
+    "size": [
       "Pastilla 90g"
     ],
     "featured": false,
@@ -3130,13 +3430,16 @@
       "• Elimina el 99,9% de virus, gérmenes y bacterias."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#eeaad2"
     ]
   },
   {
     "id": 101,
-    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "variedad": "Naranja y Jazmín",
+    "presentacion": "Pastilla 90g",
+    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL Naranja y Jazmín Pastilla 90g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000646",
@@ -3147,7 +3450,7 @@
     ],
     "price": "5900",
     "originalPrice": "5900.00",
-    "sizes": [
+    "size": [
       "Pastilla 90g"
     ],
     "featured": false,
@@ -3162,13 +3465,16 @@
       "• Elimina el 99,9% de virus, gérmenes y bacterias."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#8ce8c0"
     ]
   },
   {
     "id": 102,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Clásico",
+    "presentacion": "Estuche de 100 g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Clásico Estuche de 100 g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300000652",
@@ -3179,7 +3485,7 @@
     ],
     "price": "6700",
     "originalPrice": "6700.00",
-    "sizes": [
+    "size": [
       "Estuche de 100 g"
     ],
     "featured": false,
@@ -3196,13 +3502,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#b6b0a5"
     ]
   },
   {
     "id": 103,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Almendras",
+    "presentacion": "Estuche de 100 g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Almendras Estuche de 100 g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300000653",
@@ -3213,7 +3522,7 @@
     ],
     "price": "6700",
     "originalPrice": "6700.00",
-    "sizes": [
+    "size": [
       "Estuche de 100 g"
     ],
     "featured": false,
@@ -3230,13 +3539,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#c2c39d"
     ]
   },
   {
     "id": 104,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Floral",
+    "presentacion": "Estuche de 100 g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Floral Estuche de 100 g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300000654",
@@ -3247,7 +3559,7 @@
     ],
     "price": "6700",
     "originalPrice": "6700.00",
-    "sizes": [
+    "size": [
       "Estuche de 100 g"
     ],
     "featured": false,
@@ -3264,13 +3576,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f859a0"
     ]
   },
   {
     "id": 105,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Marina",
+    "presentacion": "Estuche de 100 g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Marina Estuche de 100 g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300000655",
@@ -3281,7 +3596,7 @@
     ],
     "price": "6700",
     "originalPrice": "6700.00",
-    "sizes": [
+    "size": [
       "Estuche de 100 g"
     ],
     "featured": false,
@@ -3298,13 +3613,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#79baec"
     ]
   },
   {
     "id": 106,
-    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "variedad": "Limón",
+    "presentacion": "Bidón de 5 L.",
+    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE Limón Bidón de 5 L.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "detergente",
     "sku": "300000667",
@@ -3315,7 +3633,7 @@
     ],
     "price": "41500",
     "originalPrice": "41500.00",
-    "sizes": [
+    "size": [
       "Bidón de 5 L."
     ],
     "featured": false,
@@ -3326,13 +3644,16 @@
       "• Fragancias variadas y agradables."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#61d62e"
     ]
   },
   {
     "id": 107,
-    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "variedad": "Manzana",
+    "presentacion": "Bidón de 5 L.",
+    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE Manzana Bidón de 5 L.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "detergente",
     "sku": "300000668",
@@ -3343,7 +3664,7 @@
     ],
     "price": "41500",
     "originalPrice": "41500.00",
-    "sizes": [
+    "size": [
       "Bidón de 5 L."
     ],
     "featured": false,
@@ -3354,13 +3675,16 @@
       "• Fragancias variadas y agradables."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f0192e"
     ]
   },
   {
     "id": 108,
-    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "variedad": "Neutro",
+    "presentacion": "Bidón de 5 L.",
+    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE Neutro Bidón de 5 L.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "detergente",
     "sku": "300000669",
@@ -3371,7 +3695,7 @@
     ],
     "price": "41500",
     "originalPrice": "41500.00",
-    "sizes": [
+    "size": [
       "Bidón de 5 L."
     ],
     "featured": false,
@@ -3382,13 +3706,16 @@
       "• Fragancias variadas y agradables."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#edd040"
     ]
   },
   {
     "id": 109,
-    "name": "JABON DE TOCADOR C2",
+    "producto": "JABON DE TOCADOR C2",
+    "variedad": "Mágica Energía",
+    "presentacion": "Pastilla 85g",
+    "name": "JABON DE TOCADOR C2 Mágica Energía Pastilla 85g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000688",
@@ -3399,7 +3726,7 @@
     ],
     "price": "4350",
     "originalPrice": "4350.00",
-    "sizes": [
+    "size": [
       "Pastilla 85g"
     ],
     "featured": false,
@@ -3414,13 +3741,16 @@
       "• Compacto y resistente al agua."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f77a36"
     ]
   },
   {
     "id": 110,
-    "name": "JABON DE TOCADOR C2",
+    "producto": "JABON DE TOCADOR C2",
+    "variedad": "Calma Mistica",
+    "presentacion": "Pastilla 85g",
+    "name": "JABON DE TOCADOR C2 Calma Mistica Pastilla 85g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000689",
@@ -3431,7 +3761,7 @@
     ],
     "price": "4350",
     "originalPrice": "4350.00",
-    "sizes": [
+    "size": [
       "Pastilla 85g"
     ],
     "featured": false,
@@ -3446,13 +3776,16 @@
       "• Compacto y resistente al agua."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#c336f7"
     ]
   },
   {
     "id": 111,
-    "name": "JABON DE TOCADOR C2",
+    "producto": "JABON DE TOCADOR C2",
+    "variedad": "Mágica Energía",
+    "presentacion": "Pastilla 130g",
+    "name": "JABON DE TOCADOR C2 Mágica Energía Pastilla 130g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000690",
@@ -3463,7 +3796,7 @@
     ],
     "price": "6000",
     "originalPrice": "6000.00",
-    "sizes": [
+    "size": [
       "Pastilla 130g"
     ],
     "featured": false,
@@ -3478,13 +3811,16 @@
       "• Compacto y resistente al agua."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f77a36"
     ]
   },
   {
     "id": 112,
-    "name": "JABON DE TOCADOR C2",
+    "producto": "JABON DE TOCADOR C2",
+    "variedad": "Calma Mistica",
+    "presentacion": "Pastilla 130g",
+    "name": "JABON DE TOCADOR C2 Calma Mistica Pastilla 130g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000691",
@@ -3495,7 +3831,7 @@
     ],
     "price": "6000",
     "originalPrice": "6000.00",
-    "sizes": [
+    "size": [
       "Pastilla 130g"
     ],
     "featured": false,
@@ -3510,13 +3846,16 @@
       "• Compacto y resistente al agua."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#c336f7"
     ]
   },
   {
     "id": 113,
-    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "variedad": "Marina",
+    "presentacion": "Botella 900ml",
+    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO Marina Botella 900ml",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "desodorante",
     "sku": "300000692",
@@ -3527,7 +3866,7 @@
     ],
     "price": "13100",
     "originalPrice": "13100.00",
-    "sizes": [
+    "size": [
       "Botella 900ml"
     ],
     "featured": false,
@@ -3540,13 +3879,16 @@
       "• Larga duración."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1171ee"
     ]
   },
   {
     "id": 114,
-    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "variedad": "Marina",
+    "presentacion": "Bidón de 5L",
+    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO Marina Bidón de 5L",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "desodorante",
     "sku": "300000693",
@@ -3557,7 +3899,7 @@
     ],
     "price": "57500",
     "originalPrice": "57500.00",
-    "sizes": [
+    "size": [
       "Bidón de 5L"
     ],
     "featured": false,
@@ -3570,13 +3912,16 @@
       "• Larga duración."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1171ee"
     ]
   },
   {
     "id": 115,
-    "name": "JABON DE TOCADOR C2",
+    "producto": "JABON DE TOCADOR C2",
+    "variedad": "Frescura Infinita",
+    "presentacion": "Pastilla 85g",
+    "name": "JABON DE TOCADOR C2 Frescura Infinita Pastilla 85g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000701",
@@ -3587,7 +3932,7 @@
     ],
     "price": "4350",
     "originalPrice": "4350.00",
-    "sizes": [
+    "size": [
       "Pastilla 85g"
     ],
     "featured": false,
@@ -3602,13 +3947,16 @@
       "• Compacto y resistente al agua."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#009dff"
     ]
   },
   {
     "id": 116,
-    "name": "JABON DE TOCADOR C2",
+    "producto": "JABON DE TOCADOR C2",
+    "variedad": "Equilibrio Natural",
+    "presentacion": "Pastilla 85g",
+    "name": "JABON DE TOCADOR C2 Equilibrio Natural Pastilla 85g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000702",
@@ -3619,7 +3967,7 @@
     ],
     "price": "4350",
     "originalPrice": "4350.00",
-    "sizes": [
+    "size": [
       "Pastilla 85g"
     ],
     "featured": false,
@@ -3634,13 +3982,16 @@
       "• Compacto y resistente al agua."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#79ee2b"
     ]
   },
   {
     "id": 117,
-    "name": "JABON DE TOCADOR C2",
+    "producto": "JABON DE TOCADOR C2",
+    "variedad": "Frescura Infinita",
+    "presentacion": "Pastilla 130g",
+    "name": "JABON DE TOCADOR C2 Frescura Infinita Pastilla 130g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000703",
@@ -3651,7 +4002,7 @@
     ],
     "price": "6000",
     "originalPrice": "6000.00",
-    "sizes": [
+    "size": [
       "Pastilla 130g"
     ],
     "featured": false,
@@ -3666,13 +4017,16 @@
       "• Compacto y resistente al agua."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#009dff"
     ]
   },
   {
     "id": 118,
-    "name": "JABON DE TOCADOR C2",
+    "producto": "JABON DE TOCADOR C2",
+    "variedad": "Equilibrio Natural",
+    "presentacion": "Pastilla 130g",
+    "name": "JABON DE TOCADOR C2 Equilibrio Natural Pastilla 130g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000704",
@@ -3683,7 +4037,7 @@
     ],
     "price": "6000",
     "originalPrice": "6000.00",
-    "sizes": [
+    "size": [
       "Pastilla 130g"
     ],
     "featured": false,
@@ -3698,13 +4052,16 @@
       "• Compacto y resistente al agua."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#79ee2b"
     ]
   },
   {
     "id": 119,
-    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "variedad": "Uva",
+    "presentacion": "Botella 900ml",
+    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO Uva Botella 900ml",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "desodorante",
     "sku": "300000705",
@@ -3715,7 +4072,7 @@
     ],
     "price": "13100",
     "originalPrice": "13100.00",
-    "sizes": [
+    "size": [
       "Botella 900ml"
     ],
     "featured": false,
@@ -3728,13 +4085,16 @@
       "• Larga duración."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#7b21e8"
     ]
   },
   {
     "id": 120,
-    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "variedad": "Lavanda",
+    "presentacion": "Botella 900ml",
+    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO Lavanda Botella 900ml",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "desodorante",
     "sku": "300000706",
@@ -3745,7 +4105,7 @@
     ],
     "price": "13100",
     "originalPrice": "13100.00",
-    "sizes": [
+    "size": [
       "Botella 900ml"
     ],
     "featured": false,
@@ -3758,13 +4118,16 @@
       "• Larga duración."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#cc5cf5"
     ]
   },
   {
     "id": 121,
-    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "variedad": "Fantasía",
+    "presentacion": "Botella 900ml",
+    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO Fantasía Botella 900ml",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "desodorante",
     "sku": "300000707",
@@ -3775,7 +4138,7 @@
     ],
     "price": "13100",
     "originalPrice": "13100.00",
-    "sizes": [
+    "size": [
       "Botella 900ml"
     ],
     "featured": false,
@@ -3788,13 +4151,16 @@
       "• Larga duración."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f339c2"
     ]
   },
   {
     "id": 122,
-    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "variedad": "Azahar",
+    "presentacion": "Botella 900ml",
+    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO Azahar Botella 900ml",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "desodorante",
     "sku": "300000708",
@@ -3805,7 +4171,7 @@
     ],
     "price": "13100",
     "originalPrice": "13100.00",
-    "sizes": [
+    "size": [
       "Botella 900ml"
     ],
     "featured": false,
@@ -3818,13 +4184,16 @@
       "• Larga duración."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#52d123"
     ]
   },
   {
     "id": 123,
-    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "variedad": "Uva",
+    "presentacion": "Bidón de 5L",
+    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO Uva Bidón de 5L",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "desodorante",
     "sku": "300000709",
@@ -3835,7 +4204,7 @@
     ],
     "price": "57500",
     "originalPrice": "57500.00",
-    "sizes": [
+    "size": [
       "Bidón de 5L"
     ],
     "featured": false,
@@ -3848,13 +4217,16 @@
       "• Larga duración."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#7b21e8"
     ]
   },
   {
     "id": 124,
-    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "variedad": "Lavanda",
+    "presentacion": "Bidón de 5L",
+    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO Lavanda Bidón de 5L",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "desodorante",
     "sku": "300000710",
@@ -3865,7 +4237,7 @@
     ],
     "price": "57500",
     "originalPrice": "57500.00",
-    "sizes": [
+    "size": [
       "Bidón de 5L"
     ],
     "featured": false,
@@ -3878,13 +4250,16 @@
       "• Larga duración."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#cc5cf5"
     ]
   },
   {
     "id": 125,
-    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "variedad": "Fantasía",
+    "presentacion": "Bidón de 5L",
+    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO Fantasía Bidón de 5L",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "desodorante",
     "sku": "300000711",
@@ -3895,7 +4270,7 @@
     ],
     "price": "57500",
     "originalPrice": "57500.00",
-    "sizes": [
+    "size": [
       "Bidón de 5L"
     ],
     "featured": false,
@@ -3908,13 +4283,16 @@
       "• Larga duración."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f339c2"
     ]
   },
   {
     "id": 126,
-    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "variedad": "Azahar",
+    "presentacion": "Bidón de 5L",
+    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO Azahar Bidón de 5L",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "desodorante",
     "sku": "300000712",
@@ -3925,7 +4303,7 @@
     ],
     "price": "57500",
     "originalPrice": "57500.00",
-    "sizes": [
+    "size": [
       "Bidón de 5L"
     ],
     "featured": false,
@@ -3938,13 +4316,16 @@
       "• Larga duración."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#52d123"
     ]
   },
   {
     "id": 127,
-    "name": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE",
+    "producto": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE",
+    "variedad": "Deluxe",
+    "presentacion": "Bolsa de 200g",
+    "name": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE Deluxe Bolsa de 200g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000713",
@@ -3955,7 +4336,7 @@
     ],
     "price": "6800",
     "originalPrice": "6800.00",
-    "sizes": [
+    "size": [
       "Bolsa de 200g"
     ],
     "featured": false,
@@ -3973,13 +4354,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ec22db"
     ]
   },
   {
     "id": 128,
-    "name": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE",
+    "producto": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE",
+    "variedad": "Deluxe",
+    "presentacion": "Bolsa de 400g",
+    "name": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE Deluxe Bolsa de 400g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000715",
@@ -3990,7 +4374,7 @@
     ],
     "price": "11800",
     "originalPrice": "11800.00",
-    "sizes": [
+    "size": [
       "Bolsa de 400g"
     ],
     "featured": false,
@@ -4008,13 +4392,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ec22db"
     ]
   },
   {
     "id": 129,
-    "name": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE",
+    "producto": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE",
+    "variedad": "Deluxe",
+    "presentacion": "Bolsa de 800g",
+    "name": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE Deluxe Bolsa de 800g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000716",
@@ -4025,7 +4412,7 @@
     ],
     "price": "21500",
     "originalPrice": "21500.00",
-    "sizes": [
+    "size": [
       "Bolsa de 800g"
     ],
     "featured": false,
@@ -4043,13 +4430,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ec22db"
     ]
   },
   {
     "id": 130,
-    "name": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA",
+    "producto": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA",
+    "variedad": "Extra",
+    "presentacion": "Bolsa de 400g",
+    "name": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA Extra Bolsa de 400g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000719",
@@ -4060,7 +4450,7 @@
     ],
     "price": "9500",
     "originalPrice": "9500.00",
-    "sizes": [
+    "size": [
       "Bolsa de 400g"
     ],
     "featured": false,
@@ -4078,13 +4468,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#eb961e"
     ]
   },
   {
     "id": 131,
-    "name": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA",
+    "producto": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA",
+    "variedad": "Extra",
+    "presentacion": "Bolsa de 800g",
+    "name": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA Extra Bolsa de 800g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000720",
@@ -4095,7 +4488,7 @@
     ],
     "price": "18000",
     "originalPrice": "18000.00",
-    "sizes": [
+    "size": [
       "Bolsa de 800g"
     ],
     "featured": false,
@@ -4113,13 +4506,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#eb961e"
     ]
   },
   {
     "id": 132,
-    "name": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA",
+    "producto": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA",
+    "variedad": "Extra",
+    "presentacion": "Bolsa de 2Kg",
+    "name": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA Extra Bolsa de 2Kg",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000721",
@@ -4130,7 +4526,7 @@
     ],
     "price": "38500",
     "originalPrice": "38500.00",
-    "sizes": [
+    "size": [
       "Bolsa de 2Kg"
     ],
     "featured": false,
@@ -4148,13 +4544,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#eb961e"
     ]
   },
   {
     "id": 133,
-    "name": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE",
+    "producto": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE",
+    "variedad": "Deluxe",
+    "presentacion": "Bolsa de 2Kg",
+    "name": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE Deluxe Bolsa de 2Kg",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000723",
@@ -4165,7 +4564,7 @@
     ],
     "price": "48500",
     "originalPrice": "48500.00",
-    "sizes": [
+    "size": [
       "Bolsa de 2Kg"
     ],
     "featured": false,
@@ -4183,13 +4582,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ec22db"
     ]
   },
   {
     "id": 134,
-    "name": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE",
+    "producto": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE",
+    "variedad": "Deluxe",
+    "presentacion": "Bolsa de 80g",
+    "name": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE Deluxe Bolsa de 80g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000724",
@@ -4200,7 +4602,7 @@
     ],
     "price": "3800",
     "originalPrice": "3800.00",
-    "sizes": [
+    "size": [
       "Bolsa de 80g"
     ],
     "featured": false,
@@ -4218,13 +4620,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ec22db"
     ]
   },
   {
     "id": 135,
-    "name": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA ANTIBAC",
+    "producto": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA ANTIBAC",
+    "variedad": "Extra",
+    "presentacion": "Bolsa de 10Kg",
+    "name": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA ANTIBAC Extra Bolsa de 10Kg",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-en-polvo",
     "sku": "300000725",
@@ -4235,7 +4640,7 @@
     ],
     "price": "163000",
     "originalPrice": "163000.00",
-    "sizes": [
+    "size": [
       "Bolsa de 10Kg"
     ],
     "featured": false,
@@ -4253,13 +4658,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#eb961e"
     ]
   },
   {
     "id": 136,
-    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "variedad": "Leche de Almendras",
+    "presentacion": "Pastilla 125g",
+    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL Leche de Almendras Pastilla 125g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000734",
@@ -4270,7 +4678,7 @@
     ],
     "price": "7200",
     "originalPrice": "7200.00",
-    "sizes": [
+    "size": [
       "Pastilla 125g"
     ],
     "featured": false,
@@ -4285,13 +4693,16 @@
       "• Elimina el 99,9% de virus, gérmenes y bacterias."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#b3e1f5"
     ]
   },
   {
     "id": 137,
-    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "variedad": "Vainilla y Frutos Rojos",
+    "presentacion": "Pastilla 125g",
+    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL Vainilla y Frutos Rojos Pastilla 125g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000735",
@@ -4302,7 +4713,7 @@
     ],
     "price": "7200",
     "originalPrice": "7200.00",
-    "sizes": [
+    "size": [
       "Pastilla 125g"
     ],
     "featured": false,
@@ -4317,13 +4728,16 @@
       "• Elimina el 99,9% de virus, gérmenes y bacterias."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#eeaad2"
     ]
   },
   {
     "id": 138,
-    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
+    "variedad": "Naranja y Jazmín",
+    "presentacion": "Pastilla 125g",
+    "name": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL Naranja y Jazmín Pastilla 125g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000736",
@@ -4334,7 +4748,7 @@
     ],
     "price": "7200",
     "originalPrice": "7200.00",
-    "sizes": [
+    "size": [
       "Pastilla 125g"
     ],
     "featured": false,
@@ -4349,13 +4763,16 @@
       "• Elimina el 99,9% de virus, gérmenes y bacterias."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#8ce8c0"
     ]
   },
   {
     "id": 139,
-    "name": "JABON DE TOCADOR CAVALLARO",
+    "producto": "JABON DE TOCADOR CAVALLARO",
+    "variedad": "Surtido",
+    "presentacion": "Caja de 500 x 10g",
+    "name": "JABON DE TOCADOR CAVALLARO Surtido Caja de 500 x 10g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000741",
@@ -4366,7 +4783,7 @@
     ],
     "price": "261000",
     "originalPrice": "261000.00",
-    "sizes": [
+    "size": [
       "Caja de 500 x 10g"
     ],
     "featured": false,
@@ -4380,13 +4797,16 @@
       "• Suaviza la piel."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#eae448"
     ]
   },
   {
     "id": 140,
-    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
+    "producto": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
+    "variedad": "Clásico",
+    "presentacion": "Doypack 900ml",
+    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO Clásico Doypack 900ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "coco-puro",
     "sku": "300000743",
@@ -4397,7 +4817,7 @@
     ],
     "price": "28950",
     "originalPrice": "28950.00",
-    "sizes": [
+    "size": [
       "Doypack 900ml"
     ],
     "featured": false,
@@ -4413,13 +4833,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#abf2bd"
     ]
   },
   {
     "id": 141,
-    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
+    "producto": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
+    "variedad": "Floral",
+    "presentacion": "Doypack 900ml",
+    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO Floral Doypack 900ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "coco-puro",
     "sku": "300000744",
@@ -4430,7 +4853,7 @@
     ],
     "price": "28950",
     "originalPrice": "28950.00",
-    "sizes": [
+    "size": [
       "Doypack 900ml"
     ],
     "featured": false,
@@ -4446,13 +4869,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f05cd7"
     ]
   },
   {
     "id": 142,
-    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
+    "producto": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
+    "variedad": "Clásico",
+    "presentacion": "Doypack 1600ml",
+    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO Clásico Doypack 1600ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "coco-puro",
     "sku": "300000745",
@@ -4463,7 +4889,7 @@
     ],
     "price": "48500",
     "originalPrice": "48500.00",
-    "sizes": [
+    "size": [
       "Doypack 1600ml"
     ],
     "featured": false,
@@ -4479,13 +4905,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#abf2bd"
     ]
   },
   {
     "id": 143,
-    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
+    "producto": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
+    "variedad": "Floral",
+    "presentacion": "Doypack 1600ml",
+    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO Floral Doypack 1600ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "coco-puro",
     "sku": "300000746",
@@ -4496,7 +4925,7 @@
     ],
     "price": "48500",
     "originalPrice": "48500.00",
-    "sizes": [
+    "size": [
       "Doypack 1600ml"
     ],
     "featured": false,
@@ -4512,13 +4941,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f05cd7"
     ]
   },
   {
     "id": 144,
-    "name": "JABON DE TOCADOR C2",
+    "producto": "JABON DE TOCADOR C2",
+    "variedad": "Armonía Pura",
+    "presentacion": "Pastilla 85g",
+    "name": "JABON DE TOCADOR C2 Armonía Pura Pastilla 85g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000751",
@@ -4529,7 +4961,7 @@
     ],
     "price": "4350",
     "originalPrice": "4350.00",
-    "sizes": [
+    "size": [
       "Pastilla 85g"
     ],
     "featured": false,
@@ -4544,13 +4976,16 @@
       "• Compacto y resistente al agua."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#97d293"
     ]
   },
   {
     "id": 145,
-    "name": "JABON DE TOCADOR C2",
+    "producto": "JABON DE TOCADOR C2",
+    "variedad": "Dulce Pasión",
+    "presentacion": "Pastilla 85g",
+    "name": "JABON DE TOCADOR C2 Dulce Pasión Pastilla 85g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000752",
@@ -4561,7 +4996,7 @@
     ],
     "price": "4350",
     "originalPrice": "4350.00",
-    "sizes": [
+    "size": [
       "Pastilla 85g"
     ],
     "featured": false,
@@ -4576,13 +5011,16 @@
       "• Compacto y resistente al agua."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f36ddd"
     ]
   },
   {
     "id": 146,
-    "name": "JABON DE TOCADOR C2",
+    "producto": "JABON DE TOCADOR C2",
+    "variedad": "Armonía Pura",
+    "presentacion": "Pastilla 130g",
+    "name": "JABON DE TOCADOR C2 Armonía Pura Pastilla 130g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000754",
@@ -4593,7 +5031,7 @@
     ],
     "price": "6000",
     "originalPrice": "6000.00",
-    "sizes": [
+    "size": [
       "Pastilla 130g"
     ],
     "featured": false,
@@ -4608,13 +5046,16 @@
       "• Compacto y resistente al agua."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#97d293"
     ]
   },
   {
     "id": 147,
-    "name": "JABON DE TOCADOR C2",
+    "producto": "JABON DE TOCADOR C2",
+    "variedad": "Dulce Pasión",
+    "presentacion": "Pastilla 130g",
+    "name": "JABON DE TOCADOR C2 Dulce Pasión Pastilla 130g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000755",
@@ -4625,7 +5066,7 @@
     ],
     "price": "6000",
     "originalPrice": "6000.00",
-    "sizes": [
+    "size": [
       "Pastilla 130g"
     ],
     "featured": false,
@@ -4640,13 +5081,16 @@
       "• Compacto y resistente al agua."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f36ddd"
     ]
   },
   {
     "id": 148,
-    "name": "JABON DE TOCADOR CAVALLARO",
+    "producto": "JABON DE TOCADOR CAVALLARO",
+    "variedad": "Blanco",
+    "presentacion": "Caja de 500 x 10g",
+    "name": "JABON DE TOCADOR CAVALLARO Blanco Caja de 500 x 10g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000756",
@@ -4657,7 +5101,7 @@
     ],
     "price": "261000",
     "originalPrice": "261000.00",
-    "sizes": [
+    "size": [
       "Caja de 500 x 10g"
     ],
     "featured": false,
@@ -4671,13 +5115,16 @@
       "• Suaviza la piel."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ebe1d5"
     ]
   },
   {
     "id": 149,
-    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "variedad": "Uva",
+    "presentacion": "Doypack 500ml",
+    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO Uva Doypack 500ml\t",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "desodorante",
     "sku": "300000761",
@@ -4688,7 +5135,7 @@
     ],
     "price": "7550",
     "originalPrice": "7550.00",
-    "sizes": [
+    "size": [
       "Doypack 500ml\t"
     ],
     "featured": false,
@@ -4701,13 +5148,16 @@
       "• Larga duración."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#7b21e8"
     ]
   },
   {
     "id": 150,
-    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "variedad": "Fantasía",
+    "presentacion": "Doypack 500ml",
+    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO Fantasía Doypack 500ml\t",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "desodorante",
     "sku": "300000763",
@@ -4718,7 +5168,7 @@
     ],
     "price": "7550",
     "originalPrice": "7550.00",
-    "sizes": [
+    "size": [
       "Doypack 500ml\t"
     ],
     "featured": false,
@@ -4731,13 +5181,16 @@
       "• Larga duración."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f339c2"
     ]
   },
   {
     "id": 151,
-    "name": "JABON DE TOCADOR C2",
+    "producto": "JABON DE TOCADOR C2",
+    "variedad": "Calma Mistica",
+    "presentacion": "Tripack 3 x 130g",
+    "name": "JABON DE TOCADOR C2 Calma Mistica Tripack 3 x 130g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000765",
@@ -4748,7 +5201,7 @@
     ],
     "price": "16400",
     "originalPrice": "16400.00",
-    "sizes": [
+    "size": [
       "Tripack 3 x 130g"
     ],
     "featured": false,
@@ -4763,13 +5216,16 @@
       "• Compacto y resistente al agua."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#c336f7"
     ]
   },
   {
     "id": 152,
-    "name": "JABON DE TOCADOR C2",
+    "producto": "JABON DE TOCADOR C2",
+    "variedad": "Frescura Infinita",
+    "presentacion": "Tripack 3 x 130g",
+    "name": "JABON DE TOCADOR C2 Frescura Infinita Tripack 3 x 130g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000766",
@@ -4780,7 +5236,7 @@
     ],
     "price": "16400",
     "originalPrice": "16400.00",
-    "sizes": [
+    "size": [
       "Tripack 3 x 130g"
     ],
     "featured": false,
@@ -4795,13 +5251,16 @@
       "• Compacto y resistente al agua."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#009dff"
     ]
   },
   {
     "id": 153,
-    "name": "JABON DE TOCADOR C2",
+    "producto": "JABON DE TOCADOR C2",
+    "variedad": "Armonía Pura",
+    "presentacion": "Tripack 3 x 130g",
+    "name": "JABON DE TOCADOR C2 Armonía Pura Tripack 3 x 130g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000767",
@@ -4812,7 +5271,7 @@
     ],
     "price": "16400",
     "originalPrice": "16400.00",
-    "sizes": [
+    "size": [
       "Tripack 3 x 130g"
     ],
     "featured": false,
@@ -4827,13 +5286,16 @@
       "• Compacto y resistente al agua."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#97d293"
     ]
   },
   {
     "id": 154,
-    "name": "JABON DE TOCADOR C2",
+    "producto": "JABON DE TOCADOR C2",
+    "variedad": "Dulce Pasión",
+    "presentacion": "Tripack 3 x 130g",
+    "name": "JABON DE TOCADOR C2 Dulce Pasión Tripack 3 x 130g",
     "category": "higiene-personal",
     "subcategory": "tocador",
     "sku": "300000768",
@@ -4844,7 +5306,7 @@
     ],
     "price": "16400",
     "originalPrice": "16400.00",
-    "sizes": [
+    "size": [
       "Tripack 3 x 130g"
     ],
     "featured": false,
@@ -4859,13 +5321,16 @@
       "• Compacto y resistente al agua."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f36ddd"
     ]
   },
   {
     "id": 155,
-    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
+    "variedad": "Marina",
+    "presentacion": "Doypack 500ml",
+    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO Marina Doypack 500ml\t",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "desodorante",
     "sku": "300000783",
@@ -4876,7 +5341,7 @@
     ],
     "price": "7550",
     "originalPrice": "7550.00",
-    "sizes": [
+    "size": [
       "Doypack 500ml\t"
     ],
     "featured": false,
@@ -4889,13 +5354,16 @@
       "• Larga duración."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1171ee"
     ]
   },
   {
     "id": 156,
-    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
+    "producto": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
+    "variedad": "Clásico",
+    "presentacion": "Doypack 200ml",
+    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO Clásico Doypack 200ml\t",
     "category": "cuidado-de-las-prendas",
     "subcategory": "coco-puro",
     "sku": "300000784",
@@ -4906,7 +5374,7 @@
     ],
     "price": "7750",
     "originalPrice": "7750.00",
-    "sizes": [
+    "size": [
       "Doypack 200ml\t"
     ],
     "featured": false,
@@ -4922,13 +5390,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#abf2bd"
     ]
   },
   {
     "id": 157,
-    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
+    "producto": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
+    "variedad": "Floral",
+    "presentacion": "Doypack 200ml",
+    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO Floral Doypack 200ml\t",
     "category": "cuidado-de-las-prendas",
     "subcategory": "coco-puro",
     "sku": "300000785",
@@ -4939,7 +5410,7 @@
     ],
     "price": "7750",
     "originalPrice": "7750.00",
-    "sizes": [
+    "size": [
       "Doypack 200ml\t"
     ],
     "featured": false,
@@ -4955,13 +5426,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f05cd7"
     ]
   },
   {
     "id": 158,
-    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "variedad": "Clásico",
+    "presentacion": "Bidón de 4L",
+    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Clásico Bidón de 4L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "deterg-liq-p-ropas",
     "sku": "300000789",
@@ -4972,7 +5446,7 @@
     ],
     "price": "63500",
     "originalPrice": "63500.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -4987,13 +5461,16 @@
       "• Fragancia de alta fijación."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1385dd"
     ]
   },
   {
     "id": 159,
-    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "variedad": "Citrus",
+    "presentacion": "Bidón de 4L",
+    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Citrus Bidón de 4L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "deterg-liq-p-ropas",
     "sku": "300000791",
@@ -5004,7 +5481,7 @@
     ],
     "price": "63500",
     "originalPrice": "63500.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -5019,13 +5496,16 @@
       "• Fragancia de alta fijación."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#38cb1a"
     ]
   },
   {
     "id": 160,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Verbena",
+    "presentacion": "Estuche de 100 g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Verbena Estuche de 100 g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300000796",
@@ -5036,7 +5516,7 @@
     ],
     "price": "6700",
     "originalPrice": "6700.00",
-    "sizes": [
+    "size": [
       "Estuche de 100 g"
     ],
     "featured": false,
@@ -5053,13 +5533,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#09be70"
     ]
   },
   {
     "id": 161,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Clásico",
+    "presentacion": "Pastilla 100g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Clásico Pastilla 100g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300000797",
@@ -5070,7 +5553,7 @@
     ],
     "price": "6100",
     "originalPrice": "6100.00",
-    "sizes": [
+    "size": [
       "Pastilla 100g"
     ],
     "featured": false,
@@ -5087,13 +5570,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#b6b0a5"
     ]
   },
   {
     "id": 162,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Almendras",
+    "presentacion": "Pastilla 100g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Almendras Pastilla 100g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300000798",
@@ -5104,7 +5590,7 @@
     ],
     "price": "6100",
     "originalPrice": "6100.00",
-    "sizes": [
+    "size": [
       "Pastilla 100g"
     ],
     "featured": false,
@@ -5121,13 +5607,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#c2c39d"
     ]
   },
   {
     "id": 163,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Floral",
+    "presentacion": "Pastilla 100g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Floral Pastilla 100g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300000799",
@@ -5138,7 +5627,7 @@
     ],
     "price": "6100",
     "originalPrice": "6100.00",
-    "sizes": [
+    "size": [
       "Pastilla 100g"
     ],
     "featured": false,
@@ -5155,13 +5644,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f859a0"
     ]
   },
   {
     "id": 164,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Marina",
+    "presentacion": "Pastilla 100g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Marina Pastilla 100g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300000800",
@@ -5172,7 +5664,7 @@
     ],
     "price": "6100",
     "originalPrice": "6100.00",
-    "sizes": [
+    "size": [
       "Pastilla 100g"
     ],
     "featured": false,
@@ -5189,13 +5681,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#79baec"
     ]
   },
   {
     "id": 165,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Verbena",
+    "presentacion": "Pastilla 100g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Verbena Pastilla 100g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300000802",
@@ -5206,7 +5701,7 @@
     ],
     "price": "6100",
     "originalPrice": "6100.00",
-    "sizes": [
+    "size": [
       "Pastilla 100g"
     ],
     "featured": false,
@@ -5223,13 +5718,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#09be70"
     ]
   },
   {
     "id": 166,
-    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "variedad": "Clásico",
+    "presentacion": "Doypack 400ml",
+    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Clásico Doypack 400ml\t",
     "category": "cuidado-de-las-prendas",
     "subcategory": "deterg-liq-p-ropas",
     "sku": "300000803",
@@ -5240,7 +5738,7 @@
     ],
     "price": "9800",
     "originalPrice": "9800.00",
-    "sizes": [
+    "size": [
       "Doypack 400ml\t"
     ],
     "featured": false,
@@ -5255,13 +5753,16 @@
       "• Fragancia de alta fijación."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1385dd"
     ]
   },
   {
     "id": 167,
-    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "variedad": "Citrus",
+    "presentacion": "Doypack 400ml",
+    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Citrus Doypack 400ml\t",
     "category": "cuidado-de-las-prendas",
     "subcategory": "deterg-liq-p-ropas",
     "sku": "300000804",
@@ -5272,7 +5773,7 @@
     ],
     "price": "9800",
     "originalPrice": "9800.00",
-    "sizes": [
+    "size": [
       "Doypack 400ml\t"
     ],
     "featured": false,
@@ -5287,13 +5788,16 @@
       "• Fragancia de alta fijación."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#38cb1a"
     ]
   },
   {
     "id": 168,
-    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "variedad": "Clásico",
+    "presentacion": "Doypack 800ml",
+    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Clásico Doypack 800ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "deterg-liq-p-ropas",
     "sku": "300000806",
@@ -5304,7 +5808,7 @@
     ],
     "price": "17400",
     "originalPrice": "17400.00",
-    "sizes": [
+    "size": [
       "Doypack 800ml"
     ],
     "featured": false,
@@ -5319,13 +5823,16 @@
       "• Fragancia de alta fijación."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1385dd"
     ]
   },
   {
     "id": 169,
-    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "variedad": "Citrus",
+    "presentacion": "Doypack 800ml",
+    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Citrus Doypack 800ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "deterg-liq-p-ropas",
     "sku": "300000807",
@@ -5336,7 +5843,7 @@
     ],
     "price": "17400",
     "originalPrice": "17400.00",
-    "sizes": [
+    "size": [
       "Doypack 800ml"
     ],
     "featured": false,
@@ -5351,13 +5858,16 @@
       "• Fragancia de alta fijación."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#38cb1a"
     ]
   },
   {
     "id": 170,
-    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "variedad": "Clásico",
+    "presentacion": "Doypack 2L",
+    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Clásico Doypack 2L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "deterg-liq-p-ropas",
     "sku": "300000808",
@@ -5368,7 +5878,7 @@
     ],
     "price": "37500",
     "originalPrice": "37500.00",
-    "sizes": [
+    "size": [
       "Doypack 2L"
     ],
     "featured": false,
@@ -5383,13 +5893,16 @@
       "• Fragancia de alta fijación."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1385dd"
     ]
   },
   {
     "id": 171,
-    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "variedad": "Citrus",
+    "presentacion": "Doypack 2L",
+    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Citrus Doypack 2L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "deterg-liq-p-ropas",
     "sku": "300000809",
@@ -5400,7 +5913,7 @@
     ],
     "price": "37500",
     "originalPrice": "37500.00",
-    "sizes": [
+    "size": [
       "Doypack 2L"
     ],
     "featured": false,
@@ -5415,13 +5928,16 @@
       "• Fragancia de alta fijación."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#38cb1a"
     ]
   },
   {
     "id": 172,
-    "name": "JABON DE TOCADOR NATURAL COCO CAVALLARO CON ACEITE ESENCIAL",
+    "producto": "JABON DE TOCADOR NATURAL COCO CAVALLARO CON ACEITE ESENCIAL",
+    "variedad": "Petit Grain",
+    "presentacion": "Estuche de 100 g",
+    "name": "JABON DE TOCADOR NATURAL COCO CAVALLARO CON ACEITE ESENCIAL Petit Grain Estuche de 100 g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300000824",
@@ -5432,7 +5948,7 @@
     ],
     "price": "6700",
     "originalPrice": "6700.00",
-    "sizes": [
+    "size": [
       "Estuche de 100 g"
     ],
     "featured": false,
@@ -5450,13 +5966,16 @@
       "• Calmante y antiestrés"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#b1e246"
     ]
   },
   {
     "id": 173,
-    "name": "JABON LIQUIDO ANTIBACTERIAL \"MULTIUSO\" COCO CAVALLARO",
+    "producto": "JABON LIQUIDO ANTIBACTERIAL \"MULTIUSO\" COCO CAVALLARO",
+    "variedad": "Natural",
+    "presentacion": "Doypack 900 ml",
+    "name": "JABON LIQUIDO ANTIBACTERIAL \"MULTIUSO\" COCO CAVALLARO Natural Doypack 900 ml",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300000834",
@@ -5467,7 +5986,7 @@
     ],
     "price": "27250",
     "originalPrice": "27250.00",
-    "sizes": [
+    "size": [
       "Doypack 900 ml"
     ],
     "featured": false,
@@ -5484,13 +6003,16 @@
       "• Libre de Gluten"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#087f0d"
     ]
   },
   {
     "id": 174,
-    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "variedad": "Clásico",
+    "presentacion": "Doypack 200ml",
+    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Clásico Doypack 200ml\t",
     "category": "cuidado-de-las-prendas",
     "subcategory": "deterg-liq-p-ropas",
     "sku": "300000909",
@@ -5501,7 +6023,7 @@
     ],
     "price": "4600",
     "originalPrice": "4600.00",
-    "sizes": [
+    "size": [
       "Doypack 200ml\t"
     ],
     "featured": false,
@@ -5516,13 +6038,16 @@
       "• Fragancia de alta fijación."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1385dd"
     ]
   },
   {
     "id": 175,
-    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
+    "variedad": "Citrus",
+    "presentacion": "Doypack 200ml",
+    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Citrus Doypack 200ml\t",
     "category": "cuidado-de-las-prendas",
     "subcategory": "deterg-liq-p-ropas",
     "sku": "300000910",
@@ -5533,7 +6058,7 @@
     ],
     "price": "4600",
     "originalPrice": "4600.00",
-    "sizes": [
+    "size": [
       "Doypack 200ml\t"
     ],
     "featured": false,
@@ -5548,13 +6073,16 @@
       "• Fragancia de alta fijación."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#38cb1a"
     ]
   },
   {
     "id": 176,
-    "name": "DETERGENTE LAVAVAJILLAS PIXOL FORMULA CONCENTRADA",
+    "producto": "DETERGENTE LAVAVAJILLAS PIXOL FORMULA CONCENTRADA",
+    "variedad": "Limón",
+    "presentacion": "Botella Det. 500ml",
+    "name": "DETERGENTE LAVAVAJILLAS PIXOL FORMULA CONCENTRADA Limón Botella Det. 500ml",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "detergente",
     "sku": "300000915",
@@ -5565,7 +6093,7 @@
     ],
     "price": "8100",
     "originalPrice": "8100.00",
-    "sizes": [
+    "size": [
       "Botella Det. 500ml"
     ],
     "featured": false,
@@ -5580,13 +6108,16 @@
       "•\tNeutralizador de olores."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#0ceb0e"
     ]
   },
   {
     "id": 177,
-    "name": "DETERGENTE LAVAVAJILLAS PIXOL 4L LIMON",
+    "producto": "DETERGENTE LAVAVAJILLAS PIXOL 4L LIMON",
+    "variedad": "Limón",
+    "presentacion": "Bidón de 4L",
+    "name": "DETERGENTE LAVAVAJILLAS PIXOL 4L LIMON Limón Bidón de 4L",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "detergente",
     "sku": "300000918",
@@ -5597,7 +6128,7 @@
     ],
     "price": "37500",
     "originalPrice": "37500.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -5612,13 +6143,16 @@
       "• Neutralizador de olores."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#0ceb0e"
     ]
   },
   {
     "id": 178,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Coconut",
+    "presentacion": "Display 20x70ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Coconut Display 20x70ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001010",
@@ -5629,7 +6163,7 @@
     ],
     "price": "62000",
     "originalPrice": "62000.00",
-    "sizes": [
+    "size": [
       "Display 20x70ml"
     ],
     "featured": false,
@@ -5642,13 +6176,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#b99869"
     ]
   },
   {
     "id": 179,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Exótico",
+    "presentacion": "Display 20x70ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Exótico Display 20x70ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001011",
@@ -5659,7 +6196,7 @@
     ],
     "price": "62000",
     "originalPrice": "62000.00",
-    "sizes": [
+    "size": [
       "Display 20x70ml"
     ],
     "featured": false,
@@ -5672,13 +6209,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f36ddd"
     ]
   },
   {
     "id": 180,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Coconut",
+    "presentacion": "Bidón de 4L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Coconut Bidón de 4L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001060",
@@ -5689,7 +6229,7 @@
     ],
     "price": "56800",
     "originalPrice": "56800.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -5702,13 +6242,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#b99869"
     ]
   },
   {
     "id": 181,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Exótico",
+    "presentacion": "Bidón de 4L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Exótico Bidón de 4L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001061",
@@ -5719,7 +6262,7 @@
     ],
     "price": "56800",
     "originalPrice": "56800.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -5732,13 +6275,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f36ddd"
     ]
   },
   {
     "id": 182,
-    "name": "JABON DE COCO PURO COCO CAVALLARO",
+    "producto": "JABON DE COCO PURO COCO CAVALLARO",
+    "variedad": "Blanco",
+    "presentacion": "Caja 30 x 50g",
+    "name": "JABON DE COCO PURO COCO CAVALLARO Blanco Caja 30 x 50g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300001104",
@@ -5749,7 +6295,7 @@
     ],
     "price": "74500",
     "originalPrice": "74500.00",
-    "sizes": [
+    "size": [
       "Caja 30 x 50g"
     ],
     "featured": false,
@@ -5766,13 +6312,16 @@
       "• Libre de gluten."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ebe1d5"
     ]
   },
   {
     "id": 183,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Floral",
+    "presentacion": "Tripack 3 x 90g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Floral Tripack 3 x 90g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300001153",
@@ -5783,7 +6332,7 @@
     ],
     "price": "14950",
     "originalPrice": "14950.00",
-    "sizes": [
+    "size": [
       "Tripack 3 x 90g"
     ],
     "featured": false,
@@ -5800,13 +6349,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f859a0"
     ]
   },
   {
     "id": 184,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Marina",
+    "presentacion": "Tripack 3 x 90g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Marina Tripack 3 x 90g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300001154",
@@ -5817,7 +6369,7 @@
     ],
     "price": "14950",
     "originalPrice": "14950.00",
-    "sizes": [
+    "size": [
       "Tripack 3 x 90g"
     ],
     "featured": false,
@@ -5834,13 +6386,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#79baec"
     ]
   },
   {
     "id": 185,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Verbena",
+    "presentacion": "Tripack 3 x 90g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Verbena Tripack 3 x 90g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300001155",
@@ -5851,7 +6406,7 @@
     ],
     "price": "14950",
     "originalPrice": "14950.00",
-    "sizes": [
+    "size": [
       "Tripack 3 x 90g"
     ],
     "featured": false,
@@ -5868,13 +6423,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#09be70"
     ]
   },
   {
     "id": 186,
-    "name": "JABON DE TOCADOR COCO CAVALLARO",
+    "producto": "JABON DE TOCADOR COCO CAVALLARO",
+    "variedad": "Berries",
+    "presentacion": "Estuche de 100 g",
+    "name": "JABON DE TOCADOR COCO CAVALLARO Berries Estuche de 100 g",
     "category": "higiene-personal",
     "subcategory": "coco-puro",
     "sku": "300001168",
@@ -5885,7 +6443,7 @@
     ],
     "price": "6700",
     "originalPrice": "6700.00",
-    "sizes": [
+    "size": [
       "Estuche de 100 g"
     ],
     "featured": false,
@@ -5902,13 +6460,16 @@
       "• Previene el acné"
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#cd70b8"
     ]
   },
   {
     "id": 187,
-    "name": "LIMP. MULTIUSO PIXOL LAVANDA 900ML",
+    "producto": "LIMP. MULTIUSO PIXOL LAVANDA 900ML",
+    "variedad": "Lavanda",
+    "presentacion": "Botella 900 ml.",
+    "name": "LIMP. MULTIUSO PIXOL LAVANDA 900ML Lavanda Botella 900 ml.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "limpiador",
     "sku": "300001195",
@@ -5919,7 +6480,7 @@
     ],
     "price": "13200",
     "originalPrice": "13200.00",
-    "sizes": [
+    "size": [
       "Botella 900 ml."
     ],
     "featured": false,
@@ -5935,13 +6496,16 @@
       "• Antibacterial."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ac23af"
     ]
   },
   {
     "id": 188,
-    "name": "LIMP. MULTIUSO PIXOL BOUQUET FLORAL 900ML",
+    "producto": "LIMP. MULTIUSO PIXOL BOUQUET FLORAL 900ML",
+    "variedad": "Bouquet Floral",
+    "presentacion": "Botella 900 ml.",
+    "name": "LIMP. MULTIUSO PIXOL BOUQUET FLORAL 900ML Bouquet Floral Botella 900 ml.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "limpiador",
     "sku": "300001197",
@@ -5952,7 +6516,7 @@
     ],
     "price": "13200",
     "originalPrice": "13200.00",
-    "sizes": [
+    "size": [
       "Botella 900 ml."
     ],
     "featured": false,
@@ -5968,13 +6532,16 @@
       "• Antibacterial."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f86381"
     ]
   },
   {
     "id": 189,
-    "name": "LIMP. MULTIUSO PIXOL FRESCURA HERBAL 900ML",
+    "producto": "LIMP. MULTIUSO PIXOL FRESCURA HERBAL 900ML",
+    "variedad": "Frescura Herbal",
+    "presentacion": "Botella 900 ml.",
+    "name": "LIMP. MULTIUSO PIXOL FRESCURA HERBAL 900ML Frescura Herbal Botella 900 ml.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "limpiador",
     "sku": "300001199",
@@ -5985,7 +6552,7 @@
     ],
     "price": "13200",
     "originalPrice": "13200.00",
-    "sizes": [
+    "size": [
       "Botella 900 ml."
     ],
     "featured": false,
@@ -6001,13 +6568,16 @@
       "• Antibacterial."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#6ed8b5"
     ]
   },
   {
     "id": 190,
-    "name": "LIMP. MULTIUSO PIXOL CITRONELA 900ML",
+    "producto": "LIMP. MULTIUSO PIXOL CITRONELA 900ML",
+    "variedad": "Citronella",
+    "presentacion": "Botella 900 ml.",
+    "name": "LIMP. MULTIUSO PIXOL CITRONELA 900ML Citronella Botella 900 ml.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "limpiador",
     "sku": "300001200",
@@ -6018,7 +6588,7 @@
     ],
     "price": "13200",
     "originalPrice": "13200.00",
-    "sizes": [
+    "size": [
       "Botella 900 ml."
     ],
     "featured": false,
@@ -6034,13 +6604,16 @@
       "• Antibacterial."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f0f401"
     ]
   },
   {
     "id": 191,
-    "name": "JABON PARA LAVAR LA ROPA AGRICULTOR",
+    "producto": "JABON PARA LAVAR LA ROPA AGRICULTOR",
+    "variedad": "Marrón",
+    "presentacion": "Caja de 20 x 150 g.",
+    "name": "JABON PARA LAVAR LA ROPA AGRICULTOR Marrón Caja de 20 x 150 g.",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-prensado",
     "sku": "300001225",
@@ -6051,7 +6624,7 @@
     ],
     "price": "63000",
     "originalPrice": "63000.00",
-    "sizes": [
+    "size": [
       "Caja de 20 x 150 g."
     ],
     "featured": false,
@@ -6067,13 +6640,16 @@
       "• Cuida y protege las manos por su contenido de glicerina."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#a58860"
     ]
   },
   {
     "id": 192,
-    "name": "JABON PARA LAVAR LA ROPA AGRICULTOR",
+    "producto": "JABON PARA LAVAR LA ROPA AGRICULTOR",
+    "variedad": "Verde",
+    "presentacion": "Caja de 20 x 150g",
+    "name": "JABON PARA LAVAR LA ROPA AGRICULTOR Verde Caja de 20 x 150g",
     "category": "cuidado-de-las-prendas",
     "subcategory": "jabon-prensado",
     "sku": "300001226",
@@ -6084,7 +6660,7 @@
     ],
     "price": "63000",
     "originalPrice": "63000.00",
-    "sizes": [
+    "size": [
       "Caja de 20 x 150g"
     ],
     "featured": false,
@@ -6100,13 +6676,16 @@
       "• Cuida y protege las manos por su contenido de glicerina."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#b6b0a5"
     ]
   },
   {
     "id": 193,
-    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "variedad": "Limón",
+    "presentacion": "Botella 480 ml.",
+    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE Limón Botella 480 ml.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "detergente",
     "sku": "300001236",
@@ -6117,7 +6696,7 @@
     ],
     "price": "5000",
     "originalPrice": "5000.00",
-    "sizes": [
+    "size": [
       "Botella 480 ml."
     ],
     "featured": false,
@@ -6128,13 +6707,16 @@
       "• Fragancias variadas y agradables."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#61d62e"
     ]
   },
   {
     "id": 194,
-    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "variedad": "Neutro",
+    "presentacion": "Botella 480 ml.",
+    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE Neutro Botella 480 ml.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "detergente",
     "sku": "300001237",
@@ -6145,7 +6727,7 @@
     ],
     "price": "5000",
     "originalPrice": "5000.00",
-    "sizes": [
+    "size": [
       "Botella 480 ml."
     ],
     "featured": false,
@@ -6156,13 +6738,16 @@
       "• Fragancias variadas y agradables."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#edd040"
     ]
   },
   {
     "id": 195,
-    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
+    "variedad": "Manzana",
+    "presentacion": "Botella 480 ml.",
+    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE Manzana Botella 480 ml.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "detergente",
     "sku": "300001238",
@@ -6173,7 +6758,7 @@
     ],
     "price": "5000",
     "originalPrice": "5000.00",
-    "sizes": [
+    "size": [
       "Botella 480 ml."
     ],
     "featured": false,
@@ -6184,13 +6769,16 @@
       "• Fragancias variadas y agradables."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f0192e"
     ]
   },
   {
     "id": 196,
-    "name": "LIMP MULTIUSO PIXOL LAVANDA 4L",
+    "producto": "LIMP MULTIUSO PIXOL LAVANDA 4L",
+    "variedad": "Lavanda",
+    "presentacion": "Bidón de 4L",
+    "name": "LIMP MULTIUSO PIXOL LAVANDA 4L Lavanda Bidón de 4L",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "limpiador",
     "sku": "300001266",
@@ -6201,7 +6789,7 @@
     ],
     "price": "48000",
     "originalPrice": "48000.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -6217,13 +6805,16 @@
       "• Antibacterial."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ac23af"
     ]
   },
   {
     "id": 197,
-    "name": "LIMP MULTIUSO PIXOL BOUQUET FLORAL 4L",
+    "producto": "LIMP MULTIUSO PIXOL BOUQUET FLORAL 4L",
+    "variedad": "Bouquet Floral",
+    "presentacion": "Bidón de 4L",
+    "name": "LIMP MULTIUSO PIXOL BOUQUET FLORAL 4L Bouquet Floral Bidón de 4L",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "limpiador",
     "sku": "300001267",
@@ -6234,7 +6825,7 @@
     ],
     "price": "48000",
     "originalPrice": "48000.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -6250,13 +6841,16 @@
       "• Antibacterial."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f86381"
     ]
   },
   {
     "id": 198,
-    "name": "LIMP MULTIUSO PIXOL FRESCURA HERBAL 4L",
+    "producto": "LIMP MULTIUSO PIXOL FRESCURA HERBAL 4L",
+    "variedad": "Frescura Herbal",
+    "presentacion": "Bidón de 4L",
+    "name": "LIMP MULTIUSO PIXOL FRESCURA HERBAL 4L Frescura Herbal Bidón de 4L",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "limpiador",
     "sku": "300001268",
@@ -6267,7 +6861,7 @@
     ],
     "price": "48000",
     "originalPrice": "48000.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -6283,13 +6877,16 @@
       "• Antibacterial."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#6ed8b5"
     ]
   },
   {
     "id": 199,
-    "name": "LIMP MULTIUSO PIXOL CITRONELLA 4L",
+    "producto": "LIMP MULTIUSO PIXOL CITRONELLA 4L",
+    "variedad": "Citronella",
+    "presentacion": "Bidón de 4L",
+    "name": "LIMP MULTIUSO PIXOL CITRONELLA 4L Citronella Bidón de 4L",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "limpiador",
     "sku": "300001269",
@@ -6300,7 +6897,7 @@
     ],
     "price": "48000",
     "originalPrice": "48000.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -6316,13 +6913,16 @@
       "• Antibacterial."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f0f401"
     ]
   },
   {
     "id": 200,
-    "name": "DETERGENTE LAVAVAJILLAS PIXOL FORMULA CONCENTRADA",
+    "producto": "DETERGENTE LAVAVAJILLAS PIXOL FORMULA CONCENTRADA",
+    "variedad": "Limón",
+    "presentacion": "Doypack 350ml",
+    "name": "DETERGENTE LAVAVAJILLAS PIXOL FORMULA CONCENTRADA Limón Doypack 350ml",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "detergente",
     "sku": "300001513",
@@ -6333,7 +6933,7 @@
     ],
     "price": "5000",
     "originalPrice": "5000.00",
-    "sizes": [
+    "size": [
       "Doypack 350ml"
     ],
     "featured": false,
@@ -6348,13 +6948,16 @@
       "• Neutralizador de olores."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#0ceb0e"
     ]
   },
   {
     "id": 201,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Clásico",
+    "presentacion": "Doypack 450ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Clásico Doypack 450ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001602",
@@ -6365,7 +6968,7 @@
     ],
     "price": "11000",
     "originalPrice": "11000.00",
-    "sizes": [
+    "size": [
       "Doypack 450ml"
     ],
     "featured": false,
@@ -6378,13 +6981,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1385dd"
     ]
   },
   {
     "id": 202,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Intenso",
+    "presentacion": "Doypack 450ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Intenso Doypack 450ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001603",
@@ -6395,7 +7001,7 @@
     ],
     "price": "11000",
     "originalPrice": "11000.00",
-    "sizes": [
+    "size": [
       "Doypack 450ml"
     ],
     "featured": false,
@@ -6408,13 +7014,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#92d99a"
     ]
   },
   {
     "id": 203,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Delicado",
+    "presentacion": "Doypack 450ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Delicado Doypack 450ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001604",
@@ -6425,7 +7034,7 @@
     ],
     "price": "11000",
     "originalPrice": "11000.00",
-    "sizes": [
+    "size": [
       "Doypack 450ml"
     ],
     "featured": false,
@@ -6438,13 +7047,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ffd600"
     ]
   },
   {
     "id": 204,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Exótico",
+    "presentacion": "Doypack 450ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Exótico Doypack 450ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001606",
@@ -6455,7 +7067,7 @@
     ],
     "price": "11000",
     "originalPrice": "11000.00",
-    "sizes": [
+    "size": [
       "Doypack 450ml"
     ],
     "featured": false,
@@ -6468,13 +7080,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f36ddd"
     ]
   },
   {
     "id": 205,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "variedad": "Floral",
+    "presentacion": "Doypack 450ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Floral Doypack 450ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001631",
@@ -6485,7 +7100,7 @@
     ],
     "price": "11050",
     "originalPrice": "11050.00",
-    "sizes": [
+    "size": [
       "Doypack 450ml"
     ],
     "featured": false,
@@ -6500,13 +7115,16 @@
       "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f859a0"
     ]
   },
   {
     "id": 206,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "variedad": "Oriental",
+    "presentacion": "Doypack 450ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Oriental Doypack 450ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001632",
@@ -6517,7 +7135,7 @@
     ],
     "price": "11050",
     "originalPrice": "11050.00",
-    "sizes": [
+    "size": [
       "Doypack 450ml"
     ],
     "featured": false,
@@ -6532,13 +7150,16 @@
       "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#bf17ee"
     ]
   },
   {
     "id": 207,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Coconut",
+    "presentacion": "Doypack 2L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Coconut Doypack 2L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001681",
@@ -6549,7 +7170,7 @@
     ],
     "price": "34400",
     "originalPrice": "34400.00",
-    "sizes": [
+    "size": [
       "Doypack 2L"
     ],
     "featured": false,
@@ -6562,13 +7183,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#b99869"
     ]
   },
   {
     "id": 208,
-    "name": "BOLSA PARA RESIDUOS PIXOL",
+    "producto": "BOLSA PARA RESIDUOS PIXOL",
+    "variedad": "Super Resistente",
+    "presentacion": "Bolsa de 100 L.",
+    "name": "BOLSA PARA RESIDUOS PIXOL Super Resistente Bolsa de 100 L.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "bolsa",
     "sku": "500000001",
@@ -6579,7 +7203,7 @@
     ],
     "price": "13000",
     "originalPrice": "13000.00",
-    "sizes": [
+    "size": [
       "Bolsa de 100 L."
     ],
     "featured": false,
@@ -6587,13 +7211,16 @@
     "usosRecomendados": [],
     "propiedades": [],
     "stock": 0,
-    "colors": [
+    "color": [
       "#fdd512"
     ]
   },
   {
     "id": 209,
-    "name": "BOLSA PARA RESIDUOS PIXOL",
+    "producto": "BOLSA PARA RESIDUOS PIXOL",
+    "variedad": "Super Resistente",
+    "presentacion": "Bolsa de 150 L.",
+    "name": "BOLSA PARA RESIDUOS PIXOL Super Resistente Bolsa de 150 L.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "bolsa",
     "sku": "500000002",
@@ -6604,7 +7231,7 @@
     ],
     "price": "16500",
     "originalPrice": "16500.00",
-    "sizes": [
+    "size": [
       "Bolsa de 150 L."
     ],
     "featured": false,
@@ -6612,13 +7239,16 @@
     "usosRecomendados": [],
     "propiedades": [],
     "stock": 0,
-    "colors": [
+    "color": [
       "#fdd512"
     ]
   },
   {
     "id": 210,
-    "name": "BOLSA PARA RESIDUOS PIXOL",
+    "producto": "BOLSA PARA RESIDUOS PIXOL",
+    "variedad": "Super Resistente",
+    "presentacion": "Bolsa de 200 L.",
+    "name": "BOLSA PARA RESIDUOS PIXOL Super Resistente Bolsa de 200 L.",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "bolsa",
     "sku": "500000003",
@@ -6629,7 +7259,7 @@
     ],
     "price": "25450",
     "originalPrice": "25450.00",
-    "sizes": [
+    "size": [
       "Bolsa de 200 L."
     ],
     "featured": false,
@@ -6637,13 +7267,16 @@
     "usosRecomendados": [],
     "propiedades": [],
     "stock": 0,
-    "colors": [
+    "color": [
       "#fdd512"
     ]
   },
   {
     "id": 211,
-    "name": "BOLSA PARA RESIDUOS PIXOL",
+    "producto": "BOLSA PARA RESIDUOS PIXOL",
+    "variedad": "Baño",
+    "presentacion": "Rollo x 100 Unidades",
+    "name": "BOLSA PARA RESIDUOS PIXOL Baño Rollo x 100 Unidades",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "bolsa",
     "sku": "500000004",
@@ -6654,7 +7287,7 @@
     ],
     "price": "31100",
     "originalPrice": "31100.00",
-    "sizes": [
+    "size": [
       "Rollo x 100 Unidades"
     ],
     "featured": false,
@@ -6662,13 +7295,16 @@
     "usosRecomendados": [],
     "propiedades": [],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ade6f0"
     ]
   },
   {
     "id": 212,
-    "name": "BOLSA PARA RESIDUOS PIXOL",
+    "producto": "BOLSA PARA RESIDUOS PIXOL",
+    "variedad": "Baño",
+    "presentacion": "Rollo x 30 Unidades",
+    "name": "BOLSA PARA RESIDUOS PIXOL Baño Rollo x 30 Unidades",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "bolsa",
     "sku": "500000005",
@@ -6679,7 +7315,7 @@
     ],
     "price": "11800",
     "originalPrice": "11800.00",
-    "sizes": [
+    "size": [
       "Rollo x 30 Unidades"
     ],
     "featured": false,
@@ -6687,13 +7323,16 @@
     "usosRecomendados": [],
     "propiedades": [],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ade6f0"
     ]
   },
   {
     "id": 213,
-    "name": "TRAPO  DE PISO PIXOL",
+    "producto": "TRAPO  DE PISO PIXOL",
+    "variedad": "Económico",
+    "presentacion": "1 Unidad",
+    "name": "TRAPO  DE PISO PIXOL Económico 1 Unidad",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "bolsa",
     "sku": "500000006",
@@ -6704,7 +7343,7 @@
     ],
     "price": "8650",
     "originalPrice": "8650.00",
-    "sizes": [
+    "size": [
       "1 Unidad"
     ],
     "featured": false,
@@ -6712,13 +7351,16 @@
     "usosRecomendados": [],
     "propiedades": [],
     "stock": 0,
-    "colors": [
+    "color": [
       "#2bd016"
     ]
   },
   {
     "id": 214,
-    "name": "TRAPO  DE PISO PIXOL",
+    "producto": "TRAPO  DE PISO PIXOL",
+    "variedad": "Premium",
+    "presentacion": "1 Unidad",
+    "name": "TRAPO  DE PISO PIXOL Premium 1 Unidad",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "bolsa",
     "sku": "500000007",
@@ -6729,7 +7371,7 @@
     ],
     "price": "12050",
     "originalPrice": "12050.00",
-    "sizes": [
+    "size": [
       "1 Unidad"
     ],
     "featured": false,
@@ -6737,13 +7379,16 @@
     "usosRecomendados": [],
     "propiedades": [],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ff6d1f"
     ]
   },
   {
     "id": 215,
-    "name": "ESPONJA PIXOL",
+    "producto": "ESPONJA PIXOL",
+    "variedad": "Verde",
+    "presentacion": "Pack x 6 Unidades",
+    "name": "ESPONJA PIXOL Verde Pack x 6 Unidades",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "complementarios",
     "sku": "500000018",
@@ -6754,7 +7399,7 @@
     ],
     "price": "17000",
     "originalPrice": "17000.00",
-    "sizes": [
+    "size": [
       "Pack x 6 Unidades"
     ],
     "featured": false,
@@ -6769,13 +7414,16 @@
       "•\tPack x 6 unidades, que permite llegar a un precio conveniente en su segmento."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#61d62e"
     ]
   },
   {
     "id": 216,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "variedad": "Tropical",
+    "presentacion": "Doypack 450ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Tropical Doypack 450ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001633",
@@ -6786,7 +7434,7 @@
     ],
     "price": "11050",
     "originalPrice": "11050.00",
-    "sizes": [
+    "size": [
       "Doypack 450ml"
     ],
     "featured": false,
@@ -6801,13 +7449,16 @@
       "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ff4701"
     ]
   },
   {
     "id": 217,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Intenso",
+    "presentacion": "Doypack 2L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Intenso Doypack 2L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001679",
@@ -6818,7 +7469,7 @@
     ],
     "price": "34400",
     "originalPrice": "34400.00",
-    "sizes": [
+    "size": [
       "Doypack 2L"
     ],
     "featured": false,
@@ -6831,13 +7482,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#92d99a"
     ]
   },
   {
     "id": 218,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Clásico",
+    "presentacion": "Doypack 2L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Clásico Doypack 2L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001678",
@@ -6848,7 +7502,7 @@
     ],
     "price": "34400",
     "originalPrice": "34400.00",
-    "sizes": [
+    "size": [
       "Doypack 2L"
     ],
     "featured": false,
@@ -6861,13 +7515,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1385dd"
     ]
   },
   {
     "id": 219,
-    "name": "DETERGENTE LAVAVAJILLAS PIXOL FORMULA CONCENTRADA",
+    "producto": "DETERGENTE LAVAVAJILLAS PIXOL FORMULA CONCENTRADA",
+    "variedad": "Limón",
+    "presentacion": "Botella Det. 500ml",
+    "name": "DETERGENTE LAVAVAJILLAS PIXOL FORMULA CONCENTRADA Limón Botella Det. 500ml",
     "category": "limpieza-y-desinfeccion-del-hogar",
     "subcategory": "detergente",
     "sku": "300001673",
@@ -6878,7 +7535,7 @@
     ],
     "price": "8100",
     "originalPrice": "8100.00",
-    "sizes": [
+    "size": [
       "Botella Det. 500ml"
     ],
     "featured": false,
@@ -6893,13 +7550,16 @@
       "•\tNeutralizador de olores."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#0ceb0e"
     ]
   },
   {
     "id": 220,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Clásico",
+    "presentacion": "Doypack 900ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Clásico Doypack 900ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001683",
@@ -6910,7 +7570,7 @@
     ],
     "price": "18200",
     "originalPrice": "18200.00",
-    "sizes": [
+    "size": [
       "Doypack 900ml"
     ],
     "featured": false,
@@ -6923,13 +7583,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#1385dd"
     ]
   },
   {
     "id": 221,
-    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
+    "producto": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
+    "variedad": "Clásico",
+    "presentacion": "Bidón de 4L",
+    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO Clásico Bidón de 4L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "coco-puro",
     "sku": "300000623",
@@ -6940,7 +7603,7 @@
     ],
     "price": "99500",
     "originalPrice": "99500.00",
-    "sizes": [
+    "size": [
       "Bidón de 4L"
     ],
     "featured": false,
@@ -6956,13 +7619,16 @@
       "• Apto para el lavado a mano y en lavadoras automáticas."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#abf2bd"
     ]
   },
   {
     "id": 222,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Delicado",
+    "presentacion": "Doypack 2L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Delicado Doypack 2L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001680",
@@ -6973,7 +7639,7 @@
     ],
     "price": "34400",
     "originalPrice": "34400.00",
-    "sizes": [
+    "size": [
       "Doypack 2L"
     ],
     "featured": false,
@@ -6986,13 +7652,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ffd600"
     ]
   },
   {
     "id": 223,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Exótico",
+    "presentacion": "Doypack 2L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Exótico Doypack 2L",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001682",
@@ -7003,7 +7672,7 @@
     ],
     "price": "34400",
     "originalPrice": "34400.00",
-    "sizes": [
+    "size": [
       "Doypack 2L"
     ],
     "featured": false,
@@ -7016,13 +7685,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f36ddd"
     ]
   },
   {
     "id": 224,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Exótico",
+    "presentacion": "Doypack 900ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Exótico Doypack 900ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001687",
@@ -7033,7 +7705,7 @@
     ],
     "price": "18200",
     "originalPrice": "18200.00",
-    "sizes": [
+    "size": [
       "Doypack 900ml"
     ],
     "featured": false,
@@ -7046,13 +7718,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#f36ddd"
     ]
   },
   {
     "id": 225,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "variedad": "Oriental",
+    "presentacion": "Doypack 1600ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Oriental Doypack 1600ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001676",
@@ -7063,7 +7738,7 @@
     ],
     "price": "32400",
     "originalPrice": "32400.00",
-    "sizes": [
+    "size": [
       "Doypack 1600ml"
     ],
     "featured": false,
@@ -7078,13 +7753,16 @@
       "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#bf17ee"
     ]
   },
   {
     "id": 226,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Coconut",
+    "presentacion": "Doypack 450ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Coconut Doypack 450ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001605",
@@ -7095,7 +7773,7 @@
     ],
     "price": "11000",
     "originalPrice": "11000.00",
-    "sizes": [
+    "size": [
       "Doypack 450ml"
     ],
     "featured": false,
@@ -7108,13 +7786,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#b99869"
     ]
   },
   {
     "id": 227,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Coconut",
+    "presentacion": "Doypack 900ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Coconut Doypack 900ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001686",
@@ -7125,7 +7806,7 @@
     ],
     "price": "18200",
     "originalPrice": "18200.00",
-    "sizes": [
+    "size": [
       "Doypack 900ml"
     ],
     "featured": false,
@@ -7138,13 +7819,16 @@
       "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#b99869"
     ]
   },
   {
     "id": 228,
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
+    "variedad": "Tropical",
+    "presentacion": "Doypack 1600ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Tropical Doypack 1600ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "suavizante",
     "sku": "300001677",
@@ -7155,7 +7839,7 @@
     ],
     "price": "32400",
     "originalPrice": "32400.00",
-    "sizes": [
+    "size": [
       "Doypack 1600ml"
     ],
     "featured": false,
@@ -7170,7 +7854,7 @@
       "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
     ],
     "stock": 0,
-    "colors": [
+    "color": [
       "#ff4701"
     ]
   }
