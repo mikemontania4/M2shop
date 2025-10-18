@@ -10,7 +10,7 @@
 }
 
 .carousel-track { display:flex; transition: transform 0.45s ease; will-change: transform; }
-.carousel-item { padding: 0 10px; }
+.carousel-item { padding: 0 0px; }
 
 .carousel-arrow {
   position: absolute;
