@@ -27,6 +27,7 @@ const ProductDetailPage: React.FC<{ productId?: number }> = ({ productId }) => {
     const idFromRoute = params.id ? Number.parseInt(params.id) : productId
     const productData = idFromRoute !== undefined ? productService.getProductById(idFromRoute) : undefined
     if (productData) {
+      console.log(productData)
       setProduct(productData)
       setSelectedSize(productData.sizes[0])
       setSelectedColor(productData.colors[0])
