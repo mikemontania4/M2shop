@@ -20,6 +20,10 @@ const ProductDetailPage: React.FC<{ productId?: number }> = ({ productId }) => {
   const params = useParams()
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }, [params.id, productId])
+
+  useEffect(() => {
     const idFromRoute = params.id ? Number.parseInt(params.id) : productId
     const productData = idFromRoute !== undefined ? productService.getProductById(idFromRoute) : undefined
     if (productData) {
