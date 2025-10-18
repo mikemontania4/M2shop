@@ -87,6 +87,11 @@ const MainNav: React.FC<MainNavProps> = ({ categories, mobileActive, onCloseMobi
               </Link>
             </li>
           ))}
+          <li className="nav-item">
+            <Link to="/la-empresa" className="nav-link" onClick={() => onCloseMobile?.()}>
+              LA EMPRESA
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

@@ -1,62 +1,70 @@
-import React, { useEffect, useMemo, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import productService, { Product } from '../services/productService';
-import { useApp } from '../contexts/AppContext';
-import { ShoppingCart, Check, ChevronLeft, ChevronRight } from 'lucide-react';
-import ProductCarousel from '../components/ProductCarousel';
+"use client"
+
+import type React from "react"
+import { useEffect, useMemo, useState } from "react"
+import { useParams } from "react-router-dom"
+import productService, { type Product } from "../services/productService"
+import { useApp } from "../contexts/AppContext"
+import { ShoppingCart, Check, ChevronLeft, ChevronRight } from "lucide-react"
+import ProductCarousel from "../components/ProductCarousel"
+import "../styles/productDetail.css"
 
 const ProductDetailPage: React.FC<{ productId?: number }> = ({ productId }) => {
-  const [product, setProduct] = useState<Product | null>(null);
-  const [selectedImage, setSelectedImage] = useState(0);
-  const [selectedSize, setSelectedSize] = useState('');
-  const [selectedColor, setSelectedColor] = useState('');
-  const [quantity, setQuantity] = useState(1);
-  const [showSuccess, setShowSuccess] = useState(false);
-  const { addToCart } = useApp();
-  const params = useParams();
+  const [product, setProduct] = useState<Product | null>(null)
+  const [selectedImage, setSelectedImage] = useState(0)
+  const [selectedSize, setSelectedSize] = useState("")
+  const [selectedColor, setSelectedColor] = useState("")
+  const [quantity, setQuantity] = useState(1)
+  const [showSuccess, setShowSuccess] = useState(false)
+  const { addToCart } = useApp()
+  const params = useParams()
 
   useEffect(() => {
-    const idFromRoute = params.id ? parseInt(params.id) : productId;
-    const productData = idFromRoute !== undefined ? productService.getProductById(idFromRoute) : undefined;
+    const idFromRoute = params.id ? Number.parseInt(params.id) : productId
+    const productData = idFromRoute !== undefined ? productService.getProductById(idFromRoute) : undefined
     if (productData) {
-      setProduct(productData);
-      setSelectedSize(productData.sizes[0]);
-      setSelectedColor(productData.colors[0]);
+      setProduct(productData)
+      setSelectedSize(productData.sizes[0])
+      setSelectedColor(productData.colors[0])
     }
-  }, [params.id, productId]);
+  }, [params.id, productId])
 
   const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('es-PY', {
-      style: 'currency',
-      currency: 'PYG',
-      minimumFractionDigits: 0
-    }).format(price);
-  };
+    return new Intl.NumberFormat("es-PY", {
+      style: "currency",
+      currency: "PYG",
+      minimumFractionDigits: 0,
+    }).format(price)
+  }
 
   const handleAddToCart = () => {
     if (product && selectedSize && selectedColor) {
-      addToCart(product, quantity, selectedSize, selectedColor);
-      setShowSuccess(true);
-      setTimeout(() => setShowSuccess(false), 3000);
+      addToCart(product, quantity, selectedSize, selectedColor)
+      setShowSuccess(true)
+      setTimeout(() => setShowSuccess(false), 3000)
     }
-  };
+  }
 
   const relatedProducts = useMemo(() => {
-    if (!product) return [] as Product[];
+    if (!product) return [] as Product[]
     return productService
       .getProductsByCategory(product.category)
       .filter((p) => p.id !== product.id)
-      .slice(0, 12);
-  }, [product]);
+      .slice(0, 12)
+  }, [product])
 
   if (!product) {
-    return <div className="container"><p>Producto no encontrado</p></div>;
+    return (
+      <div className="container">
+        <p>Producto no encontrado</p>
+      </div>
+    )
   }
 
-  const hasDiscount = product.originalPrice > 0;
+  const hasDiscount = product.originalPrice > 0
   const discountPercentage = hasDiscount
     ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
-    : 0;
+    : 0
 
   return (
     <div className="product-detail-page">
@@ -64,16 +72,17 @@ const ProductDetailPage: React.FC<{ productId?: number }> = ({ productId }) => {
         <div className="product-detail-grid">
           <div className="product-images">
             <div className="main-image">
-              <img src={product.images[selectedImage]} alt={product.name} />
-              {hasDiscount && (
-                <span className="discount-badge">-{discountPercentage}%</span>
-              )}
+              <img src={product.images[selectedImage] || "/placeholder.svg"} alt={product.name} />
+              {hasDiscount && <span className="discount-badge">-{discountPercentage}%</span>}
               {product.images.length > 1 && (
                 <>
                   <button className="image-nav-btn prev" onClick={() => setSelectedImage((i) => Math.max(0, i - 1))}>
                     <ChevronLeft size={18} />
                   </button>
-                  <button className="image-nav-btn next" onClick={() => setSelectedImage((i) => Math.min(product.images.length - 1, i + 1))}>
+                  <button
+                    className="image-nav-btn next"
+                    onClick={() => setSelectedImage((i) => Math.min(product.images.length - 1, i + 1))}
+                  >
                     <ChevronRight size={18} />
                   </button>
                 </>
@@ -84,9 +93,9 @@ const ProductDetailPage: React.FC<{ productId?: number }> = ({ productId }) => {
                 {product.images.map((image, index) => (
                   <img
                     key={index}
-                    src={image}
+                    src={image || "/placeholder.svg"}
                     alt={`${product.name} ${index + 1}`}
-                    className={selectedImage === index ? 'active' : ''}
+                    className={selectedImage === index ? "active" : ""}
                     onClick={() => setSelectedImage(index)}
                   />
                 ))}
@@ -111,20 +120,24 @@ const ProductDetailPage: React.FC<{ productId?: number }> = ({ productId }) => {
 
             <p className="product-description">{product.descripcion || product.description}</p>
 
-            {(product.propiedades && product.propiedades.length > 0) && (
+            {product.propiedades && product.propiedades.length > 0 && (
               <div className="product-specs">
                 <h3>Propiedades</h3>
                 <ul>
-                  {product.propiedades.map((p, i) => (<li key={i}>{p}</li>))}
+                  {product.propiedades.map((p, i) => (
+                    <li key={i}>{p}</li>
+                  ))}
                 </ul>
               </div>
             )}
 
-            {(product.usosRecomendados && product.usosRecomendados.length > 0) && (
+            {product.usosRecomendados && product.usosRecomendados.length > 0 && (
               <div className="product-uses">
                 <h3>Usos Recomendados</h3>
                 <ul>
-                  {product.usosRecomendados.map((p, i) => (<li key={i}>{p}</li>))}
+                  {product.usosRecomendados.map((p, i) => (
+                    <li key={i}>{p}</li>
+                  ))}
                 </ul>
               </div>
             )}
@@ -136,7 +149,7 @@ const ProductDetailPage: React.FC<{ productId?: number }> = ({ productId }) => {
                   {product.sizes.map((size) => (
                     <button
                       key={size}
-                      className={`size-btn ${selectedSize === size ? 'active' : ''}`}
+                      className={`size-btn ${selectedSize === size ? "active" : ""}`}
                       onClick={() => setSelectedSize(size)}
                     >
                       {size}
@@ -151,7 +164,7 @@ const ProductDetailPage: React.FC<{ productId?: number }> = ({ productId }) => {
                   {product.colors.map((color) => (
                     <button
                       key={color}
-                      className={`color-btn ${selectedColor === color ? 'active' : ''}`}
+                      className={`color-btn ${selectedColor === color ? "active" : ""}`}
                       onClick={() => setSelectedColor(color)}
                     >
                       {color}
@@ -167,7 +180,7 @@ const ProductDetailPage: React.FC<{ productId?: number }> = ({ productId }) => {
                   <input
                     type="number"
                     value={quantity}
-                    onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))}
+                    onChange={(e) => setQuantity(Math.max(1, Number.parseInt(e.target.value) || 1))}
                     min="1"
                   />
                   <button onClick={() => setQuantity(quantity + 1)}>+</button>
@@ -189,8 +202,12 @@ const ProductDetailPage: React.FC<{ productId?: number }> = ({ productId }) => {
             </div>
 
             <div className="product-info-list">
-              <p><strong>Stock:</strong> {product.stock > 0 ? `${product.stock} unidades disponibles` : 'Sin stock'}</p>
-              <p><strong>Categoría:</strong> {product.category}</p>
+              <p>
+                <strong>Stock:</strong> {product.stock > 0 ? `${product.stock} unidades disponibles` : "Sin stock"}
+              </p>
+              <p>
+                <strong>Categoría:</strong> {product.category}
+              </p>
             </div>
           </div>
         </div>
@@ -215,7 +232,7 @@ const ProductDetailPage: React.FC<{ productId?: number }> = ({ productId }) => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProductDetailPage;
+export default ProductDetailPage

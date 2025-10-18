@@ -26,12 +26,16 @@ const MobileSearchBar: React.FC = () => {
 
   return (
     <div className="mobile-search-bar">
-      <div className="container">
-        <button className="mobile-menu-btn" onClick={toggleMobileMenu} aria-label="Toggle menu">
-          <Menu size={24} />
-        </button>
-        <SearchBar />
-        <CartButton />
+      <div className="mobile-search-container">
+        <div className="mobile-search-left">
+          <SearchBar />
+        </div>
+        <div className="mobile-search-right">
+          <CartButton />
+          <button className="mobile-menu-btn" onClick={toggleMobileMenu} aria-label="Toggle menu">
+            <Menu size={24} />
+          </button>
+        </div>
       </div>
     </div>
   )

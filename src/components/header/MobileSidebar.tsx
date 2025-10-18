@@ -84,6 +84,11 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({ isOpen, onClose, categori
                 </button>
               </li>
             ))}
+            <li>
+              <button className="sidebar-category-item" onClick={() => handleNavigation("/la-empresa")}>
+                LA EMPRESA
+              </button>
+            </li>
           </ul>
         </div>
 
