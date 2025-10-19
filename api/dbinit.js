@@ -24,11 +24,17 @@ const Resena = require("./src/models/Resena.models");
 const ListaDeseos = require("./src/models/ListaDeseos.models");
 const MetodoEnvio = require("./src/models/MetodoEnvio.models");
 const ConfiguracionSitio = require("./src/models/ConfiguracionSitio.models");
+const Descuento = require("./src/models/Descuento.models");
  
 
 // Datos de ejemplo
 const datosEjemplo = require('./datos.json');
 const Banner = require('./src/models/Banner.models');
+
+// Datos de migración
+const variantesConvertidos = require('./variantes_convertidos.json');
+const categoriasGeneradas = require('./categorias_generadas.json');
+const descuentosData = require('./descuentos.json');
 
 const populateDB = async () => {
   console.log("🔄 Iniciando población de base de datos...");
@@ -291,6 +297,97 @@ for (const banner of datosEjemplo.banners) {
 }
 console.log("✅ Banners insertados");
 
+    // ============= 25. CATEGORÍAS GENERADAS =============
+    console.log("2️⃣5️⃣  Insertando categorías generadas...");
+    for (const categoria of categoriasGeneradas) {
+      // Crear categoría principal
+      const categoriaPrincipal = await Categoria.findOrCreate({
+        where: { slug: categoria.id },
+        defaults: {
+          nombre: categoria.name,
+          slug: categoria.id,
+          descripcion: categoria.description || '',
+          imagenUrl: categoria.image || null,
+          activo: true
+        }
+      });
+
+      // Crear subcategorías si existen
+      if (categoria.subcategories && categoria.subcategories.length > 0) {
+        for (const subcategoria of categoria.subcategories) {
+          await Categoria.findOrCreate({
+            where: { slug: subcategoria.id },
+            defaults: {
+              nombre: subcategoria.name,
+              slug: subcategoria.id,
+              descripcion: subcategoria.description || '',
+              imagenUrl: subcategoria.image || null,
+              categoriasPadreId: categoriaPrincipal[0].id,
+              activo: true
+            }
+          });
+        }
+      }
+    }
+    console.log("✅ Categorías generadas insertadas");
+
+    // ============= 26. PRODUCTOS DESDE VARIANTES CONVERTIDOS =============
+    console.log("2️⃣6️⃣  Insertando productos desde variantes convertidos...");
+    for (const variante of variantesConvertidos) {
+      // Buscar la categoría por slug
+      const categoria = await Categoria.findOne({ 
+        where: { slug: variante.subcategory || variante.category } 
+      });
+
+      if (categoria) {
+        await Producto.findOrCreate({
+          where: { sku: variante.sku },
+          defaults: {
+            sku: variante.sku,
+            nombre: variante.producto,
+            slug: variante.sku.toLowerCase().replace(/[^a-z0-9-]/g, '-'),
+            descripcionCorta: variante.descripcion || '',
+            precioOriginal: parseFloat(variante.precioOriginal) || 0,
+            precio: parseFloat(variante.precio) || parseFloat(variante.precioOriginal) || 0,
+            variedad: variante.variedad,
+            presentacion: variante.presentacion,
+            categoriaId: categoria.id,
+            stock: variante.stock || 0,
+            activo: true
+          }
+        });
+      }
+    }
+    console.log("✅ Productos desde variantes insertados");
+
+    // ============= 27. DESCUENTOS =============
+    console.log("2️⃣7️⃣  Insertando descuentos...");
+    for (const descuentoData of descuentosData) {
+      // Buscar el producto por SKU
+      const producto = await Producto.findOne({ where: { sku: descuentoData.sku } });
+      
+      if (producto) {
+        await Descuento.findOrCreate({
+          where: { 
+            productoId: producto.id,
+            sku: descuentoData.sku,
+            tipo: descuentoData.tipoDescuento === 'PRODUCTO' ? 'PORCENTAJE' : 'IMPORTE'
+          },
+          defaults: {
+            productoId: producto.id,
+            sku: descuentoData.sku,
+            valor: parseFloat(descuentoData.descuento),
+            tipo: descuentoData.tipoDescuento === 'PRODUCTO' ? 'PORCENTAJE' : 'IMPORTE',
+            cantDesde: parseFloat(descuentoData.cantDesde) || 1,
+            cantHasta: parseFloat(descuentoData.cantHasta) || 999999999,
+            fechaDesde: new Date(),
+            fechaHasta: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000), // 1 año desde ahora
+            activo: true
+          }
+        });
+      }
+    }
+    console.log("✅ Descuentos insertados");
 
     console.log("\n🎉 ¡Base de datos poblada exitosamente!");
     console.log("\n📊 Resumen:");
@@ -318,6 +415,9 @@ console.log("✅ Banners insertados");
     console.log(`   - ${datosEjemplo.metodosEnvio.length} métodos de envío`);
     console.log(`   - ${datosEjemplo.configuracionSitio.length} configuraciones`);
     console.log(`   - ${datosEjemplo.banners.length} banners`);
+    console.log(`   - ${categoriasGeneradas.length} categorías generadas`);
+    console.log(`   - ${variantesConvertidos.length} productos desde variantes`);
+    console.log(`   - ${descuentosData.length} descuentos`);
     console.log("\n👤 Usuarios creados:");
     console.log("   - admin@cavallaro.com.py (Admin)");
     console.log("   - vendedor@cavallaro.com.py (Vendedor)");

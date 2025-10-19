@@ -1,4 +1,5 @@
 const { Sequelize } = require('sequelize');
+const { setupAssociations } = require('./src/models/associations');
 
 const sequelize = new Sequelize(process.env.DB_CNN, {
     logging: true, //default true
@@ -14,6 +15,9 @@ const sequelize = new Sequelize(process.env.DB_CNN, {
 const dbConnection = async () => {
     try {
         await sequelize.authenticate();
+        
+        // Configurar relaciones
+        setupAssociations();
         
         if (process.env.DB_INIT == 'true') {
            

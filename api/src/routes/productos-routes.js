@@ -8,6 +8,7 @@ const { authMiddleware, roleMiddleware } = require('../middlewares/authMiddlewar
 const router = Router();
 // Públicas
 router.get('/productos', productoController.listar);
+router.get('/productos/frontend', productoController.listarParaFrontend);
 router.get('/productos/:slug', productoController.obtenerPorSlug);
 
 // Admin/Vendedor

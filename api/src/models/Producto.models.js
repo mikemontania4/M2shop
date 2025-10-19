@@ -30,13 +30,25 @@ const Producto = sequelize.define('Producto', {
     type: DataTypes.TEXT,
     allowNull: true
   },
+  precioOriginal: {
+    type: DataTypes.DECIMAL(10, 2),
+    allowNull: false,
+    comment: 'Precio original sin descuentos'
+  },
   precio: {
     type: DataTypes.DECIMAL(10, 2),
-    allowNull: false
+    allowNull: true,
+    comment: 'Precio calculado con descuentos aplicados'
   },
-  precioComparacion: {
-    type: DataTypes.DECIMAL(10, 2),
-    allowNull: true
+  variedad: {
+    type: DataTypes.STRING(100),
+    allowNull: true,
+    comment: 'Variedad del producto (ej: Extra, Clásico)'
+  },
+  presentacion: {
+    type: DataTypes.STRING(100),
+    allowNull: true,
+    comment: 'Presentación del producto (ej: Bolsa de 10Kg)'
   },
   costo: {
     type: DataTypes.DECIMAL(10, 2),

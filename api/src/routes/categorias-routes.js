@@ -6,6 +6,7 @@ const router = Router();
 
 // Públicas
 router.get('/categorias', categoriaController.listar);
+router.get('/categorias/frontend', categoriaController.listarParaFrontend);
 router.get('/categorias/:slug', categoriaController.obtenerPorSlug);
 
 // Admin/Vendedor

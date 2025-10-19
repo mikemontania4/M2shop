@@ -80,6 +80,39 @@ const eliminar = async (req, res) => {
  
  
 
+const listarParaFrontend = async (req, res) => {
+  try {
+    const categorias = await Categoria.findAll({
+      where: { activo: true, categoriasPadreId: null },
+      include: [{
+        model: Categoria,
+        as: 'CategoriaPadre',
+        where: { activo: true },
+        required: false
+      }],
+      order: [['orden', 'ASC']]
+    });
+
+    // Formatear para el frontend
+    const categoriasFormateadas = categorias.map(categoria => ({
+      id: categoria.slug,
+      name: categoria.nombre,
+      description: categoria.descripcion || '',
+      image: categoria.imagenUrl || '',
+      subcategories: categoria.CategoriaPadre ? [{
+        id: categoria.CategoriaPadre.slug,
+        name: categoria.CategoriaPadre.nombre,
+        description: categoria.CategoriaPadre.descripcion || '',
+        image: categoria.CategoriaPadre.imagenUrl || ''
+      }] : []
+    }));
+
+    res.json(categoriasFormateadas);
+  } catch (error) {
+    res.status(500).json({ mensaje: 'Error al listar categorías para frontend', error: error.message });
+  }
+};
+
 module.exports = {
-  crear,eliminar,actualizar,obtenerPorSlug,listar
+  crear,eliminar,actualizar,obtenerPorSlug,listar,listarParaFrontend
 };

@@ -10,9 +10,15 @@ const Descuento = sequelize.define('Descuento', {
     allowNull: false
   },
  
-  varianteId: {
+  productoId: {
     type: DataTypes.INTEGER,
     allowNull: true,
+    comment: 'ID del producto al que aplica el descuento'
+  },
+  sku: {
+    type: DataTypes.STRING(50),
+    allowNull: true,
+    comment: 'SKU del producto al que aplica el descuento'
   },
   activo: {
     type: DataTypes.BOOLEAN,
@@ -46,13 +52,14 @@ const Descuento = sequelize.define('Descuento', {
   },
   valor: {
     type: DataTypes.DECIMAL(19, 2),
-    allowNull: false
+    allowNull: false,
+    comment: 'Valor del descuento (porcentaje o monto fijo)'
   },
  
   tipo: {
-     type: DataTypes.STRING(100),
+    type: DataTypes.STRING(100),
     allowNull: false,
-    comment: 'IMPORTE, PRODUCTO'
+    comment: 'PORCENTAJE, IMPORTE'
   },
   
  
@@ -62,4 +69,4 @@ const Descuento = sequelize.define('Descuento', {
   underscored: true, // Convierte automáticamente a snake_case
 });
  
-module.exports = Valoracion;
+module.exports = Descuento;
