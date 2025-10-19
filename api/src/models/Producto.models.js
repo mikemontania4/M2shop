@@ -1,94 +1,81 @@
 const { DataTypes } = require('sequelize');
-const { sequelize } = require('../../dbconfig'); 
+const { sequelize } = require('../../dbconfig');
 const Categoria = require('./Categoria.models');
-const Marca = require('./Marca.models');
+
+/**
+ * Modelo: Producto
+ * Representa la información general que comparten todas las variantes.
+ * Ejemplo: “Lavandina Concentrada” → todas sus variantes heredan descripción, usos, propiedades, etc.
+ */
 const Producto = sequelize.define('Producto', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true
   },
-  sku: {
-    type: DataTypes.STRING(50),
-    allowNull: false,
-    unique: true
-  },
+
   nombre: {
     type: DataTypes.STRING(200),
     allowNull: false
   },
+
   slug: {
     type: DataTypes.STRING(200),
     allowNull: false,
     unique: true
   },
-  descripcionCorta: {
+
+  descripcion: {
     type: DataTypes.TEXT,
-    allowNull: true
+    allowNull: true,
+    comment: 'Descripción general del producto'
   },
-  descripcionLarga: {
-    type: DataTypes.TEXT,
-    allowNull: true
+
+  usosRecomendados: {
+    type: DataTypes.JSON,
+    allowNull: true,
+    comment: 'Lista de usos recomendados del producto'
   },
-  precio: {
-    type: DataTypes.DECIMAL(10, 2),
-    allowNull: false
+
+  propiedades: {
+    type: DataTypes.JSON,
+    allowNull: true,
+    comment: 'Características o beneficios destacados'
   },
-  precioComparacion: {
-    type: DataTypes.DECIMAL(10, 2),
-    allowNull: true
-  },
-  costo: {
-    type: DataTypes.DECIMAL(10, 2),
-    allowNull: true
-  },
+
   categoriaId: {
     type: DataTypes.INTEGER,
     allowNull: false
   },
-  marcaId: {
+
+  subcategoriaId: {
     type: DataTypes.INTEGER,
     allowNull: true
   },
-  stock: {
-    type: DataTypes.INTEGER,
-    defaultValue: 0
-  },
-  stockMinimo: {
-    type: DataTypes.INTEGER,
-    defaultValue: 0
-  },
-  peso: {
-    type: DataTypes.DECIMAL(8, 2),
-    allowNull: true,
-    comment: 'Peso en kg'
-  },
-  destacado: {
-    type: DataTypes.BOOLEAN,
-    defaultValue: false
-  },
-  nuevo: {
-    type: DataTypes.BOOLEAN,
-    defaultValue: false
-  },
+
   activo: {
     type: DataTypes.BOOLEAN,
     defaultValue: true
   },
-  metaTitle: {
-    type: DataTypes.STRING(200),
-    allowNull: true
-  },
-  metaDescription: {
-    type: DataTypes.TEXT,
-    allowNull: true
-  }
+
+  // 🔽 Campos eliminados o trasladados (por rigidez o redundancia)
+  // sku: se trasladó a Variante, ya que cada variante tiene un SKU único.
+  // precio, precioComparacion, costo: también van en Variante.
+  // stock, stockMinimo, peso: se manejan en las variantes.
+  // destacado, nuevo: se mantienen en Variante (no todos los productos los requieren).
+  // metaTitle, metaDescription: se pueden manejar en otra tabla o como metadatos SEO dinámicos.
 }, {
   tableName: 'productos',
   timestamps: true,
   underscored: true
 });
- Producto.belongsTo(Categoria, { foreignKey: 'categoriaId' });
-Producto.belongsTo(Marca, { foreignKey: 'marcaId' });
- 
+
+// Relaciones
+Producto.belongsTo(Categoria, { foreignKey: 'categoriaId', as: 'categoria' });
+Categoria.hasMany(Producto, { foreignKey: 'categoriaId', as: 'productos' });
+
+// Subcategoría: misma tabla Categoría, con alias distinto
+Producto.belongsTo(Categoria, { foreignKey: 'subcategoriaId', as: 'subcategoria' });
+Categoria.hasMany(Producto, { foreignKey: 'subcategoriaId', as: 'productosSubcategoria' });
+
 module.exports = Producto;

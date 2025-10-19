@@ -374,7 +374,7 @@ const ImagenProducto = sequelize.define('ImagenProducto', {
   underscored: true
 });
 
-const VarianteProducto = sequelize.define('VarianteProducto', {
+const Variante = sequelize.define('Variante', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -882,21 +882,21 @@ Categoria.belongsTo(Categoria, { as: 'CategoriaPadre', foreignKey: 'categoriasPa
 Producto.belongsTo(Categoria, { foreignKey: 'categoriaId' });
 Producto.belongsTo(Marca, { foreignKey: 'marcaId' });
 ImagenProducto.belongsTo(Producto, { foreignKey: 'productoId' });
-VarianteProducto.belongsTo(Producto, { foreignKey: 'productoId' });
+Variante.belongsTo(Producto, { foreignKey: 'productoId' });
 AtributoProducto.belongsTo(Producto, { foreignKey: 'productoId' });
 
 // Carrito
 Carrito.belongsTo(Usuario, { foreignKey: 'usuarioId' });
 ItemCarrito.belongsTo(Carrito, { foreignKey: 'carritoId' });
 ItemCarrito.belongsTo(Producto, { foreignKey: 'productoId' });
-ItemCarrito.belongsTo(VarianteProducto, { foreignKey: 'varianteId' });
+ItemCarrito.belongsTo(Variante, { foreignKey: 'varianteId' });
 
 // Pedidos
 Pedido.belongsTo(Usuario, { foreignKey: 'usuarioId' });
 Pedido.belongsTo(DireccionEnvio, { foreignKey: 'direccionEnvioId' });
 ItemPedido.belongsTo(Pedido, { foreignKey: 'pedidoId' });
 ItemPedido.belongsTo(Producto, { foreignKey: 'productoId' });
-ItemPedido.belongsTo(VarianteProducto, { foreignKey: 'varianteId' });
+ItemPedido.belongsTo(Variante, { foreignKey: 'varianteId' });
 HistorialPedido.belongsTo(Pedido, { foreignKey: 'pedidoId' });
 HistorialPedido.belongsTo(Usuario, { foreignKey: 'usuarioId' });
 
@@ -926,7 +926,7 @@ module.exports = {
   Marca,
   Producto,
   ImagenProducto,
-  VarianteProducto,
+  Variante,
   AtributoProducto,
   Carrito,
   ItemCarrito,

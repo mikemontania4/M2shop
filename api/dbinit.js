@@ -9,7 +9,7 @@ const Categoria = require("./src/models/Categoria.models");
 const Marca = require("./src/models/Marca.models");
 const Producto = require("./src/models/Producto.models");
 const ImagenProducto = require("./src/models/ImagenProducto.models");
-const VarianteProducto = require("./src/models/VarianteProducto.models");
+const Variante = require("./src/models/Variante.models");
 const AtributoProducto = require("./src/models/AtributoProducto.models");
 const Carrito = require("./src/models/Carrito.models");
 const ItemCarrito = require("./src/models/ItemCarrito.models");
@@ -152,7 +152,7 @@ const populateDB = async () => {
     // ============= 11. VARIANTES DE PRODUCTOS =============
     console.log("1️⃣1️⃣  Insertando variantes de productos...");
     for (const variante of datosEjemplo.variantesProducto) {
-      await VarianteProducto.findOrCreate({
+      await Variante.findOrCreate({
         where: { sku: variante.sku },
         defaults: variante
       });

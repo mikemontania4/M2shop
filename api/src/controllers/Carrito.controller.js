@@ -16,7 +16,7 @@ const obtener = async (req, res) => {
           model: ItemCarrito,
           include: [
             { model: Producto, include: [{ model: ImagenProducto, where: { esPrincipal: true }, required: false }] },
-            { model: VarianteProducto }
+            { model: Variante }
           ]
         }]
       });
@@ -74,7 +74,7 @@ const obtener = async (req, res) => {
       let precioUnitario = parseFloat(producto.precio);
 
       if (varianteId) {
-        const variante = await VarianteProducto.findByPk(varianteId);
+        const variante = await Variante.findByPk(varianteId);
         if (variante && variante.precio) {
           precioUnitario = parseFloat(variante.precio);
         }
@@ -101,7 +101,7 @@ const obtener = async (req, res) => {
       const carritoActualizado = await Carrito.findByPk(carrito.id, {
         include: [{
           model: ItemCarrito, 
-          include: [Producto, VarianteProducto]
+          include: [Producto, Variante]
         }]
       });
 

@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const { sequelize } = require('../../dbconfig');
 const Pedido = require('./Pedido.models');
 const Producto = require('./Producto.models');
-const VarianteProducto = require('./VarianteProducto.models');
+const Variante = require('./Variante.models');
 const ItemPedido = sequelize.define('ItemPedido', {
   id: {
     type: DataTypes.INTEGER,
@@ -49,5 +49,5 @@ const ItemPedido = sequelize.define('ItemPedido', {
 });
  ItemPedido.belongsTo(Pedido, { foreignKey: 'pedidoId' });
 ItemPedido.belongsTo(Producto, { foreignKey: 'productoId' });
-ItemPedido.belongsTo(VarianteProducto, { foreignKey: 'varianteId' });
+ItemPedido.belongsTo(Variante, { foreignKey: 'varianteId' });
 module.exports = ItemPedido;

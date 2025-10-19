@@ -19,7 +19,7 @@ const { sequelize } = require('../../dbconfig');
         where: { usuarioId },
         include: [{ 
           model: ItemCarrito, 
-          include: [Producto, VarianteProducto] 
+          include: [Producto, Variante] 
         }]
       });
 
@@ -90,7 +90,7 @@ const { sequelize } = require('../../dbconfig');
       for (const item of carrito.ItemCarritos) {
         // Verificar stock disponible
         const stockDisponible = item.varianteId 
-          ? item.VarianteProducto.stock 
+          ? item.Variante.stock 
           : item.Producto.stock;
 
         if (stockDisponible < item.cantidad) {
@@ -106,7 +106,7 @@ const { sequelize } = require('../../dbconfig');
           productoId: item.productoId,
           varianteId: item.varianteId,
           nombreProducto: item.Producto.nombre,
-          sku: item.varianteId ? item.VarianteProducto.sku : item.Producto.sku,
+          sku: item.varianteId ? item.Variante.sku : item.Producto.sku,
           cantidad: item.cantidad,
           precioUnitario: item.precioUnitario,
           subtotal: parseFloat(item.precioUnitario) * item.cantidad
@@ -114,8 +114,8 @@ const { sequelize } = require('../../dbconfig');
 
         // Reducir stock
         if (item.varianteId) {
-          await VarianteProducto.update(
-            { stock: item.VarianteProducto.stock - item.cantidad },
+          await Variante.update(
+            { stock: item.Variante.stock - item.cantidad },
             { where: { id: item.varianteId }, transaction }
           );
         } else {
@@ -218,7 +218,7 @@ const { sequelize } = require('../../dbconfig');
       const pedido = await Pedido.findOne({
         where,
         include: [
-          { model: ItemPedido, include: [Producto, VarianteProducto] },
+          { model: ItemPedido, include: [Producto, Variante] },
           { model: DireccionEnvio, include: [{ model: Barrio, include: [{ model: Ciudad }] }] },
           { model: HistorialPedido, include: [{ model: Usuario, attributes: ['nombre', 'apellido'] }], order: [['createdAt', 'DESC']] }
         ]
@@ -318,7 +318,7 @@ const { sequelize } = require('../../dbconfig');
       // Devolver stock
       for (const item of pedido.ItemPedidos) {
         if (item.varianteId) {
-          await VarianteProducto.increment('stock', {
+          await Variante.increment('stock', {
             by: item.cantidad,
             where: { id: item.varianteId },
             transaction

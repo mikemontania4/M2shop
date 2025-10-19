@@ -3,12 +3,12 @@ const Usuario = require('../models/Usuario.models');
 const { sequelize } = require('../../dbconfig');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const VarianteProducto = require('../models/VarianteProducto.models');
+const Variante = require('../models/Variante.models');
  
  // Crear variante
   const crear = async (req, res) => {
     try {
-      const variante = await VarianteProducto.create(req.body);
+      const variante = await Variante.create(req.body);
       res.status(201).json({ mensaje: 'Variante creada', variante });
     } catch (error) {
       res.status(500).json({ mensaje: 'Error al crear variante', error: error.message });
@@ -20,7 +20,7 @@ const VarianteProducto = require('../models/VarianteProducto.models');
     try {
       const { productoId } = req.params;
 
-      const variantes = await VarianteProducto.findAll({
+      const variantes = await Variante.findAll({
         where: { productoId, activo: true },
         order: [['nombre', 'ASC']]
       });
@@ -35,13 +35,13 @@ const VarianteProducto = require('../models/VarianteProducto.models');
  const actualizar= async (req, res) => {
     try {
       const { id } = req.params;
-      const [updated] = await VarianteProducto.update(req.body, { where: { id } });
+      const [updated] = await Variante.update(req.body, { where: { id } });
 
       if (!updated) {
         return res.status(404).json({ mensaje: 'Variante no encontrada' });
       }
 
-      const varianteActualizada = await VarianteProducto.findByPk(id);
+      const varianteActualizada = await Variante.findByPk(id);
       res.json({ mensaje: 'Variante actualizada', variante: varianteActualizada });
     } catch (error) {
       res.status(500).json({ mensaje: 'Error al actualizar variante', error: error.message });
@@ -52,7 +52,7 @@ const VarianteProducto = require('../models/VarianteProducto.models');
   const eliminar = async (req, res) => {
     try {
       const { id } = req.params;
-      const [updated] = await VarianteProducto.update({ activo: false }, { where: { id } });
+      const [updated] = await Variante.update({ activo: false }, { where: { id } });
 
       if (!updated) {
         return res.status(404).json({ mensaje: 'Variante no encontrada' });
@@ -70,7 +70,7 @@ const VarianteProducto = require('../models/VarianteProducto.models');
       const { id } = req.params;
       const { cantidad, operacion } = req.body;
 
-      const variante = await VarianteProducto.findByPk(id);
+      const variante = await Variante.findByPk(id);
       if (!variante) {
         return res.status(404).json({ mensaje: 'Variante no encontrada' });
       }
@@ -83,7 +83,7 @@ const VarianteProducto = require('../models/VarianteProducto.models');
         if (nuevoStock < 0) nuevoStock = 0;
       }
 
-      await VarianteProducto.update({ stock: nuevoStock }, { where: { id } });
+      await Variante.update({ stock: nuevoStock }, { where: { id } });
 
       res.json({ mensaje: 'Stock actualizado', stockActual: nuevoStock });
     } catch (error) {

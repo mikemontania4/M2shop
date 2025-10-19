@@ -4,7 +4,7 @@ const Producto = require('../models/Producto.models');
 const Categoria = require('../models/Categoria.models');
 const Marca = require('../models/Marca.models');
 const ImagenProducto = require('../models/ImagenProducto.models');
-const VarianteProducto = require('../models/VarianteProducto.models');
+const Variante = require('../models/Variante.models');
 const AtributoProducto = require('../models/AtributoProducto.models');
  
 
@@ -93,7 +93,7 @@ const obtenerPorSlug = async (req, res) => {
           { model: Categoria, attributes: ['id', 'nombre', 'slug'] },
           { model: Marca, attributes: ['id', 'nombre', 'slug', 'logoUrl'] },
           { model: ImagenProducto },
-          { model: VarianteProducto, where: { activo: true }, required: false },
+          { model: Variante, where: { activo: true }, required: false },
           { model: AtributoProducto }
         ]
       });

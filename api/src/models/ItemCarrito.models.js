@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const { sequelize } = require('../../dbconfig');
 const Carrito = require('./Carrito.models');
 const Producto = require('./Producto.models');
-const VarianteProducto = require('./VarianteProducto.models');
+const Variante = require('./Variante.models');
 const ItemCarrito = sequelize.define('ItemCarrito', {
   id: {
     type: DataTypes.INTEGER,
@@ -37,5 +37,5 @@ const ItemCarrito = sequelize.define('ItemCarrito', {
 });
 ItemCarrito.belongsTo(Carrito, { foreignKey: 'carritoId' });
 ItemCarrito.belongsTo(Producto, { foreignKey: 'productoId' });
-ItemCarrito.belongsTo(VarianteProducto, { foreignKey: 'varianteId' });
+ItemCarrito.belongsTo(Variante, { foreignKey: 'varianteId' });
 module.exports = ItemCarrito;
