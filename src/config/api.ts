@@ -1,4 +1,4 @@
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/M2SHOP';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3002/M2SHOP';
 
 export const API_ENDPOINTS = {
   PRODUCTS: `${API_BASE_URL}/productos/frontend`,
