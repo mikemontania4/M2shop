@@ -17,13 +17,32 @@ const VarianteProducto = sequelize.define('VarianteProducto', {
     unique: true
   },
   nombre: {
-    type: DataTypes.STRING(100),
+    type: DataTypes.STRING(200),
     allowNull: false,
-    comment: 'Ej: Talla M - Color Rojo'
+    comment: 'Se puede generar concatenando atributos'
+  },
+  slug: {
+    type: DataTypes.STRING(200),
+    allowNull: false,
+    unique: true
   },
   precio: {
     type: DataTypes.DECIMAL(10, 2),
+    allowNull: false
+  },
+  precioOriginal: {
+    type: DataTypes.DECIMAL(10, 2),
+    allowNull: true,
+    comment: 'Precio sin descuentos'
+  },
+  imagenUrl: {
+    type: DataTypes.STRING(255),
     allowNull: true
+  },
+  images: {
+    type: DataTypes.JSON,
+    allowNull: true,
+    comment: 'Array de URLs de imágenes'
   },
   stock: {
     type: DataTypes.INTEGER,
@@ -32,12 +51,20 @@ const VarianteProducto = sequelize.define('VarianteProducto', {
   activo: {
     type: DataTypes.BOOLEAN,
     defaultValue: true
+  },
+  destacado: {
+    type: DataTypes.BOOLEAN,
+    defaultValue: false
+  },
+  nuevo: {
+    type: DataTypes.BOOLEAN,
+    defaultValue: false
   }
 }, {
   tableName: 'variantes_producto',
   timestamps: true,
   underscored: true
 });
- VarianteProducto.belongsTo(Producto, { foreignKey: 'productoId' });
+// Las relaciones se definen en initRelations.js para evitar dependencias circulares
 
 module.exports = VarianteProducto;

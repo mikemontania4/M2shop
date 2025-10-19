@@ -8,11 +8,6 @@ const Producto = sequelize.define('Producto', {
     primaryKey: true,
     autoIncrement: true
   },
-  sku: {
-    type: DataTypes.STRING(50),
-    allowNull: false,
-    unique: true
-  },
   nombre: {
     type: DataTypes.STRING(200),
     allowNull: false
@@ -30,38 +25,32 @@ const Producto = sequelize.define('Producto', {
     type: DataTypes.TEXT,
     allowNull: true
   },
-  precio: {
-    type: DataTypes.DECIMAL(10, 2),
-    allowNull: false
+  usos: {
+    type: DataTypes.JSON,
+    allowNull: true,
+    comment: 'Array de usos recomendados'
   },
-  precioComparacion: {
-    type: DataTypes.DECIMAL(10, 2),
-    allowNull: true
-  },
-  costo: {
-    type: DataTypes.DECIMAL(10, 2),
-    allowNull: true
+  propiedades: {
+    type: DataTypes.JSON,
+    allowNull: true,
+    comment: 'Array de propiedades del producto'
   },
   categoriaId: {
     type: DataTypes.INTEGER,
     allowNull: false
   },
+  subcategoriaId: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+    comment: 'FK a categorias (padre = categoriaId)'
+  },
   marcaId: {
     type: DataTypes.INTEGER,
     allowNull: true
   },
-  stock: {
-    type: DataTypes.INTEGER,
-    defaultValue: 0
-  },
-  stockMinimo: {
-    type: DataTypes.INTEGER,
-    defaultValue: 0
-  },
-  peso: {
-    type: DataTypes.DECIMAL(8, 2),
-    allowNull: true,
-    comment: 'Peso en kg'
+  activo: {
+    type: DataTypes.BOOLEAN,
+    defaultValue: true
   },
   destacado: {
     type: DataTypes.BOOLEAN,
@@ -70,10 +59,6 @@ const Producto = sequelize.define('Producto', {
   nuevo: {
     type: DataTypes.BOOLEAN,
     defaultValue: false
-  },
-  activo: {
-    type: DataTypes.BOOLEAN,
-    defaultValue: true
   },
   metaTitle: {
     type: DataTypes.STRING(200),
@@ -88,7 +73,6 @@ const Producto = sequelize.define('Producto', {
   timestamps: true,
   underscored: true
 });
- Producto.belongsTo(Categoria, { foreignKey: 'categoriaId' });
-Producto.belongsTo(Marca, { foreignKey: 'marcaId' });
+// Las relaciones se definen en initRelations.js para evitar dependencias circulares
  
 module.exports = Producto;

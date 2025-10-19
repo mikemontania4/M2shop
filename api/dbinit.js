@@ -1,4 +1,6 @@
 const bcrypt = require('bcrypt');
+const fs = require('fs');
+const path = require('path');
 const Usuario = require("./src/models/Usuario.models");
 const Pais = require("./src/models/Pais.models");
 const Departamento = require("./src/models/Departamento.models");
@@ -24,7 +26,9 @@ const Resena = require("./src/models/Resena.models");
 const ListaDeseos = require("./src/models/ListaDeseos.models");
 const MetodoEnvio = require("./src/models/MetodoEnvio.models");
 const ConfiguracionSitio = require("./src/models/ConfiguracionSitio.models");
- 
+
+// Servicios de migración
+const migradorService = require('./src/servicios/migradorCategoriaProducto.services');
 
 // Datos de ejemplo
 const datosEjemplo = require('./datos.json');
@@ -291,6 +295,51 @@ for (const banner of datosEjemplo.banners) {
 }
 console.log("✅ Banners insertados");
 
+    // ============= 25. MIGRACIÓN DE PRODUCTOS Y VARIANTES =============
+    console.log("2️⃣5️⃣  Iniciando migración de productos y variantes...");
+    
+    try {
+      // Leer archivos de migración
+      const variantesConvertidosPath = path.join(__dirname, 'variantes_convertidos.json');
+      const descuentosPath = path.join(__dirname, 'descuentos.json');
+      
+      if (fs.existsSync(variantesConvertidosPath)) {
+        const variantesData = JSON.parse(fs.readFileSync(variantesConvertidosPath, 'utf8'));
+        console.log(`📦 Migrando ${variantesData.length} productos/variantes...`);
+        
+        const resumenProductos = await migradorService.migrarProductosYVariante(variantesData);
+        console.log("✅ Migración de productos y variantes completada");
+        console.log(`   - Categorías: ${resumenProductos.creadas.categorias} creadas, ${resumenProductos.actualizadas.categorias} actualizadas`);
+        console.log(`   - Productos: ${resumenProductos.creadas.productos} creados, ${resumenProductos.actualizadas.productos} actualizados`);
+        console.log(`   - Variantes: ${resumenProductos.creadas.variantes} creadas, ${resumenProductos.actualizadas.variantes} actualizadas`);
+        console.log(`   - Atributos: ${resumenProductos.creadas.atributos} creados, ${resumenProductos.actualizadas.atributos} actualizados`);
+        console.log(`   - Valores Atributos: ${resumenProductos.creadas.valoresAtributos} creados, ${resumenProductos.actualizadas.valoresAtributos} actualizados`);
+        console.log(`   - Variantes Atributos: ${resumenProductos.creadas.variantesAtributos} creados`);
+        if (resumenProductos.errores.length > 0) {
+          console.log(`   - Errores: ${resumenProductos.errores.length}`);
+        }
+      } else {
+        console.log("⚠️  Archivo variantes_convertidos.json no encontrado, saltando migración de productos");
+      }
+
+      if (fs.existsSync(descuentosPath)) {
+        const descuentosData = JSON.parse(fs.readFileSync(descuentosPath, 'utf8'));
+        console.log(`💰 Migrando ${descuentosData.length} descuentos...`);
+        
+        const resumenDescuentos = await migradorService.migrarDescuentos(descuentosData);
+        console.log("✅ Migración de descuentos completada");
+        console.log(`   - Descuentos: ${resumenDescuentos.creadas.descuentos} creados, ${resumenDescuentos.actualizadas.descuentos} actualizados`);
+        if (resumenDescuentos.errores.length > 0) {
+          console.log(`   - Errores: ${resumenDescuentos.errores.length}`);
+        }
+      } else {
+        console.log("⚠️  Archivo descuentos.json no encontrado, saltando migración de descuentos");
+      }
+
+    } catch (error) {
+      console.error("❌ Error en migración de productos/variantes:", error);
+      // No lanzar error para no interrumpir el resto de la inicialización
+    }
 
     console.log("\n🎉 ¡Base de datos poblada exitosamente!");
     console.log("\n📊 Resumen:");

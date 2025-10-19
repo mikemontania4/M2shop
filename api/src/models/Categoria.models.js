@@ -14,7 +14,7 @@ const Categoria = sequelize.define('Categoria', {
   slug: {
     type: DataTypes.STRING(100),
     allowNull: false,
-    unique: true
+    comment: 'Recomendable único por contexto'
   },
   descripcion: {
     type: DataTypes.TEXT,
@@ -26,7 +26,8 @@ const Categoria = sequelize.define('Categoria', {
   },
   categoriasPadreId: {
     type: DataTypes.INTEGER,
-    allowNull: true
+    allowNull: true,
+    comment: 'NULL si es categoría principal'
   },
   orden: {
     type: DataTypes.INTEGER,
@@ -41,5 +42,6 @@ const Categoria = sequelize.define('Categoria', {
   timestamps: true,
   underscored: true
 });
-Categoria.belongsTo(Categoria, { as: 'CategoriaPadre', foreignKey: 'categoriasPadreId' }); 
+
+// Las relaciones se definen en initRelations.js para evitar dependencias circulares 
 module.exports = Categoria;
