@@ -1,137 +1,6 @@
 [
   {
     "id": 1,
-    "producto": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA",
-    "variedad": "Extra",
-    "presentacion": "Bolsa de 10Kg",
-    "name": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA Extra Bolsa de 10Kg",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "jabon-en-polvo",
-    "sku": "300000243",
-    "image": "https://cdn.cavallaro.com.py/productos/300000243.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000243.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 10Kg.png"
-    ],
-    "price": "141900",
-    "originalPrice": "141900.00",
-    "size": [
-      "Bolsa de 10Kg"
-    ],
-    "featured": false,
-    "descripcion": "<p>El polvo para lavar la ropa Guaira Extra contiene una dosis justa de activos que permite una limpieza efectiva de las prendas, al mismo tiempo que desinfecta los tejidos por su propiedad antibacterial. Su fórmula mejorada además encapsula y neutraliza los malos olores, dejando el tejido con un perfume intenso y duradero.</p>",
-    "usosRecomendados": [
-      "Todo tipo de tejidos, ropa de cama y blanquería."
-    ],
-    "propiedades": [
-      "• Limpieza eficiente de los tejidos",
-      "• Elimina el 99,9 % de virus, gérmenes y bacterias.",
-      "• Neutraliza malos olores.",
-      "• Fragancia floral de alta fijación.",
-      "• Eficaz en lavado a baja temperatura y en aguas de elevada dureza.",
-      "• Espuma controlada.",
-      "• Apto para el lavado a mano y en lavadoras automáticas."
-    ],
-    "stock": 0,
-    "color": [
-      "#eb961e"
-    ]
-  },
-  {
-    "id": 2,
-    "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
-    "variedad": "Limón",
-    "presentacion": "Botella 500 ml.",
-    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE Limón Botella 500 ml.",
-    "category": "limpieza-y-desinfeccion-del-hogar",
-    "subcategory": "detergente",
-    "sku": "300000664",
-    "image": "https://cdn.cavallaro.com.py/productos/300000664.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000664.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Botella 500ml.png"
-    ],
-    "price": "5000",
-    "originalPrice": "5000.00",
-    "size": [
-      "Botella 500 ml."
-    ],
-    "featured": false,
-    "descripcion": "<p>El detergente lavavajillas Insuperable es un detergente biodegradable que posee un eficaz poder limpiador y desengrasante.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Optimo desengrasante.",
-      "• Fragancias variadas y agradables."
-    ],
-    "stock": 0,
-    "color": [
-      "#61d62e"
-    ]
-  },
-  {
-    "id": 3,
-    "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
-    "variedad": "Manzana",
-    "presentacion": "Botella 500 ml.",
-    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE Manzana Botella 500 ml.",
-    "category": "limpieza-y-desinfeccion-del-hogar",
-    "subcategory": "detergente",
-    "sku": "300000665",
-    "image": "https://cdn.cavallaro.com.py/productos/300000665.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000665.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Botella 500ml.png"
-    ],
-    "price": "5000",
-    "originalPrice": "5000.00",
-    "size": [
-      "Botella 500 ml."
-    ],
-    "featured": false,
-    "descripcion": "<p>El detergente lavavajillas Insuperable es un detergente biodegradable que posee un eficaz poder limpiador y desengrasante.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Optimo desengrasante.",
-      "• Fragancias variadas y agradables."
-    ],
-    "stock": 0,
-    "color": [
-      "#f0192e"
-    ]
-  },
-  {
-    "id": 4,
-    "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
-    "variedad": "Neutro",
-    "presentacion": "Botella 500 ml.",
-    "name": "DETERGENTE LAVAVAJILLAS INSUPERABLE Neutro Botella 500 ml.",
-    "category": "limpieza-y-desinfeccion-del-hogar",
-    "subcategory": "detergente",
-    "sku": "300000666",
-    "image": "https://cdn.cavallaro.com.py/productos/300000666.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000666.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Botella 500ml.png"
-    ],
-    "price": "5000",
-    "originalPrice": "5000.00",
-    "size": [
-      "Botella 500 ml."
-    ],
-    "featured": false,
-    "descripcion": "<p>El detergente lavavajillas Insuperable es un detergente biodegradable que posee un eficaz poder limpiador y desengrasante.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Optimo desengrasante.",
-      "• Fragancias variadas y agradables."
-    ],
-    "stock": 0,
-    "color": [
-      "#edd040"
-    ]
-  },
-  {
-    "id": 5,
     "producto": "COMBO NAVIDEÑO - COCO PURO",
     "variedad": "Neutro",
     "presentacion": "KIT",
@@ -145,7 +14,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/1 Unidad.png"
     ],
     "price": "128500",
-    "originalPrice": "128500.00",
+    "originalPrice": "128500",
     "size": [
       "KIT"
     ],
@@ -166,7 +35,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 2,
     "producto": "COMBO NAVIDEÑO - PREMIUM",
     "variedad": "Neutro",
     "presentacion": "KIT",
@@ -180,7 +49,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/1 Unidad.png"
     ],
     "price": "199400",
-    "originalPrice": "199400.00",
+    "originalPrice": "199400",
     "size": [
       "KIT"
     ],
@@ -202,7 +71,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 3,
     "producto": "COMBO NAVIDEÑO - ECONOMICO",
     "variedad": "Neutro",
     "presentacion": "KIT",
@@ -216,7 +85,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/1 Unidad.png"
     ],
     "price": "70800",
-    "originalPrice": "70800.00",
+    "originalPrice": "70800",
     "size": [
       "KIT"
     ],
@@ -240,106 +109,7 @@
     ]
   },
   {
-    "id": 8,
-    "producto": "PACK PROMO DESODORANTE FANTASIA 900ML + 500ML",
-    "variedad": "Premium",
-    "presentacion": "KIT",
-    "name": "PACK PROMO DESODORANTE FANTASIA 900ML + 500ML Premium KIT",
-    "category": "limpieza-y-desinfeccion-del-hogar",
-    "subcategory": "bolsa",
-    "sku": "830000351",
-    "image": "https://cdn.cavallaro.com.py/productos/830000351.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/830000351.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/1 Unidad.png"
-    ],
-    "price": "14700",
-    "originalPrice": "14700.00",
-    "size": [
-      "KIT"
-    ],
-    "featured": false,
-    "descripcion": "<p>El desodorante de ambiente Cavallaro posee una exclusiva fórmula Antibacterial que limpia, desinfecta y perfuma tu hogar por más tiempo.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Neutraliza eficazmente los olores indeseables.",
-      "• Elimina el 99 % de virus, bacterias y hongos de tus pisos.",
-      "• Mantiene los ambientes perfumados.",
-      "• Larga duración."
-    ],
-    "stock": 0,
-    "color": [
-      "#ff6d1f"
-    ]
-  },
-  {
-    "id": 9,
-    "producto": "PACK PROMO DESODORANTE UVA 900ML + 500ML",
-    "variedad": "Premium",
-    "presentacion": "KIT",
-    "name": "PACK PROMO DESODORANTE UVA 900ML + 500ML Premium KIT",
-    "category": "limpieza-y-desinfeccion-del-hogar",
-    "subcategory": "bolsa",
-    "sku": "830000352",
-    "image": "https://cdn.cavallaro.com.py/productos/830000352.jpg",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/830000352.jpg",
-      "https://cdn.cavallaro.com.py/presentaciones/1 Unidad.png"
-    ],
-    "price": "14700",
-    "originalPrice": "14700.00",
-    "size": [
-      "KIT"
-    ],
-    "featured": false,
-    "descripcion": "<p>El desodorante de ambiente Cavallaro posee una exclusiva fórmula Antibacterial que limpia, desinfecta y perfuma tu hogar por más tiempo.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Neutraliza eficazmente los olores indeseables.",
-      "• Elimina el 99 % de virus, bacterias y hongos de tus pisos.",
-      "• Mantiene los ambientes perfumados.",
-      "• Larga duración."
-    ],
-    "stock": 0,
-    "color": [
-      "#ff6d1f"
-    ]
-  },
-  {
-    "id": 10,
-    "producto": "PACK PROMO DESODORANTE MARINA 900ML + 500ML",
-    "variedad": "Premium",
-    "presentacion": "KIT",
-    "name": "PACK PROMO DESODORANTE MARINA 900ML + 500ML Premium KIT",
-    "category": "limpieza-y-desinfeccion-del-hogar",
-    "subcategory": "bolsa",
-    "sku": "830000355",
-    "image": "https://cdn.cavallaro.com.py/productos/830000355.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/830000355.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/1 Unidad.png"
-    ],
-    "price": "14700",
-    "originalPrice": "14700.00",
-    "size": [
-      "KIT"
-    ],
-    "featured": false,
-    "descripcion": "<p>El desodorante de ambiente Cavallaro posee una exclusiva fórmula Antibacterial que limpia, desinfecta y perfuma tu hogar por más tiempo.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Neutraliza eficazmente los olores indeseables.",
-      "• Elimina el 99 % de virus, bacterias y hongos de tus pisos.",
-      "• Mantiene los ambientes perfumados.",
-      "• Larga duración."
-    ],
-    "stock": 0,
-    "color": [
-      "#ff6d1f"
-    ]
-  },
-  {
-    "id": 11,
+    "id": 4,
     "producto": "COMBO NAVIDEÑO - MEDIO",
     "variedad": "Neutro",
     "presentacion": "KIT",
@@ -353,7 +123,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/1 Unidad.png"
     ],
     "price": "108900",
-    "originalPrice": "108900.00",
+    "originalPrice": "108900",
     "size": [
       "KIT"
     ],
@@ -378,7 +148,7 @@
     ]
   },
   {
-    "id": 12,
+    "id": 5,
     "producto": "ESCOBA NOVICA R1672",
     "variedad": "Neutro",
     "presentacion": "Escoba novica",
@@ -392,7 +162,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Escoba novica.png"
     ],
     "price": "19000",
-    "originalPrice": "19000.00",
+    "originalPrice": "19000",
     "size": [
       "Escoba novica"
     ],
@@ -410,7 +180,7 @@
     ]
   },
   {
-    "id": 13,
+    "id": 6,
     "producto": "MOPA ALG. REFILL - R 132",
     "variedad": "Neutro",
     "presentacion": "Refil mopa de algodón",
@@ -424,7 +194,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Refil mopa de algodón.png"
     ],
     "price": "32500",
-    "originalPrice": "32500.00",
+    "originalPrice": "32500",
     "size": [
       "Refil mopa de algodón"
     ],
@@ -442,7 +212,7 @@
     ]
   },
   {
-    "id": 14,
+    "id": 7,
     "producto": "MOPA ALG. CON PALO - R 1322",
     "variedad": "Neutro",
     "presentacion": "Mopa de algodón con palo",
@@ -456,7 +226,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Mopa de algodón con palo.png"
     ],
     "price": "38500",
-    "originalPrice": "38500.00",
+    "originalPrice": "38500",
     "size": [
       "Mopa de algodón con palo"
     ],
@@ -474,39 +244,7 @@
     ]
   },
   {
-    "id": 15,
-    "producto": "MOPA SPRAY NOVICA BT1912",
-    "variedad": "Neutro",
-    "presentacion": "Mopa spray",
-    "name": "MOPA SPRAY NOVICA BT1912 Neutro Mopa spray",
-    "category": "limpieza-y-desinfeccion-del-hogar",
-    "subcategory": "complementarios",
-    "sku": "500000031",
-    "image": "https://cdn.cavallaro.com.py/productos/500000031.jpg",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/500000031.jpg",
-      "https://cdn.cavallaro.com.py/presentaciones/Mopa spray.png"
-    ],
-    "price": "224000",
-    "originalPrice": "224000.00",
-    "size": [
-      "Mopa spray"
-    ],
-    "featured": false,
-    "descripcion": "<p>Una opción perfecta para una limpieza rápida del piso, Noviça Mop Spray es práctico, eficiente y totalmente articulado, lo que le permite llegar a todos los lados y lugares del piso, incluso debajo de los muebles y otros lugares de difícil acceso. Desarrolladas con un sistema de pulverización, que se puede activar fácilmente mediante un gatillo manual, las mopas en spray cuentan con un depósito para almacenar agua y productos de limpieza, evitando que el usuario entre en contacto con productos químicos. El sistema también ayuda a ahorrar agua.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "•\tSistema de pulverización: activado, limpio.",
-      "•\tRecambio de microfibra duradero y fácil de cambiar.",
-      "•\tDepósito con capacidad de 600 ml."
-    ],
-    "stock": 0,
-    "color": [
-      "#8d9093"
-    ]
-  },
-  {
-    "id": 16,
+    "id": 8,
     "producto": "PALA DE LIMPIEZA R150",
     "variedad": "Neutro",
     "presentacion": "Pala de limpieza",
@@ -520,7 +258,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pala de limpieza.png"
     ],
     "price": "26000",
-    "originalPrice": "26000.00",
+    "originalPrice": "26000",
     "size": [
       "Pala de limpieza"
     ],
@@ -538,7 +276,7 @@
     ]
   },
   {
-    "id": 17,
+    "id": 9,
     "producto": "SECADOR / ESCURRIDOR 30CM 1292",
     "variedad": "Neutro",
     "presentacion": "Secador de piso push 30 cm",
@@ -552,7 +290,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Secador de piso push 30 cm.png"
     ],
     "price": "36500",
-    "originalPrice": "36500.00",
+    "originalPrice": "36500",
     "size": [
       "Secador de piso push 30 cm"
     ],
@@ -570,7 +308,7 @@
     ]
   },
   {
-    "id": 18,
+    "id": 10,
     "producto": "SECADOR / ESCURRIDOR 40 CM1302",
     "variedad": "Neutro",
     "presentacion": "Secador de piso push 40 cm",
@@ -584,7 +322,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Secador de piso push 40 cm.png"
     ],
     "price": "39500",
-    "originalPrice": "39500.00",
+    "originalPrice": "39500",
     "size": [
       "Secador de piso push 40 cm"
     ],
@@ -602,7 +340,7 @@
     ]
   },
   {
-    "id": 19,
+    "id": 11,
     "producto": "BALDE C/PORTA ESCURRIDOR 1384",
     "variedad": "Neutro",
     "presentacion": "Balde con porta escurridor",
@@ -616,7 +354,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Balde con porta escurridor.png"
     ],
     "price": "54500",
-    "originalPrice": "54500.00",
+    "originalPrice": "54500",
     "size": [
       "Balde con porta escurridor"
     ],
@@ -634,7 +372,7 @@
     ]
   },
   {
-    "id": 20,
+    "id": 12,
     "producto": "ESCOBILLON SUPER BE 80X12 R1772",
     "variedad": "Neutro",
     "presentacion": "Escobillon novica",
@@ -648,7 +386,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Escobillon novica.png"
     ],
     "price": "34500",
-    "originalPrice": "34500.00",
+    "originalPrice": "34500",
     "size": [
       "Escobillon novica"
     ],
@@ -666,61 +404,7 @@
     ]
   },
   {
-    "id": 21,
-    "producto": "KITS SEMANAL",
-    "variedad": "Surtido",
-    "presentacion": "Kit",
-    "name": "KITS SEMANAL Surtido Kit",
-    "category": "limpieza-y-desinfeccion-del-hogar",
-    "subcategory": "otros-servicios",
-    "sku": "830000544",
-    "image": "",
-    "images": [
-      "https://cdn.cavallaro.com.py/presentaciones/Kit.png"
-    ],
-    "price": "59000",
-    "originalPrice": "59000.00",
-    "size": [
-      "Kit"
-    ],
-    "featured": false,
-    "descripcion": "<p>Kit semanal.</p>",
-    "usosRecomendados": [],
-    "propiedades": [],
-    "stock": 0,
-    "color": [
-      "#dde4ec"
-    ]
-  },
-  {
-    "id": 22,
-    "producto": "KITS QUINCENAL",
-    "variedad": "Surtido",
-    "presentacion": "Kit",
-    "name": "KITS QUINCENAL Surtido Kit",
-    "category": "limpieza-y-desinfeccion-del-hogar",
-    "subcategory": "otros-servicios",
-    "sku": "830000545",
-    "image": "",
-    "images": [
-      "https://cdn.cavallaro.com.py/presentaciones/Kit.png"
-    ],
-    "price": "98000",
-    "originalPrice": "98000.00",
-    "size": [
-      "Kit"
-    ],
-    "featured": false,
-    "descripcion": "<p>Kit quincenal.</p>",
-    "usosRecomendados": [],
-    "propiedades": [],
-    "stock": 0,
-    "color": [
-      "#e1e8ef"
-    ]
-  },
-  {
-    "id": 23,
+    "id": 13,
     "producto": "POLVO PARA LAVAR LA ROPA GUAIRA OPTI SYSTEM",
     "variedad": "Opti-Fiber",
     "presentacion": "Bolsa de 800g",
@@ -734,7 +418,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 800g.png"
     ],
     "price": "35150",
-    "originalPrice": "35150.00",
+    "originalPrice": "35150",
     "size": [
       "Bolsa de 800g"
     ],
@@ -757,7 +441,7 @@
     ]
   },
   {
-    "id": 24,
+    "id": 14,
     "producto": "POLVO PARA LAVAR LA ROPA GUAIRA OPTI SYSTEM",
     "variedad": "Opti-Fiber",
     "presentacion": "Bolsa de 2Kg",
@@ -771,7 +455,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 2Kg.png"
     ],
     "price": "76850",
-    "originalPrice": "76850.00",
+    "originalPrice": "76850",
     "size": [
       "Bolsa de 2Kg"
     ],
@@ -794,7 +478,7 @@
     ]
   },
   {
-    "id": 25,
+    "id": 15,
     "producto": "PINZAS P/ROPAS PIXOL",
     "variedad": "Verde",
     "presentacion": "Pack de 12 Unidades",
@@ -808,7 +492,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pack de 12 Unidades.png"
     ],
     "price": "15000",
-    "originalPrice": "15000.00",
+    "originalPrice": "15000",
     "size": [
       "Pack de 12 Unidades"
     ],
@@ -826,7 +510,7 @@
     ]
   },
   {
-    "id": 26,
+    "id": 16,
     "producto": "CAJA EXHIBIDORA COCO TOC. 5X1",
     "variedad": "Surtido",
     "presentacion": "Caja 5 x 100g",
@@ -840,7 +524,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Caja 5 x 100g.png"
     ],
     "price": "50000",
-    "originalPrice": "50000.00",
+    "originalPrice": "50000",
     "size": [
       "Caja 5 x 100g"
     ],
@@ -863,7 +547,7 @@
     ]
   },
   {
-    "id": 27,
+    "id": 17,
     "producto": "JABON DE COCO PURO COCO CAVALLARO",
     "variedad": "Blanco",
     "presentacion": "Pan de 200g",
@@ -877,7 +561,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pan de 200g.png"
     ],
     "price": "10300",
-    "originalPrice": "10300.00",
+    "originalPrice": "10300",
     "size": [
       "Pan de 200g"
     ],
@@ -900,7 +584,7 @@
     ]
   },
   {
-    "id": 28,
+    "id": 18,
     "producto": "JABON DE COCO PURO COCO CAVALLARO",
     "variedad": "Blanco",
     "presentacion": "Pack 10 x 40g",
@@ -914,9 +598,344 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pack 10 x 40g.png"
     ],
     "price": "22000",
-    "originalPrice": "22000.00",
+    "originalPrice": "22000",
     "size": [
       "Pack 10 x 40g"
+    ],
+    "featured": false,
+    "descripcion": "<p>El jabón de coco puro Coco Cavallaro es un jabón hipoalergénico, antibacterial, elaborado 100 % de aceite de almendra de coco. Por su composición natural de origen vegetal, brinda una limpieza efectiva y el máximo cuidado a los tejidos y a la piel.</p>",
+    "usosRecomendados": [
+      "Limpieza de todo tipo de tejidos, lavado de manos, baño de mascotas."
+    ],
+    "propiedades": [
+      "• Elimina el 99,9 % de virus, bacterias y hongos.",
+      "• Antiséptico.",
+      "• Hipoalergénico.",
+      "• Limpia y desengrasa.",
+      "• Neutraliza los malos olores.",
+      "• Libre de gluten."
+    ],
+    "stock": 0,
+    "color": [
+      "#ebe1d5"
+    ]
+  },
+  {
+    "id": 19,
+    "producto": "JABON DE COCO PURO COCO CAVALLARO",
+    "variedad": "Blanco",
+    "presentacion": "Pan de 100g",
+    "name": "JABON DE COCO PURO COCO CAVALLARO Blanco Pan de 100g",
+    "category": "cuidado-de-las-prendas",
+    "subcategory": "coco-puro",
+    "sku": "300000003",
+    "image": "https://cdn.cavallaro.com.py/productos/300000003.PNG",
+    "images": [
+      "https://cdn.cavallaro.com.py/productos/300000003.PNG",
+      "https://cdn.cavallaro.com.py/presentaciones/Pan de 100g.png"
+    ],
+    "price": "5650",
+    "originalPrice": "5650",
+    "size": [
+      "Pan de 100g"
+    ],
+    "featured": false,
+    "descripcion": "<p>El jabón de coco puro Coco Cavallaro es un jabón hipoalergénico, antibacterial, elaborado 100 % de aceite de almendra de coco. Por su composición natural de origen vegetal, brinda una limpieza efectiva y el máximo cuidado a los tejidos y a la piel.</p>",
+    "usosRecomendados": [
+      "Limpieza de todo tipo de tejidos, lavado de manos, baño de mascotas."
+    ],
+    "propiedades": [
+      "• Elimina el 99,9 % de virus, bacterias y hongos.",
+      "• Antiséptico.",
+      "• Hipoalergénico.",
+      "• Limpia y desengrasa.",
+      "• Neutraliza los malos olores.",
+      "• Libre de gluten."
+    ],
+    "stock": 0,
+    "color": [
+      "#ebe1d5"
+    ]
+  },
+  {
+    "id": 20,
+    "producto": "LAVANDINA CAVALLARO",
+    "variedad": "Concentrado",
+    "presentacion": "Bidón de 5 L.",
+    "name": "LAVANDINA CAVALLARO Concentrado Bidón de 5 L.",
+    "category": "limpieza-y-desinfeccion-del-hogar",
+    "subcategory": "lavandina",
+    "sku": "300000007",
+    "image": "https://cdn.cavallaro.com.py/productos/300000007.PNG",
+    "images": [
+      "https://cdn.cavallaro.com.py/productos/300000007.PNG",
+      "https://cdn.cavallaro.com.py/presentaciones/Bidón de 5L.png"
+    ],
+    "price": "59950",
+    "originalPrice": "59950",
+    "size": [
+      "Bidón de 5 L."
+    ],
+    "featured": false,
+    "descripcion": "<p>La lavandina Cavallaro por su alta concentración de 60 g. de cloro activo por decímetro cúbico es ideal para desinfectar y desodorizar ambientes y superficies, eliminando el 99,9 % de virus, bacterias y hongos.</p>",
+    "usosRecomendados": [],
+    "propiedades": [
+      "• Poder Desinfectante.",
+      "• Neutraliza los malos olores.",
+      "• Elimina el 99 % de virus, bacterias y hongos de ambientes y superficies."
+    ],
+    "stock": 0,
+    "color": [
+      "#e4d211"
+    ]
+  },
+  {
+    "id": 21,
+    "producto": "DETERGENTE LAVAVAJILLAS CAVALLARO",
+    "variedad": "Concentrado",
+    "presentacion": "Bidón de 5 L.",
+    "name": "DETERGENTE LAVAVAJILLAS CAVALLARO Concentrado Bidón de 5 L.",
+    "category": "limpieza-y-desinfeccion-del-hogar",
+    "subcategory": "detergente",
+    "sku": "300000016",
+    "image": "https://cdn.cavallaro.com.py/productos/300000016.PNG",
+    "images": [
+      "https://cdn.cavallaro.com.py/productos/300000016.PNG",
+      "https://cdn.cavallaro.com.py/presentaciones/Bidón de 5L.png"
+    ],
+    "price": "59000",
+    "originalPrice": "59000",
+    "size": [
+      "Bidón de 5 L."
+    ],
+    "featured": false,
+    "descripcion": "<p>El detergente lavavajillas Cavallaro es un detergente sintético elaborado a base de ingredientes activos biodegradables en alta concentración, que permiten realizar una limpieza eficiente de las vajillas con menos cantidad de producto y el mínimo esfuerzo.</p>",
+    "usosRecomendados": [],
+    "propiedades": [
+      "• Optimo desengrasante.",
+      "• Fórmula concentrada que permite el doble de rendimiento."
+    ],
+    "stock": 0,
+    "color": [
+      "#e4d211"
+    ]
+  },
+  {
+    "id": 22,
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Clásico",
+    "presentacion": "Bidón de 4L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Clásico Bidón de 4L",
+    "category": "cuidado-de-las-prendas",
+    "subcategory": "suavizante",
+    "sku": "300000029",
+    "image": "https://cdn.cavallaro.com.py/productos/300000029.jpg",
+    "images": [
+      "https://cdn.cavallaro.com.py/productos/300000029.jpg",
+      "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
+    ],
+    "price": "56800",
+    "originalPrice": "56800",
+    "size": [
+      "Bidón de 4L"
+    ],
+    "featured": false,
+    "descripcion": "<p>Los Suavizantes Cavallaro Premium acondicionan los tejidos de las prendas después del lavado, humectando las fibras y otorgándoles máxima suavidad. Su fórmula mejorada posee una tecnología de capsulas de perfume denominada HD (High diffusive) que permite la difusión de fragancia en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
+    "usosRecomendados": [],
+    "propiedades": [
+      "• Suaviza las fibras de los tejidos, evitando que las mismas adquieran rigidez luego del lavado.",
+      "• Facilita el planchado de las prendas.",
+      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños.",
+      "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
+    ],
+    "stock": 0,
+    "color": [
+      "#1385dd"
+    ]
+  },
+  {
+    "id": 23,
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Intenso",
+    "presentacion": "Doypack 900ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Intenso Doypack 900ml",
+    "category": "cuidado-de-las-prendas",
+    "subcategory": "suavizante",
+    "sku": "300000034",
+    "image": "https://cdn.cavallaro.com.py/productos/300000034.jpg",
+    "images": [
+      "https://cdn.cavallaro.com.py/productos/300000034.jpg",
+      "https://cdn.cavallaro.com.py/presentaciones/Doypack 900ml.png"
+    ],
+    "price": "18200",
+    "originalPrice": "18200",
+    "size": [
+      "Doypack 900ml"
+    ],
+    "featured": false,
+    "descripcion": "<p>Los Suavizantes Cavallaro Premium acondicionan los tejidos de las prendas después del lavado, humectando las fibras y otorgándoles máxima suavidad. Su fórmula mejorada posee una tecnología de capsulas de perfume denominada HD (High diffusive) que permite la difusión de fragancia en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
+    "usosRecomendados": [],
+    "propiedades": [
+      "• Suaviza las fibras de los tejidos, evitando que las mismas adquieran rigidez luego del lavado.",
+      "• Facilita el planchado de las prendas.",
+      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños.",
+      "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
+    ],
+    "stock": 0,
+    "color": [
+      "#92d99a"
+    ]
+  },
+  {
+    "id": 24,
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Delicado",
+    "presentacion": "Bidón de 4L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Delicado Bidón de 4L",
+    "category": "cuidado-de-las-prendas",
+    "subcategory": "suavizante",
+    "sku": "300000042",
+    "image": "https://cdn.cavallaro.com.py/productos/300000042.jpg",
+    "images": [
+      "https://cdn.cavallaro.com.py/productos/300000042.jpg",
+      "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
+    ],
+    "price": "56800",
+    "originalPrice": "56800",
+    "size": [
+      "Bidón de 4L"
+    ],
+    "featured": false,
+    "descripcion": "<p>Los Suavizantes Cavallaro Premium acondicionan los tejidos de las prendas después del lavado, humectando las fibras y otorgándoles máxima suavidad. Su fórmula mejorada posee una tecnología de capsulas de perfume denominada HD (High diffusive) que permite la difusión de fragancia en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
+    "usosRecomendados": [],
+    "propiedades": [
+      "• Suaviza las fibras de los tejidos, evitando que las mismas adquieran rigidez luego del lavado.",
+      "• Facilita el planchado de las prendas.",
+      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños.",
+      "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
+    ],
+    "stock": 0,
+    "color": [
+      "#ffd600"
+    ]
+  },
+  {
+    "id": 25,
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Intenso",
+    "presentacion": "Bidón de 4L",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Intenso Bidón de 4L",
+    "category": "cuidado-de-las-prendas",
+    "subcategory": "suavizante",
+    "sku": "300000043",
+    "image": "https://cdn.cavallaro.com.py/productos/300000043.jpg",
+    "images": [
+      "https://cdn.cavallaro.com.py/productos/300000043.jpg",
+      "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
+    ],
+    "price": "56800",
+    "originalPrice": "56800",
+    "size": [
+      "Bidón de 4L"
+    ],
+    "featured": false,
+    "descripcion": "<p>Los Suavizantes Cavallaro Premium acondicionan los tejidos de las prendas después del lavado, humectando las fibras y otorgándoles máxima suavidad. Su fórmula mejorada posee una tecnología de capsulas de perfume denominada HD (High diffusive) que permite la difusión de fragancia en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
+    "usosRecomendados": [],
+    "propiedades": [
+      "• Suaviza las fibras de los tejidos, evitando que las mismas adquieran rigidez luego del lavado.",
+      "• Facilita el planchado de las prendas.",
+      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños.",
+      "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
+    ],
+    "stock": 0,
+    "color": [
+      "#92d99a"
+    ]
+  },
+  {
+    "id": 26,
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Clásico",
+    "presentacion": "Display 20x70ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Clásico Display 20x70ml",
+    "category": "cuidado-de-las-prendas",
+    "subcategory": "suavizante",
+    "sku": "300000046",
+    "image": "https://cdn.cavallaro.com.py/productos/300000046.jpg",
+    "images": [
+      "https://cdn.cavallaro.com.py/productos/300000046.jpg",
+      "https://cdn.cavallaro.com.py/presentaciones/Display 20x70ml.png"
+    ],
+    "price": "62000",
+    "originalPrice": "62000",
+    "size": [
+      "Display 20x70ml"
+    ],
+    "featured": false,
+    "descripcion": "<p>Los Suavizantes Cavallaro Premium acondicionan los tejidos de las prendas después del lavado, humectando las fibras y otorgándoles máxima suavidad. Su fórmula mejorada posee una tecnología de capsulas de perfume denominada HD (High diffusive) que permite la difusión de fragancia en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
+    "usosRecomendados": [],
+    "propiedades": [
+      "• Suaviza las fibras de los tejidos, evitando que las mismas adquieran rigidez luego del lavado.",
+      "• Facilita el planchado de las prendas.",
+      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños.",
+      "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
+    ],
+    "stock": 0,
+    "color": [
+      "#1385dd"
+    ]
+  },
+  {
+    "id": 27,
+    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
+    "variedad": "Intenso",
+    "presentacion": "Display 20x70ml",
+    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Intenso Display 20x70ml",
+    "category": "cuidado-de-las-prendas",
+    "subcategory": "suavizante",
+    "sku": "300000047",
+    "image": "https://cdn.cavallaro.com.py/productos/300000047.jpg",
+    "images": [
+      "https://cdn.cavallaro.com.py/productos/300000047.jpg",
+      "https://cdn.cavallaro.com.py/presentaciones/Display 20x70ml.png"
+    ],
+    "price": "62000",
+    "originalPrice": "62000",
+    "size": [
+      "Display 20x70ml"
+    ],
+    "featured": false,
+    "descripcion": "<p>Los Suavizantes Cavallaro Premium acondicionan los tejidos de las prendas después del lavado, humectando las fibras y otorgándoles máxima suavidad. Su fórmula mejorada posee una tecnología de capsulas de perfume denominada HD (High diffusive) que permite la difusión de fragancia en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
+    "usosRecomendados": [],
+    "propiedades": [
+      "• Suaviza las fibras de los tejidos, evitando que las mismas adquieran rigidez luego del lavado.",
+      "• Facilita el planchado de las prendas.",
+      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños.",
+      "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
+    ],
+    "stock": 0,
+    "color": [
+      "#92d99a"
+    ]
+  },
+  {
+    "id": 28,
+    "producto": "JABON DE COCO PURO COCO CAVALLARO",
+    "variedad": "Blanco",
+    "presentacion": "Barra de 500g",
+    "name": "JABON DE COCO PURO COCO CAVALLARO Blanco Barra de 500g",
+    "category": "cuidado-de-las-prendas",
+    "subcategory": "coco-puro",
+    "sku": "300000050",
+    "image": "https://cdn.cavallaro.com.py/productos/300000050.jpg",
+    "images": [
+      "https://cdn.cavallaro.com.py/productos/300000050.jpg",
+      "https://cdn.cavallaro.com.py/presentaciones/Barra de 500g.png"
+    ],
+    "price": "25000",
+    "originalPrice": "25000",
+    "size": [
+      "Barra de 500g"
     ],
     "featured": false,
     "descripcion": "<p>El jabón de coco puro Coco Cavallaro es un jabón hipoalergénico, antibacterial, elaborado 100 % de aceite de almendra de coco. Por su composición natural de origen vegetal, brinda una limpieza efectiva y el máximo cuidado a los tejidos y a la piel.</p>",
@@ -940,506 +959,6 @@
     "id": 29,
     "producto": "JABON DE COCO PURO COCO CAVALLARO",
     "variedad": "Blanco",
-    "presentacion": "Pan de 100g",
-    "name": "JABON DE COCO PURO COCO CAVALLARO Blanco Pan de 100g",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "coco-puro",
-    "sku": "300000003",
-    "image": "https://cdn.cavallaro.com.py/productos/300000003.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000003.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Pan de 100g.png"
-    ],
-    "price": "5650",
-    "originalPrice": "5650.00",
-    "size": [
-      "Pan de 100g"
-    ],
-    "featured": false,
-    "descripcion": "<p>El jabón de coco puro Coco Cavallaro es un jabón hipoalergénico, antibacterial, elaborado 100 % de aceite de almendra de coco. Por su composición natural de origen vegetal, brinda una limpieza efectiva y el máximo cuidado a los tejidos y a la piel.</p>",
-    "usosRecomendados": [
-      "Limpieza de todo tipo de tejidos, lavado de manos, baño de mascotas."
-    ],
-    "propiedades": [
-      "• Elimina el 99,9 % de virus, bacterias y hongos.",
-      "• Antiséptico.",
-      "• Hipoalergénico.",
-      "• Limpia y desengrasa.",
-      "• Neutraliza los malos olores.",
-      "• Libre de gluten."
-    ],
-    "stock": 0,
-    "color": [
-      "#ebe1d5"
-    ]
-  },
-  {
-    "id": 30,
-    "producto": "LAVANDINA CAVALLARO",
-    "variedad": "Concentrado",
-    "presentacion": "Bidón de 5 L.",
-    "name": "LAVANDINA CAVALLARO Concentrado Bidón de 5 L.",
-    "category": "limpieza-y-desinfeccion-del-hogar",
-    "subcategory": "lavandina",
-    "sku": "300000007",
-    "image": "https://cdn.cavallaro.com.py/productos/300000007.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000007.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Bidón de 5L.png"
-    ],
-    "price": "59950",
-    "originalPrice": "59950.00",
-    "size": [
-      "Bidón de 5 L."
-    ],
-    "featured": false,
-    "descripcion": "<p>La lavandina Cavallaro por su alta concentración de 60 g. de cloro activo por decímetro cúbico es ideal para desinfectar y desodorizar ambientes y superficies, eliminando el 99,9 % de virus, bacterias y hongos.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Poder Desinfectante.",
-      "• Neutraliza los malos olores.",
-      "• Elimina el 99 % de virus, bacterias y hongos de ambientes y superficies."
-    ],
-    "stock": 0,
-    "color": [
-      "#e4d211"
-    ]
-  },
-  {
-    "id": 31,
-    "producto": "DETERGENTE LAVAVAJILLAS CAVALLARO",
-    "variedad": "Concentrado",
-    "presentacion": "Bidón de 5 L.",
-    "name": "DETERGENTE LAVAVAJILLAS CAVALLARO Concentrado Bidón de 5 L.",
-    "category": "limpieza-y-desinfeccion-del-hogar",
-    "subcategory": "detergente",
-    "sku": "300000016",
-    "image": "https://cdn.cavallaro.com.py/productos/300000016.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000016.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Bidón de 5L.png"
-    ],
-    "price": "59000",
-    "originalPrice": "59000.00",
-    "size": [
-      "Bidón de 5 L."
-    ],
-    "featured": false,
-    "descripcion": "<p>El detergente lavavajillas Cavallaro es un detergente sintético elaborado a base de ingredientes activos biodegradables en alta concentración, que permiten realizar una limpieza eficiente de las vajillas con menos cantidad de producto y el mínimo esfuerzo.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Optimo desengrasante.",
-      "• Fórmula concentrada que permite el doble de rendimiento."
-    ],
-    "stock": 0,
-    "color": [
-      "#e4d211"
-    ]
-  },
-  {
-    "id": 32,
-    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
-    "variedad": "Clásico",
-    "presentacion": "Bidón de 4L",
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Clásico Bidón de 4L",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "suavizante",
-    "sku": "300000029",
-    "image": "https://cdn.cavallaro.com.py/productos/300000029.jpg",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000029.jpg",
-      "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
-    ],
-    "price": "56800",
-    "originalPrice": "56800.00",
-    "size": [
-      "Bidón de 4L"
-    ],
-    "featured": false,
-    "descripcion": "<p>Los Suavizantes Cavallaro Premium acondicionan los tejidos de las prendas después del lavado, humectando las fibras y otorgándoles máxima suavidad. Su fórmula mejorada posee una tecnología de capsulas de perfume denominada HD (High diffusive) que permite la difusión de fragancia en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Suaviza las fibras de los tejidos, evitando que las mismas adquieran rigidez luego del lavado.",
-      "• Facilita el planchado de las prendas.",
-      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños.",
-      "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
-    ],
-    "stock": 0,
-    "color": [
-      "#1385dd"
-    ]
-  },
-  {
-    "id": 33,
-    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
-    "variedad": "Clásico",
-    "presentacion": "Doypack 900ml",
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Clásico Doypack 900ml",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "suavizante",
-    "sku": "300000033",
-    "image": "https://cdn.cavallaro.com.py/productos/300000033.jpg",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000033.jpg",
-      "https://cdn.cavallaro.com.py/presentaciones/Doypack 900ml.png"
-    ],
-    "price": "18200",
-    "originalPrice": "18200.00",
-    "size": [
-      "Doypack 900ml"
-    ],
-    "featured": false,
-    "descripcion": "<p>Los Suavizantes Cavallaro Premium acondicionan los tejidos de las prendas después del lavado, humectando las fibras y otorgándoles máxima suavidad. Su fórmula mejorada posee una tecnología de capsulas de perfume denominada HD (High diffusive) que permite la difusión de fragancia en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Suaviza las fibras de los tejidos, evitando que las mismas adquieran rigidez luego del lavado.",
-      "• Facilita el planchado de las prendas.",
-      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños.",
-      "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
-    ],
-    "stock": 0,
-    "color": [
-      "#1385dd"
-    ]
-  },
-  {
-    "id": 34,
-    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
-    "variedad": "Intenso",
-    "presentacion": "Doypack 900ml",
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Intenso Doypack 900ml",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "suavizante",
-    "sku": "300000034",
-    "image": "https://cdn.cavallaro.com.py/productos/300000034.jpg",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000034.jpg",
-      "https://cdn.cavallaro.com.py/presentaciones/Doypack 900ml.png"
-    ],
-    "price": "18200",
-    "originalPrice": "18200.00",
-    "size": [
-      "Doypack 900ml"
-    ],
-    "featured": false,
-    "descripcion": "<p>Los Suavizantes Cavallaro Premium acondicionan los tejidos de las prendas después del lavado, humectando las fibras y otorgándoles máxima suavidad. Su fórmula mejorada posee una tecnología de capsulas de perfume denominada HD (High diffusive) que permite la difusión de fragancia en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Suaviza las fibras de los tejidos, evitando que las mismas adquieran rigidez luego del lavado.",
-      "• Facilita el planchado de las prendas.",
-      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños.",
-      "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
-    ],
-    "stock": 0,
-    "color": [
-      "#92d99a"
-    ]
-  },
-  {
-    "id": 35,
-    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
-    "variedad": "Clásico",
-    "presentacion": "Doypack 2L",
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Clásico Doypack 2L",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "suavizante",
-    "sku": "300000038",
-    "image": "https://cdn.cavallaro.com.py/productos/300000038.jpg",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000038.jpg",
-      "https://cdn.cavallaro.com.py/presentaciones/Doypack 2L.png"
-    ],
-    "price": "34400",
-    "originalPrice": "34400.00",
-    "size": [
-      "Doypack 2L"
-    ],
-    "featured": false,
-    "descripcion": "<p>Los Suavizantes Cavallaro Premium acondicionan los tejidos de las prendas después del lavado, humectando las fibras y otorgándoles máxima suavidad. Su fórmula mejorada posee una tecnología de capsulas de perfume denominada HD (High diffusive) que permite la difusión de fragancia en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Suaviza las fibras de los tejidos, evitando que las mismas adquieran rigidez luego del lavado.",
-      "• Facilita el planchado de las prendas.",
-      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños.",
-      "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
-    ],
-    "stock": 0,
-    "color": [
-      "#1385dd"
-    ]
-  },
-  {
-    "id": 36,
-    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
-    "variedad": "Intenso",
-    "presentacion": "Doypack 2L",
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Intenso Doypack 2L",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "suavizante",
-    "sku": "300000039",
-    "image": "https://cdn.cavallaro.com.py/productos/300000039.jpg",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000039.jpg",
-      "https://cdn.cavallaro.com.py/presentaciones/Doypack 2L.png"
-    ],
-    "price": "34400",
-    "originalPrice": "34400.00",
-    "size": [
-      "Doypack 2L"
-    ],
-    "featured": false,
-    "descripcion": "<p>Los Suavizantes Cavallaro Premium acondicionan los tejidos de las prendas después del lavado, humectando las fibras y otorgándoles máxima suavidad. Su fórmula mejorada posee una tecnología de capsulas de perfume denominada HD (High diffusive) que permite la difusión de fragancia en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Suaviza las fibras de los tejidos, evitando que las mismas adquieran rigidez luego del lavado.",
-      "• Facilita el planchado de las prendas.",
-      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños.",
-      "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
-    ],
-    "stock": 0,
-    "color": [
-      "#92d99a"
-    ]
-  },
-  {
-    "id": 37,
-    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
-    "variedad": "Delicado",
-    "presentacion": "Doypack 450ml",
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Delicado Doypack 450ml",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "suavizante",
-    "sku": "300000040",
-    "image": "https://cdn.cavallaro.com.py/productos/300000040.jpg",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000040.jpg",
-      "https://cdn.cavallaro.com.py/presentaciones/Doypack 450ml.png"
-    ],
-    "price": "11000",
-    "originalPrice": "11000.00",
-    "size": [
-      "Doypack 450ml"
-    ],
-    "featured": false,
-    "descripcion": "<p>Los Suavizantes Cavallaro Premium acondicionan los tejidos de las prendas después del lavado, humectando las fibras y otorgándoles máxima suavidad. Su fórmula mejorada posee una tecnología de capsulas de perfume denominada HD (High diffusive) que permite la difusión de fragancia en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Suaviza las fibras de los tejidos, evitando que las mismas adquieran rigidez luego del lavado.",
-      "• Facilita el planchado de las prendas.",
-      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños.",
-      "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
-    ],
-    "stock": 0,
-    "color": [
-      "#ffd600"
-    ]
-  },
-  {
-    "id": 38,
-    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
-    "variedad": "Intenso",
-    "presentacion": "Doypack 450ml",
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Intenso Doypack 450ml",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "suavizante",
-    "sku": "300000041",
-    "image": "https://cdn.cavallaro.com.py/productos/300000041.jpg",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000041.jpg",
-      "https://cdn.cavallaro.com.py/presentaciones/Doypack 450ml.png"
-    ],
-    "price": "11000",
-    "originalPrice": "11000.00",
-    "size": [
-      "Doypack 450ml"
-    ],
-    "featured": false,
-    "descripcion": "<p>Los Suavizantes Cavallaro Premium acondicionan los tejidos de las prendas después del lavado, humectando las fibras y otorgándoles máxima suavidad. Su fórmula mejorada posee una tecnología de capsulas de perfume denominada HD (High diffusive) que permite la difusión de fragancia en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Suaviza las fibras de los tejidos, evitando que las mismas adquieran rigidez luego del lavado.",
-      "• Facilita el planchado de las prendas.",
-      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños.",
-      "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
-    ],
-    "stock": 0,
-    "color": [
-      "#92d99a"
-    ]
-  },
-  {
-    "id": 39,
-    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
-    "variedad": "Delicado",
-    "presentacion": "Bidón de 4L",
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Delicado Bidón de 4L",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "suavizante",
-    "sku": "300000042",
-    "image": "https://cdn.cavallaro.com.py/productos/300000042.jpg",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000042.jpg",
-      "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
-    ],
-    "price": "56800",
-    "originalPrice": "56800.00",
-    "size": [
-      "Bidón de 4L"
-    ],
-    "featured": false,
-    "descripcion": "<p>Los Suavizantes Cavallaro Premium acondicionan los tejidos de las prendas después del lavado, humectando las fibras y otorgándoles máxima suavidad. Su fórmula mejorada posee una tecnología de capsulas de perfume denominada HD (High diffusive) que permite la difusión de fragancia en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Suaviza las fibras de los tejidos, evitando que las mismas adquieran rigidez luego del lavado.",
-      "• Facilita el planchado de las prendas.",
-      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños.",
-      "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
-    ],
-    "stock": 0,
-    "color": [
-      "#ffd600"
-    ]
-  },
-  {
-    "id": 40,
-    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
-    "variedad": "Intenso",
-    "presentacion": "Bidón de 4L",
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Intenso Bidón de 4L",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "suavizante",
-    "sku": "300000043",
-    "image": "https://cdn.cavallaro.com.py/productos/300000043.jpg",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000043.jpg",
-      "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
-    ],
-    "price": "56800",
-    "originalPrice": "56800.00",
-    "size": [
-      "Bidón de 4L"
-    ],
-    "featured": false,
-    "descripcion": "<p>Los Suavizantes Cavallaro Premium acondicionan los tejidos de las prendas después del lavado, humectando las fibras y otorgándoles máxima suavidad. Su fórmula mejorada posee una tecnología de capsulas de perfume denominada HD (High diffusive) que permite la difusión de fragancia en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Suaviza las fibras de los tejidos, evitando que las mismas adquieran rigidez luego del lavado.",
-      "• Facilita el planchado de las prendas.",
-      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños.",
-      "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
-    ],
-    "stock": 0,
-    "color": [
-      "#92d99a"
-    ]
-  },
-  {
-    "id": 41,
-    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
-    "variedad": "Clásico",
-    "presentacion": "Display 20x70ml",
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Clásico Display 20x70ml",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "suavizante",
-    "sku": "300000046",
-    "image": "https://cdn.cavallaro.com.py/productos/300000046.jpg",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000046.jpg",
-      "https://cdn.cavallaro.com.py/presentaciones/Display 20x70ml.png"
-    ],
-    "price": "62000",
-    "originalPrice": "62000.00",
-    "size": [
-      "Display 20x70ml"
-    ],
-    "featured": false,
-    "descripcion": "<p>Los Suavizantes Cavallaro Premium acondicionan los tejidos de las prendas después del lavado, humectando las fibras y otorgándoles máxima suavidad. Su fórmula mejorada posee una tecnología de capsulas de perfume denominada HD (High diffusive) que permite la difusión de fragancia en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Suaviza las fibras de los tejidos, evitando que las mismas adquieran rigidez luego del lavado.",
-      "• Facilita el planchado de las prendas.",
-      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños.",
-      "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
-    ],
-    "stock": 0,
-    "color": [
-      "#1385dd"
-    ]
-  },
-  {
-    "id": 42,
-    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
-    "variedad": "Intenso",
-    "presentacion": "Display 20x70ml",
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM Intenso Display 20x70ml",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "suavizante",
-    "sku": "300000047",
-    "image": "https://cdn.cavallaro.com.py/productos/300000047.jpg",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000047.jpg",
-      "https://cdn.cavallaro.com.py/presentaciones/Display 20x70ml.png"
-    ],
-    "price": "62000",
-    "originalPrice": "62000.00",
-    "size": [
-      "Display 20x70ml"
-    ],
-    "featured": false,
-    "descripcion": "<p>Los Suavizantes Cavallaro Premium acondicionan los tejidos de las prendas después del lavado, humectando las fibras y otorgándoles máxima suavidad. Su fórmula mejorada posee una tecnología de capsulas de perfume denominada HD (High diffusive) que permite la difusión de fragancia en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Suaviza las fibras de los tejidos, evitando que las mismas adquieran rigidez luego del lavado.",
-      "• Facilita el planchado de las prendas.",
-      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños.",
-      "• Integra aromas concentrados y perlas de perfume que aseguran una mayor persistencia de la fragancia en la prenda, aun después del proceso de secado y planchado."
-    ],
-    "stock": 0,
-    "color": [
-      "#92d99a"
-    ]
-  },
-  {
-    "id": 43,
-    "producto": "JABON DE COCO PURO COCO CAVALLARO",
-    "variedad": "Blanco",
-    "presentacion": "Barra de 500g",
-    "name": "JABON DE COCO PURO COCO CAVALLARO Blanco Barra de 500g",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "coco-puro",
-    "sku": "300000050",
-    "image": "https://cdn.cavallaro.com.py/productos/300000050.jpg",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000050.jpg",
-      "https://cdn.cavallaro.com.py/presentaciones/Barra de 500g.png"
-    ],
-    "price": "25000",
-    "originalPrice": "25000.00",
-    "size": [
-      "Barra de 500g"
-    ],
-    "featured": false,
-    "descripcion": "<p>El jabón de coco puro Coco Cavallaro es un jabón hipoalergénico, antibacterial, elaborado 100 % de aceite de almendra de coco. Por su composición natural de origen vegetal, brinda una limpieza efectiva y el máximo cuidado a los tejidos y a la piel.</p>",
-    "usosRecomendados": [
-      "Limpieza de todo tipo de tejidos, lavado de manos, baño de mascotas."
-    ],
-    "propiedades": [
-      "• Elimina el 99,9 % de virus, bacterias y hongos.",
-      "• Antiséptico.",
-      "• Hipoalergénico.",
-      "• Limpia y desengrasa.",
-      "• Neutraliza los malos olores.",
-      "• Libre de gluten."
-    ],
-    "stock": 0,
-    "color": [
-      "#ebe1d5"
-    ]
-  },
-  {
-    "id": 44,
-    "producto": "JABON DE COCO PURO COCO CAVALLARO",
-    "variedad": "Blanco",
     "presentacion": "Barra de 1000g",
     "name": "JABON DE COCO PURO COCO CAVALLARO Blanco Barra de 1000g",
     "category": "cuidado-de-las-prendas",
@@ -1451,7 +970,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Barra de 1000g.png"
     ],
     "price": "48250",
-    "originalPrice": "48250.00",
+    "originalPrice": "48250",
     "size": [
       "Barra de 1000g"
     ],
@@ -1474,7 +993,7 @@
     ]
   },
   {
-    "id": 45,
+    "id": 30,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Floral",
     "presentacion": "Caja de 250 x 25g",
@@ -1488,7 +1007,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Caja de 250 x 25g.png"
     ],
     "price": "387500",
-    "originalPrice": "387500.00",
+    "originalPrice": "387500",
     "size": [
       "Caja de 250 x 25g"
     ],
@@ -1511,7 +1030,7 @@
     ]
   },
   {
-    "id": 46,
+    "id": 31,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Almendras",
     "presentacion": "Caja de 250 x 25g",
@@ -1525,7 +1044,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Caja de 250 x 25g.png"
     ],
     "price": "387500",
-    "originalPrice": "387500.00",
+    "originalPrice": "387500",
     "size": [
       "Caja de 250 x 25g"
     ],
@@ -1548,7 +1067,7 @@
     ]
   },
   {
-    "id": 47,
+    "id": 32,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Clásico",
     "presentacion": "Caja de 250 x 25g",
@@ -1562,7 +1081,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Caja de 250 x 25g.png"
     ],
     "price": "387500",
-    "originalPrice": "387500.00",
+    "originalPrice": "387500",
     "size": [
       "Caja de 250 x 25g"
     ],
@@ -1585,7 +1104,7 @@
     ]
   },
   {
-    "id": 48,
+    "id": 33,
     "producto": "JABON EN POLVO ANTIBACTERIAL COCO CAVALLARO",
     "variedad": "Clásico",
     "presentacion": "Bolsa de 80g",
@@ -1599,7 +1118,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 80g.png"
     ],
     "price": "4050",
-    "originalPrice": "4050.00",
+    "originalPrice": "4050",
     "size": [
       "Bolsa de 80g"
     ],
@@ -1621,7 +1140,7 @@
     ]
   },
   {
-    "id": 49,
+    "id": 34,
     "producto": "JABON EN POLVO ANTIBACTERIAL COCO CAVALLARO",
     "variedad": "Clásico",
     "presentacion": "Bolsa de 800g",
@@ -1635,7 +1154,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 800g.png"
     ],
     "price": "34000",
-    "originalPrice": "34000.00",
+    "originalPrice": "34000",
     "size": [
       "Bolsa de 800g"
     ],
@@ -1657,7 +1176,7 @@
     ]
   },
   {
-    "id": 50,
+    "id": 35,
     "producto": "JABON PARA LAVAR LA ROPA GUAIRA DELUXE",
     "variedad": "Coco y Glicerina",
     "presentacion": "Pan de 130 g.",
@@ -1671,7 +1190,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pan de 130g.png"
     ],
     "price": "4200",
-    "originalPrice": "4200.00",
+    "originalPrice": "4200",
     "size": [
       "Pan de 130 g."
     ],
@@ -1692,7 +1211,7 @@
     ]
   },
   {
-    "id": 51,
+    "id": 36,
     "producto": "JABON PARA LAVAR LA ROPA GUAIRA DELUXE",
     "variedad": "Coco y Glicerina",
     "presentacion": "Pack de 5 x 180g",
@@ -1706,7 +1225,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pack de 5 x 180g.png"
     ],
     "price": "23000",
-    "originalPrice": "23000.00",
+    "originalPrice": "23000",
     "size": [
       "Pack de 5 x 180g"
     ],
@@ -1727,7 +1246,7 @@
     ]
   },
   {
-    "id": 52,
+    "id": 37,
     "producto": "JABON PARA LAVAR LA ROPA GUAIRA DELUXE",
     "variedad": "Coco y Glicerina",
     "presentacion": "Pan de 200g",
@@ -1741,7 +1260,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pan de 200g.png"
     ],
     "price": "6200",
-    "originalPrice": "6200.00",
+    "originalPrice": "6200",
     "size": [
       "Pan de 200g"
     ],
@@ -1762,7 +1281,7 @@
     ]
   },
   {
-    "id": 53,
+    "id": 38,
     "producto": "JABÓN PARA LAVAR LA ROPA GUAIRA DELUXE",
     "variedad": "Azul Blanqueador",
     "presentacion": "Pan de 230 g.",
@@ -1776,7 +1295,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pan de 230g.png"
     ],
     "price": "8100",
-    "originalPrice": "8100.00",
+    "originalPrice": "8100",
     "size": [
       "Pan de 230 g."
     ],
@@ -1797,7 +1316,7 @@
     ]
   },
   {
-    "id": 54,
+    "id": 39,
     "producto": "JABÓN PARA LAVAR LA ROPA GUAIRA DELUXE",
     "variedad": "Glicerina y Limón",
     "presentacion": "Pan de 250 g.",
@@ -1811,7 +1330,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pan de 250g.png"
     ],
     "price": "8300",
-    "originalPrice": "8300.00",
+    "originalPrice": "8300",
     "size": [
       "Pan de 250 g."
     ],
@@ -1832,7 +1351,7 @@
     ]
   },
   {
-    "id": 55,
+    "id": 40,
     "producto": "JABON DE TOCADOR IO",
     "variedad": "Durazno & Frutos Rojos",
     "presentacion": "Tripack 3 x 80g",
@@ -1846,7 +1365,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Tripack 3 x 80g.png"
     ],
     "price": "8300",
-    "originalPrice": "8300.00",
+    "originalPrice": "8300",
     "size": [
       "Tripack 3 x 80g"
     ],
@@ -1864,7 +1383,7 @@
     ]
   },
   {
-    "id": 56,
+    "id": 41,
     "producto": "JABON DE TOCADOR IO",
     "variedad": "Mango & Mburucuya",
     "presentacion": "Tripack 3 x 80g",
@@ -1878,7 +1397,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Tripack 3 x 80g.png"
     ],
     "price": "8300",
-    "originalPrice": "8300.00",
+    "originalPrice": "8300",
     "size": [
       "Tripack 3 x 80g"
     ],
@@ -1896,7 +1415,7 @@
     ]
   },
   {
-    "id": 57,
+    "id": 42,
     "producto": "JABON DE TOCADOR IO",
     "variedad": "Manzana verde & Pera",
     "presentacion": "Tripack 3 x 80g",
@@ -1910,7 +1429,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Tripack 3 x 80g.png"
     ],
     "price": "8300",
-    "originalPrice": "8300.00",
+    "originalPrice": "8300",
     "size": [
       "Tripack 3 x 80g"
     ],
@@ -1928,7 +1447,7 @@
     ]
   },
   {
-    "id": 58,
+    "id": 43,
     "producto": "JABON DE TOCADOR C",
     "variedad": "Natural Fresh",
     "presentacion": "Caja de 300 x 20g",
@@ -1942,7 +1461,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Caja de 300 x 20g.png"
     ],
     "price": "363000",
-    "originalPrice": "363000.00",
+    "originalPrice": "363000",
     "size": [
       "Caja de 300 x 20g"
     ],
@@ -1962,7 +1481,7 @@
     ]
   },
   {
-    "id": 59,
+    "id": 44,
     "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
     "variedad": "Clásico",
     "presentacion": "Bolsa de 10Kg",
@@ -1976,7 +1495,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 10Kg.png"
     ],
     "price": "125400",
-    "originalPrice": "125400.00",
+    "originalPrice": "125400",
     "size": [
       "Bolsa de 10Kg"
     ],
@@ -1997,7 +1516,7 @@
     ]
   },
   {
-    "id": 60,
+    "id": 45,
     "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
     "variedad": "Citrus",
     "presentacion": "Bolsa de 1Kg",
@@ -2011,7 +1530,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 1Kg.png"
     ],
     "price": "15300",
-    "originalPrice": "15300.00",
+    "originalPrice": "15300",
     "size": [
       "Bolsa de 1Kg"
     ],
@@ -2032,7 +1551,7 @@
     ]
   },
   {
-    "id": 61,
+    "id": 46,
     "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
     "variedad": "Citrus",
     "presentacion": "Bolsa de 10Kg",
@@ -2046,7 +1565,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 10Kg.png"
     ],
     "price": "125400",
-    "originalPrice": "125400.00",
+    "originalPrice": "125400",
     "size": [
       "Bolsa de 10Kg"
     ],
@@ -2067,7 +1586,7 @@
     ]
   },
   {
-    "id": 62,
+    "id": 47,
     "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
     "variedad": "Clásico",
     "presentacion": "Bolsa de 400g",
@@ -2081,7 +1600,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 400g.png"
     ],
     "price": "7000",
-    "originalPrice": "7000.00",
+    "originalPrice": "7000",
     "size": [
       "Bolsa de 400g"
     ],
@@ -2102,7 +1621,7 @@
     ]
   },
   {
-    "id": 63,
+    "id": 48,
     "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
     "variedad": "Citrus",
     "presentacion": "Bolsa de 150g",
@@ -2116,7 +1635,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 150g.png"
     ],
     "price": "3850",
-    "originalPrice": "3850.00",
+    "originalPrice": "3850",
     "size": [
       "Bolsa de 150g"
     ],
@@ -2137,7 +1656,7 @@
     ]
   },
   {
-    "id": 64,
+    "id": 49,
     "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
     "variedad": "Citrus",
     "presentacion": "Bolsa de 400g",
@@ -2151,7 +1670,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 400g.png"
     ],
     "price": "7000",
-    "originalPrice": "7000.00",
+    "originalPrice": "7000",
     "size": [
       "Bolsa de 400g"
     ],
@@ -2172,7 +1691,7 @@
     ]
   },
   {
-    "id": 65,
+    "id": 50,
     "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
     "variedad": "Citrus",
     "presentacion": "Bolsa de 3Kg",
@@ -2186,7 +1705,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 3Kg.png"
     ],
     "price": "43000",
-    "originalPrice": "43000.00",
+    "originalPrice": "43000",
     "size": [
       "Bolsa de 3Kg"
     ],
@@ -2207,7 +1726,7 @@
     ]
   },
   {
-    "id": 66,
+    "id": 51,
     "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
     "variedad": "Clásico",
     "presentacion": "Bolsa de 1Kg",
@@ -2221,7 +1740,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 1Kg.png"
     ],
     "price": "15300",
-    "originalPrice": "15300.00",
+    "originalPrice": "15300",
     "size": [
       "Bolsa de 1Kg"
     ],
@@ -2242,7 +1761,7 @@
     ]
   },
   {
-    "id": 67,
+    "id": 52,
     "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
     "variedad": "Clásico",
     "presentacion": "Bolsa de 3Kg",
@@ -2256,7 +1775,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 3Kg.png"
     ],
     "price": "43000",
-    "originalPrice": "43000.00",
+    "originalPrice": "43000",
     "size": [
       "Bolsa de 3Kg"
     ],
@@ -2277,7 +1796,7 @@
     ]
   },
   {
-    "id": 68,
+    "id": 53,
     "producto": "POLVO PARA LAVAR LA ROPA INSUPERABLE",
     "variedad": "Clásico",
     "presentacion": "Bolsa de 150g",
@@ -2291,7 +1810,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 150g.png"
     ],
     "price": "3850",
-    "originalPrice": "3850.00",
+    "originalPrice": "3850",
     "size": [
       "Bolsa de 150g"
     ],
@@ -2312,7 +1831,7 @@
     ]
   },
   {
-    "id": 69,
+    "id": 54,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
     "variedad": "Floral",
     "presentacion": "Display 20x70ml",
@@ -2326,7 +1845,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Display 20x70ml.png"
     ],
     "price": "62000",
-    "originalPrice": "62000.00",
+    "originalPrice": "62000",
     "size": [
       "Display 20x70ml"
     ],
@@ -2347,7 +1866,7 @@
     ]
   },
   {
-    "id": 70,
+    "id": 55,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
     "variedad": "Tropical",
     "presentacion": "Display 20x70ml",
@@ -2361,7 +1880,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Display 20x70ml.png"
     ],
     "price": "62000",
-    "originalPrice": "62000.00",
+    "originalPrice": "62000",
     "size": [
       "Display 20x70ml"
     ],
@@ -2382,7 +1901,7 @@
     ]
   },
   {
-    "id": 71,
+    "id": 56,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
     "variedad": "Oriental",
     "presentacion": "Display 20x70ml",
@@ -2396,7 +1915,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Display 20x70ml.png"
     ],
     "price": "62000",
-    "originalPrice": "62000.00",
+    "originalPrice": "62000",
     "size": [
       "Display 20x70ml"
     ],
@@ -2417,42 +1936,7 @@
     ]
   },
   {
-    "id": 72,
-    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
-    "variedad": "Floral",
-    "presentacion": "Doypack 450ml",
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Floral Doypack 450ml",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "suavizante",
-    "sku": "300000273",
-    "image": "https://cdn.cavallaro.com.py/productos/300000273.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000273.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Doypack 450ml.png"
-    ],
-    "price": "11050",
-    "originalPrice": "11050.00",
-    "size": [
-      "Doypack 450ml"
-    ],
-    "featured": false,
-    "descripcion": "<p>Los Suavizantes Cavallaro Edición Especial poseen una fórmula concentrada que otorga el doble de suavidad y perfume a los tejidos. Cada variedad posee una exquisita fragancia desarrollada de manera exclusiva por un perfumista profesional, ofreciendo así diversas sensaciones y experiencias para los sentidos. Su composición posee perfume encapsulado mediante una tecnología denominada HD (High Diffusive) que permite la liberación de fragancia de forma gradual en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Edición Especial de perfumes, con aromas exclusivos para deleitar los sentidos.",
-      "• Su agente activo concentrado brinda humectación y un extra de suavidad a los tejidos.",
-      "• Mayor concentración de perfume, que brindan una explosión de fragancia.",
-      "• Con perfume encapsulado que garantiza que la fragancia se fije y perdure por más tiempo en el tejido.",
-      "• Facilita el planchado de las prendas.",
-      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
-    ],
-    "stock": 0,
-    "color": [
-      "#f859a0"
-    ]
-  },
-  {
-    "id": 73,
+    "id": 57,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
     "variedad": "Tropical",
     "presentacion": "Doypack 450ml",
@@ -2466,7 +1950,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 450ml.png"
     ],
     "price": "11050",
-    "originalPrice": "11050.00",
+    "originalPrice": "11050",
     "size": [
       "Doypack 450ml"
     ],
@@ -2487,42 +1971,7 @@
     ]
   },
   {
-    "id": 74,
-    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
-    "variedad": "Oriental",
-    "presentacion": "Doypack 450ml",
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Oriental Doypack 450ml",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "suavizante",
-    "sku": "300000275",
-    "image": "https://cdn.cavallaro.com.py/productos/300000275.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000275.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Doypack 450ml.png"
-    ],
-    "price": "11050",
-    "originalPrice": "11050.00",
-    "size": [
-      "Doypack 450ml"
-    ],
-    "featured": false,
-    "descripcion": "<p>Los Suavizantes Cavallaro Edición Especial poseen una fórmula concentrada que otorga el doble de suavidad y perfume a los tejidos. Cada variedad posee una exquisita fragancia desarrollada de manera exclusiva por un perfumista profesional, ofreciendo así diversas sensaciones y experiencias para los sentidos. Su composición posee perfume encapsulado mediante una tecnología denominada HD (High Diffusive) que permite la liberación de fragancia de forma gradual en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Edición Especial de perfumes, con aromas exclusivos para deleitar los sentidos.",
-      "• Su agente activo concentrado brinda humectación y un extra de suavidad a los tejidos.",
-      "• Mayor concentración de perfume, que brindan una explosión de fragancia.",
-      "• Con perfume encapsulado que garantiza que la fragancia se fije y perdure por más tiempo en el tejido.",
-      "• Facilita el planchado de las prendas.",
-      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
-    ],
-    "stock": 0,
-    "color": [
-      "#bf17ee"
-    ]
-  },
-  {
-    "id": 75,
+    "id": 58,
     "producto": "POLVO PARA LAVAR LA ROPA GUAIRA PROFESIONAL",
     "variedad": "Profesional",
     "presentacion": "Bolsa de 2Kg",
@@ -2536,7 +1985,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 2Kg.png"
     ],
     "price": "52500",
-    "originalPrice": "52500.00",
+    "originalPrice": "52500",
     "size": [
       "Bolsa de 2Kg"
     ],
@@ -2557,7 +2006,7 @@
     ]
   },
   {
-    "id": 76,
+    "id": 59,
     "producto": "POLVO PARA LAVAR LA ROPA GUAIRA PROFESIONAL",
     "variedad": "Profesional",
     "presentacion": "Bolsa de 5Kg",
@@ -2571,7 +2020,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 5Kg.png"
     ],
     "price": "130400",
-    "originalPrice": "130400.00",
+    "originalPrice": "130400",
     "size": [
       "Bolsa de 5Kg"
     ],
@@ -2592,147 +2041,7 @@
     ]
   },
   {
-    "id": 77,
-    "producto": "JABON PARA LAVAR LA ROPA TROPICAL",
-    "variedad": "Ropa Blanca",
-    "presentacion": "Pan de 180 g.",
-    "name": "JABON PARA LAVAR LA ROPA TROPICAL Ropa Blanca Pan de 180 g.",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "jabon-de-lavar",
-    "sku": "300000362",
-    "image": "https://cdn.cavallaro.com.py/productos/300000362.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000362.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Pan de 180g.png"
-    ],
-    "price": "5000",
-    "originalPrice": "5000.00",
-    "size": [
-      "Pan de 180 g."
-    ],
-    "featured": false,
-    "descripcion": "<p>Es una línea de jabones de lavar premium, traslúcidos, con alto contenido de aceite de almendra de coco y un extra de glicerina, además de una variada y exquisita colección de perfumes florales y cítricos frutales.  Esta línea brinda un excelente poder de limpieza y nuevas propuestas olfativas para adecuarse a las necesidades y gustos del consumidor.</p>",
-    "usosRecomendados": [
-      "Todo tipo de tejidos."
-    ],
-    "propiedades": [
-      "• Mayor concentración de jabón lo que le otorga mayor poder de limpieza.",
-      "• Extra de glicerina, que brinda cuidado para los tejidos y protección a la piel de las manos.",
-      "• El aceite de almendra de coco le confiere un poder espumante elevado.",
-      "• Mayor rendimiento, por su formato compacto y concentrado."
-    ],
-    "stock": 0,
-    "color": [
-      "#359aff"
-    ]
-  },
-  {
-    "id": 78,
-    "producto": "JABON PARA LAVAR LA ROPA TROPICAL",
-    "variedad": "Ropa Delicada",
-    "presentacion": "Pan de 180 g.",
-    "name": "JABON PARA LAVAR LA ROPA TROPICAL Ropa Delicada Pan de 180 g.",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "jabon-de-lavar",
-    "sku": "300000363",
-    "image": "https://cdn.cavallaro.com.py/productos/300000363.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000363.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Pan de 180g.png"
-    ],
-    "price": "5000",
-    "originalPrice": "5000.00",
-    "size": [
-      "Pan de 180 g."
-    ],
-    "featured": false,
-    "descripcion": "<p>Es una línea de jabones de lavar premium, traslúcidos, con alto contenido de aceite de almendra de coco y un extra de glicerina, además de una variada y exquisita colección de perfumes florales y cítricos frutales.  Esta línea brinda un excelente poder de limpieza y nuevas propuestas olfativas para adecuarse a las necesidades y gustos del consumidor.</p>",
-    "usosRecomendados": [
-      "Todo tipo de tejidos."
-    ],
-    "propiedades": [
-      "• Mayor concentración de jabón lo que le otorga mayor poder de limpieza.",
-      "• Extra de glicerina, que brinda cuidado para los tejidos y protección a la piel de las manos.",
-      "• El aceite de almendra de coco le confiere un poder espumante elevado.",
-      "• Mayor rendimiento, por su formato compacto y concentrado."
-    ],
-    "stock": 0,
-    "color": [
-      "#ff80c3"
-    ]
-  },
-  {
-    "id": 79,
-    "producto": "JABON PARA LAVAR LA ROPA TROPICAL",
-    "variedad": "Ropa Diaria",
-    "presentacion": "Pan de 180 g.",
-    "name": "JABON PARA LAVAR LA ROPA TROPICAL Ropa Diaria Pan de 180 g.",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "jabon-de-lavar",
-    "sku": "300000364",
-    "image": "https://cdn.cavallaro.com.py/productos/300000364.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000364.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Pan de 180g.png"
-    ],
-    "price": "5000",
-    "originalPrice": "5000.00",
-    "size": [
-      "Pan de 180 g."
-    ],
-    "featured": false,
-    "descripcion": "<p>Es una línea de jabones de lavar premium, traslúcidos, con alto contenido de aceite de almendra de coco y un extra de glicerina, además de una variada y exquisita colección de perfumes florales y cítricos frutales.  Esta línea brinda un excelente poder de limpieza y nuevas propuestas olfativas para adecuarse a las necesidades y gustos del consumidor.</p>",
-    "usosRecomendados": [
-      "Todo tipo de tejidos."
-    ],
-    "propiedades": [
-      "• Mayor concentración de jabón lo que le otorga mayor poder de limpieza.",
-      "• Extra de glicerina, que brinda cuidado para los tejidos y protección a la piel de las manos.",
-      "• El aceite de almendra de coco le confiere un poder espumante elevado.",
-      "• Mayor rendimiento, por su formato compacto y concentrado."
-    ],
-    "stock": 0,
-    "color": [
-      "#37d767"
-    ]
-  },
-  {
-    "id": 80,
-    "producto": "JABON PARA LAVAR LA ROPA TROPICAL",
-    "variedad": "Ropa Color",
-    "presentacion": "Pan de 180 g.",
-    "name": "JABON PARA LAVAR LA ROPA TROPICAL Ropa Color Pan de 180 g.",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "jabon-de-lavar",
-    "sku": "300000365",
-    "image": "https://cdn.cavallaro.com.py/productos/300000365.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000365.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Pan de 180g.png"
-    ],
-    "price": "5000",
-    "originalPrice": "5000.00",
-    "size": [
-      "Pan de 180 g."
-    ],
-    "featured": false,
-    "descripcion": "<p>Es una línea de jabones de lavar premium, traslúcidos, con alto contenido de aceite de almendra de coco y un extra de glicerina, además de una variada y exquisita colección de perfumes florales y cítricos frutales.  Esta línea brinda un excelente poder de limpieza y nuevas propuestas olfativas para adecuarse a las necesidades y gustos del consumidor.</p>",
-    "usosRecomendados": [
-      "Todo tipo de tejidos."
-    ],
-    "propiedades": [
-      "• Mayor concentración de jabón lo que le otorga mayor poder de limpieza.",
-      "• Extra de glicerina, que brinda cuidado para los tejidos y protección a la piel de las manos.",
-      "• El aceite de almendra de coco le confiere un poder espumante elevado.",
-      "• Mayor rendimiento, por su formato compacto y concentrado."
-    ],
-    "stock": 0,
-    "color": [
-      "#cc61ba"
-    ]
-  },
-  {
-    "id": 81,
+    "id": 60,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Delicado",
     "presentacion": "Doypack 900ml",
@@ -2746,7 +2055,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 900ml.png"
     ],
     "price": "18200",
-    "originalPrice": "18200.00",
+    "originalPrice": "18200",
     "size": [
       "Doypack 900ml"
     ],
@@ -2765,7 +2074,7 @@
     ]
   },
   {
-    "id": 82,
+    "id": 61,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
     "variedad": "Floral",
     "presentacion": "Doypack 1600ml",
@@ -2779,7 +2088,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 1600ml.png"
     ],
     "price": "32400",
-    "originalPrice": "32400.00",
+    "originalPrice": "32400",
     "size": [
       "Doypack 1600ml"
     ],
@@ -2800,7 +2109,7 @@
     ]
   },
   {
-    "id": 83,
+    "id": 62,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
     "variedad": "Floral",
     "presentacion": "Bidón de 4L",
@@ -2814,7 +2123,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
     ],
     "price": "67150",
-    "originalPrice": "67150.00",
+    "originalPrice": "67150",
     "size": [
       "Bidón de 4L"
     ],
@@ -2835,7 +2144,7 @@
     ]
   },
   {
-    "id": 84,
+    "id": 63,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
     "variedad": "Tropical",
     "presentacion": "Bidón de 4L",
@@ -2849,7 +2158,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
     ],
     "price": "67150",
-    "originalPrice": "67150.00",
+    "originalPrice": "67150",
     "size": [
       "Bidón de 4L"
     ],
@@ -2870,7 +2179,7 @@
     ]
   },
   {
-    "id": 85,
+    "id": 64,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
     "variedad": "Oriental",
     "presentacion": "Bidón de 4L",
@@ -2884,7 +2193,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
     ],
     "price": "67150",
-    "originalPrice": "67150.00",
+    "originalPrice": "67150",
     "size": [
       "Bidón de 4L"
     ],
@@ -2905,7 +2214,7 @@
     ]
   },
   {
-    "id": 86,
+    "id": 65,
     "producto": "JABON PARA LAVAR LA ROPA AGRICULTOR",
     "variedad": "Marrón",
     "presentacion": "Caja de 20 x 250 g.",
@@ -2919,7 +2228,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Caja de 20 x 250g.png"
     ],
     "price": "95000",
-    "originalPrice": "95000.00",
+    "originalPrice": "95000",
     "size": [
       "Caja de 20 x 250 g."
     ],
@@ -2941,7 +2250,7 @@
     ]
   },
   {
-    "id": 87,
+    "id": 66,
     "producto": "JABON PARA LAVAR LA ROPA AGRICULTOR",
     "variedad": "Verde",
     "presentacion": "Caja de 20 x 250 g.",
@@ -2955,7 +2264,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Caja de 20 x 250g.png"
     ],
     "price": "95000",
-    "originalPrice": "95000.00",
+    "originalPrice": "95000",
     "size": [
       "Caja de 20 x 250 g."
     ],
@@ -2977,7 +2286,7 @@
     ]
   },
   {
-    "id": 88,
+    "id": 67,
     "producto": "JABON DE TOCADOR C GLICERINA",
     "variedad": "Neutro",
     "presentacion": "Pastilla 125g",
@@ -2991,7 +2300,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 125g.png"
     ],
     "price": "6600",
-    "originalPrice": "6600.00",
+    "originalPrice": "6600",
     "size": [
       "Pastilla 125g"
     ],
@@ -3012,7 +2321,7 @@
     ]
   },
   {
-    "id": 89,
+    "id": 68,
     "producto": "JABON DE TOCADOR C GLICERINA",
     "variedad": "Floral",
     "presentacion": "Pastilla 125g",
@@ -3026,7 +2335,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 125g.png"
     ],
     "price": "6600",
-    "originalPrice": "6600.00",
+    "originalPrice": "6600",
     "size": [
       "Pastilla 125g"
     ],
@@ -3047,7 +2356,7 @@
     ]
   },
   {
-    "id": 90,
+    "id": 69,
     "producto": "JABON DE TOCADOR C GLICERINA",
     "variedad": "Citrus",
     "presentacion": "Pastilla 125g",
@@ -3061,7 +2370,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 125g.png"
     ],
     "price": "6600",
-    "originalPrice": "6600.00",
+    "originalPrice": "6600",
     "size": [
       "Pastilla 125g"
     ],
@@ -3082,7 +2391,7 @@
     ]
   },
   {
-    "id": 91,
+    "id": 70,
     "producto": "POLVO PARA LAVAR LA ROPA GUAIRA PROFESIONAL",
     "variedad": "Profesional",
     "presentacion": "Bolsa de 600g",
@@ -3096,7 +2405,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 600g.png"
     ],
     "price": "17600",
-    "originalPrice": "17600.00",
+    "originalPrice": "17600",
     "size": [
       "Bolsa de 600g"
     ],
@@ -3117,7 +2426,7 @@
     ]
   },
   {
-    "id": 92,
+    "id": 71,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Delicado",
     "presentacion": "Display 20x70ml",
@@ -3131,7 +2440,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Display 20x70ml.png"
     ],
     "price": "62000",
-    "originalPrice": "62000.00",
+    "originalPrice": "62000",
     "size": [
       "Display 20x70ml"
     ],
@@ -3150,7 +2459,7 @@
     ]
   },
   {
-    "id": 93,
+    "id": 72,
     "producto": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
     "variedad": "Floral",
     "presentacion": "Bidón de 4L",
@@ -3164,7 +2473,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
     ],
     "price": "99500",
-    "originalPrice": "99500.00",
+    "originalPrice": "99500",
     "size": [
       "Bidón de 4L"
     ],
@@ -3186,7 +2495,7 @@
     ]
   },
   {
-    "id": 94,
+    "id": 73,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Surtido",
     "presentacion": "Pack de 15 x 25g",
@@ -3200,7 +2509,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pack de 15 x 25g.png"
     ],
     "price": "24000",
-    "originalPrice": "24000.00",
+    "originalPrice": "24000",
     "size": [
       "Pack de 15 x 25g"
     ],
@@ -3223,7 +2532,7 @@
     ]
   },
   {
-    "id": 95,
+    "id": 74,
     "producto": "JABON LIQUIDO ANTIBACTERIAL \"MULTIUSO\" COCO CAVALLARO",
     "variedad": "Natural",
     "presentacion": "Bidón de 4L",
@@ -3237,7 +2546,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
     ],
     "price": "97500",
-    "originalPrice": "97500.00",
+    "originalPrice": "97500",
     "size": [
       "Bidón de 4L"
     ],
@@ -3260,7 +2569,7 @@
     ]
   },
   {
-    "id": 96,
+    "id": 75,
     "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
     "variedad": "Leche de Almendras",
     "presentacion": "Estuche de 125g",
@@ -3274,7 +2583,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Estuche de 125g.png"
     ],
     "price": "8400",
-    "originalPrice": "8400.00",
+    "originalPrice": "8400",
     "size": [
       "Estuche de 125g"
     ],
@@ -3295,7 +2604,7 @@
     ]
   },
   {
-    "id": 97,
+    "id": 76,
     "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
     "variedad": "Vainilla y Frutos Rojos",
     "presentacion": "Estuche de 125g",
@@ -3309,7 +2618,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Estuche de 125g.png"
     ],
     "price": "8400",
-    "originalPrice": "8400.00",
+    "originalPrice": "8400",
     "size": [
       "Estuche de 125g"
     ],
@@ -3330,7 +2639,7 @@
     ]
   },
   {
-    "id": 98,
+    "id": 77,
     "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
     "variedad": "Naranja y Jazmín",
     "presentacion": "Estuche de 125g",
@@ -3344,7 +2653,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Estuche de 125g.png"
     ],
     "price": "8400",
-    "originalPrice": "8400.00",
+    "originalPrice": "8400",
     "size": [
       "Estuche de 125g"
     ],
@@ -3365,7 +2674,7 @@
     ]
   },
   {
-    "id": 99,
+    "id": 78,
     "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
     "variedad": "Leche de Almendras",
     "presentacion": "Pastilla 90g",
@@ -3379,7 +2688,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 90g.png"
     ],
     "price": "5900",
-    "originalPrice": "5900.00",
+    "originalPrice": "5900",
     "size": [
       "Pastilla 90g"
     ],
@@ -3400,7 +2709,7 @@
     ]
   },
   {
-    "id": 100,
+    "id": 79,
     "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
     "variedad": "Vainilla y Frutos Rojos",
     "presentacion": "Pastilla 90g",
@@ -3414,7 +2723,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 90g.png"
     ],
     "price": "5900",
-    "originalPrice": "5900.00",
+    "originalPrice": "5900",
     "size": [
       "Pastilla 90g"
     ],
@@ -3435,7 +2744,7 @@
     ]
   },
   {
-    "id": 101,
+    "id": 80,
     "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
     "variedad": "Naranja y Jazmín",
     "presentacion": "Pastilla 90g",
@@ -3449,7 +2758,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 90g.png"
     ],
     "price": "5900",
-    "originalPrice": "5900.00",
+    "originalPrice": "5900",
     "size": [
       "Pastilla 90g"
     ],
@@ -3470,7 +2779,7 @@
     ]
   },
   {
-    "id": 102,
+    "id": 81,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Clásico",
     "presentacion": "Estuche de 100 g",
@@ -3484,7 +2793,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Estuche de 100 g.png"
     ],
     "price": "6700",
-    "originalPrice": "6700.00",
+    "originalPrice": "6700",
     "size": [
       "Estuche de 100 g"
     ],
@@ -3507,7 +2816,7 @@
     ]
   },
   {
-    "id": 103,
+    "id": 82,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Almendras",
     "presentacion": "Estuche de 100 g",
@@ -3521,7 +2830,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Estuche de 100 g.png"
     ],
     "price": "6700",
-    "originalPrice": "6700.00",
+    "originalPrice": "6700",
     "size": [
       "Estuche de 100 g"
     ],
@@ -3544,7 +2853,7 @@
     ]
   },
   {
-    "id": 104,
+    "id": 83,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Floral",
     "presentacion": "Estuche de 100 g",
@@ -3558,7 +2867,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Estuche de 100 g.png"
     ],
     "price": "6700",
-    "originalPrice": "6700.00",
+    "originalPrice": "6700",
     "size": [
       "Estuche de 100 g"
     ],
@@ -3581,7 +2890,7 @@
     ]
   },
   {
-    "id": 105,
+    "id": 84,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Marina",
     "presentacion": "Estuche de 100 g",
@@ -3595,7 +2904,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Estuche de 100 g.png"
     ],
     "price": "6700",
-    "originalPrice": "6700.00",
+    "originalPrice": "6700",
     "size": [
       "Estuche de 100 g"
     ],
@@ -3618,7 +2927,7 @@
     ]
   },
   {
-    "id": 106,
+    "id": 85,
     "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
     "variedad": "Limón",
     "presentacion": "Bidón de 5 L.",
@@ -3632,7 +2941,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 5L.png"
     ],
     "price": "41500",
-    "originalPrice": "41500.00",
+    "originalPrice": "41500",
     "size": [
       "Bidón de 5 L."
     ],
@@ -3649,7 +2958,7 @@
     ]
   },
   {
-    "id": 107,
+    "id": 86,
     "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
     "variedad": "Manzana",
     "presentacion": "Bidón de 5 L.",
@@ -3663,7 +2972,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 5L.png"
     ],
     "price": "41500",
-    "originalPrice": "41500.00",
+    "originalPrice": "41500",
     "size": [
       "Bidón de 5 L."
     ],
@@ -3680,7 +2989,7 @@
     ]
   },
   {
-    "id": 108,
+    "id": 87,
     "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
     "variedad": "Neutro",
     "presentacion": "Bidón de 5 L.",
@@ -3694,7 +3003,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 5L.png"
     ],
     "price": "41500",
-    "originalPrice": "41500.00",
+    "originalPrice": "41500",
     "size": [
       "Bidón de 5 L."
     ],
@@ -3711,7 +3020,7 @@
     ]
   },
   {
-    "id": 109,
+    "id": 88,
     "producto": "JABON DE TOCADOR C2",
     "variedad": "Mágica Energía",
     "presentacion": "Pastilla 85g",
@@ -3725,7 +3034,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 85g.png"
     ],
     "price": "4350",
-    "originalPrice": "4350.00",
+    "originalPrice": "4350",
     "size": [
       "Pastilla 85g"
     ],
@@ -3746,7 +3055,7 @@
     ]
   },
   {
-    "id": 110,
+    "id": 89,
     "producto": "JABON DE TOCADOR C2",
     "variedad": "Calma Mistica",
     "presentacion": "Pastilla 85g",
@@ -3760,7 +3069,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 85g.png"
     ],
     "price": "4350",
-    "originalPrice": "4350.00",
+    "originalPrice": "4350",
     "size": [
       "Pastilla 85g"
     ],
@@ -3781,7 +3090,7 @@
     ]
   },
   {
-    "id": 111,
+    "id": 90,
     "producto": "JABON DE TOCADOR C2",
     "variedad": "Mágica Energía",
     "presentacion": "Pastilla 130g",
@@ -3795,7 +3104,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 130g.png"
     ],
     "price": "6000",
-    "originalPrice": "6000.00",
+    "originalPrice": "6000",
     "size": [
       "Pastilla 130g"
     ],
@@ -3816,7 +3125,7 @@
     ]
   },
   {
-    "id": 112,
+    "id": 91,
     "producto": "JABON DE TOCADOR C2",
     "variedad": "Calma Mistica",
     "presentacion": "Pastilla 130g",
@@ -3830,7 +3139,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 130g.png"
     ],
     "price": "6000",
-    "originalPrice": "6000.00",
+    "originalPrice": "6000",
     "size": [
       "Pastilla 130g"
     ],
@@ -3851,7 +3160,7 @@
     ]
   },
   {
-    "id": 113,
+    "id": 92,
     "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
     "variedad": "Marina",
     "presentacion": "Botella 900ml",
@@ -3865,7 +3174,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Botella 900ml.png"
     ],
     "price": "13100",
-    "originalPrice": "13100.00",
+    "originalPrice": "13100",
     "size": [
       "Botella 900ml"
     ],
@@ -3884,7 +3193,7 @@
     ]
   },
   {
-    "id": 114,
+    "id": 93,
     "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
     "variedad": "Marina",
     "presentacion": "Bidón de 5L",
@@ -3898,7 +3207,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 5L.png"
     ],
     "price": "57500",
-    "originalPrice": "57500.00",
+    "originalPrice": "57500",
     "size": [
       "Bidón de 5L"
     ],
@@ -3917,7 +3226,7 @@
     ]
   },
   {
-    "id": 115,
+    "id": 94,
     "producto": "JABON DE TOCADOR C2",
     "variedad": "Frescura Infinita",
     "presentacion": "Pastilla 85g",
@@ -3931,7 +3240,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 85g.png"
     ],
     "price": "4350",
-    "originalPrice": "4350.00",
+    "originalPrice": "4350",
     "size": [
       "Pastilla 85g"
     ],
@@ -3952,7 +3261,7 @@
     ]
   },
   {
-    "id": 116,
+    "id": 95,
     "producto": "JABON DE TOCADOR C2",
     "variedad": "Equilibrio Natural",
     "presentacion": "Pastilla 85g",
@@ -3966,7 +3275,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 85g.png"
     ],
     "price": "4350",
-    "originalPrice": "4350.00",
+    "originalPrice": "4350",
     "size": [
       "Pastilla 85g"
     ],
@@ -3987,7 +3296,7 @@
     ]
   },
   {
-    "id": 117,
+    "id": 96,
     "producto": "JABON DE TOCADOR C2",
     "variedad": "Frescura Infinita",
     "presentacion": "Pastilla 130g",
@@ -4001,7 +3310,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 130g.png"
     ],
     "price": "6000",
-    "originalPrice": "6000.00",
+    "originalPrice": "6000",
     "size": [
       "Pastilla 130g"
     ],
@@ -4022,42 +3331,7 @@
     ]
   },
   {
-    "id": 118,
-    "producto": "JABON DE TOCADOR C2",
-    "variedad": "Equilibrio Natural",
-    "presentacion": "Pastilla 130g",
-    "name": "JABON DE TOCADOR C2 Equilibrio Natural Pastilla 130g",
-    "category": "higiene-personal",
-    "subcategory": "tocador",
-    "sku": "300000704",
-    "image": "https://cdn.cavallaro.com.py/productos/300000704.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000704.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Pastilla 130g.png"
-    ],
-    "price": "6000",
-    "originalPrice": "6000.00",
-    "size": [
-      "Pastilla 130g"
-    ],
-    "featured": false,
-    "descripcion": "<p>El jabón de Tocador C2 posee una fórmula exclusiva con aceite de almendra de coco, glicerina y exquisitas fragancias florales y frutales.</p>",
-    "usosRecomendados": [
-      "Para piel normal y mixta."
-    ],
-    "propiedades": [
-      "• Limpieza y suavidad para la piel",
-      "• Fragancia duradera en la piel.",
-      "• Variedad de Fragancias y presentaciones.",
-      "• Compacto y resistente al agua."
-    ],
-    "stock": 0,
-    "color": [
-      "#79ee2b"
-    ]
-  },
-  {
-    "id": 119,
+    "id": 97,
     "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
     "variedad": "Uva",
     "presentacion": "Botella 900ml",
@@ -4071,7 +3345,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Botella 900ml.png"
     ],
     "price": "13100",
-    "originalPrice": "13100.00",
+    "originalPrice": "13100",
     "size": [
       "Botella 900ml"
     ],
@@ -4090,7 +3364,7 @@
     ]
   },
   {
-    "id": 120,
+    "id": 98,
     "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
     "variedad": "Lavanda",
     "presentacion": "Botella 900ml",
@@ -4104,7 +3378,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Botella 900ml.png"
     ],
     "price": "13100",
-    "originalPrice": "13100.00",
+    "originalPrice": "13100",
     "size": [
       "Botella 900ml"
     ],
@@ -4123,7 +3397,7 @@
     ]
   },
   {
-    "id": 121,
+    "id": 99,
     "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
     "variedad": "Fantasía",
     "presentacion": "Botella 900ml",
@@ -4137,7 +3411,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Botella 900ml.png"
     ],
     "price": "13100",
-    "originalPrice": "13100.00",
+    "originalPrice": "13100",
     "size": [
       "Botella 900ml"
     ],
@@ -4156,7 +3430,7 @@
     ]
   },
   {
-    "id": 122,
+    "id": 100,
     "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
     "variedad": "Azahar",
     "presentacion": "Botella 900ml",
@@ -4170,7 +3444,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Botella 900ml.png"
     ],
     "price": "13100",
-    "originalPrice": "13100.00",
+    "originalPrice": "13100",
     "size": [
       "Botella 900ml"
     ],
@@ -4189,7 +3463,7 @@
     ]
   },
   {
-    "id": 123,
+    "id": 101,
     "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
     "variedad": "Uva",
     "presentacion": "Bidón de 5L",
@@ -4203,7 +3477,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 5L.png"
     ],
     "price": "57500",
-    "originalPrice": "57500.00",
+    "originalPrice": "57500",
     "size": [
       "Bidón de 5L"
     ],
@@ -4222,7 +3496,7 @@
     ]
   },
   {
-    "id": 124,
+    "id": 102,
     "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
     "variedad": "Lavanda",
     "presentacion": "Bidón de 5L",
@@ -4236,7 +3510,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 5L.png"
     ],
     "price": "57500",
-    "originalPrice": "57500.00",
+    "originalPrice": "57500",
     "size": [
       "Bidón de 5L"
     ],
@@ -4255,7 +3529,7 @@
     ]
   },
   {
-    "id": 125,
+    "id": 103,
     "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
     "variedad": "Fantasía",
     "presentacion": "Bidón de 5L",
@@ -4269,7 +3543,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 5L.png"
     ],
     "price": "57500",
-    "originalPrice": "57500.00",
+    "originalPrice": "57500",
     "size": [
       "Bidón de 5L"
     ],
@@ -4288,7 +3562,7 @@
     ]
   },
   {
-    "id": 126,
+    "id": 104,
     "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
     "variedad": "Azahar",
     "presentacion": "Bidón de 5L",
@@ -4302,7 +3576,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 5L.png"
     ],
     "price": "57500",
-    "originalPrice": "57500.00",
+    "originalPrice": "57500",
     "size": [
       "Bidón de 5L"
     ],
@@ -4321,7 +3595,7 @@
     ]
   },
   {
-    "id": 127,
+    "id": 105,
     "producto": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE",
     "variedad": "Deluxe",
     "presentacion": "Bolsa de 200g",
@@ -4335,7 +3609,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 200g.png"
     ],
     "price": "6800",
-    "originalPrice": "6800.00",
+    "originalPrice": "6800",
     "size": [
       "Bolsa de 200g"
     ],
@@ -4359,7 +3633,7 @@
     ]
   },
   {
-    "id": 128,
+    "id": 106,
     "producto": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE",
     "variedad": "Deluxe",
     "presentacion": "Bolsa de 400g",
@@ -4373,7 +3647,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 400g.png"
     ],
     "price": "11800",
-    "originalPrice": "11800.00",
+    "originalPrice": "11800",
     "size": [
       "Bolsa de 400g"
     ],
@@ -4397,7 +3671,7 @@
     ]
   },
   {
-    "id": 129,
+    "id": 107,
     "producto": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE",
     "variedad": "Deluxe",
     "presentacion": "Bolsa de 800g",
@@ -4411,7 +3685,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 800g.png"
     ],
     "price": "21500",
-    "originalPrice": "21500.00",
+    "originalPrice": "21500",
     "size": [
       "Bolsa de 800g"
     ],
@@ -4435,7 +3709,7 @@
     ]
   },
   {
-    "id": 130,
+    "id": 108,
     "producto": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA",
     "variedad": "Extra",
     "presentacion": "Bolsa de 400g",
@@ -4449,7 +3723,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 400g.png"
     ],
     "price": "9500",
-    "originalPrice": "9500.00",
+    "originalPrice": "9500",
     "size": [
       "Bolsa de 400g"
     ],
@@ -4473,7 +3747,7 @@
     ]
   },
   {
-    "id": 131,
+    "id": 109,
     "producto": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA",
     "variedad": "Extra",
     "presentacion": "Bolsa de 800g",
@@ -4487,7 +3761,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 800g.png"
     ],
     "price": "18000",
-    "originalPrice": "18000.00",
+    "originalPrice": "18000",
     "size": [
       "Bolsa de 800g"
     ],
@@ -4511,7 +3785,7 @@
     ]
   },
   {
-    "id": 132,
+    "id": 110,
     "producto": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA",
     "variedad": "Extra",
     "presentacion": "Bolsa de 2Kg",
@@ -4525,7 +3799,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 2Kg.png"
     ],
     "price": "38500",
-    "originalPrice": "38500.00",
+    "originalPrice": "38500",
     "size": [
       "Bolsa de 2Kg"
     ],
@@ -4549,7 +3823,7 @@
     ]
   },
   {
-    "id": 133,
+    "id": 111,
     "producto": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE",
     "variedad": "Deluxe",
     "presentacion": "Bolsa de 2Kg",
@@ -4563,7 +3837,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 2Kg.png"
     ],
     "price": "48500",
-    "originalPrice": "48500.00",
+    "originalPrice": "48500",
     "size": [
       "Bolsa de 2Kg"
     ],
@@ -4587,7 +3861,7 @@
     ]
   },
   {
-    "id": 134,
+    "id": 112,
     "producto": "POLVO PARA LAVAR LA ROPA ANTIBACTERIAL GUAIRA DELUXE",
     "variedad": "Deluxe",
     "presentacion": "Bolsa de 80g",
@@ -4601,7 +3875,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 80g.png"
     ],
     "price": "3800",
-    "originalPrice": "3800.00",
+    "originalPrice": "3800",
     "size": [
       "Bolsa de 80g"
     ],
@@ -4625,7 +3899,7 @@
     ]
   },
   {
-    "id": 135,
+    "id": 113,
     "producto": "POLVO PARA LAVAR LA ROPA GUAIRA EXTRA ANTIBAC",
     "variedad": "Extra",
     "presentacion": "Bolsa de 10Kg",
@@ -4639,7 +3913,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 10Kg.png"
     ],
     "price": "163000",
-    "originalPrice": "163000.00",
+    "originalPrice": "163000",
     "size": [
       "Bolsa de 10Kg"
     ],
@@ -4663,7 +3937,7 @@
     ]
   },
   {
-    "id": 136,
+    "id": 114,
     "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
     "variedad": "Leche de Almendras",
     "presentacion": "Pastilla 125g",
@@ -4677,7 +3951,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 125g.png"
     ],
     "price": "7200",
-    "originalPrice": "7200.00",
+    "originalPrice": "7200",
     "size": [
       "Pastilla 125g"
     ],
@@ -4698,7 +3972,7 @@
     ]
   },
   {
-    "id": 137,
+    "id": 115,
     "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
     "variedad": "Vainilla y Frutos Rojos",
     "presentacion": "Pastilla 125g",
@@ -4712,7 +3986,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 125g.png"
     ],
     "price": "7200",
-    "originalPrice": "7200.00",
+    "originalPrice": "7200",
     "size": [
       "Pastilla 125g"
     ],
@@ -4733,7 +4007,7 @@
     ]
   },
   {
-    "id": 138,
+    "id": 116,
     "producto": "JABON DE TOCADOR C2 HUMECTANTE ANTIBACTERIAL",
     "variedad": "Naranja y Jazmín",
     "presentacion": "Pastilla 125g",
@@ -4747,7 +4021,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 125g.png"
     ],
     "price": "7200",
-    "originalPrice": "7200.00",
+    "originalPrice": "7200",
     "size": [
       "Pastilla 125g"
     ],
@@ -4768,7 +4042,7 @@
     ]
   },
   {
-    "id": 139,
+    "id": 117,
     "producto": "JABON DE TOCADOR CAVALLARO",
     "variedad": "Surtido",
     "presentacion": "Caja de 500 x 10g",
@@ -4782,7 +4056,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Caja de 500 x 10g.png"
     ],
     "price": "261000",
-    "originalPrice": "261000.00",
+    "originalPrice": "261000",
     "size": [
       "Caja de 500 x 10g"
     ],
@@ -4802,7 +4076,7 @@
     ]
   },
   {
-    "id": 140,
+    "id": 118,
     "producto": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
     "variedad": "Clásico",
     "presentacion": "Doypack 900ml",
@@ -4816,7 +4090,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 900ml.png"
     ],
     "price": "28950",
-    "originalPrice": "28950.00",
+    "originalPrice": "28950",
     "size": [
       "Doypack 900ml"
     ],
@@ -4838,7 +4112,7 @@
     ]
   },
   {
-    "id": 141,
+    "id": 119,
     "producto": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
     "variedad": "Floral",
     "presentacion": "Doypack 900ml",
@@ -4852,7 +4126,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 900ml.png"
     ],
     "price": "28950",
-    "originalPrice": "28950.00",
+    "originalPrice": "28950",
     "size": [
       "Doypack 900ml"
     ],
@@ -4874,7 +4148,7 @@
     ]
   },
   {
-    "id": 142,
+    "id": 120,
     "producto": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
     "variedad": "Clásico",
     "presentacion": "Doypack 1600ml",
@@ -4888,7 +4162,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 1600ml.png"
     ],
     "price": "48500",
-    "originalPrice": "48500.00",
+    "originalPrice": "48500",
     "size": [
       "Doypack 1600ml"
     ],
@@ -4910,7 +4184,7 @@
     ]
   },
   {
-    "id": 143,
+    "id": 121,
     "producto": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
     "variedad": "Floral",
     "presentacion": "Doypack 1600ml",
@@ -4924,7 +4198,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 1600ml.png"
     ],
     "price": "48500",
-    "originalPrice": "48500.00",
+    "originalPrice": "48500",
     "size": [
       "Doypack 1600ml"
     ],
@@ -4946,7 +4220,7 @@
     ]
   },
   {
-    "id": 144,
+    "id": 122,
     "producto": "JABON DE TOCADOR C2",
     "variedad": "Armonía Pura",
     "presentacion": "Pastilla 85g",
@@ -4960,7 +4234,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 85g.png"
     ],
     "price": "4350",
-    "originalPrice": "4350.00",
+    "originalPrice": "4350",
     "size": [
       "Pastilla 85g"
     ],
@@ -4981,7 +4255,7 @@
     ]
   },
   {
-    "id": 145,
+    "id": 123,
     "producto": "JABON DE TOCADOR C2",
     "variedad": "Dulce Pasión",
     "presentacion": "Pastilla 85g",
@@ -4995,7 +4269,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 85g.png"
     ],
     "price": "4350",
-    "originalPrice": "4350.00",
+    "originalPrice": "4350",
     "size": [
       "Pastilla 85g"
     ],
@@ -5016,7 +4290,7 @@
     ]
   },
   {
-    "id": 146,
+    "id": 124,
     "producto": "JABON DE TOCADOR C2",
     "variedad": "Armonía Pura",
     "presentacion": "Pastilla 130g",
@@ -5030,7 +4304,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 130g.png"
     ],
     "price": "6000",
-    "originalPrice": "6000.00",
+    "originalPrice": "6000",
     "size": [
       "Pastilla 130g"
     ],
@@ -5051,7 +4325,7 @@
     ]
   },
   {
-    "id": 147,
+    "id": 125,
     "producto": "JABON DE TOCADOR C2",
     "variedad": "Dulce Pasión",
     "presentacion": "Pastilla 130g",
@@ -5065,7 +4339,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 130g.png"
     ],
     "price": "6000",
-    "originalPrice": "6000.00",
+    "originalPrice": "6000",
     "size": [
       "Pastilla 130g"
     ],
@@ -5086,7 +4360,7 @@
     ]
   },
   {
-    "id": 148,
+    "id": 126,
     "producto": "JABON DE TOCADOR CAVALLARO",
     "variedad": "Blanco",
     "presentacion": "Caja de 500 x 10g",
@@ -5100,7 +4374,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Caja de 500 x 10g.png"
     ],
     "price": "261000",
-    "originalPrice": "261000.00",
+    "originalPrice": "261000",
     "size": [
       "Caja de 500 x 10g"
     ],
@@ -5120,73 +4394,7 @@
     ]
   },
   {
-    "id": 149,
-    "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
-    "variedad": "Uva",
-    "presentacion": "Doypack 500ml",
-    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO Uva Doypack 500ml\t",
-    "category": "limpieza-y-desinfeccion-del-hogar",
-    "subcategory": "desodorante",
-    "sku": "300000761",
-    "image": "https://cdn.cavallaro.com.py/productos/300000761.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000761.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Doypack 500ml.png"
-    ],
-    "price": "7550",
-    "originalPrice": "7550.00",
-    "size": [
-      "Doypack 500ml\t"
-    ],
-    "featured": false,
-    "descripcion": "<p>El desodorante de ambiente Cavallaro posee una exclusiva fórmula Antibacterial que limpia, desinfecta y perfuma tu hogar por más tiempo.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Neutraliza eficazmente los olores indeseables.",
-      "• Elimina el 99 % de virus, bacterias y hongos de tus pisos.",
-      "• Mantiene los ambientes perfumados.",
-      "• Larga duración."
-    ],
-    "stock": 0,
-    "color": [
-      "#7b21e8"
-    ]
-  },
-  {
-    "id": 150,
-    "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
-    "variedad": "Fantasía",
-    "presentacion": "Doypack 500ml",
-    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO Fantasía Doypack 500ml\t",
-    "category": "limpieza-y-desinfeccion-del-hogar",
-    "subcategory": "desodorante",
-    "sku": "300000763",
-    "image": "https://cdn.cavallaro.com.py/productos/300000763.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000763.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Doypack 500ml.png"
-    ],
-    "price": "7550",
-    "originalPrice": "7550.00",
-    "size": [
-      "Doypack 500ml\t"
-    ],
-    "featured": false,
-    "descripcion": "<p>El desodorante de ambiente Cavallaro posee una exclusiva fórmula Antibacterial que limpia, desinfecta y perfuma tu hogar por más tiempo.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Neutraliza eficazmente los olores indeseables.",
-      "• Elimina el 99 % de virus, bacterias y hongos de tus pisos.",
-      "• Mantiene los ambientes perfumados.",
-      "• Larga duración."
-    ],
-    "stock": 0,
-    "color": [
-      "#f339c2"
-    ]
-  },
-  {
-    "id": 151,
+    "id": 127,
     "producto": "JABON DE TOCADOR C2",
     "variedad": "Calma Mistica",
     "presentacion": "Tripack 3 x 130g",
@@ -5200,7 +4408,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Tripack 3 x 130g.png"
     ],
     "price": "16400",
-    "originalPrice": "16400.00",
+    "originalPrice": "16400",
     "size": [
       "Tripack 3 x 130g"
     ],
@@ -5221,7 +4429,7 @@
     ]
   },
   {
-    "id": 152,
+    "id": 128,
     "producto": "JABON DE TOCADOR C2",
     "variedad": "Frescura Infinita",
     "presentacion": "Tripack 3 x 130g",
@@ -5235,7 +4443,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Tripack 3 x 130g.png"
     ],
     "price": "16400",
-    "originalPrice": "16400.00",
+    "originalPrice": "16400",
     "size": [
       "Tripack 3 x 130g"
     ],
@@ -5256,7 +4464,7 @@
     ]
   },
   {
-    "id": 153,
+    "id": 129,
     "producto": "JABON DE TOCADOR C2",
     "variedad": "Armonía Pura",
     "presentacion": "Tripack 3 x 130g",
@@ -5270,7 +4478,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Tripack 3 x 130g.png"
     ],
     "price": "16400",
-    "originalPrice": "16400.00",
+    "originalPrice": "16400",
     "size": [
       "Tripack 3 x 130g"
     ],
@@ -5291,7 +4499,7 @@
     ]
   },
   {
-    "id": 154,
+    "id": 130,
     "producto": "JABON DE TOCADOR C2",
     "variedad": "Dulce Pasión",
     "presentacion": "Tripack 3 x 130g",
@@ -5305,7 +4513,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Tripack 3 x 130g.png"
     ],
     "price": "16400",
-    "originalPrice": "16400.00",
+    "originalPrice": "16400",
     "size": [
       "Tripack 3 x 130g"
     ],
@@ -5326,44 +4534,11 @@
     ]
   },
   {
-    "id": 155,
-    "producto": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO",
-    "variedad": "Marina",
-    "presentacion": "Doypack 500ml",
-    "name": "DESODORANTE DE AMBIENTE ANTIBACTERIAL CAVALLARO Marina Doypack 500ml\t",
-    "category": "limpieza-y-desinfeccion-del-hogar",
-    "subcategory": "desodorante",
-    "sku": "300000783",
-    "image": "https://cdn.cavallaro.com.py/productos/300000783.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000783.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Doypack 500ml\t.png"
-    ],
-    "price": "7550",
-    "originalPrice": "7550.00",
-    "size": [
-      "Doypack 500ml\t"
-    ],
-    "featured": false,
-    "descripcion": "<p>El desodorante de ambiente Cavallaro posee una exclusiva fórmula Antibacterial que limpia, desinfecta y perfuma tu hogar por más tiempo.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Neutraliza eficazmente los olores indeseables.",
-      "• Elimina el 99 % de virus, bacterias y hongos de tus pisos.",
-      "• Mantiene los ambientes perfumados.",
-      "• Larga duración."
-    ],
-    "stock": 0,
-    "color": [
-      "#1171ee"
-    ]
-  },
-  {
-    "id": 156,
+    "id": 131,
     "producto": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
     "variedad": "Clásico",
     "presentacion": "Doypack 200ml",
-    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO Clásico Doypack 200ml\t",
+    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO Clásico Doypack 200ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "coco-puro",
     "sku": "300000784",
@@ -5373,7 +4548,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 200ml\t.png"
     ],
     "price": "7750",
-    "originalPrice": "7750.00",
+    "originalPrice": "7750",
     "size": [
       "Doypack 200ml\t"
     ],
@@ -5395,11 +4570,11 @@
     ]
   },
   {
-    "id": 157,
+    "id": 132,
     "producto": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
     "variedad": "Floral",
     "presentacion": "Doypack 200ml",
-    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO Floral Doypack 200ml\t",
+    "name": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO Floral Doypack 200ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "coco-puro",
     "sku": "300000785",
@@ -5409,7 +4584,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 200ml\t.png"
     ],
     "price": "7750",
-    "originalPrice": "7750.00",
+    "originalPrice": "7750",
     "size": [
       "Doypack 200ml\t"
     ],
@@ -5431,7 +4606,7 @@
     ]
   },
   {
-    "id": 158,
+    "id": 133,
     "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
     "variedad": "Clásico",
     "presentacion": "Bidón de 4L",
@@ -5445,7 +4620,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
     ],
     "price": "63500",
-    "originalPrice": "63500.00",
+    "originalPrice": "63500",
     "size": [
       "Bidón de 4L"
     ],
@@ -5466,7 +4641,7 @@
     ]
   },
   {
-    "id": 159,
+    "id": 134,
     "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
     "variedad": "Citrus",
     "presentacion": "Bidón de 4L",
@@ -5480,7 +4655,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
     ],
     "price": "63500",
-    "originalPrice": "63500.00",
+    "originalPrice": "63500",
     "size": [
       "Bidón de 4L"
     ],
@@ -5501,7 +4676,7 @@
     ]
   },
   {
-    "id": 160,
+    "id": 135,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Verbena",
     "presentacion": "Estuche de 100 g",
@@ -5515,7 +4690,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Estuche de 100 g.png"
     ],
     "price": "6700",
-    "originalPrice": "6700.00",
+    "originalPrice": "6700",
     "size": [
       "Estuche de 100 g"
     ],
@@ -5538,7 +4713,7 @@
     ]
   },
   {
-    "id": 161,
+    "id": 136,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Clásico",
     "presentacion": "Pastilla 100g",
@@ -5552,7 +4727,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 100g.png"
     ],
     "price": "6100",
-    "originalPrice": "6100.00",
+    "originalPrice": "6100",
     "size": [
       "Pastilla 100g"
     ],
@@ -5575,7 +4750,7 @@
     ]
   },
   {
-    "id": 162,
+    "id": 137,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Almendras",
     "presentacion": "Pastilla 100g",
@@ -5589,7 +4764,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 100g.png"
     ],
     "price": "6100",
-    "originalPrice": "6100.00",
+    "originalPrice": "6100",
     "size": [
       "Pastilla 100g"
     ],
@@ -5612,7 +4787,7 @@
     ]
   },
   {
-    "id": 163,
+    "id": 138,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Floral",
     "presentacion": "Pastilla 100g",
@@ -5626,7 +4801,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 100g.png"
     ],
     "price": "6100",
-    "originalPrice": "6100.00",
+    "originalPrice": "6100",
     "size": [
       "Pastilla 100g"
     ],
@@ -5649,7 +4824,7 @@
     ]
   },
   {
-    "id": 164,
+    "id": 139,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Marina",
     "presentacion": "Pastilla 100g",
@@ -5663,7 +4838,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 100g.png"
     ],
     "price": "6100",
-    "originalPrice": "6100.00",
+    "originalPrice": "6100",
     "size": [
       "Pastilla 100g"
     ],
@@ -5686,7 +4861,7 @@
     ]
   },
   {
-    "id": 165,
+    "id": 140,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Verbena",
     "presentacion": "Pastilla 100g",
@@ -5700,7 +4875,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pastilla 100g.png"
     ],
     "price": "6100",
-    "originalPrice": "6100.00",
+    "originalPrice": "6100",
     "size": [
       "Pastilla 100g"
     ],
@@ -5723,11 +4898,11 @@
     ]
   },
   {
-    "id": 166,
+    "id": 141,
     "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
     "variedad": "Clásico",
     "presentacion": "Doypack 400ml",
-    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Clásico Doypack 400ml\t",
+    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Clásico Doypack 400ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "deterg-liq-p-ropas",
     "sku": "300000803",
@@ -5737,7 +4912,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 400ml\t.png"
     ],
     "price": "9800",
-    "originalPrice": "9800.00",
+    "originalPrice": "9800",
     "size": [
       "Doypack 400ml\t"
     ],
@@ -5758,11 +4933,11 @@
     ]
   },
   {
-    "id": 167,
+    "id": 142,
     "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
     "variedad": "Citrus",
     "presentacion": "Doypack 400ml",
-    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Citrus Doypack 400ml\t",
+    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Citrus Doypack 400ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "deterg-liq-p-ropas",
     "sku": "300000804",
@@ -5772,7 +4947,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 400ml\t.png"
     ],
     "price": "9800",
-    "originalPrice": "9800.00",
+    "originalPrice": "9800",
     "size": [
       "Doypack 400ml\t"
     ],
@@ -5793,7 +4968,7 @@
     ]
   },
   {
-    "id": 168,
+    "id": 143,
     "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
     "variedad": "Clásico",
     "presentacion": "Doypack 800ml",
@@ -5807,7 +4982,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 800ml.png"
     ],
     "price": "17400",
-    "originalPrice": "17400.00",
+    "originalPrice": "17400",
     "size": [
       "Doypack 800ml"
     ],
@@ -5828,7 +5003,7 @@
     ]
   },
   {
-    "id": 169,
+    "id": 144,
     "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
     "variedad": "Citrus",
     "presentacion": "Doypack 800ml",
@@ -5842,7 +5017,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 800ml.png"
     ],
     "price": "17400",
-    "originalPrice": "17400.00",
+    "originalPrice": "17400",
     "size": [
       "Doypack 800ml"
     ],
@@ -5863,7 +5038,7 @@
     ]
   },
   {
-    "id": 170,
+    "id": 145,
     "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
     "variedad": "Clásico",
     "presentacion": "Doypack 2L",
@@ -5877,7 +5052,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 2L.png"
     ],
     "price": "37500",
-    "originalPrice": "37500.00",
+    "originalPrice": "37500",
     "size": [
       "Doypack 2L"
     ],
@@ -5898,7 +5073,7 @@
     ]
   },
   {
-    "id": 171,
+    "id": 146,
     "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
     "variedad": "Citrus",
     "presentacion": "Doypack 2L",
@@ -5912,7 +5087,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 2L.png"
     ],
     "price": "37500",
-    "originalPrice": "37500.00",
+    "originalPrice": "37500",
     "size": [
       "Doypack 2L"
     ],
@@ -5933,7 +5108,7 @@
     ]
   },
   {
-    "id": 172,
+    "id": 147,
     "producto": "JABON DE TOCADOR NATURAL COCO CAVALLARO CON ACEITE ESENCIAL",
     "variedad": "Petit Grain",
     "presentacion": "Estuche de 100 g",
@@ -5947,7 +5122,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Estuche de 100 g.png"
     ],
     "price": "6700",
-    "originalPrice": "6700.00",
+    "originalPrice": "6700",
     "size": [
       "Estuche de 100 g"
     ],
@@ -5971,7 +5146,7 @@
     ]
   },
   {
-    "id": 173,
+    "id": 148,
     "producto": "JABON LIQUIDO ANTIBACTERIAL \"MULTIUSO\" COCO CAVALLARO",
     "variedad": "Natural",
     "presentacion": "Doypack 900 ml",
@@ -5985,7 +5160,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 900ml.png"
     ],
     "price": "27250",
-    "originalPrice": "27250.00",
+    "originalPrice": "27250",
     "size": [
       "Doypack 900 ml"
     ],
@@ -6008,11 +5183,11 @@
     ]
   },
   {
-    "id": 174,
+    "id": 149,
     "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
     "variedad": "Clásico",
     "presentacion": "Doypack 200ml",
-    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Clásico Doypack 200ml\t",
+    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Clásico Doypack 200ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "deterg-liq-p-ropas",
     "sku": "300000909",
@@ -6022,7 +5197,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 200ml\t.png"
     ],
     "price": "4600",
-    "originalPrice": "4600.00",
+    "originalPrice": "4600",
     "size": [
       "Doypack 200ml\t"
     ],
@@ -6043,11 +5218,11 @@
     ]
   },
   {
-    "id": 175,
+    "id": 150,
     "producto": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE",
     "variedad": "Citrus",
     "presentacion": "Doypack 200ml",
-    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Citrus Doypack 200ml\t",
+    "name": "LÍQUIDO PARA LAVAR ROPA INSUPERABLE Citrus Doypack 200ml",
     "category": "cuidado-de-las-prendas",
     "subcategory": "deterg-liq-p-ropas",
     "sku": "300000910",
@@ -6057,7 +5232,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 200ml\t.png"
     ],
     "price": "4600",
-    "originalPrice": "4600.00",
+    "originalPrice": "4600",
     "size": [
       "Doypack 200ml\t"
     ],
@@ -6078,42 +5253,7 @@
     ]
   },
   {
-    "id": 176,
-    "producto": "DETERGENTE LAVAVAJILLAS PIXOL FORMULA CONCENTRADA",
-    "variedad": "Limón",
-    "presentacion": "Botella Det. 500ml",
-    "name": "DETERGENTE LAVAVAJILLAS PIXOL FORMULA CONCENTRADA Limón Botella Det. 500ml",
-    "category": "limpieza-y-desinfeccion-del-hogar",
-    "subcategory": "detergente",
-    "sku": "300000915",
-    "image": "https://cdn.cavallaro.com.py/productos/300000915.png",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000915.png",
-      "https://cdn.cavallaro.com.py/presentaciones/Botella Det. 500ml.png"
-    ],
-    "price": "8100",
-    "originalPrice": "8100.00",
-    "size": [
-      "Botella Det. 500ml"
-    ],
-    "featured": false,
-    "descripcion": "<p>El Detergente Lavavajillas Pixol, es un detergente concentrado Antibacterial, elaborado a base de ingredientes activos biodegradables con un máximo poder desengrasante, que permiten una limpieza eficiente de las vajillas, con menos cantidad de producto en una sola pasada.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "•\tMáximo poder desengrasante.",
-      "•\tFórmula Concentrada.",
-      "•\tCuidado de manos.",
-      "•\tAntibacterial.",
-      "•\tEspuma duradera.",
-      "•\tNeutralizador de olores."
-    ],
-    "stock": 0,
-    "color": [
-      "#0ceb0e"
-    ]
-  },
-  {
-    "id": 177,
+    "id": 151,
     "producto": "DETERGENTE LAVAVAJILLAS PIXOL 4L LIMON",
     "variedad": "Limón",
     "presentacion": "Bidón de 4L",
@@ -6127,7 +5267,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
     ],
     "price": "37500",
-    "originalPrice": "37500.00",
+    "originalPrice": "37500",
     "size": [
       "Bidón de 4L"
     ],
@@ -6148,7 +5288,7 @@
     ]
   },
   {
-    "id": 178,
+    "id": 152,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Coconut",
     "presentacion": "Display 20x70ml",
@@ -6162,7 +5302,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Display 20x70ml.png"
     ],
     "price": "62000",
-    "originalPrice": "62000.00",
+    "originalPrice": "62000",
     "size": [
       "Display 20x70ml"
     ],
@@ -6181,7 +5321,7 @@
     ]
   },
   {
-    "id": 179,
+    "id": 153,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Exótico",
     "presentacion": "Display 20x70ml",
@@ -6195,7 +5335,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Display 20x70ml.png"
     ],
     "price": "62000",
-    "originalPrice": "62000.00",
+    "originalPrice": "62000",
     "size": [
       "Display 20x70ml"
     ],
@@ -6214,7 +5354,7 @@
     ]
   },
   {
-    "id": 180,
+    "id": 154,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Coconut",
     "presentacion": "Bidón de 4L",
@@ -6228,7 +5368,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
     ],
     "price": "56800",
-    "originalPrice": "56800.00",
+    "originalPrice": "56800",
     "size": [
       "Bidón de 4L"
     ],
@@ -6247,7 +5387,7 @@
     ]
   },
   {
-    "id": 181,
+    "id": 155,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Exótico",
     "presentacion": "Bidón de 4L",
@@ -6261,7 +5401,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
     ],
     "price": "56800",
-    "originalPrice": "56800.00",
+    "originalPrice": "56800",
     "size": [
       "Bidón de 4L"
     ],
@@ -6280,7 +5420,7 @@
     ]
   },
   {
-    "id": 182,
+    "id": 156,
     "producto": "JABON DE COCO PURO COCO CAVALLARO",
     "variedad": "Blanco",
     "presentacion": "Caja 30 x 50g",
@@ -6294,7 +5434,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Caja 30 x 50g.png"
     ],
     "price": "74500",
-    "originalPrice": "74500.00",
+    "originalPrice": "74500",
     "size": [
       "Caja 30 x 50g"
     ],
@@ -6317,7 +5457,7 @@
     ]
   },
   {
-    "id": 183,
+    "id": 157,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Floral",
     "presentacion": "Tripack 3 x 90g",
@@ -6331,7 +5471,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Tripack 3 x 90g.png"
     ],
     "price": "14950",
-    "originalPrice": "14950.00",
+    "originalPrice": "14950",
     "size": [
       "Tripack 3 x 90g"
     ],
@@ -6354,7 +5494,7 @@
     ]
   },
   {
-    "id": 184,
+    "id": 158,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Marina",
     "presentacion": "Tripack 3 x 90g",
@@ -6368,7 +5508,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Tripack 3 x 90g.png"
     ],
     "price": "14950",
-    "originalPrice": "14950.00",
+    "originalPrice": "14950",
     "size": [
       "Tripack 3 x 90g"
     ],
@@ -6391,7 +5531,7 @@
     ]
   },
   {
-    "id": 185,
+    "id": 159,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Verbena",
     "presentacion": "Tripack 3 x 90g",
@@ -6405,7 +5545,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Tripack 3 x 90g.png"
     ],
     "price": "14950",
-    "originalPrice": "14950.00",
+    "originalPrice": "14950",
     "size": [
       "Tripack 3 x 90g"
     ],
@@ -6428,7 +5568,7 @@
     ]
   },
   {
-    "id": 186,
+    "id": 160,
     "producto": "JABON DE TOCADOR COCO CAVALLARO",
     "variedad": "Berries",
     "presentacion": "Estuche de 100 g",
@@ -6442,7 +5582,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Estuche de 100 g.png"
     ],
     "price": "6700",
-    "originalPrice": "6700.00",
+    "originalPrice": "6700",
     "size": [
       "Estuche de 100 g"
     ],
@@ -6465,7 +5605,7 @@
     ]
   },
   {
-    "id": 187,
+    "id": 161,
     "producto": "LIMP. MULTIUSO PIXOL LAVANDA 900ML",
     "variedad": "Lavanda",
     "presentacion": "Botella 900 ml.",
@@ -6479,7 +5619,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Botella 900ml.png"
     ],
     "price": "13200",
-    "originalPrice": "13200.00",
+    "originalPrice": "13200",
     "size": [
       "Botella 900 ml."
     ],
@@ -6501,7 +5641,7 @@
     ]
   },
   {
-    "id": 188,
+    "id": 162,
     "producto": "LIMP. MULTIUSO PIXOL BOUQUET FLORAL 900ML",
     "variedad": "Bouquet Floral",
     "presentacion": "Botella 900 ml.",
@@ -6515,7 +5655,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Botella 900ml.png"
     ],
     "price": "13200",
-    "originalPrice": "13200.00",
+    "originalPrice": "13200",
     "size": [
       "Botella 900 ml."
     ],
@@ -6537,7 +5677,7 @@
     ]
   },
   {
-    "id": 189,
+    "id": 163,
     "producto": "LIMP. MULTIUSO PIXOL FRESCURA HERBAL 900ML",
     "variedad": "Frescura Herbal",
     "presentacion": "Botella 900 ml.",
@@ -6551,7 +5691,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Botella 900ml.png"
     ],
     "price": "13200",
-    "originalPrice": "13200.00",
+    "originalPrice": "13200",
     "size": [
       "Botella 900 ml."
     ],
@@ -6573,7 +5713,7 @@
     ]
   },
   {
-    "id": 190,
+    "id": 164,
     "producto": "LIMP. MULTIUSO PIXOL CITRONELA 900ML",
     "variedad": "Citronella",
     "presentacion": "Botella 900 ml.",
@@ -6587,7 +5727,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Botella 900ml.png"
     ],
     "price": "13200",
-    "originalPrice": "13200.00",
+    "originalPrice": "13200",
     "size": [
       "Botella 900 ml."
     ],
@@ -6609,7 +5749,7 @@
     ]
   },
   {
-    "id": 191,
+    "id": 165,
     "producto": "JABON PARA LAVAR LA ROPA AGRICULTOR",
     "variedad": "Marrón",
     "presentacion": "Caja de 20 x 150 g.",
@@ -6623,7 +5763,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Caja de 20 x 150g.png"
     ],
     "price": "63000",
-    "originalPrice": "63000.00",
+    "originalPrice": "63000",
     "size": [
       "Caja de 20 x 150 g."
     ],
@@ -6645,7 +5785,7 @@
     ]
   },
   {
-    "id": 192,
+    "id": 166,
     "producto": "JABON PARA LAVAR LA ROPA AGRICULTOR",
     "variedad": "Verde",
     "presentacion": "Caja de 20 x 150g",
@@ -6659,7 +5799,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Caja de 20 x 150g.png"
     ],
     "price": "63000",
-    "originalPrice": "63000.00",
+    "originalPrice": "63000",
     "size": [
       "Caja de 20 x 150g"
     ],
@@ -6681,7 +5821,7 @@
     ]
   },
   {
-    "id": 193,
+    "id": 167,
     "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
     "variedad": "Limón",
     "presentacion": "Botella 480 ml.",
@@ -6695,7 +5835,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Botella 480 ml..png"
     ],
     "price": "5000",
-    "originalPrice": "5000.00",
+    "originalPrice": "5000",
     "size": [
       "Botella 480 ml."
     ],
@@ -6712,7 +5852,7 @@
     ]
   },
   {
-    "id": 194,
+    "id": 168,
     "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
     "variedad": "Neutro",
     "presentacion": "Botella 480 ml.",
@@ -6726,7 +5866,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Botella 480 ml..png"
     ],
     "price": "5000",
-    "originalPrice": "5000.00",
+    "originalPrice": "5000",
     "size": [
       "Botella 480 ml."
     ],
@@ -6743,7 +5883,7 @@
     ]
   },
   {
-    "id": 195,
+    "id": 169,
     "producto": "DETERGENTE LAVAVAJILLAS INSUPERABLE",
     "variedad": "Manzana",
     "presentacion": "Botella 480 ml.",
@@ -6757,7 +5897,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Botella 480 ml..png"
     ],
     "price": "5000",
-    "originalPrice": "5000.00",
+    "originalPrice": "5000",
     "size": [
       "Botella 480 ml."
     ],
@@ -6774,7 +5914,7 @@
     ]
   },
   {
-    "id": 196,
+    "id": 170,
     "producto": "LIMP MULTIUSO PIXOL LAVANDA 4L",
     "variedad": "Lavanda",
     "presentacion": "Bidón de 4L",
@@ -6788,7 +5928,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
     ],
     "price": "48000",
-    "originalPrice": "48000.00",
+    "originalPrice": "48000",
     "size": [
       "Bidón de 4L"
     ],
@@ -6810,7 +5950,7 @@
     ]
   },
   {
-    "id": 197,
+    "id": 171,
     "producto": "LIMP MULTIUSO PIXOL BOUQUET FLORAL 4L",
     "variedad": "Bouquet Floral",
     "presentacion": "Bidón de 4L",
@@ -6824,7 +5964,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
     ],
     "price": "48000",
-    "originalPrice": "48000.00",
+    "originalPrice": "48000",
     "size": [
       "Bidón de 4L"
     ],
@@ -6846,7 +5986,7 @@
     ]
   },
   {
-    "id": 198,
+    "id": 172,
     "producto": "LIMP MULTIUSO PIXOL FRESCURA HERBAL 4L",
     "variedad": "Frescura Herbal",
     "presentacion": "Bidón de 4L",
@@ -6860,7 +6000,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
     ],
     "price": "48000",
-    "originalPrice": "48000.00",
+    "originalPrice": "48000",
     "size": [
       "Bidón de 4L"
     ],
@@ -6882,7 +6022,7 @@
     ]
   },
   {
-    "id": 199,
+    "id": 173,
     "producto": "LIMP MULTIUSO PIXOL CITRONELLA 4L",
     "variedad": "Citronella",
     "presentacion": "Bidón de 4L",
@@ -6896,7 +6036,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
     ],
     "price": "48000",
-    "originalPrice": "48000.00",
+    "originalPrice": "48000",
     "size": [
       "Bidón de 4L"
     ],
@@ -6918,7 +6058,7 @@
     ]
   },
   {
-    "id": 200,
+    "id": 174,
     "producto": "DETERGENTE LAVAVAJILLAS PIXOL FORMULA CONCENTRADA",
     "variedad": "Limón",
     "presentacion": "Doypack 350ml",
@@ -6932,7 +6072,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 350ml.png"
     ],
     "price": "5000",
-    "originalPrice": "5000.00",
+    "originalPrice": "5000",
     "size": [
       "Doypack 350ml"
     ],
@@ -6953,7 +6093,7 @@
     ]
   },
   {
-    "id": 201,
+    "id": 175,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Clásico",
     "presentacion": "Doypack 450ml",
@@ -6967,7 +6107,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 450ml.png"
     ],
     "price": "11000",
-    "originalPrice": "11000.00",
+    "originalPrice": "11000",
     "size": [
       "Doypack 450ml"
     ],
@@ -6986,7 +6126,7 @@
     ]
   },
   {
-    "id": 202,
+    "id": 176,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Intenso",
     "presentacion": "Doypack 450ml",
@@ -7000,7 +6140,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 450ml.png"
     ],
     "price": "11000",
-    "originalPrice": "11000.00",
+    "originalPrice": "11000",
     "size": [
       "Doypack 450ml"
     ],
@@ -7019,7 +6159,7 @@
     ]
   },
   {
-    "id": 203,
+    "id": 177,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Delicado",
     "presentacion": "Doypack 450ml",
@@ -7033,7 +6173,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 450ml.png"
     ],
     "price": "11000",
-    "originalPrice": "11000.00",
+    "originalPrice": "11000",
     "size": [
       "Doypack 450ml"
     ],
@@ -7052,7 +6192,7 @@
     ]
   },
   {
-    "id": 204,
+    "id": 178,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Exótico",
     "presentacion": "Doypack 450ml",
@@ -7066,7 +6206,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 450ml.png"
     ],
     "price": "11000",
-    "originalPrice": "11000.00",
+    "originalPrice": "11000",
     "size": [
       "Doypack 450ml"
     ],
@@ -7085,7 +6225,7 @@
     ]
   },
   {
-    "id": 205,
+    "id": 179,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
     "variedad": "Floral",
     "presentacion": "Doypack 450ml",
@@ -7099,7 +6239,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 450ml.png"
     ],
     "price": "11050",
-    "originalPrice": "11050.00",
+    "originalPrice": "11050",
     "size": [
       "Doypack 450ml"
     ],
@@ -7120,7 +6260,7 @@
     ]
   },
   {
-    "id": 206,
+    "id": 180,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
     "variedad": "Oriental",
     "presentacion": "Doypack 450ml",
@@ -7134,7 +6274,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 450ml.png"
     ],
     "price": "11050",
-    "originalPrice": "11050.00",
+    "originalPrice": "11050",
     "size": [
       "Doypack 450ml"
     ],
@@ -7155,7 +6295,7 @@
     ]
   },
   {
-    "id": 207,
+    "id": 181,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Coconut",
     "presentacion": "Doypack 2L",
@@ -7169,7 +6309,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 2L.png"
     ],
     "price": "34400",
-    "originalPrice": "34400.00",
+    "originalPrice": "34400",
     "size": [
       "Doypack 2L"
     ],
@@ -7188,7 +6328,7 @@
     ]
   },
   {
-    "id": 208,
+    "id": 182,
     "producto": "BOLSA PARA RESIDUOS PIXOL",
     "variedad": "Super Resistente",
     "presentacion": "Bolsa de 100 L.",
@@ -7202,7 +6342,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 100L.png"
     ],
     "price": "13000",
-    "originalPrice": "13000.00",
+    "originalPrice": "13000",
     "size": [
       "Bolsa de 100 L."
     ],
@@ -7216,7 +6356,7 @@
     ]
   },
   {
-    "id": 209,
+    "id": 183,
     "producto": "BOLSA PARA RESIDUOS PIXOL",
     "variedad": "Super Resistente",
     "presentacion": "Bolsa de 150 L.",
@@ -7230,7 +6370,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 150L.png"
     ],
     "price": "16500",
-    "originalPrice": "16500.00",
+    "originalPrice": "16500",
     "size": [
       "Bolsa de 150 L."
     ],
@@ -7244,7 +6384,7 @@
     ]
   },
   {
-    "id": 210,
+    "id": 184,
     "producto": "BOLSA PARA RESIDUOS PIXOL",
     "variedad": "Super Resistente",
     "presentacion": "Bolsa de 200 L.",
@@ -7258,7 +6398,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bolsa de 200L.png"
     ],
     "price": "25450",
-    "originalPrice": "25450.00",
+    "originalPrice": "25450",
     "size": [
       "Bolsa de 200 L."
     ],
@@ -7272,7 +6412,7 @@
     ]
   },
   {
-    "id": 211,
+    "id": 185,
     "producto": "BOLSA PARA RESIDUOS PIXOL",
     "variedad": "Baño",
     "presentacion": "Rollo x 100 Unidades",
@@ -7286,7 +6426,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Rollo x 100 Unidades.png"
     ],
     "price": "31100",
-    "originalPrice": "31100.00",
+    "originalPrice": "31100",
     "size": [
       "Rollo x 100 Unidades"
     ],
@@ -7300,7 +6440,7 @@
     ]
   },
   {
-    "id": 212,
+    "id": 186,
     "producto": "BOLSA PARA RESIDUOS PIXOL",
     "variedad": "Baño",
     "presentacion": "Rollo x 30 Unidades",
@@ -7314,7 +6454,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Rollo x 30 Unidades.png"
     ],
     "price": "11800",
-    "originalPrice": "11800.00",
+    "originalPrice": "11800",
     "size": [
       "Rollo x 30 Unidades"
     ],
@@ -7328,7 +6468,7 @@
     ]
   },
   {
-    "id": 213,
+    "id": 187,
     "producto": "TRAPO  DE PISO PIXOL",
     "variedad": "Económico",
     "presentacion": "1 Unidad",
@@ -7342,7 +6482,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/1 Unidad.png"
     ],
     "price": "8650",
-    "originalPrice": "8650.00",
+    "originalPrice": "8650",
     "size": [
       "1 Unidad"
     ],
@@ -7356,7 +6496,7 @@
     ]
   },
   {
-    "id": 214,
+    "id": 188,
     "producto": "TRAPO  DE PISO PIXOL",
     "variedad": "Premium",
     "presentacion": "1 Unidad",
@@ -7370,7 +6510,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/1 Unidad.png"
     ],
     "price": "12050",
-    "originalPrice": "12050.00",
+    "originalPrice": "12050",
     "size": [
       "1 Unidad"
     ],
@@ -7384,7 +6524,7 @@
     ]
   },
   {
-    "id": 215,
+    "id": 189,
     "producto": "ESPONJA PIXOL",
     "variedad": "Verde",
     "presentacion": "Pack x 6 Unidades",
@@ -7398,7 +6538,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Pack x 6 Unidades.png"
     ],
     "price": "17000",
-    "originalPrice": "17000.00",
+    "originalPrice": "17000",
     "size": [
       "Pack x 6 Unidades"
     ],
@@ -7419,42 +6559,7 @@
     ]
   },
   {
-    "id": 216,
-    "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
-    "variedad": "Tropical",
-    "presentacion": "Doypack 450ml",
-    "name": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL Tropical Doypack 450ml",
-    "category": "cuidado-de-las-prendas",
-    "subcategory": "suavizante",
-    "sku": "300001633",
-    "image": "https://cdn.cavallaro.com.py/productos/300000274.PNG",
-    "images": [
-      "https://cdn.cavallaro.com.py/productos/300000274.PNG",
-      "https://cdn.cavallaro.com.py/presentaciones/Doypack 450ml.png"
-    ],
-    "price": "11050",
-    "originalPrice": "11050.00",
-    "size": [
-      "Doypack 450ml"
-    ],
-    "featured": false,
-    "descripcion": "<p>Los Suavizantes Cavallaro Edición Especial poseen una fórmula concentrada que otorga el doble de suavidad y perfume a los tejidos. Cada variedad posee una exquisita fragancia desarrollada de manera exclusiva por un perfumista profesional, ofreciendo así diversas sensaciones y experiencias para los sentidos. Su composición posee perfume encapsulado mediante una tecnología denominada HD (High Diffusive) que permite la liberación de fragancia de forma gradual en diferentes momentos: durante el enjuague, en el momento de secado, durante la guarda y al momento de uso con la acción mecánica.</p>",
-    "usosRecomendados": [],
-    "propiedades": [
-      "• Edición Especial de perfumes, con aromas exclusivos para deleitar los sentidos.",
-      "• Su agente activo concentrado brinda humectación y un extra de suavidad a los tejidos.",
-      "• Mayor concentración de perfume, que brindan una explosión de fragancia.",
-      "• Con perfume encapsulado que garantiza que la fragancia se fije y perdure por más tiempo en el tejido.",
-      "• Facilita el planchado de las prendas.",
-      "• Protege los colores y evita el desgaste en la zona de cuello, codos y puños."
-    ],
-    "stock": 0,
-    "color": [
-      "#ff4701"
-    ]
-  },
-  {
-    "id": 217,
+    "id": 190,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Intenso",
     "presentacion": "Doypack 2L",
@@ -7468,7 +6573,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 2L.png"
     ],
     "price": "34400",
-    "originalPrice": "34400.00",
+    "originalPrice": "34400",
     "size": [
       "Doypack 2L"
     ],
@@ -7487,7 +6592,7 @@
     ]
   },
   {
-    "id": 218,
+    "id": 191,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Clásico",
     "presentacion": "Doypack 2L",
@@ -7501,7 +6606,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 2L.png"
     ],
     "price": "34400",
-    "originalPrice": "34400.00",
+    "originalPrice": "34400",
     "size": [
       "Doypack 2L"
     ],
@@ -7520,7 +6625,7 @@
     ]
   },
   {
-    "id": 219,
+    "id": 192,
     "producto": "DETERGENTE LAVAVAJILLAS PIXOL FORMULA CONCENTRADA",
     "variedad": "Limón",
     "presentacion": "Botella Det. 500ml",
@@ -7534,7 +6639,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Botella Det. 500ml.png"
     ],
     "price": "8100",
-    "originalPrice": "8100.00",
+    "originalPrice": "8100",
     "size": [
       "Botella Det. 500ml"
     ],
@@ -7555,7 +6660,7 @@
     ]
   },
   {
-    "id": 220,
+    "id": 193,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Clásico",
     "presentacion": "Doypack 900ml",
@@ -7569,7 +6674,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 900ml.png"
     ],
     "price": "18200",
-    "originalPrice": "18200.00",
+    "originalPrice": "18200",
     "size": [
       "Doypack 900ml"
     ],
@@ -7588,7 +6693,7 @@
     ]
   },
   {
-    "id": 221,
+    "id": 194,
     "producto": "JABON LIQUIDO ANTIBACTERIAL PARA LAVAR LA ROPA COCO CAVALLARO",
     "variedad": "Clásico",
     "presentacion": "Bidón de 4L",
@@ -7602,7 +6707,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Bidón de 4L.png"
     ],
     "price": "99500",
-    "originalPrice": "99500.00",
+    "originalPrice": "99500",
     "size": [
       "Bidón de 4L"
     ],
@@ -7624,7 +6729,7 @@
     ]
   },
   {
-    "id": 222,
+    "id": 195,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Delicado",
     "presentacion": "Doypack 2L",
@@ -7638,7 +6743,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 2L.png"
     ],
     "price": "34400",
-    "originalPrice": "34400.00",
+    "originalPrice": "34400",
     "size": [
       "Doypack 2L"
     ],
@@ -7657,7 +6762,7 @@
     ]
   },
   {
-    "id": 223,
+    "id": 196,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Exótico",
     "presentacion": "Doypack 2L",
@@ -7671,7 +6776,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 2L.png"
     ],
     "price": "34400",
-    "originalPrice": "34400.00",
+    "originalPrice": "34400",
     "size": [
       "Doypack 2L"
     ],
@@ -7690,7 +6795,7 @@
     ]
   },
   {
-    "id": 224,
+    "id": 197,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Exótico",
     "presentacion": "Doypack 900ml",
@@ -7704,7 +6809,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 900ml.png"
     ],
     "price": "18200",
-    "originalPrice": "18200.00",
+    "originalPrice": "18200",
     "size": [
       "Doypack 900ml"
     ],
@@ -7723,7 +6828,7 @@
     ]
   },
   {
-    "id": 225,
+    "id": 198,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
     "variedad": "Oriental",
     "presentacion": "Doypack 1600ml",
@@ -7737,7 +6842,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 1600ml.png"
     ],
     "price": "32400",
-    "originalPrice": "32400.00",
+    "originalPrice": "32400",
     "size": [
       "Doypack 1600ml"
     ],
@@ -7758,7 +6863,7 @@
     ]
   },
   {
-    "id": 226,
+    "id": 199,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Coconut",
     "presentacion": "Doypack 450ml",
@@ -7772,7 +6877,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 450ml.png"
     ],
     "price": "11000",
-    "originalPrice": "11000.00",
+    "originalPrice": "11000",
     "size": [
       "Doypack 450ml"
     ],
@@ -7791,7 +6896,7 @@
     ]
   },
   {
-    "id": 227,
+    "id": 200,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO PREMIUM",
     "variedad": "Coconut",
     "presentacion": "Doypack 900ml",
@@ -7805,7 +6910,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 900ml.png"
     ],
     "price": "18200",
-    "originalPrice": "18200.00",
+    "originalPrice": "18200",
     "size": [
       "Doypack 900ml"
     ],
@@ -7824,7 +6929,7 @@
     ]
   },
   {
-    "id": 228,
+    "id": 201,
     "producto": "SUAVIZANTE PARA ROPAS CAVALLARO EDICION ESPECIAL",
     "variedad": "Tropical",
     "presentacion": "Doypack 1600ml",
@@ -7838,7 +6943,7 @@
       "https://cdn.cavallaro.com.py/presentaciones/Doypack 1600ml.png"
     ],
     "price": "32400",
-    "originalPrice": "32400.00",
+    "originalPrice": "32400",
     "size": [
       "Doypack 1600ml"
     ],

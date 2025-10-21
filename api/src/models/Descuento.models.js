@@ -62,4 +62,4 @@ const Descuento = sequelize.define('Descuento', {
   underscored: true, // Convierte automáticamente a snake_case
 });
  
-module.exports = Valoracion;
+module.exports = Descuento;

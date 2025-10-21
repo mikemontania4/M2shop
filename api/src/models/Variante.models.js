@@ -79,7 +79,7 @@ const Variante = sequelize.define('Variante', {
   // color, presentacion → ahora se gestionan mediante Atributos dinámicos.
   // descuento → se maneja mediante tabla Descuento relacionada por varianteId.
 }, {
-  tableName: 'variantes_productos',
+  tableName: 'variantes',
   timestamps: true,
   underscored: true
 });

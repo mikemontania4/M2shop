@@ -9,8 +9,7 @@ const Categoria = require("./src/models/Categoria.models");
 const Marca = require("./src/models/Marca.models");
 const Producto = require("./src/models/Producto.models");
 const ImagenProducto = require("./src/models/ImagenProducto.models");
-const Variante = require("./src/models/Variante.models");
-const AtributoProducto = require("./src/models/AtributoProducto.models");
+const Variante = require("./src/models/Variante.models"); 
 const Carrito = require("./src/models/Carrito.models");
 const ItemCarrito = require("./src/models/ItemCarrito.models");
 
@@ -29,6 +28,7 @@ const ConfiguracionSitio = require("./src/models/ConfiguracionSitio.models");
 // Datos de ejemplo
 const datosEjemplo = require('./datos.json');
 const Banner = require('./src/models/Banner.models');
+const { ejecutarMigracion } = require('./migraciones.services');
 
 const populateDB = async () => {
   console.log("🔄 Iniciando población de base de datos...");
@@ -119,205 +119,7 @@ const populateDB = async () => {
     }
     console.log("✅ Marcas insertadas");
 
-    // ============= 8. CATEGORÍAS =============
-    console.log("8️⃣  Insertando categorías...");
-    for (const categoria of datosEjemplo.categorias) {
-      await Categoria.findOrCreate({
-        where: { slug: categoria.slug },
-        defaults: categoria
-      });
-    }
-    console.log("✅ Categorías insertadas");
-
-    // ============= 9. PRODUCTOS =============
-    console.log("9️⃣  Insertando productos...");
-    for (const producto of datosEjemplo.productos) {
-      await Producto.findOrCreate({
-        where: { sku: producto.sku },
-        defaults: producto
-      });
-    }
-    console.log("✅ Productos insertados");
-
-    // ============= 10. IMÁGENES DE PRODUCTOS =============
-    console.log("🔟 Insertando imágenes de productos...");
-    for (const imagen of datosEjemplo.imagenesProducto) {
-      await ImagenProducto.findOrCreate({
-        where: { id: imagen.id },
-        defaults: imagen
-      });
-    }
-    console.log("✅ Imágenes insertadas");
-
-    // ============= 11. VARIANTES DE PRODUCTOS =============
-    console.log("1️⃣1️⃣  Insertando variantes de productos...");
-    for (const variante of datosEjemplo.variantesProducto) {
-      await Variante.findOrCreate({
-        where: { sku: variante.sku },
-        defaults: variante
-      });
-    }
-    console.log("✅ Variantes insertadas");
-
-    // ============= 12. ATRIBUTOS DE PRODUCTOS =============
-    console.log("1️⃣2️⃣  Insertando atributos de productos...");
-    for (const atributo of datosEjemplo.atributosProducto) {
-      await AtributoProducto.findOrCreate({
-        where: { id: atributo.id },
-        defaults: atributo
-      });
-    }
-    console.log("✅ Atributos insertados");
-
-    // ============= 13. CARRITOS =============
-    console.log("1️⃣3️⃣  Insertando carritos...");
-    for (const carrito of datosEjemplo.carritos) {
-      await Carrito.findOrCreate({
-        where: { id: carrito.id },
-        defaults: carrito
-      });
-    }
-    console.log("✅ Carritos insertados");
-
-    // ============= 14. ITEMS DE CARRITO =============
-    console.log("1️⃣4️⃣  Insertando items de carrito...");
-    for (const item of datosEjemplo.itemsCarrito) {
-      await ItemCarrito.findOrCreate({
-        where: { id: item.id },
-        defaults: item
-      });
-    }
-    console.log("✅ Items de carrito insertados");
-
-    // ============= 15. PEDIDOS =============
-    console.log("1️⃣5️⃣  Insertando pedidos...");
-    for (const pedido of datosEjemplo.pedidos) {
-      await Pedido.findOrCreate({
-        where: { numeroPedido: pedido.numeroPedido },
-        defaults: pedido
-      });
-    }
-    console.log("✅ Pedidos insertados");
-
-    // ============= 16. ITEMS DE PEDIDO =============
-    console.log("1️⃣6️⃣  Insertando items de pedido...");
-    for (const item of datosEjemplo.itemsPedido) {
-      await ItemPedido.findOrCreate({
-        where: { id: item.id },
-        defaults: item
-      });
-    }
-    console.log("✅ Items de pedido insertados");
-
-    // ============= 17. HISTORIAL DE PEDIDOS =============
-    console.log("1️⃣7️⃣  Insertando historial de pedidos...");
-    for (const historial of datosEjemplo.historialPedido) {
-      await HistorialPedido.findOrCreate({
-        where: { id: historial.id },
-        defaults: historial
-      });
-    }
-    console.log("✅ Historial de pedidos insertado");
-
-    // ============= 18. CUPONES =============
-    console.log("1️⃣8️⃣  Insertando cupones...");
-    console.log('Cupones a insertar:', datosEjemplo.cupones);
-    for (const cupon of datosEjemplo.cupones) {
-
-      await Cupon.findOrCreate({
-        where: { codigo: cupon.codigo },
-        defaults: cupon
-      });
-    }
-    console.log("✅ Cupones insertados");
-
-    // ============= 19. USO DE CUPONES =============
-    console.log("1️⃣9️⃣  Insertando uso de cupones...");
-    for (const uso of datosEjemplo.usoCupones) {
-      await UsoCupon.findOrCreate({
-        where: { id: uso.id },
-        defaults: uso
-      });
-    }
-    console.log("✅ Uso de cupones insertado");
-
-    // ============= 20. RESEÑAS =============
-    console.log("2️⃣0️⃣  Insertando reseñas...");
-    for (const resena of datosEjemplo.resenas) {
-      await Resena.findOrCreate({
-        where: { id: resena.id },
-        defaults: resena
-      });
-    }
-    console.log("✅ Reseñas insertadas");
-
-    // ============= 21. LISTA DE DESEOS =============
-    console.log("2️⃣1️⃣  Insertando lista de deseos...");
-    for (const item of datosEjemplo.listaDeseos) {
-      await ListaDeseos.findOrCreate({
-        where: { id: item.id },
-        defaults: item
-      });
-    }
-    console.log("✅ Lista de deseos insertada");
-
-    // ============= 22. MÉTODOS DE ENVÍO =============
-    console.log("2️⃣2️⃣  Insertando métodos de envío...");
-    for (const metodo of datosEjemplo.metodosEnvio) {
-      await MetodoEnvio.findOrCreate({
-        where: { id: metodo.id },
-        defaults: metodo
-      });
-    }
-    console.log("✅ Métodos de envío insertados");
-
-    // ============= 23. CONFIGURACIÓN DEL SITIO =============
-    console.log("2️⃣3️⃣  Insertando configuración del sitio...");
-    for (const config of datosEjemplo.configuracionSitio) {
-      await ConfiguracionSitio.findOrCreate({
-        where: { clave: config.clave },
-        defaults: config
-      });
-    }
-    console.log("✅ Configuración del sitio insertada");
-
-    // ============= 24. BANNERS =============
-console.log("📸 Insertando banners...");
-for (const banner of datosEjemplo.banners) {
-  await Banner.findOrCreate({
-    where: { id: banner.id },
-    defaults: banner
-  });
-}
-console.log("✅ Banners insertados");
-
-
-    console.log("\n🎉 ¡Base de datos poblada exitosamente!");
-    console.log("\n📊 Resumen:");
-    console.log(`   - ${datosEjemplo.paises.length} países`);
-    console.log(`   - ${datosEjemplo.departamentos.length} departamentos`);
-    console.log(`   - ${datosEjemplo.ciudades.length} ciudades`);
-    console.log(`   - ${datosEjemplo.barrios.length} barrios`);
-    console.log(`   - ${datosEjemplo.usuarios.length} usuarios`);
-    console.log(`   - ${datosEjemplo.direccionesEnvio.length} direcciones de envío`);
-    console.log(`   - ${datosEjemplo.marcas.length} marcas`);
-    console.log(`   - ${datosEjemplo.categorias.length} categorías`);
-    console.log(`   - ${datosEjemplo.productos.length} productos`);
-    console.log(`   - ${datosEjemplo.imagenesProducto.length} imágenes de productos`);
-    console.log(`   - ${datosEjemplo.variantesProducto.length} variantes de productos`);
-    console.log(`   - ${datosEjemplo.atributosProducto.length} atributos de productos`);
-    console.log(`   - ${datosEjemplo.carritos.length} carritos`);
-    console.log(`   - ${datosEjemplo.itemsCarrito.length} items de carrito`);
-    console.log(`   - ${datosEjemplo.pedidos.length} pedidos`);
-    console.log(`   - ${datosEjemplo.itemsPedido.length} items de pedido`);
-    console.log(`   - ${datosEjemplo.historialPedido.length} registros de historial`);
-    console.log(`   - ${datosEjemplo.cupones.length} cupones`);
-    console.log(`   - ${datosEjemplo.usoCupones.length} usos de cupones`);
-    console.log(`   - ${datosEjemplo.resenas.length} reseñas`);
-    console.log(`   - ${datosEjemplo.listaDeseos.length} items en lista de deseos`);
-    console.log(`   - ${datosEjemplo.metodosEnvio.length} métodos de envío`);
-    console.log(`   - ${datosEjemplo.configuracionSitio.length} configuraciones`);
-    console.log(`   - ${datosEjemplo.banners.length} banners`);
+    await ejecutarMigracion();
     console.log("\n👤 Usuarios creados:");
     console.log("   - admin@cavallaro.com.py (Admin)");
     console.log("   - vendedor@cavallaro.com.py (Vendedor)");
